@@ -1,5 +1,5 @@
 # DraftProject 
-Represents the draft version of a project that is either a newly-formed project undergoing development or a published project that is checked out for editing.
+Represents the draft version of a project that is either new or a published project that is checked out for editing.
 
 DraftProject inherits properties and methods from the Project class.
 
@@ -89,24 +89,24 @@ To set the value of properties in an existing project:
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[ChangeEnterpriseProjectType](#changeenterpriseprojecttype)|||&#x22C6;&#x2713;|void||
-|[CheckIn](#checkin)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a check-in job for a draft project if it is still checked out.|
-|[Publish](#publish)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a publish job to get the changes from the draft project back to the published version.|
-|[Update](#update)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Saves changes in a new project or checked-out draft project back to Project Server.|
-|[UpdateCustomFields](#updatecustomfields)|||&#x22C6;&#x2713;|QueueJob||
-|[Validate](#validate)|&#x2713;|&#x2713;|&#x2713;|void|Validates pending changes from all added or removed projects.|
+|[ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)](#changeenterpriseprojecttype)|||&#x22C6;&#x2713;|void||
+|[CheckIn(force: Boolean)](#checkin)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a check-in job for a draft project if it is still checked out.|
+|[Publish(checkIn: Boolean)](#publish)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a publish job to get the changes from the draft project back to the published version.|
+|[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Saves changes in a new project or checked-out draft project back to Project Server.|
+|[UpdateCustomFields(customfielddictionary: CustomFieldCollection)](#updatecustomfields)|||&#x22C6;&#x2713;|QueueJob||
+|[Validate()](#validate)|&#x2713;|&#x2713;|&#x2713;|void|Validates pending changes from all added or removed projects.|
 
 
-## Individual Methods
+## Method Details
 
-### <a name="changeenterpriseprojecttype"></a> ChangeEnterpriseProjectType()
+### <a name="changeenterpriseprojecttype"></a> ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)
 
 <!-- Need a description here -->
 
 #### Syntax
 
 ```
-POST http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/ChangeEnterpriseProjectType(enterpriseProjectTypeUid)
+ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)
 ```
 
 #### Parameters
@@ -119,14 +119,14 @@ POST http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Dra
 
 void
 
-### <a name="checkin"></a> CheckIn()
+### <a name="checkin"></a> CheckIn(force: Boolean)
 
 Queues a check-in job for a draft project if it is still checked out.
 
 #### Syntax
 
 ```
-QueueJob CheckIn(force)
+CheckIn(force: Boolean)
 ```
 
 #### Parameters
@@ -137,16 +137,17 @@ QueueJob CheckIn(force)
 
 #### Return value
 
-Type: (QueueJob) A queued job that will check in the draft version of the project.
+QueueJob <br />
+A queued job that will check in the draft version of the project.
 
-### <a name="publish"></a> Publish()
+### <a name="publish"></a> Publish(checkIn: Boolean)
 
 Queues a publish job to get the changes from the draft project back to the published version.
 
 #### Syntax
 
 ```
-QueueJob Publish(checkIn)
+Publish(checkIn: Boolean)
 ```
 
 #### Parameters
@@ -157,7 +158,8 @@ QueueJob Publish(checkIn)
 
 #### Return value
 
-Type: (QueueJob) A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service publishes the draft version of the project.
+QueueJob <br />
+A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service publishes the draft version of the project.
 
 ### <a name="update"></a> Update()
 
@@ -166,7 +168,7 @@ Saves changes in a new project or checked-out draft project back to Project Serv
 #### Syntax
 
 ```
-QueueJob Update()
+Update()
 ```
 
 #### Parameters
@@ -175,20 +177,21 @@ none
 
 #### Return value
 
-Type: (QueueJob) A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
+QueueJob <br />
+A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
 
 #### Remarks
 
 The Update method cannot process a CSOM request greater than 2 MB in size.
 
-### <a name="updatecustomfields"></a> UpdateCustomFields()
+### <a name="updatecustomfields"></a> UpdateCustomFields(customfielddictionary: CustomFieldCollection)
 
 Updates the custom fields associated with the project.
 
 #### Syntax
 
 ```
-POST http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/UpdateCustomFields(customfielddictionary)
+UpdateCustomFields(customfielddictionary: CustomFieldCollection)
 ```
 
 #### Parameters
@@ -199,7 +202,8 @@ POST http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Dra
 
 #### Return Value
 
-Type: (QueueJob) A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
+QueueJob<br />
+A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
 
 
 ### <a name="validate"></a> Validate()
@@ -209,7 +213,7 @@ Validates pending changes from all added or removed projects.
 #### Syntax
 
 ```
-void Validate()
+Validate()
 ```
 
 #### Parameters
