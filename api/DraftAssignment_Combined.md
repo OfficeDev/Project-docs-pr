@@ -80,7 +80,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 
 |**Name** |**CSOM** |**JSOM** |**REST** |**Return Type** |**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:-----|
-|[DeleteObject()](deleteobject)|&#x2713;|&#x2713;|&#x2713;|   void |Deletes the draft assignment.|
+|[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|   void |Deletes the draft assignment.|
 
 
 ## Method Details
