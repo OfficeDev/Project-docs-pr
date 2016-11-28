@@ -62,7 +62,7 @@ The  **DraftProjectResource** has the following method.
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject](#deleteobject)|&#x2713;| &#x2713;|&#x2713;|void|Deletes the DraftProjectResource object.|
+|[DeleteObject()](#deleteobject)|&#x2713;| &#x2713;|&#x2713;|void|Deletes the DraftProjectResource object.|
 
 
 ## Method Details

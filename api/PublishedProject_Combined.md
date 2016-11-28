@@ -89,10 +89,10 @@ To set the value of properties in an existing project:
 
 |**Name**|**CSOM** |**JSOM** |**REST** |**Return Type**|**Description**|
 |:-----|:-----: |:-----: |:-----: |:-----|:-----|
-|[CheckOut](#checkout)|&#x2713; |&#x2713; |&#x2713; |DraftProject|Checks out the draft version of the project.|
-|[DeleteObject](#deleteobject)|&#x2713; |&#x2713; |&#x2713; |QueueJob|Deletes the PublishedProject object.|
-|[SubmitToWorkflow](#submittoworkflow)|&#x2713; |&#x2713; |&#x2713; |void|Causes the workflow to run.|
-|[UpdateVisibilityCustomFields](#updatevisibilitycustomfields)|&#x2713; |&#x2713; |&#x2713; |QueueJob|Updates the custom fields for a project in visibility mode.|
+|[CheckOut()](#checkout)|&#x2713; |&#x2713; |&#x2713; |DraftProject|Checks out the draft version of the project.|
+|[DeleteObject()](#deleteobject)|&#x2713; |&#x2713; |&#x2713; |QueueJob|Deletes the PublishedProject object.|
+|[SubmitToWorkflow()](#submittoworkflow)|&#x2713; |&#x2713; |&#x2713; |void|Causes the workflow to run.|
+|[UpdateVisibilityCustomFields()](#updatevisibilitycustomfields)|&#x2713; |&#x2713; |&#x2713; |QueueJob|Updates the custom fields for a project in visibility mode.|
 
 ## Remarks
 
@@ -114,7 +114,7 @@ Checks out the draft version of the project.
 #### Syntax
 
 ```
-DraftProject CheckOut()
+CheckOut()
 ```
 
 #### Parameters
@@ -123,7 +123,8 @@ none
 
 #### Return value
 
-Type: (DraftProject) The draft version of the project.
+DraftProject<br />
+The draft version of the project.
 
 ### <a name="deleteobject"></a> DeleteObject()
 
@@ -132,7 +133,7 @@ Deletes the PublishedProject object.
 #### Syntax
 
 ```
-QueueJob DeleteObject()
+DeleteObject()
 ```
 
 #### Parameters
@@ -141,7 +142,8 @@ none
 
 #### Return value
 
-Type: (QueueJob) A QueueJob object that contains information about the queued job.
+QueueJob<br />
+A QueueJob object that contains information about the queued job.
 
 #### Remarks
 
@@ -155,7 +157,7 @@ Causes the workflow to run.
 #### Syntax
 
 ```
-void SubmitToWorkflow()
+SubmitToWorkflow()
 ```
 
 #### Parameters
@@ -182,4 +184,5 @@ none
 
 #### Return value
 
-Type: (QueueJob) A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the published version of the project.
+QueueJob<br />
+A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the published version of the project.

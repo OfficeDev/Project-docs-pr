@@ -126,7 +126,7 @@ Queues a check-in job for a draft project if it is still checked out.
 #### Syntax
 
 ```
-CheckIn(force: Boolean)
+QueueJob CheckIn(force: Boolean)
 ```
 
 #### Parameters

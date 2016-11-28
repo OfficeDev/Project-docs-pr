@@ -78,14 +78,14 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 
 ### Methods
 
-|**CSOM** |**JSOM** |**REST** |**Return Type** |**Description**|
-|:----- |:----- |:----- |:----- |:-----|
-|DeleteObject|deleteObject|DeleteObject|   n/a |Deletes the draft assignment.|
+|**Name** |**CSOM** |**JSOM** |**REST** |**Return Type** |**Description**|
+|:----- |:-----: |:-----: |:-----: |:----- |:-----|
+|[DeleteObject()](deleteobject)|&#x2713;|&#x2713;|&#x2713;|   void |Deletes the draft assignment.|
 
 
 ## Method Details
 
-### DeleteObject()
+### <a name="deleteobject"></a>DeleteObject()
  
 Deletes the draft assignment.
 
