@@ -53,7 +53,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |DurationTimeSpan|&#x2713;&#x02B7;||&#x2713;|TimeSpan|Gets or sets the time interval for the amount of time that it takes to complete a task.|
 |FieldValues|&#x2713;|&#x2713;||Dictionary<string,object>|Gets the collection of custom fields that have values set for a task.|
 |Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a task finish date.|
-|FinishText|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|String||
+|FinishText|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
 |FixedCost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets any non-resource task expense.|
 |IsActive|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether a task is active.|
 |IsLockedByManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether a task has been locked for changes by a manager.|
@@ -75,8 +75,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |RemainingDurationMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the time interval, expressed in milliseconds, for the remaining task duration.|
 |RemainingDurationTimeSpan|&#x2713;&#x02B7;||&#x2713;|TimeSpan|Gets or sets the time interval for the remaining task duration.|
 |Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task start date.|
-|StartText|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|String||
-|StatusManager|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|User (SharePoint)||
+|StartText|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
+|StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User (SharePoint)||
 |Successors|&#x2713;|&#x2713;|&#x2713;|DraftTaskLinkCollection|Gets links to tasks that depend on the current task.|
 |UsePercentPhysicalWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether to use PercentPhysicalWorkComplete orPercentComplete to compute earned value.|
 |Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total time scheduled for a task.|

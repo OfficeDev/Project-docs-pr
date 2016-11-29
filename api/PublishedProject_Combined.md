@@ -70,7 +70,7 @@ To set the value of properties in an existing project:
 |NewTasksAreManual|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether new tasks are manually scheduled. |
 |NumberFiscalYearFromStart|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to use the project start year for fiscal year numbering. |
 |Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User|Gets the owner of the project. |
-|ProjectIdentifier|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Integer||
+|ProjectIdentifier|&#x2713;|&#x2713;|&#x2713;|Integer||
 |ProjectResources|&#x2713;|&#x2713;|&#x2713;|PublishedProjectResourceCollection|Gets the collection of resources for a project. |
 |ProtectedActualsSynch|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets whether the project actuals are synchronized with the protected actuals. |
 |ShowEstimatedDurations|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether a question mark is displayed after an estimated duration for a task. |
@@ -79,8 +79,8 @@ To set the value of properties in an existing project:
 |TaskLinks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskLinkCollection|Gets the collection of task links for the project. |
 |Tasks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskCollection|Gets the collection of tasks for the project. |
 |TrackingMode|&#x2713;|&#x2713;|&#x2713;|Enumerated value |Gets the default tracking method for all assignments in the project. |
-|UtilizationDate|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|DateTime||
-|UtilizationType|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
+|UtilizationDate|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|UtilizationType|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
 |WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Short integer|Gets the day of the week on which a work week starts. |
 |WinprojVersion|&#x2713;|&#x2713;|&#x2713;|Decimal|Gets the version of Project Professional that created the published project. |
 

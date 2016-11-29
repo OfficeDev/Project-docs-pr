@@ -57,8 +57,8 @@ To set the value of properties in an existing project:
 |DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default type for tasks in the project. |
 |DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the project description. |
-|EnterpriseProjectTypeId|||&#x22C6;&#x2713;|Guid||
-|EntityLinks|||&#x22C6;&#x2713;|EntityLinkCollection||
+|EnterpriseProjectTypeId|||&#x2713;|Guid||
+|EntityLinks|||&#x2713;|EntityLinkCollection||
 |FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary/JSON list of key-value pairs|Gets the custom field values for the published project. |
 |FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the project finish date. |
 |FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|short integer|Gets the number of the first month in the fiscal year. |
@@ -70,7 +70,7 @@ To set the value of properties in an existing project:
 |NewTasksAreManual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether new tasks are manually scheduled. |
 |NumberFiscalYearFromStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether to use the project start year for fiscal year numbering. |
 |Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User|Gets the owner of the project. |
-|ProjectIdentifier|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|Integer||
+|ProjectIdentifier|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
 |ProjectResources|&#x2713;|&#x2713;|&#x2713;|PublishedProjectResourceCollection|Gets the collection of resources for a project. |
 |ProtectedActualsSynch|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets whether the project actuals are synchronized with the protected actuals. |
 |ShowEstimatedDurations|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether a question mark is displayed after an estimated duration for a task. |
@@ -79,8 +79,8 @@ To set the value of properties in an existing project:
 |TaskLinks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskLinkCollection|Gets the collection of task links for the project. |
 |Tasks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskCollection|Gets the collection of tasks for the project. |
 |TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value |Gets the default tracking method for all assignments in the project. |
-|UtilizationDate|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|DateTime||
-|UtilizationType|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|&#x22C6;&#x2713;&#x02B7;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
+|UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
+|UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
 |WeekStartDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Short integer|Gets the day of the week on which a work week starts. |
 |WinprojVersion|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets the version of Project Professional that created the published project. |
 
@@ -89,11 +89,11 @@ To set the value of properties in an existing project:
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)](#changeenterpriseprojecttype)|||&#x22C6;&#x2713;|void||
+|[ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)](#changeenterpriseprojecttype)|||&#x2713;|void||
 |[CheckIn(force: Boolean)](#checkin)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a check-in job for a draft project if it is still checked out.|
 |[Publish(checkIn: Boolean)](#publish)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a publish job to get the changes from the draft project back to the published version.|
 |[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Saves changes in a new project or checked-out draft project back to Project Server.|
-|[UpdateCustomFields(customfielddictionary: CustomFieldCollection)](#updatecustomfields)|||&#x22C6;&#x2713;|QueueJob||
+|[UpdateCustomFields(customfielddictionary: CustomFieldCollection)](#updatecustomfields)|||&#x2713;|QueueJob||
 |[Validate()](#validate)|&#x2713;|&#x2713;|&#x2713;|void|Validates pending changes from all added or removed projects.|
 
 

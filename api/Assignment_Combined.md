@@ -46,10 +46,10 @@ This resource supports GET HTTP command.
 |Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when the assignment was created.|
 |CurrentCostVariance|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the current cost variance (CV).|
 |CustomFields|&#x2713;|&#x2713;|&#x2713;|CustomFieldCollection|Gets the collection of custom fields for the assignment.|
-|Delay|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|String|Gets the amount of time that passes after the start date, before work on the assignment starts.|
-|DelayMilliseconds||&#x2713;|&#x22C6;&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the amount of time that passes after the start date, before work on the assignment starts.|
-|DelayTimeSpan|&#x22C6;&#x2713;|&#x22C6;|&#x2713;|TimeSpan|Gets the time interval for the amount of time that passes after the start date, before work on the assignment starts.|
-|Finish|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|DateTime|Gets the date when the assignment is scheduled to be completed.|
+|Delay|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of time that passes after the start date, before work on the assignment starts.|
+|DelayMilliseconds||&#x2713;|&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the amount of time that passes after the start date, before work on the assignment starts.|
+|DelayTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of time that passes after the start date, before work on the assignment starts.|
+|Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when the assignment is scheduled to be completed.|
 |FinishVariance|&#x2713;|&#x2713;|&#x2713;|String|Gets the variance of the finish date of the assignment.|
 |FinishVarianceMilliseconds||&#x2713;|&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the variance of the finish date of the assignment.|
 |FinishVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the variance of the finish date of the assignment.|
@@ -63,7 +63,7 @@ This resource supports GET HTTP command.
 |LevelingDelayMilliseconds||&#x2713;|&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the amount of time that resource leveling can delay the assignment from its early start date.|
 |LevelingDelayTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of time that resource leveling can delay the assignment from its early start date.|
 |Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when the assignment was modified.|
-|Notes|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|String|Gets comments about the assignment.|
+|Notes|&#x2713;|&#x2713;|&#x2713;|String|Gets comments about the assignment.|
 |OvertimeCost|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the total overtime cost of the assignment.|
 |RemainingCost|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the total remaining cost of the assignment, as scheduled.|
 |RemainingOvertimeCost|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the scheduled remaining overtime cost of the assignment.|
@@ -74,7 +74,7 @@ This resource supports GET HTTP command.
 |StartVarianceMilliseconds||&#x2713;|&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the variance of the assignment start date.|
 |StartVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the variance of the assignment start date.|
 |Stop|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when a resource stops work on the assignment.|
-|WorkContourType|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|WorkContourType||
+|WorkContourType|&#x2713;|&#x2713;|&#x2713;|WorkContourType||
 |WorkVariance|&#x2713;|&#x2713;|&#x2713;|String|Gets the difference between baseline work and currently scheduled work on the assignment.|
 |WorkVarianceMilliseconds||&#x2713;|&#x2713;|Double (64-bit)|Gets the time interval, expressed in milliseconds, for the difference between baseline work and currently scheduled work on the assignment.|
 |WorkVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the difference between baseline work and currently scheduled work on the assignment.|

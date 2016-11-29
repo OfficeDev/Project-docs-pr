@@ -44,45 +44,45 @@ To set the value of properties in an existing project:
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |ApprovedEnd|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved end date in the project portfolio planner.|
 |ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved start date in the project portfolio planner.|
-|CalculateActualCosts|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether the project automatically calculates actual and remaining work and costs. |
-|CalculatesActualCosts|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether the project always calculates actual costs. |
+|CalculateActualCosts|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project automatically calculates actual and remaining work and costs. |
+|CalculatesActualCosts|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project always calculates actual costs. |
 |CheckedOutBy|&#x2713;|&#x2713;|&#x2713;|User|Gets the enterprise resource who has the project checked out.|
 |CheckedOutDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when project was checked out.|
 |CheckOutDescription|&#x2713;|&#x2713;|&#x2713;|String|Gets the description of the current checkout action for the project.|
 |CheckOutId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the session GUID that is associated with the current check out.|
 |CreatedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when the project was created.|
-|CriticalSlackLimit|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Integer|Gets the number of days that a task can go past its end date before the project marks that task as critical. |
+|CriticalSlackLimit|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the number of days that a task can go past its end date before the project marks that task as critical. |
 |CustomFields|&#x2713;|&#x2713;|&#x2713;|CustomFieldCollection class|Gets the collection of project custom fields that have values set for the project.|
-|DefaultFinishTime|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|DateTime|Gets the default end time of a working day. |
+|DefaultFinishTime|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the default end time of a working day. |
 |DefaultOvertimeRateUnits|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the time unit for the default overtime rate that is stored by the DefaultOvertimeRate property.|
 |DefaultStandardRateUnits|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the time unit for the default standard rate that is stored by the DefaultStandardRate property.|
-|DefaultStartTime|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|DateTime|Gets the default start time of a working day. |
-|Engagements|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|PS.ProjectEngagementCollection||
+|DefaultStartTime|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the default start time of a working day. |
+|Engagements|&#x2713;|&#x2713;|&#x2713;|PS.ProjectEngagementCollection||
 |EnterpriseProjectType|&#x2713;|&#x2713;|&#x2713;|EnterpriseProjectType|Gets the enterprise project type (EPT) for the project.|
 |HasMppPendingImport|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether there is an mpp file waiting to be imported.|
-|HonorConstraints|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether scheduling constraints take precedence over dependencies. |
+|HonorConstraints|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether scheduling constraints take precedence over dependencies. |
 |Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project.|
 |IsCheckedOut|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project is checked out.|
 |LastPublishedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the most recent date when the project was published.|
 |LastSavedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the most recent date when the project was saved.|
 |ListId|||&#x2713;|Guid||
-|MoveActualIfLater|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts forward to the status date, if the actual end date falls before the status date. |
-|MoveActualToStatus|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts back to the status date, if the actual end data falls after the status date. |
-|MoveRemainingIfEarlier|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to move the start date of remaining parts forward to the status date, if the actual start date falls before the status date. |
-|MoveRemainingToStatus|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to move the start date of the remaining parts back to the status date, if the actual start date falls after the status date. |
-|MultipleCriticalPaths|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to calculate multiple critical paths. |
+|MoveActualIfLater|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts forward to the status date, if the actual end date falls before the status date. |
+|MoveActualToStatus|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts back to the status date, if the actual end data falls after the status date. |
+|MoveRemainingIfEarlier|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the start date of remaining parts forward to the status date, if the actual start date falls before the status date. |
+|MoveRemainingToStatus|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the start date of the remaining parts back to the status date, if the actual start date falls after the status date. |
+|MultipleCriticalPaths|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to calculate multiple critical paths. |
 |OptimizerDecision|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the result of the Optimizer in a project portfolio analysis.|
 |PercentComplete|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the percentage complete of the project summary task.|
 |Phase|&#x2713;|&#x2713;|&#x2713;|Phase|Gets the current workflow phase of the project.|
 |PlannerDecision|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the result of the Planner in a project portfolio analysis.|
 |ProjectSiteUrl|&#x2713;|&#x2713;|&#x2713;|String|Gets the URL of the project site.|
-|ProjectSummaryTask|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|ProjectSummaryTask||
+|ProjectSummaryTask|&#x2713;|&#x2713;|&#x2713;|ProjectSummaryTask||
 |ProjectType|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the type of project (standard project, template, master project, or subproject).|
 |QueueJobs|&#x2713;|&#x2713;|&#x2713;|QueueJobCollection|Gets the collection of Project Server Queue Service jobs that are associated with the project.|
-|ScheduledFromStart|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets whether the project is scheduled from the finish date instead of the start date. |
-|SplitInProgress|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether to split tasks that are in progress. |
-|SpreadActualCostsToStatus|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether actual costs are spread to the status date or to the stop date. |
-|SpreadPercentCompleteToStatus|&#x22C6;&#x2713;|&#x22C6;&#x2713;|&#x22C6;&#x2713;|Boolean|Gets a value that indicates whether the percentage complete consideration period is spread to the status date or to the task finish date. |
+|ScheduledFromStart|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets whether the project is scheduled from the finish date instead of the start date. |
+|SplitInProgress|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to split tasks that are in progress. |
+|SpreadActualCostsToStatus|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether actual costs are spread to the status date or to the stop date. |
+|SpreadPercentCompleteToStatus|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the percentage complete consideration period is spread to the status date or to the task finish date. |
 |Stage|&#x2713;|&#x2713;|&#x2713;|Stage|Gets the current workflow stage of the project.|
 |SummaryTaskId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the hidden project summary task.|
 |TaskListId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project's task list.|
