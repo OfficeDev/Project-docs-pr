@@ -59,4 +59,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/PublicProjectResources('proj
 
 The  **PublishedProjectResource** has no methods.
 
+## See Also
+
+[ProjectResource class](ProjectResource_Combined.md) <br />
+[DraftProjectResource class](DraftProjectResource_Combined.md)
 

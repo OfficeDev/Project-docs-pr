@@ -101,3 +101,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/ProjectResource('projectreso
 The  **ProjectResource** object has no methods.
 
 
+## See Also
+
+[DraftProjectResource class](DraftProjectResource_Combined.md) <br />
+[PublishedProjectResource class](PublishedProjectResource_Combined.md)
+

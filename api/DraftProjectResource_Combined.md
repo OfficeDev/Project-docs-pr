@@ -86,4 +86,9 @@ none
 void
 
 
+## See Also
+
+[ProjectResource class](ProjectResource_Combined.md) <br />
+[PublishedProjectResource class](PublishedProjectResource_Combined.md)
+
 
