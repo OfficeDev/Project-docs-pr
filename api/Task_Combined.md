@@ -147,4 +147,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/Tasks('taskid')
 
 The  **Task** object has no methods.
 
+## See Also
+
+[DraftTask class](DraftTask_Combined.md) <br />
+[PublishedTask class](PublishedTask_Combined.md)
 
