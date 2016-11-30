@@ -27,10 +27,6 @@ This resource supports PUT, MERGE, and DELETE HTTP commands.
 http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/Assignments('assignmentid')
 ```
 
-## See Also
-
-[Assignment class](Assignment_Combined.md) <br />
-[PublishedAssignment class](PublishedAssignment_Combined.md)
 
 ## Members
 
@@ -106,3 +102,10 @@ none
 #### Return Value
 
 void
+
+
+## See Also
+
+[Assignment class](Assignment_Combined.md) <br />
+[PublishedAssignment class](PublishedAssignment_Combined.md)
+

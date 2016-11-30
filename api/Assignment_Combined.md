@@ -24,11 +24,6 @@ This resource supports GET HTTP command.
 http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
 ```
 
-## See Also
-
-[DraftAssignment class](DraftAssignment_Combined.md) <br />
-[PublishedAssignment class](PublishedAssignment_Combined.md)
-
 
 ## Members
 
@@ -91,6 +86,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignme
 The **Assignment** object has no methods.
 
 
+## See Also
 
-
-
+[DraftAssignment class](DraftAssignment_Combined.md) <br />
+[PublishedAssignment class](PublishedAssignment_Combined.md)
