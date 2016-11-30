@@ -10,7 +10,6 @@ PublishedProject inherits properties and methods from Project.
 ```C#
 Public Class PublishedProject
 ```
-
 ### JSOM
 
 ```
@@ -186,3 +185,8 @@ none
 
 QueueJob<br />
 A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the published version of the project.
+
+## See Also
+
+[Project class](Project_Combined.md) <br />
+[DraftProject class](DraftProject_Combined.md)

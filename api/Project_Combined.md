@@ -294,3 +294,9 @@ UpdateProjectStageStatus(stage: Stage, statusInformation: string, stageStatusVal
 #### Return Value
 
 void
+
+
+## See Also
+
+[DraftProject class](DraftProject_Combined.md) <br />
+[PublishedProject class](PublishedProject_Combined.md)
