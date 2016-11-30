@@ -27,6 +27,12 @@ This resource supports the GET HTTP command.
 http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
 ```
 
+## See Also
+
+[Assignment class](Assignment_Combined.md) <br />
+[DraftAssignment class](DraftAssignment_Combined.md)
+
+
 ## Members
 
 ### Properties

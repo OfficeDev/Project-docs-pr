@@ -18,11 +18,17 @@ PS.Assignment
 
 ### REST Interface
 
+This resource supports GET HTTP command.
+
 ```
 http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
 ```
 
-This resource supports GET HTTP command.
+## See Also
+
+[DraftAssignment class](DraftAssignment_Combined.md) <br />
+[PublishedAssignment class](PublishedAssignment_Combined.md)
+
 
 ## Members
 
@@ -83,6 +89,8 @@ This resource supports GET HTTP command.
 ### Methods
 
 The **Assignment** object has no methods.
+
+
 
 
 

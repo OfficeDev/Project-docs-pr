@@ -57,8 +57,6 @@ To set the value of properties in an existing project:
 |DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default type for tasks in the project. |
 |DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the project description. |
-|EnterpriseProjectTypeId|||&#x2713;|Guid||
-|EntityLinks|||&#x2713;|EntityLinkCollection||
 |FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary/JSON list of key-value pairs|Gets the custom field values for the published project. |
 |FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the project finish date. |
 |FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|short integer|Gets the number of the first month in the fiscal year. |

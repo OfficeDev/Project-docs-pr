@@ -27,6 +27,11 @@ This resource supports PUT, MERGE, and DELETE HTTP commands.
 http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/Assignments('assignmentid')
 ```
 
+## See Also
+
+[Assignment class](Assignment_Combined.md) <br />
+[PublishedAssignment class](PublishedAssignment_Combined.md)
+
 ## Members
 
 ### Properties
@@ -81,7 +86,6 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 |**Name** |**CSOM** |**JSOM** |**REST** |**Return Type** |**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:-----|
 |[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|   void |Deletes the draft assignment.|
-
 
 ## Method Details
 
