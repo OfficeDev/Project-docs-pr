@@ -1,6 +1,7 @@
 # [AccrueAt enumeration](AccrueAtEnumeration.md)
 # [Assignment class](Assignment_Combined.md)
 # [AssignmentCreationInformation class](AssignmentCreationInformation_Combined.md)
+# [DeletedPublishedAssignmentclass](DeletedPublishedAssignment_Combined.md)
 # [DraftAssignment class](DraftAssignment_Combined.md)
 # [DraftProject class](DraftProject_Combined.md)
 # [DraftProjectResource class](DraftProjectResource_Combined.md)
