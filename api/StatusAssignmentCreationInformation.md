@@ -1,5 +1,5 @@
 
-# AssignmentCreationInformation class
+# StatusAssignmentCreationInformation class
 Contains the properties that can be set when creating an assignment.
 
 ## Syntax
@@ -13,7 +13,7 @@ Class AssignmentCreationInformation Inherits from ClientValueObject
 ### JSOM
 
 ```
-PS.AssignmentCreationInformation
+PS.Assignment
 ```
 
 ### REST Interface
