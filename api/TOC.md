@@ -29,6 +29,8 @@
 # [PublishedTask class](PublishedTask.md)
 # [PublishedTaskCollection class](PublishedTaskCollection.md)
 
+# [StatusAssignment class](StatusAssignment.md)
+
 # [Task class](Task.md)
 # [TaskCreationInformation class](TaskCreationInformation.md)
 
