@@ -103,6 +103,6 @@ The  **ProjectResource** object has no methods.
 
 ## See Also
 
-[DraftProjectResource class](DraftProjectResource_Combined.md) <br />
-[PublishedProjectResource class](PublishedProjectResource_Combined.md)
+[DraftProjectResource class](DraftProjectResource.md) <br />
+[PublishedProjectResource class](PublishedProjectResource.md)
 

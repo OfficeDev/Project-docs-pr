@@ -61,6 +61,6 @@ The  **PublishedProjectResource** has no methods.
 
 ## See Also
 
-[ProjectResource class](ProjectResource_Combined.md) <br />
-[DraftProjectResource class](DraftProjectResource_Combined.md)
+[ProjectResource class](ProjectResource.md) <br />
+[DraftProjectResource class](DraftProjectResource.md)
 

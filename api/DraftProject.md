@@ -225,6 +225,6 @@ void
 
 ## See Also
 
-[Project class](Project_Combined.md) <br />
-[PublishedProject class](PublishedProject_Combined.md)
+[Project class](Project.md) <br />
+[PublishedProject class](PublishedProject.md)
 

@@ -1,6 +1,6 @@
 # ProjectCollection class
 
-Represents a collection of [PublishedProject](PublishedProject_Combined.md) objects.
+Represents a collection of [PublishedProject](PublishedProject.md) objects.
 
 ## Syntax
 

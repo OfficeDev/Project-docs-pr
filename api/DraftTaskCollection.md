@@ -1,6 +1,6 @@
 # DraftTaskCollection class
 
-Represents a collection of [DraftTask](DraftTask_Combined.md) objects.
+Represents a collection of [DraftTask](DraftTask.md) objects.
 
 ## Syntax
 

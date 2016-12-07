@@ -106,6 +106,6 @@ void
 
 ## See Also
 
-[Assignment class](Assignment_Combined.md) <br />
-[PublishedAssignment class](PublishedAssignment_Combined.md)
+[Assignment class](Assignment.md) <br />
+[PublishedAssignment class](PublishedAssignment.md)
 

@@ -188,5 +188,5 @@ A QueueJob object that contains information about the queued job. If the queue j
 
 ## See Also
 
-[Project class](Project_Combined.md) <br />
-[DraftProject class](DraftProject_Combined.md)
+[Project class](Project.md) <br />
+[DraftProject class](DraftProject.md)

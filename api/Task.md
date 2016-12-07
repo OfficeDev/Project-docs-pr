@@ -149,6 +149,6 @@ The  **Task** object has no methods.
 
 ## See Also
 
-[DraftTask class](DraftTask_Combined.md) <br />
-[PublishedTask class](PublishedTask_Combined.md)
+[DraftTask class](DraftTask.md) <br />
+[PublishedTask class](PublishedTask.md)
 

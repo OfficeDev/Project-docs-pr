@@ -1,6 +1,6 @@
 # EnterpriseResourceCollection class
 
-Represents a collection of [EnterpriseResource](EnterpriseResource_Combined.md) objects.
+Represents a collection of [EnterpriseResource](EnterpriseResource.md) objects.
 
 ## Syntax
 

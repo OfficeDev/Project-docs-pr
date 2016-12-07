@@ -298,5 +298,5 @@ void
 
 ## See Also
 
-[DraftProject class](DraftProject_Combined.md) <br />
-[PublishedProject class](PublishedProject_Combined.md)
+[DraftProject class](DraftProject.md) <br />
+[PublishedProject class](PublishedProject.md)

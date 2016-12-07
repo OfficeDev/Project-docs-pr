@@ -1,6 +1,6 @@
 # DraftAssignmentCollection class
 
-Represents a collection of [DraftAssignment](DraftAssignment_Combined.md) objects.
+Represents a collection of [DraftAssignment](DraftAssignment.md) objects.
 
 ## Syntax
 

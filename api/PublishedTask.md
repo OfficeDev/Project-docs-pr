@@ -90,5 +90,5 @@ The  **PublishedTask** object has no methods.
 
 ## See Also
 
-[Task class](Task_Combined.md) <br />
-[DraftTask class](DraftTask_Combined.md)
+[Task class](Task.md) <br />
+[DraftTask class](DraftTask.md)

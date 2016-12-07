@@ -88,5 +88,5 @@ The **Assignment** object has no methods.
 
 ## See Also
 
-[DraftAssignment class](DraftAssignment_Combined.md) <br />
-[PublishedAssignment class](PublishedAssignment_Combined.md)
+[DraftAssignment class](DraftAssignment.md) <br />
+[PublishedAssignment class](PublishedAssignment.md)
