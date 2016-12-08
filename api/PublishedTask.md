@@ -32,7 +32,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Tasks('taskid')
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the costs incurred for work already performed on the task, together with any other recorded costs that are associated with the N38task.|
+|ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the costs incurred for work already performed on the task, together with any other recorded costs that are associated with the task.|
 |ActualFinish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when the task is complete.|
 |ActualStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time that the task actually began, based on progress information that was entered.|
 |ActualWork|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of work that has already been performed by resources assigned to the task.|
