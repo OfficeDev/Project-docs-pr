@@ -52,8 +52,8 @@ To set the value of properties in an existing project:
 |DefaultEffortDriven|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether the scheduling of new tasks is effort-driven. |
 |DefaultEstimatedDuration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether new tasks have estimated durations. |
 |DefaultFixedCostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets a value that indicates which default fixed-cost accrual method to use on new tasks. |
-|DefaultOvertimeRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets the default overtime rate for local resources. |
-|DefaultStandardRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets the default standard rate for local resources. |
+|DefaultOvertimeRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the default overtime rate for local resources. |
+|DefaultStandardRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the default standard rate for local resources. |
 |DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default type for tasks in the project. |
 |DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the project description. |
