@@ -37,7 +37,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/PublicProjectResources('proj
 |Code|&#x2713;|&#x2713;|&#x2713;|String|Gets any code, abbreviation, or number that is entered as part of the information about the resource.|
 |CostAccrual|&#x2713;|&#x2713;|&#x2713;|AccrueAt|Gets a value that represents how and when to charge resource costs to the cost of a task.|
 |CostCenter|&#x2713;|&#x2713;|&#x2713;|String|Gets any code, abbreviation, or number that has been entered as part of the information about the resource.|
-|CostPerUse|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the cost per use of the resource.|
+|CostPerUse|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the cost per use of the resource.|
 |DefaultAssignmentOwner|&#x2713;|&#x2713;|&#x2713;|User (SP)|Gets the default assignment owner.|
 |DefaultBookingType|&#x2713;|&#x2713;|&#x2713;|BookingType|Gets the default booking type for the resource.|
 |Email|&#x2713;|&#x2713;|&#x2713;|String|Gets the email address of the resource.|
@@ -46,12 +46,12 @@ http://<sitecollection> /<site> /_api/ProjectServer/PublicProjectResources('proj
 |Initials|&#x2713;|&#x2713;|&#x2713;|String|Gets the short name for the resource.|
 |Item|&#x2713;|&#x2713;||Object|Gets a resource item in the published project.|
 |MaterialLabel|&#x2713;|&#x2713;|&#x2713;|String|Gets the unit of measure for a material resource, which can be supplies or other consumable items that are used in a project.|
-|MaximumCapacity|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the percentage, or the number of units, that represent the maximum capacity for which the resource is available during the current time period.|
+|MaximumCapacity|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the percentage, or the number of units, that represent the maximum capacity for which the resource is available during the current time period.|
 |Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the project resource.|
-|OvertimeRate|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the hourly rate of pay for overtime for the resource.|
+|OvertimeRate|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the hourly rate of pay for overtime for the resource.|
 |OvertimeRateUnits|&#x2713;|&#x2713;|&#x2713;|OvertimeRateFormat|Gets the rate description format in which the overtime rate is displayed.|
 |Phonetics|&#x2713;|&#x2713;|&#x2713;|String|Gets phonetic information in either the Japanese Hiragana writing system or the Katakana writing system for resource names.|
-|StandardRate|&#x2713;|&#x2713;|&#x2713;|Double (64-bit)|Gets the rate of pay per hour for regular, non-overtime work performed by the resource.|
+|StandardRate|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the rate of pay per hour for regular, non-overtime work performed by the resource.|
 |StandardRateUnits|&#x2713;|&#x2713;|&#x2713;|StandardRateFormat|Gets the rate description format in which the standard rate is displayed.|
 
 
