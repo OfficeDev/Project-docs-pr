@@ -31,6 +31,7 @@
 
 # [StatusAssignment class](StatusAssignment.md)
 # [StatusAssignmentCreationInformation class](StatusAssignmentCreationInformation.md)
+# [StatusAssignmentHistoryLine class](StatusAssignmentHistoryLine.md)
 
 # [Task class](Task.md)
 # [TaskCreationInformation class](TaskCreationInformation.md)
