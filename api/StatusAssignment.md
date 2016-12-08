@@ -33,11 +33,11 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources('resourcei
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |ActualFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time when an assignment was completed.|
 |ActualOvertime|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the actual amount of overtime work already performed by resources that are assigned to tasks.|
-|ActualOvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the actual amount of overtime work already performed by resources that are assigned to tasks.|
+|ActualOvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the actual amount of overtime work already performed by resources that are assigned to tasks.|
 |ActualOvertimeTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the actual amount of overtime work already performed by resources that are assigned to tasks.|
 |ActualStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time that an assignment actually began, based on progress information that was entered.|
 |ActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of work that has already been performed by resources that are assigned to tasks.|
-|ActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the amount of work that has already been performed by resources that are assigned to tasks.|
+|ActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of work that has already been performed by resources that are assigned to tasks.|
 |ActualWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of work that has already been performed by resources that are assigned to tasks.|
 |ApprovalStatus|&#x2713;|&#x2713;|&#x2713;|StatusApprovalType||
 |Comments|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the comments for the status assignment.|
@@ -51,24 +51,24 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources('resourcei
 |Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets or sets the date and time that the status assignment was last updated.|
 |Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the status assignment.|
 |Overtime|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of overtime work.|
-|OvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the amount of overtime work.|
+|OvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of overtime work.|
 |OvertimeTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of overtime work.|
 |PercentComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int16|Gets or sets the current status of a task, resource, or assignment, expressed as the percentage of work that has been completed.|
 |Project|&#x2713;|&#x2713;|&#x2713;|PublishedProject|Gets the project that contains the status assignment.|
 |RegularWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total amount of nonovertime work that is scheduled to be performed by resources.|
-|RegularWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the total amount of nonovertime work that is scheduled to be performed by resources.|
+|RegularWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the total amount of nonovertime work that is scheduled to be performed by resources.|
 |RegularWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the total amount of nonovertime work that is scheduled to be performed by resources.|
 |RemainingOvertime|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of remaining scheduled overtime work.|
-|RemainingOvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the amount of remaining scheduled overtime work.|
+|RemainingOvertimeMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of remaining scheduled overtime work.|
 |RemainingOvertimeTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of remaining scheduled overtime work.|
 |RemainingWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the time, such as person-hours or days, that are still required to complete a task or set of tasks.|
-|RemainingWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the time, such as person-hours or days, that are still required to complete a task or set of tasks.|
+|RemainingWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the time, such as person-hours or days, that are still required to complete a task or set of tasks.|
 |RemainingWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the time, such as person-hours or days, that are still required to complete a task or set of tasks.|
 |Resource|&#x2713;|&#x2713;|&#x2713;|EnterpriseResource|Gets the resource that is associated with the status assignment.|
 |Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date when an assigned resource is scheduled to begin working on an assignment.|
 |Task|&#x2713;|&#x2713;|&#x2713;|StatusTask|Gets the task that is associated with the status assignment.|
 |Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total time scheduled on a task for all assigned resources.|
-|WorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Int32|Gets or sets the time interval, expressed in milliseconds, for the total time scheduled on a task for all assigned resources.|
+|WorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the total time scheduled on a task for all assigned resources.|
 |WorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the total time scheduled on a task for all assigned resources.|
 
 ### Methods

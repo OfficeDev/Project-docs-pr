@@ -48,8 +48,8 @@ This resource supports the PUT, DELETE, and MERGE HTTP commands.
 |FinishText|&#x2713;|&#x2713;|&#x2713;|String|Gets the project finish date expressed as a string.|
 |Item|&#x2713;|&#x2713;||Object|Gets an item in the project.|
 |Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the project summary task.|
-|PercentComplete|&#x2713;|&#x2713;|&#x2713;|int32|Gets the percent of duration completed on the project.|
-|Priority|&#x2713;|&#x2713;|&#x2713;|int32|Gets the project priority.|
+|PercentComplete|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the percent of duration completed on the project.|
+|Priority|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the project priority.|
 |Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the project start date.|
 |StartText|&#x2713;|&#x2713;|&#x2713;|String|Gets the project start date expressed as a string.|
 |Work|&#x2713;|&#x2713;|&#x2713;|String|Gets the total time scheduled for the project.|

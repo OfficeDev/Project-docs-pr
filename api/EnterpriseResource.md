@@ -40,12 +40,12 @@ Enterprise resources are part of an organization’s entire list of resources an
 |BaseCalendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Calendar|Gets or sets a base calendar for an enterprise resource.|
 |CanLevel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether resource leveling can be performed on an enterprise resource. <br />True if resource leveling can be performed on the resource; otherwise,False.|
 |Code|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as part of the information about an enterprise resource.|
-|CostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|AccrueAt (int32-std for enums)|Gets or sets a value that represents how and when to charge enterprise resource costs to the cost of a task.|
+|CostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|AccrueAt (Integer-std for enums)|Gets or sets a value that represents how and when to charge enterprise resource costs to the cost of a task.|
 |CostCenter|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as cost center information for an enterprise resource.|
 |Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when an enterprise resource was added to the project.|
 |CustomFields|&#x2713;|&#x2713;|&#x2713;|CustomFieldCollection|Gets a collection of custom fields that have values set for an enterprise resource.|
 |DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the default name that is entered into the Assignment Owner field when an enterprise resource is assigned to a task.|
-|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|BookingType  (int32-std for enums)|Gets or sets the default booking type for an enterprise resource.|
+|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|BookingType  (Integer-std for enums)|Gets or sets the default booking type for an enterprise resource.|
 |Email|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the email address of an enterprise resource.|
 |Engagements|&#x2713;|&#x2713;|&#x2713;|ResourceEngagementCollection||
 |ExternalId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as an external identifier for an enterprise resource.|
