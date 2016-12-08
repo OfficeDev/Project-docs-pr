@@ -45,7 +45,7 @@ To set the value of properties in an existing project:
 |CurrencyPosition|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets the placement of the currency symbol in relation to the currency value. |
 |CurrencySymbol|&#x2713;|&#x2713;|&#x2713;|String|Gets the currency symbol that represents the type of currency that is used in the project. |
 |CurrentDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the current date for the project. |
-|DaysPerMonth|&#x2713;|&#x2713;|&#x2713;|short integer|Gets the default number of working days per month. |
+|DaysPerMonth|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the default number of working days per month. |
 |DefaultEffortDriven|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the scheduling of new tasks is effort-driven. |
 |DefaultEstimatedDuration|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether new tasks have estimated durations. |
 |DefaultFixedCostAccrual|&#x2713;|&#x2713;|&#x2713;|Enumerated value|Gets a value that indicates which default fixed-cost accrual method to use on new tasks. |
@@ -59,7 +59,7 @@ To set the value of properties in an existing project:
 |entityLinks|||&#x2713;|EntityLinkCollection||
 |FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary/JSON list of key-value pairs|Gets the custom field values for the published project. |
 |FinishDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the project finish date. |
-|FiscalYearStartMonth|&#x2713;|&#x2713;|&#x2713;|short integer|Gets the number of the first month in the fiscal year. |
+|FiscalYearStartMonth|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the number of the first month in the fiscal year. |
 |IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|PublishedProject|Gets a PublishedProject object that includes custom fields. |
 |IsEnterpriseProject|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the published project is an enterprise project (managed by Project Server). |
 |Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Object|Gets or sets an item in the project. |
@@ -80,7 +80,7 @@ To set the value of properties in an existing project:
 |TrackingMode|&#x2713;|&#x2713;|&#x2713;|Enumerated value |Gets the default tracking method for all assignments in the project. |
 |UtilizationDate|&#x2713;|&#x2713;|&#x2713;|DateTime||
 |UtilizationType|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
-|WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Short integer|Gets the day of the week on which a work week starts. |
+|WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the day of the week on which a work week starts. |
 |WinprojVersion|&#x2713;|&#x2713;|&#x2713;|Decimal|Gets the version of Project Professional that created the published project. |
 
 
