@@ -1,6 +1,6 @@
 
 # DeletedPublishedAssignment class
-Represents an assignment that was deleted from a published project.
+Represents an assignment that was deleted from a [PublishedProject](PublishedProject.md).
 
 ## Syntax
 
@@ -37,8 +37,8 @@ This resource supports GET HTTP command.
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the data and time that the assignment was deleted.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid| Gets the Id of the deleted assignment.|
-|ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the Id of the published project associated with the assignment.|
+|Id|&#x2713;|&#x2713;|&#x2713;|Guid| Gets the Id of the deleted [Assignment](Assignment.md).|
+|ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the Id of the [PublishedProject](PublishedProject.md) associated with the [Assignment](Assignment.md).|
 
 
 ### Methods

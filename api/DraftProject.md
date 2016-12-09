@@ -1,7 +1,7 @@
 # DraftProject 
 Represents the draft version of a project that is either new or a published project that is checked out for editing.
 
-DraftProject inherits properties and methods from the Project class.
+DraftProject inherits properties and methods from the [Project](Project.md) class.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft
 
 ## Remarks
 
-The **DraftProject** class and the **PublishedProject** class derive from the **Project** class. 
+The **DraftProject** class and the **[PublishedProject](PublishedProject.md)** class derive from the **[Project](Project.md)** class. 
 
 To set the value of properties in an existing project:
 
@@ -41,26 +41,26 @@ To set the value of properties in an existing project:
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Assignments|&#x2713;|&#x2713;|&#x2713;|PublishedAssignmentCollection|Gets the collection of assignments in the project.|
-|Calendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Calendar|Gets the project calendar. |
+|Assignments|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignmentCollection](PublishedAssignmentCollection.md)|Gets the collection of assignments in the project.|
+|Calendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[Calendar](Calendar.md)|Gets the project calendar. |
 |CurrencyCode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the currency code of the project, as defined in ISO 4217. |
 |CurrencyDigits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the number of decimal digits in currency values. |
-|CurrencyPosition|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the placement of the currency symbol in relation to the currency value. |
+|CurrencyPosition|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CurrencySymbolPosition](CurrencySymbolPosition.md)|Gets the placement of the currency symbol in relation to the currency value. |
 |CurrencySymbol|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the currency symbol that represents the type of currency that is used in the project. |
 |CurrentDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the current date for the project. |
 |DaysPerMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the default number of working days per month. |
 |DefaultEffortDriven|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether the scheduling of new tasks is effort-driven. |
 |DefaultEstimatedDuration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether new tasks have estimated durations. |
-|DefaultFixedCostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets a value that indicates which default fixed-cost accrual method to use on new tasks. |
+|DefaultFixedCostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[FixedCostAccrual](FixedCostAccrual.md)|Gets a value that indicates which default fixed-cost accrual method to use on new tasks. |
 |DefaultOvertimeRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the default overtime rate for local resources. |
 |DefaultStandardRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the default standard rate for local resources. |
-|DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default type for tasks in the project. |
-|DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value|Gets the default format for work duration. |
+|DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TaskType](TaskType.md)|Gets the default type for tasks in the project. |
+|DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[WorkFormat](WorkFormat.md)|Gets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the project description. |
-|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary/JSON list of key-value pairs|Gets the custom field values for the published project. |
+|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the published project. |
 |FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the project finish date. |
 |FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the number of the first month in the fiscal year. |
-|IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|PublishedProject|Gets a PublishedProject object that includes custom fields. |
+|IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) object that includes custom fields. |
 |Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Object|Gets or sets an item in the project. |
 |MinutesPerDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the default number of minutes per day. |
 |MinutesPerWeek|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the default number of minutes per week. |
@@ -69,14 +69,14 @@ To set the value of properties in an existing project:
 |NumberFiscalYearFromStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether to use the project start year for fiscal year numbering. |
 |Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User|Gets the owner of the project. |
 |ProjectIdentifier|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|ProjectResources|&#x2713;|&#x2713;|&#x2713;|PublishedProjectResourceCollection|Gets the collection of resources for a project. |
+|ProjectResources|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResourceCollection](PublishedProjectResourceCollection.md)|Gets the collection of resources for a project. |
 |ProtectedActualsSynch|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets whether the project actuals are synchronized with the protected actuals. |
 |ShowEstimatedDurations|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether a question mark is displayed after an estimated duration for a task. |
 |StartDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the project start date. |
 |StatusDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the status date for the project. |
-|TaskLinks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskLinkCollection|Gets the collection of task links for the project. |
-|Tasks|&#x2713;|&#x2713;|&#x2713;|PublishedTaskCollection|Gets the collection of tasks for the project. |
-|TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumerated value |Gets the default tracking method for all assignments in the project. |
+|TaskLinks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets the collection of task links for the project. |
+|Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project. |
+|TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TrackingMode](TrackingMode.md)|Gets the default tracking method for all assignments in the project. |
 |UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
 |UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
 |WeekStartDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the day of the week on which a work week starts. |

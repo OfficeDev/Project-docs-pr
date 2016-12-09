@@ -32,16 +32,16 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/As
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |DraftAssignment|Gets the current DraftAssignment from the collection.|
+|item| |&#x2713;| |[DraftAssignment](DraftAssignment.md)|Gets the current [DraftAssignment](DraftAssignment.md) from the collection.|
 
 
 ### Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|DraftAssignment|Gets a draft assignment from the collection with the Id value.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|DraftAssignment|Gets a draft assignment from the collection with the specified GUID.|
-|[Add(AssignmentCreationInformation acinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|DraftAssignment|Adds the draft assignment that is specified by the AssignmentCreationInformation object to the collection.|
+|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the Id value.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the specified GUID.|
+|[Add(AssignmentCreationInformation acinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
 |[Remove(DraftAssignment assignment)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified draft assignment from the collection. Returns true if successful.|
 
 
@@ -65,8 +65,8 @@ GetById(string oid)
 
 #### Return Value
 
-DraftAssignment<br />
-The DraftAssignment with the specified ID.
+[DraftAssignment](DraftAssignment.md)<br />
+The draft assignment with the specified ID.
 
 
 
@@ -85,11 +85,11 @@ GetByGuid(Guid uid)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|The guid that references the DraftAssignment.
+|uid| Guid|The guid that references the draft assignment.
 
 #### Return Value
 
-DraftAssignment<br />
+[DraftAssignment](DraftAssignment.md)<br />
 The DraftAssignment with the specified guid.
 
 
@@ -97,7 +97,7 @@ The DraftAssignment with the specified guid.
 
 ### <a name="add"></a> Add(AssignmentCreationInformation acinfo)
 
-Adds the draft assignment that is specified by the AssignmentCreationInformation object to the collection.
+Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.
 
 #### Syntax
 
@@ -110,17 +110,17 @@ Add(AssignmentCreationInformation Assignmentinfo)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|acinfo | AssignmentCreationInformation |Contains the properties that can be set when creating a Assignment.|
+|acinfo | [AssignmentCreationInformation](AssignmentCreationInformation.md) |Contains the properties that can be set when creating a [Assignment](Assignment.md).|
 
 #### Return Value
 
-DraftAssignment<br />
+[DraftAssignment](DraftAssignment.md)<br />
 The added Assignment.
 
 
 ### <a name="remove"></a> Remove(DraftAssignment assignment)
 
-Removes the DraftAssignment from the collection. Returns true if successful.
+Removes the [DraftAssignment](DraftAssignment.md) from the collection. Returns true if successful.
 
 #### Syntax
 
@@ -132,7 +132,7 @@ Remove(DraftAssignment Assignment))
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|assignment | DraftAssignment |The project to remove from the collection.|
+|assignment | [DraftAssignment](DraftAssignment.md) |The project to remove from the collection.|
 
 #### Return Value
 

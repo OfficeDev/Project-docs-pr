@@ -1,9 +1,9 @@
 
 # DraftAssignment
 
-Represents an assignment in a project is checked out or not published yet.
+Represents an [Assignment](Assignment.md) in a project is checked out or not published yet.
 
-DarftAssignment inherits properties and from the Assignment class.
+DraftAssignment inherits properties and from the [Assignment](Assignment.md) class.
 
 ## Syntax
 
@@ -48,8 +48,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 |BudgetedWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the time interval, expressed in milliseconds, for the budgeted work for the assignment.|
 |BudgetedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets the time interval for the budgeted work for the assignment.|
 |Cost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the total scheduled or projected cost for the assignment.|
-|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|BookingType  (enum)|Gets the default booking type for the assignment.|
-|FieldValues|&#x2713;|&#x2713;||Dictionary<string,object>|Gets the collection of custom fields that have values set for the assignment.|
+|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets the default booking type for the assignment.|
+|FieldValues|&#x2713;|&#x2713;||Dictionary<string,object>|Gets the collection of custom fields ([CustomFieldCollection](CustomFieldCollection.md))that have values set for the assignment.|
 |IsLockedByManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether the assignment has been locked for changes by a manager.|
 |IsWorkResource|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets a value that indicates whether an assignment resource is a work resource or a material resource.|
 |Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Object|Gets an item in the project.|
@@ -68,9 +68,9 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 |RemainingWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the time, such as person-hours or days, that is still required to complete the assignment.|
 |RemainingWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the time interval, expressed in milliseconds,  for the time that is still required to complete the assignment.|
 |RemainingWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets the time interval for the time, such as person-hours or days, that is still required to complete the assignment.|
-|Resource|&#x2713;|&#x2713;|&#x2713;&#x02B7;|DraftProjectResource|Gets the resource that is associated with the assignment.|
+|Resource|&#x2713;|&#x2713;|&#x2713;&#x02B7;|[DraftProjectResource](DraftProjectResource.md)|Gets the resource that is associated with the assignment.|
 |ResourceCapacity|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets how much work the resource performs on the assignment, expressed as a percentage of the resource's theoretical full capacity.|
-|Task|&#x2713;|&#x2713;|&#x2713;&#x02B7;|DraftTask|Gets the task to which the assignment belongs.|
+|Task|&#x2713;|&#x2713;|&#x2713;&#x02B7;|[DraftTask](DraftTask.md)|Gets the task to which the assignment belongs.|
 |TaskId|||&#x2713;&#x02B7;|Guid|Gets the TaskId to which the assignment belongs.|
 |Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the total amount of time that is scheduled for the assignment.|
 |WorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets the time interval, expressed in milliseconds, for the total amount of time that is scheduled for the assignment.|

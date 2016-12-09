@@ -1,6 +1,6 @@
 
 # AssignmentCreationInformation class
-Contains the properties that can be set when creating an assignment.
+Contains the properties that can be set when creating an [Assignment](Assignment.md).
 
 ## Syntax
 

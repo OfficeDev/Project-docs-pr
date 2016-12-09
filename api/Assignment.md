@@ -46,7 +46,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignme
 |CostVarianceAtCompletion|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the cost variance at completion (VAC) for the assignment.|
 |Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when the assignment was created.|
 |CurrentCostVariance|&#x2713;|&#x2713;|&#x2713;|Decimal value|Gets the current cost variance (CV).|
-|CustomFields|&#x2713;|&#x2713;|&#x2713;|CustomFieldCollection|Gets the collection of custom fields for the assignment.|
+|CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets the collection of custom fields for the assignment.|
 |Delay|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of time that passes after the start date, before work on the assignment starts.|
 |DelayMilliseconds||&#x2713;|&#x2713;|Decimal value|Gets the time interval, expressed in milliseconds, for the amount of time that passes after the start date, before work on the assignment starts.|
 |DelayTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of time that passes after the start date, before work on the assignment starts.|
