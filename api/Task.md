@@ -9,7 +9,7 @@ A task is an activity that has a beginning and an end. Project plans are made up
 ### CSOM
 
 ```C#
-Class Project
+Class Task
 ```
 
 ### JSOM
