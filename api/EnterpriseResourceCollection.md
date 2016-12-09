@@ -32,19 +32,19 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |EnterpriseResource|Gets the current resource from the collection.|
+|item| |&#x2713;| |[EnterpriseResource](EnterpriseResource.md)|Gets the current resource from the collection.|
 
 
 ### Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|EnterpriseResource|Adds the enterprise resource that is specified by the EnterpriseResourceCreationInformation object to the collection.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|EnterpriseResource|Get an enterprise resource from the collection with the specified GUID.|
-|[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|EnterpriseResource|Gets an enterprise resource from the collection with the Name value.|
-|[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||EnterpriseResource|Returns an enterprise resource from the collection linked to the SharePoint user.|
+|[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation) object to the collection.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Get an enterprise resource from the collection with the specified GUID.|
+|[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets an enterprise resource from the collection with the Name value.|
+|[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Returns an enterprise resource from the collection linked to the SharePoint user.|
 |[Remove(EnterpriseResource resource)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified enterprise resource from a project.|
-|[Self()](#self)|||&#x2713;|EnterpriseResource||
+|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)||
 |[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|Void|Updates the enterprise resource collection.|
 
 
@@ -52,7 +52,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources
 
 ### <a name="add"></a> Add(EnterpriseResourceCreationInformation ercinfo)
 
-Adds the enterprise resource that is specified by the EnterpriseResourceCreationInformation object to the collection.
+Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.
 
 #### Syntax
 
@@ -64,12 +64,12 @@ Add(EnterpriseResourceCreationInformation ercinfo)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ercinfo| EnterpriseResourceCreationInformation|Contains the properties that can be set when creating an enterprise resource.|
+|ercinfo| [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation)|Contains the properties that can be set when creating an enterprise resource.|
 
 #### Return Value
 
-EnterpriseResource<br />
-An EnterpriseResource object.
+[EnterpriseResource](EnterpriseResource.md)<br />
+An [EnterpriseResource](EnterpriseResource.md) object.
 
 
 
@@ -91,8 +91,8 @@ GetByGuid(Guid uid)
 
 #### Return Value
 
-EnterpriseResource<br />
-An EnterpriseResource object.
+[EnterpriseResource](EnterpriseResource.md)<br />
+An [EnterpriseResource](EnterpriseResource.md) object.
 
 
 
@@ -114,8 +114,8 @@ GetById(string id)
 
 #### Return Value
 
-EnterpriseResource<br />
-An EnterpriseResource object.
+[EnterpriseResource](EnterpriseResource.md)<br />
+An [EnterpriseResource](EnterpriseResource.md) object.
 
 
 
@@ -137,8 +137,8 @@ GetByUser(SPUser user)
 
 #### Return Value
 
-EnterpriseResource<br />
-An EnterpriseResource object.
+[EnterpriseResource](EnterpriseResource.md)<br />
+An [EnterpriseResource](EnterpriseResource.md) object.
 
 
 
@@ -156,7 +156,7 @@ Remove(EnterpriseResource resource)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|resource| EnterpriseResource|The enterprise resource to remove.
+|resource| [EnterpriseResource](EnterpriseResource.md)|The enterprise resource to remove.
 
 #### Return Value
 
@@ -181,8 +181,8 @@ none
 
 #### Return Value
 
-EnterpriseResource<br />
-An EnterpriseResource object.
+[EnterpriseResource](EnterpriseResource.md)<br />
+An [EnterpriseResource](EnterpriseResource.md) object.
 
 
 

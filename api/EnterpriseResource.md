@@ -36,18 +36,18 @@ Enterprise resources are part of an organization’s entire list of resources an
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Assignments|&#x2713;|&#x2713;|&#x2713;|StatusAssignmentCollection|Gets a collection of status assignments for an enterprise resource. <br />Status assignment data reports on the status of assignments.|
-|BaseCalendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Calendar|Gets or sets a base calendar for an enterprise resource.|
+|Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets a collection of status assignments for an enterprise resource. <br />Status assignment data reports on the status of assignments.|
+|BaseCalendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[Calendar](Calendar.md)|Gets or sets a base calendar for an enterprise resource.|
 |CanLevel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether resource leveling can be performed on an enterprise resource. <br />True if resource leveling can be performed on the resource; otherwise,False.|
 |Code|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as part of the information about an enterprise resource.|
-|CostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|AccrueAt (Integer-std for enums)|Gets or sets a value that represents how and when to charge enterprise resource costs to the cost of a task.|
+|CostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[AccrueAt](AccrueAt.md)|Gets or sets a value that represents how and when to charge enterprise resource costs to the cost of a task.|
 |CostCenter|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as cost center information for an enterprise resource.|
 |Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when an enterprise resource was added to the project.|
-|CustomFields|&#x2713;|&#x2713;|&#x2713;|CustomFieldCollection|Gets a collection of custom fields that have values set for an enterprise resource.|
-|DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the default name that is entered into the Assignment Owner field when an enterprise resource is assigned to a task.|
-|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|BookingType  (Integer-std for enums)|Gets or sets the default booking type for an enterprise resource.|
+|CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets a collection of custom fields that have values set for an enterprise resource.|
+|DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the default name that is entered into the [Assignment](Assignment.md) Owner property when an enterprise resource is assigned to a task.|
+|DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the default booking type for an enterprise resource.|
 |Email|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the email address of an enterprise resource.|
-|Engagements|&#x2713;|&#x2713;|&#x2713;|ResourceEngagementCollection||
+|Engagements|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagementCollection](ResourceEngagementCollection.md)||
 |ExternalId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as an external identifier for an enterprise resource.|
 |FieldValues|&#x2713;|&#x2713;||Dictionary<string,object>|Gets the collection of custom fields that have values set for an enterprise resource.|
 |Group|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of a group to which an enterprise resource belongs.|
@@ -65,9 +65,9 @@ Enterprise resources are part of an organization’s entire list of resources an
 |Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of an enterprise resource.|
 |Phonetics|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets phonetic information for resource names in either the Japanese Hiragana writing system or the Katakana writing system.|
 |RequiresEngagements|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean||
-|ResourceCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|CalendarExceptionCollection |Gets a collection of exceptions to the base calendar that are specific to an enterprise resource.|
-|ResourceType|&#x2713;|&#x2713;|&#x2713;|EnterpriseResourceType |Gets an enumerated value that represents the type of an enterprise resource.|
-|Self|||&#x2713;|EnterpriseResource||
+|ResourceCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md) |Gets a collection of exceptions to the base calendar that are specific to an enterprise resource.|
+|ResourceType|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceType](EnterpriseResourceType.md)|Gets an enumerated value that represents the type of an enterprise resource.|
+|Self|||&#x2713;|[EnterpriseResource](EnterpriseResource)||
 |TerminationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time after which the resource can no longer be used.|
 |TimesheetManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the manager who reviews and approves the timesheet of an enterprise resource.|
 |User|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the SharePoint user that is linked to the Enterprise Resource.|
@@ -81,7 +81,7 @@ Enterprise resources are part of an organization’s entire list of resources an
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the EnterpriseResource object.|
 |[ForceCheckin()](#forcecheckin)|&#x2713;|&#x2713;|&#x2713;|void|Forces a project to be checked in after it is left in a state of being checked out following the interruption or unexpected closing of Project Server.|
-|[getSelf(context)](#getself)|&#x2713;|&#x2713;| |EnterpriseResource|Gets the currently logged-on user.|
+|[getSelf(ClientRuntimeContext context)](#getself)|&#x2713;|&#x2713;| |EnterpriseResource|Gets the currently logged-on user.|
 
 
 ## Method Details
@@ -122,14 +122,14 @@ none
 
 void
 
-### <a name="getself"></a>GetSelf(context ClientRuntimeContext)
+### <a name="getself"></a>GetSelf(ClientRuntimeContext context)
 
 Gets the currently logged-on user.
 
 #### Syntax
 
 ```
-GetSelf(context ClientRuntimeContext)
+GetSelf(ClientRuntimeContext context)
 ```
 
 #### Parameters
@@ -137,6 +137,10 @@ GetSelf(context ClientRuntimeContext)
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |context|ClientRuntimeContext|A ClientRuntimeContext.
+
+<!-- Couldn't find ClientRuntimeContext!
+ |context|[ClientRuntimeContext](ClientRuntimeContext.md)|A ClientRuntimeContext. 
+-->
 
 #### Return Value
 
