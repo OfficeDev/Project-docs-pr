@@ -2,7 +2,7 @@
 # DraftTask class
 Represents a task in a checked-out project.
 
-DraftTask inherits properties from the Task object.
+DraftTask inherits properties from the [Task](Task.md) object.
 
 ## Syntax
 
@@ -38,14 +38,14 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |ActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the time interval, expressed in milliseconds, for the amount of work that has already been performed on a task.|
 |ActualWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;|TimeSpan|Gets or sets the time interval for the amount of work that has already been performed on a task.|
 |AddAfterId|||&#x2713;|Guid||
-|Assignments|&#x2713;|&#x2713;|&#x2713;|DraftAssignmentCollection|Gets the assignments for a task.|
+|Assignments|&#x2713;|&#x2713;|&#x2713;|[DraftAssignmentCollection](DraftAssignmentCollection)|Gets the assignments for a task.|
 |BudgetWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of work that is estimated to be performed on a task.|
 |BudgetWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the time interval, expressed in milliseconds, for the amount of work that is estimated to be performed on a task.|
 |BudgetWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;|TimeSpan|Gets or sets the time interval for the amount of work that is estimated to be performed on a task.|
-|Calendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Calendar|Gets or sets the task calendar.|
+|Calendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[Calendar](Calendar.md)|Gets or sets the task calendar.|
 |Completion|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a completion date for a task.|
 |ConstraintStartEnd|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a constraint start date or end date for a task.|
-|ConstraintType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Enumeration|Gets or sets the time constraint type for a task.|
+|ConstraintType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[ConstraintType](ConstraintType.md)|Gets or sets the time constraint type for a task.|
 |Cost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the total scheduled or projected cost based on costs already incurred for work performed on a task, in addition to the costs planned for the remaining work.|
 |Deadline|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date that was entered as a deadline for a task. |
 |Duration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of time that it takes to complete a task.|
@@ -69,7 +69,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |ParentId|||&#x2713;|||
 |PercentComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the percent of duration completed on a task.|
 |PercentPhysicalWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the percentage of physical work completed on a task.|
-|Predecessors|&#x2713;|&#x2713;|&#x2713;|DraftTaskLinkCollection|Gets the links to the predecessor tasks that the current task depends on.|
+|Predecessors|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLinkCollection](DraftTaskLinkCollection.md)|Gets the links to the predecessor tasks that the current task depends on.|
 |Priority|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the task priority.|
 |RemainingDuration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the remaining task duration.|
 |RemainingDurationMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the time interval, expressed in milliseconds, for the remaining task duration.|
@@ -77,7 +77,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task start date.|
 |StartText|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
 |StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User (SharePoint)||
-|Successors|&#x2713;|&#x2713;|&#x2713;|DraftTaskLinkCollection|Gets links to tasks that depend on the current task.|
+|Successors|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLinkCollection](DraftTaskLinkCollection.md)|Gets links to tasks that depend on the current task.|
 |UsePercentPhysicalWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether to use PercentPhysicalWorkComplete orPercentComplete to compute earned value.|
 |Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total time scheduled for a task.|
 |WorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the time interval, expressed in milliseconds, for the total time scheduled for a task.|
@@ -85,8 +85,6 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 
 
 ### Methods
-
-The  **DRaftTask** object has the following method:
 
 |**Name**|**CSOM** |**JSOM** |**REST** |**Return Type**|**Description**|
 |:----- |:-----:|:-----:|:-----:|:-----|:-----|

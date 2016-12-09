@@ -33,7 +33,7 @@ To set the value of properties in an existing project:
 
 1. Use the **PublishedProject CheckOut** method.
 2. Edit the **DraftProject** object.
-3. Check in the edited project using the **DraftProject CheckIn** method.
+3. Check in the edited project using the **DraftProject [CheckIn](#checkin)** method.
 
 ## Members
 
@@ -57,7 +57,7 @@ To set the value of properties in an existing project:
 |DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TaskType](TaskType.md)|Gets the default type for tasks in the project. |
 |DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[WorkFormat](WorkFormat.md)|Gets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the project description. |
-|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the published project. |
+|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the [PublishedProject](PublishedProject.md). |
 |FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets the project finish date. |
 |FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the number of the first month in the fiscal year. |
 |IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) object that includes custom fields. |
@@ -78,7 +78,7 @@ To set the value of properties in an existing project:
 |Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project. |
 |TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TrackingMode](TrackingMode.md)|Gets the default tracking method for all assignments in the project. |
 |UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
-|UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
+|UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[UtilizationType](UtilizationType.md)|Gets the derivation source(s) of the summary resource assignments of a project.|
 |WeekStartDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the day of the week on which a work week starts. |
 |WinprojVersion|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets the version of Project Professional that created the published project. |
 
@@ -87,44 +87,44 @@ To set the value of properties in an existing project:
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)](#changeenterpriseprojecttype)|||&#x2713;|void||
-|[CheckIn(force: Boolean)](#checkin)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a check-in job for a draft project if it is still checked out.|
-|[Publish(checkIn: Boolean)](#publish)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Queues a publish job to get the changes from the draft project back to the published version.|
-|[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|QueueJob|Saves changes in a new project or checked-out draft project back to Project Server.|
-|[UpdateCustomFields(customfielddictionary: CustomFieldCollection)](#updatecustomfields)|||&#x2713;|QueueJob||
+|[ChangeEnterpriseProjectType(Guid enterpriseProjectTypeUid)](#changeenterpriseprojecttype)|||&#x2713;|void||
+|[CheckIn(Boolean force)](#checkin)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Queues a check-in job for a draft project if it is still checked out.|
+|[Publish(Boolean checkIn)](#publish)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Queues a publish job to get the changes from the draft project back to the published version.|
+|[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Saves changes in a new project or checked-out draft project back to Project Server.|
+|[UpdateCustomFields(CustomFieldCollection customfielddictionary)](#updatecustomfields)|||&#x2713;|[QueueJob](QueueJob.md)||
 |[Validate()](#validate)|&#x2713;|&#x2713;|&#x2713;|void|Validates pending changes from all added or removed projects.|
 
 
 ## Method Details
 
-### <a name="changeenterpriseprojecttype"></a> ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)
+### <a name="changeenterpriseprojecttype"></a> ChangeEnterpriseProjectType(Guid enterpriseProjectTypeUid )
 
 <!-- Need a description here -->
 
 #### Syntax
 
 ```
-ChangeEnterpriseProjectType(enterpriseProjectTypeUid: Guid)
+ChangeEnterpriseProjectType(Guid enterpriseProjectTypeUid)
 ```
 
 #### Parameters
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|enterpriseProjectTypeUid| Guid|Id of the new enterprise project type.
+|enterpriseProjectTypeUid| Guid|Id of the new [EnterpriseProjectType](EnterpriseProjectType.md).
 
 #### Return value
 
 void
 
-### <a name="checkin"></a> CheckIn(force: Boolean)
+### <a name="checkin"></a> CheckIn(Boolean force)
 
 Queues a check-in job for a draft project if it is still checked out.
 
 #### Syntax
 
 ```
-QueueJob CheckIn(force: Boolean)
+QueueJob CheckIn(Boolean force)
 ```
 
 #### Parameters
@@ -135,29 +135,29 @@ QueueJob CheckIn(force: Boolean)
 
 #### Return value
 
-QueueJob <br />
+[QueueJob](QueueJob.md) <br />
 A queued job that will check in the draft version of the project.
 
-### <a name="publish"></a> Publish(checkIn: Boolean)
+### <a name="publish"></a> Publish(Boolean checkIn)
 
 Queues a publish job to get the changes from the draft project back to the published version.
 
 #### Syntax
 
 ```
-Publish(checkIn: Boolean)
+Publish(Boolean checkIn)
 ```
 
 #### Parameters
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|checkIn | Boolean | If True, check in the project should after it is published; otherwise, False.
+|checkIn | Boolean | If True, check in the project after it is published; otherwise, False.
 
 #### Return value
 
-QueueJob <br />
-A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service publishes the draft version of the project.
+[QueueJob](QueueJob.md) <br />
+A [QueueJob](QueueJob.md) object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service publishes the draft version of the project.
 
 ### <a name="update"></a> Update()
 
@@ -175,33 +175,33 @@ none
 
 #### Return value
 
-QueueJob <br />
-A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
+[QueueJob](QueueJob.md) <br />
+A [QueueJob](QueueJob.md) object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
 
 #### Remarks
 
 The Update method cannot process a CSOM request greater than 2 MB in size.
 
-### <a name="updatecustomfields"></a> UpdateCustomFields(customfielddictionary: CustomFieldCollection)
+### <a name="updatecustomfields"></a> UpdateCustomFields(CustomFieldCollection customfielddictionary)
 
 Updates the custom fields associated with the project.
 
 #### Syntax
 
 ```
-UpdateCustomFields(customfielddictionary: CustomFieldCollection)
+UpdateCustomFields(CustomFieldCollection customfielddictionary)
 ```
 
 #### Parameters
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|customfielddictionary| CustomFieldCollection | Collection of project custom fields that have values set for the project. 
+|customfielddictionary| [CustomFieldCollection](CustomFieldCollection.md) | Collection of project custom fields that have values set for the project. 
 
 #### Return Value
 
-QueueJob<br />
-A QueueJob object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
+[QueueJob](QueueJob.md)<br />
+A [QueueJob](QueueJob.md) object that contains information about the queued job. If the queue job is successful, the Project Server Queuing Service saves the new or draft version of the project.
 
 
 ### <a name="validate"></a> Validate()

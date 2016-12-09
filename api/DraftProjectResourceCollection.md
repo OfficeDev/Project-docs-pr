@@ -32,18 +32,18 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Pr
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |DraftProjectResource|Gets the current DraftProjectResource from the collection.|
+|item| |&#x2713;| |DraftProjectResource|Gets the current [DraftProjectResource](DraftProjectResource.md) from the collection.|
 
 
 ### Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(ProjectResourceCreationInformation prcinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|DraftProjectResource|Adds a new ProjectResource that is specified by the ProjectResourceCreationInformation object to the collection.|
-|[AddEnterpriseResource(EnterpriseResource resource)](#addenterpriseresource)|&#x2713;|&#x2713;||DraftProjectResource|Adds an existing enterprise resource to the draft project resource collection.|
-|[AddEnterpriseResourceById(Guid resourceId)](#addenterpriseresourcebyid)|||&#x2713;|QueueJob|Adds an existing enterprise resource with the specified Id value to the draft project resource collection.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|DraftProjectResource|Gets a draft project resource from the collection with the specified GUID.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|DraftProjectResource|Gets a draft project resource from the collection with the Id value.|
+|[Add(ProjectResourceCreationInformation prcinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Adds a new [ProjectResource](ProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.|
+|[AddEnterpriseResource(EnterpriseResource resource)](#addenterpriseresource)|&#x2713;|&#x2713;||[DraftProjectResource](DraftProjectResource.md)|Adds an existing enterprise resource to the draft project resource collection.|
+|[AddEnterpriseResourceById(Guid resourceId)](#addenterpriseresourcebyid)|||&#x2713;|[QueueJob](QueueJob.md)|Adds an existing enterprise resource with the specified Id value to the draft project resource collection.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a draft project resource from the collection with the specified GUID.|
+|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a draft project resource from the collection with the Id value.|
 |[Remove(DraftProjectResource resource)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified draft project resource from the collection|
 
 
@@ -51,7 +51,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Pr
 
 ### <a name="add"></a> Add(ProjectResourceCreationInformation prcinfo)
 
-Adds a new ProjectResource that is specified by the ProjectResourceCreationInformation object to the collection.
+Adds a new [ProjectResource](ProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.
 
 #### Syntax
 
@@ -64,12 +64,12 @@ Add(ProjectResourceCreationInformation prcinfo)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|prcinfo | ProjectResourceCreationInformation |Contains the properties of the project resource to create.|
+|prcinfo | [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) |Contains the properties of the project resource to create.|
 
 #### Return Value
 
-DraftProjectResource<br />
-The added DraftProjectResource.
+[DraftProjectResource](DraftProjectResource.md)<br />
+The added [DraftProjectResource](DraftProjectResource.md).
 
 
 
@@ -88,18 +88,18 @@ AddEnterpriseResource(EnterpriseResource resource)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|resource | EnterpriseResource |The enterprise resource to add.|
+|resource | [EnterpriseResource](EnterpriseResource.md) |The enterprise resource to add.|
 
 #### Return Value
 
-DraftProjectResource<br />
-The added DraftProjectResource.
+[DraftProjectResource](DraftProjectResource.md)<br />
+The added [DraftProjectResource](DraftProjectResource.md).
 
 
 
 ### <a name="addenterpriseresourcebyid"></a> AddEnterpriseResourceById(Guid resourceId)
 
-Adds an existing enterprise resource specified by the guid to the draft project resource collection.
+Adds an existing enterprise resource specified by the Guid to the draft project resource collection.
 
 #### Syntax
 
@@ -116,14 +116,14 @@ AddEnterpriseResourceById(Guid resourceId)
 
 #### Return Value
 
-QueueJob<br />
-The QueueJob includes the JobState property that identifies the result of the AddEnterpriseResource request.
+[QueueJob](QueueJob.md)<br />
+The [QueueJob](QueueJob.md) includes the JobState property that identifies the result of the AddEnterpriseResource request.
 
 
 
 ### <a name="getbyguid"></a> GetByGuid(Guid uid)
 
-Gets a draft ProjectResource from the collection with the specified GUID.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the specified GUID.
 
 #### Syntax
 
@@ -139,14 +139,14 @@ GetByGuid(Guid uid)
 
 #### Return Value
 
-DraftProjectResource<br />
-A DraftProjectResource object.
+[DraftProjectResource](DraftProjectResource.md)<br />
+A [DraftProjectResource](DraftProjectResource.md) object.
 
 
 
 ### <a name="getbyid"></a>GetById(string id)
 
-Gets a draft ProjectResource from the collection with the Id value.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.
 
 #### Syntax
 
@@ -162,14 +162,14 @@ GetById(string id)
 
 #### Return Value
 
-DraftProjectResource<br />
-The DraftProjectResource with the specified ID.
+[DraftProjectResource](DraftProjectResource.md)<br />
+The [DraftProjectResource](DraftProjectResource.md) with the specified ID.
 
 
 
 ### <a name="remove"></a> Remove(DraftProjectResource ProjectResource)
 
-Removes the DraftProjectResource from the collection. Returns true if successful.
+Removes the [DraftProjectResource](DraftProjectResource.md) from the collection. Returns true if successful.
 
 #### Syntax
 
@@ -181,7 +181,7 @@ Remove(DraftProjectResource ProjectResource))
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ProjectResource | DraftProjectResource |The project to remove from the collection.|
+|ProjectResource | [DraftProjectResource](DraftProjectResource.md) |The project to remove from the collection.|
 
 #### Return Value
 

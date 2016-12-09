@@ -32,16 +32,16 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Ta
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |DraftTask|Gets the current DraftTask from the collection.|
+|item| |&#x2713;| |[DraftTask](DraftTask.md)|Gets the current draft task from the collection.|
 
 
 ### Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|DraftTask|Gets a draft task from the collection with the Id value.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|DraftTask|Gets a draft task from the collection with the specified GUID.|
-|[Add(TaskCreationInformation taskinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|DraftTask|Adds the draft task that is specified by the TaskCreationInformation object to the collection.|
+|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the Id value.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the specified GUID.|
+|[Add(TaskCreationInformation taskinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.|
 |[Remove(DraftTask task)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the DraftTask from the collection. Returns true if successful.|
 
 
@@ -65,8 +65,8 @@ GetById(string id)
 
 #### Return Value
 
-DraftTask<br />
-The DraftTask with the specified ID.
+[DraftTask](DraftTask.md)<br />
+The [DraftTask](DraftTask.md) with the specified ID.
 
 
 
@@ -85,19 +85,19 @@ GetByGuid(Guid uid)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|The guid that references the DraftTask.
+|uid| Guid|The guid that references the [DraftTask](DraftTask.md).
 
 #### Return Value
 
-DraftTask<br />
-The DraftTask with the specified guid.
+[DraftTask](DraftTask.md)<br />
+The [DraftTask](DraftTask.md) with the specified guid.
 
 
 
 
 ### <a name="add"></a> Add(TaskCreationInformation taskinfo)
 
-Adds the draft task that is specified by the TaskCreationInformation object to the collection.
+Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.
 
 #### Syntax
 
@@ -114,13 +114,13 @@ Add(TaskCreationInformation taskinfo)
 
 #### Return Value
 
-DraftTask<br />
+[DraftTask](DraftTask.md)<br />
 The added task.
 
 
 ### <a name="remove"></a> Remove(DraftTask task)
 
-Removes the DraftTask from the collection. Returns true if successful.
+Removes the [DraftTask](DraftTask.md) from the collection. Returns true if successful.
 
 #### Syntax
 
@@ -132,7 +132,7 @@ Remove(DraftTask task)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|task | DraftTask |The project to remove from the collection.|
+|task | [DraftTask](DraftTask.md) |The project to remove from the collection.|
 
 #### Return Value
 
