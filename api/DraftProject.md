@@ -7,7 +7,7 @@ DraftProject inherits properties and methods from the [Project](Project.md) clas
 
 ### CSOM
 
-```C#
+```
 Class DraftProject
 ```
 
@@ -52,12 +52,12 @@ To set the value of properties in an existing project:
 |DefaultEffortDriven|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the scheduling of new tasks is effort-driven. |
 |DefaultEstimatedDuration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether new tasks have estimated durations. |
 |DefaultFixedCostAccrual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[FixedCostAccrual](FixedCostAccrual.md)|Gets or sets a value that indicates which default fixed-cost accrual method to use on new tasks. |
-|DefaultOvertimeRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the default overtime rate for local resources. |
-|DefaultStandardRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal value|Gets or sets the default standard rate for local resources. |
+|DefaultOvertimeRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the default overtime rate for local resources. |
+|DefaultStandardRate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the default standard rate for local resources. |
 |DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TaskType](TaskType.md)|Gets or sets the default type for tasks in the project. |
 |DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[WorkFormat](WorkFormat.md)|Gets or sets the default format for work duration. |
 |Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the project description. |
-|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the [PublishedProject](PublishedProject.md). |
+|FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the [DraftProject](DraftProject.md). |
 |FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the project finish date. |
 |FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the number of the first month in the fiscal year. |
 |IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|[DraftProject](DraftProject.md)|Gets a [DraftProject](DraftProject.md) object that includes custom fields. |
@@ -69,13 +69,13 @@ To set the value of properties in an existing project:
 |NumberFiscalYearFromStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether to use the project start year for fiscal year numbering. |
 |Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the owner of the project. |
 |ProjectIdentifier|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the Project Id, represented as a string.|
-|ProjectResources|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResourceCollection](PublishedProjectResourceCollection.md)|Gets the collection of resources for a project. |
+|ProjectResources|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResourceCollection](DraftProjectResourceCollection.md)|Gets the collection of resources for a project. |
 |ProtectedActualsSynch|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets whether the project actuals are synchronized with the protected actuals. |
 |ShowEstimatedDurations|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether a question mark is displayed after an estimated duration for a task. |
 |StartDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the project start date. |
 |StatusDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the status date for the project. |
-|TaskLinks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets the collection of task links for the project. |
-|Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project. |
+|TaskLinks|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLinkCollection](DraftTaskLinkCollection.md)|Gets the collection of task links for the project. |
+|Tasks|&#x2713;|&#x2713;|&#x2713;|[DraftTaskCollection](DraftTaskCollection.md)|Gets the collection of tasks for the project. |
 |TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TrackingMode](TrackingMode.md)|Gets or sets the default tracking method for all assignments in the project. |
 |UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time of resource utilization for the current project.|
 |UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[UtilizationType](UtilizationType.md)|Gets or sets the derivation source(s) of the summary resource assignments of a project.|

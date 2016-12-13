@@ -6,7 +6,7 @@ Represents a collection of [DraftTask](DraftTask.md) objects.
 
 ### CSOM
 
-```C#
+```
 class DraftTaskCollection Inherits ClientObjectCollection(of DraftTask)
 ```
 
@@ -39,35 +39,35 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Ta
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the Id value.|
+|[Add(TaskCreationInformation taskinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.||
 |[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the specified GUID.|
-|[Add(TaskCreationInformation taskinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.|
-|[Remove(DraftTask task)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the DraftTask from the collection. Returns true if successful.|
+|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the Id value.|
+|[Remove(DraftTask task)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the draft task from the collection. Returns true if successful.|
 
 
 ## Method Details
 
-### <a name="getbyid"></a>GetById(string id)
+### <a name="add"></a> Add(TaskCreationInformation taskinfo)
 
-Gets a draft task from the collection with the Id value.
+Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.
 
 #### Syntax
 
 ```
-GetById(string id)
+Add(TaskCreationInformation taskinfo)
 ```
 
 #### Parameters
 
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| string|The identifier of the referenced object.
+|taskinfo | TaskCreationInformation |Contains the properties that can be set when creating a task.|
 
 #### Return Value
 
 [DraftTask](DraftTask.md)<br />
-The [DraftTask](DraftTask.md) with the specified ID.
-
+The added task.
 
 
 
@@ -94,33 +94,34 @@ The [DraftTask](DraftTask.md) with the specified guid.
 
 
 
+### <a name="getbyid"></a>GetById(string id)
 
-### <a name="add"></a> Add(TaskCreationInformation taskinfo)
-
-Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.
+Gets a draft task from the collection with the Id value.
 
 #### Syntax
 
 ```
-Add(TaskCreationInformation taskinfo)
+GetById(string id)
 ```
 
 #### Parameters
 
-
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|taskinfo | TaskCreationInformation |Contains the properties that can be set when creating a task.|
+|id| string|The identifier of the referenced object.
 
 #### Return Value
 
 [DraftTask](DraftTask.md)<br />
-The added task.
+The [DraftTask](DraftTask.md) with the specified ID.
+
+
+
 
 
 ### <a name="remove"></a> Remove(DraftTask task)
 
-Removes the [DraftTask](DraftTask.md) from the collection. Returns true if successful.
+Removes the specified draft task from the collection. Returns true if successful.
 
 #### Syntax
 
@@ -132,7 +133,7 @@ Remove(DraftTask task)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|task | [DraftTask](DraftTask.md) |The project to remove from the collection.|
+|task | [DraftTask](DraftTask.md) |The draft task to remove from the collection.|
 
 #### Return Value
 

@@ -6,7 +6,7 @@ Represents a resource that is managed by Project Server in a project.
 
 ### CSOM
 
-```C#
+```
 Class EnterpriseResource 
 ```
 
@@ -44,7 +44,7 @@ Enterprise resources are part of an organization’s entire list of resources an
 |CostCenter|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as cost center information for an enterprise resource.|
 |Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when an enterprise resource was added to the project.|
 |CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets a collection of custom fields that have values set for an enterprise resource.|
-|DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the default name that is entered into the [Assignment](Assignment.md) Owner property when an enterprise resource is assigned to a task.|
+|DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the default name that is entered into the [Assignment](Assignment.md) Owner property when an enterprise resource is assigned to a task.|
 |DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the default booking type for an enterprise resource.|
 |Email|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the email address of an enterprise resource.|
 |Engagements|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagementCollection](ResourceEngagementCollection.md)||
@@ -59,19 +59,19 @@ Enterprise resources are part of an organization’s entire list of resources an
 |IsCheckedOut|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether enterprise resource assignment data is currently available for updating or modification, or whether the enterprise resource is checked out.|
 |IsGeneric|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a Boolean value that indicates whether an enterprise resource is generic.|
 |IsTeam|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a Boolean value that indicates whether a resource is in a team assignment pool.|
-|Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Object|Gets or sets an enterprise resource in a project.|
+|Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Dictionary<string,object>|Gets or sets an enterprise resource in a project.|
 |MaterialLabel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the unit of measure that is entered for supplies or other consumable items that are used to complete tasks in a project.|
 |Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the modified date and time.|
 |Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of an enterprise resource.|
 |Phonetics|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets phonetic information for resource names in either the Japanese Hiragana writing system or the Katakana writing system.|
-|RequiresEngagements|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean||
+|RequiresEngagements|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether an enterprise resource requires a limited-availability resource. When True, an engagement to use the the enterprise resource must established by appropriate resource and project managers. |
 |ResourceCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md) |Gets a collection of exceptions to the base calendar that are specific to an enterprise resource.|
 |ResourceType|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceType](EnterpriseResourceType.md)|Gets an enumerated value that represents the type of an enterprise resource.|
-|Self|||&#x2713;|[EnterpriseResource](EnterpriseResource)||
+|Self|||&#x2713;|[EnterpriseResource](EnterpriseResource)|Gets the currently logged-on user.|
 |TerminationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time after which the resource can no longer be used.|
-|TimesheetManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the manager who reviews and approves the timesheet of an enterprise resource.|
-|User|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|User(SP)|Gets the SharePoint user that is linked to the Enterprise Resource.|
-|UserPermissions|||&#x2713;|UserPermissions||
+|TimesheetManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the manager who reviews and approves the timesheet of an enterprise resource.|
+|User|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the SharePoint user that is linked to the Enterprise Resource.|
+|UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)|Gets a UserPermissionCollection that represents the users and their permissions for the enterprise resource.|
 
 
 
@@ -82,6 +82,7 @@ Enterprise resources are part of an organization’s entire list of resources an
 |[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the EnterpriseResource object.|
 |[ForceCheckin()](#forcecheckin)|&#x2713;|&#x2713;|&#x2713;|void|Forces a project to be checked in after it is left in a state of being checked out following the interruption or unexpected closing of Project Server.|
 |[getSelf(ClientRuntimeContext context)](#getself)|&#x2713;|&#x2713;| |EnterpriseResource|Gets the currently logged-on user.|
+|[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;| &#x2713;| |void|Sets a custom field on the enterprise resource.|
 
 
 ## Method Details
@@ -148,3 +149,26 @@ EnterpriseResource<br />
 The EnterpriseResource who is currently logged on.
 
 
+### <a name="setcustomfieldvalue"></a> SetCustomFieldValue(String fieldName, Object value)
+
+Sets a custom field on the enterprise resource.
+
+#### Syntax
+
+```
+SetCustomFieldValue(String fieldName, Object value)
+```
+
+#### Parameters
+
+|**Name**|**Type**|**Description**|
+|:-----|:-----|:-----|
+|fieldName|String| The name of the custom field.|
+|value |Object|The value to be set for the custom field.|
+
+
+#### Return value
+
+void
+
+## See Also

@@ -6,7 +6,7 @@ Represents a collection of [DraftProjectResource](DraftProjectResource.md) objec
 
 ### CSOM
 
-```C#
+```
 class DraftProjectResourceCollection Inherits ClientObjectCollection(of DraftProjectResource)
 ```
 

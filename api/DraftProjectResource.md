@@ -84,7 +84,6 @@ none
 
 void
 
-[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)
 ### <a name="setcustomfieldvalue"></a> SetCustomFieldValue(String fieldName, Object value)
 
 Sets a custom field on the project resource.
