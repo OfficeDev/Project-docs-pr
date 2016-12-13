@@ -18,7 +18,7 @@ PS.DeletedPublishedAssignment
 
 ### REST Interface
 
-This resource supports GET HTTP command.
+This resource supports PUT, MERGE, and DELETE HTTP command.
 
 <!-- The following endpoint is for an assignment. I don't know how to edit it for DeletedPublishedAssignment.
 

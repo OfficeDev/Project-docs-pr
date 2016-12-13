@@ -1,6 +1,6 @@
 # DraftProjectResourceCollection class
 
-Represents a collection of draft project resources.
+Represents a collection of [DraftProjectResource](DraftProjectResource.md) objects.
 
 ## Syntax
 

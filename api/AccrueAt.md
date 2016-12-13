@@ -4,9 +4,13 @@ The cost accrual mode specifies how and when resource costs are to be charged to
 
 ## Syntax
 
+CSOM
+
 ```C#
 Public Enumeration AccrueAt
 ```
+
+JSOM/REST
 
 ```
 PS.AccrueAt

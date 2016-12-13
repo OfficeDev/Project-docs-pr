@@ -18,7 +18,7 @@ PS.DraftAssignmentCollection
 
 ### REST Interface
 
-This resource supports GET and POST HTTP commands:
+This resource supports PUT, MERGE, and DELETE HTTP commands:
 
 ```
 http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Assignments
@@ -39,61 +39,14 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/As
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the Id value.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the specified GUID.|
 |[Add(AssignmentCreationInformation acinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the specified GUID.|
+|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the Id value.|
 |[Remove(DraftAssignment assignment)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified draft assignment from the collection. Returns true if successful.|
 
 
+
 ## Method Details
-
-### <a name="getbyid"></a>GetById(string oid)
-
-Gets a draft assignment from the collection with the Id value.
-
-#### Syntax
-
-```
-GetById(string oid)
-```
-
-#### Parameters
-
-|**Name** |**Type**|**Description**|
-|:------ |:----|:------ |
-|id| string|The identifier of the referenced object.
-
-#### Return Value
-
-[DraftAssignment](DraftAssignment.md)<br />
-The draft assignment with the specified ID.
-
-
-
-
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a draft assignment from the collection with the specified GUID.
-
-#### Syntax
-
-```
-GetByGuid(Guid uid)
-```
-
-#### Parameters
-
-|**Name** |**Type**|**Description**|
-|:------ |:----|:------ |
-|uid| Guid|The guid that references the draft assignment.
-
-#### Return Value
-
-[DraftAssignment](DraftAssignment.md)<br />
-The DraftAssignment with the specified guid.
-
-
-
 
 ### <a name="add"></a> Add(AssignmentCreationInformation acinfo)
 
@@ -116,6 +69,56 @@ Add(AssignmentCreationInformation Assignmentinfo)
 
 [DraftAssignment](DraftAssignment.md)<br />
 The added Assignment.
+
+
+
+### <a name="getbyguid"></a> GetByGuid(Guid uid)
+
+Gets a draft assignment from the collection with the specified Guid.
+
+#### Syntax
+
+```
+GetByGuid(Guid uid)
+```
+
+#### Parameters
+
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|uid| Guid|The guid that references the draft assignment.|
+
+#### Return Value
+
+[DraftAssignment](DraftAssignment.md)<br />
+The DraftAssignment with the specified guid.
+
+
+
+
+### <a name="getbyid"></a>GetById(String oid)
+
+Gets a draft assignment from the collection with the Id value.
+
+#### Syntax
+
+```
+GetById(String oid)
+```
+
+#### Parameters
+
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|id|String|The identifier of the referenced object.|
+
+#### Return Value
+
+[DraftAssignment](DraftAssignment.md)<br />
+The draft assignment with the specified ID.
+
+
+
 
 
 ### <a name="remove"></a> Remove(DraftAssignment assignment)
