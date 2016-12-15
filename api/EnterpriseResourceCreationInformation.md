@@ -7,8 +7,8 @@ Provides information for the creation of an enterprise resource ([EnterpriseReso
 
 ### CSOM
 
-```C#
-Class EnterpriseResourceCreationInformation Inherits from ClientValueObject
+```
+Class EnterpriseResourceCreationInformation
 ```
 
 ### JSOM

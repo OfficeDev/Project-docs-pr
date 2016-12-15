@@ -6,7 +6,7 @@ Represents a collection of [EnterpriseResource](EnterpriseResource.md) objects.
 
 ### CSOM
 
-```C#
+```
 class EnterpriseResourceCollection inherits ClientObjectCollection(of EnterpriseResource)
 ```
 
@@ -44,7 +44,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources
 |[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets an enterprise resource from the collection with the Name value.|
 |[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Returns an enterprise resource from the collection linked to the SharePoint user.|
 |[Remove(EnterpriseResource resource)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified enterprise resource from a project.|
-|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)||
+|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the current member of the collection.|
 |[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|Void|Updates the enterprise resource collection.|
 
 

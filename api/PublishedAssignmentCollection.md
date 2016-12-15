@@ -6,8 +6,8 @@ Represents a collection of published assignments.
 
 ### CSOM
 
-```C#
-class PublishedAssignmentCollection Inherits ClientObjectCollection(of PublishedAssignment)
+```
+class PublishedAssignmentCollection
 ```
 
 ### JSOM
@@ -32,20 +32,42 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignme
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |PublishedAssignment|Gets the current PublishedAssignment from the collection.|
+|item| |&#x2713;| |[PublishedAssignment](PublishedAssignment.md)|Gets the current PublishedAssignment from the collection.|
 
 
 ### Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|PublishedAssignment|Gets a published assignment from the collection with the Id value.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|PublishedAssignment|Gets a published assignment from the collection with the specified GUID.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a published assignment from the collection with the specified Guid.|
+|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a published assignment from the collection with the Id value.|
 
 
 ## Method Details
 
-### <a name="getbyid"></a>GetById(string id)
+### <a name="getbyguid"></a> GetByGuid(Guid uid)
+
+Gets a published assignment from the collection with the specified Guid.
+
+#### Syntax
+
+```
+GetByGuid(Guid uid)
+```
+
+#### Parameters
+
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|uid| Guid|A Guid value.
+
+#### Return Value
+
+[PublishedAssignment](PublishedAssignment.md)<br />
+The assignment in the published project.
+
+
+### <a name="getbyid"></a>GetById(String id)
 
 Gets a published assignment from the collection with the Id value.
 
@@ -63,29 +85,6 @@ GetById(string id)
 
 #### Return Value
 
-PublishedAssignment<br />
+[PublishedAssignment](PublishedAssignment.md)<br />
 The assignment in the published project.
-
-
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a publisehd assignment from the collection with the specified GUID.
-
-#### Syntax
-
-```
-GetByGuid(Guid uid)
-```
-
-#### Parameters
-
-|**Name** |**Type**|**Description**|
-|:------ |:----|:------ |
-|uid| Guid|A guid value.
-
-#### Return Value
-
-PublishedAssignment<br />
-The assignment in the published project.
-
 

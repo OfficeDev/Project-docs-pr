@@ -8,8 +8,8 @@ Contains properties for the creation of a project resource entity.
 
 ### CSOM
 
-```C#
-Class ProjectResourceCreationInformation Inherits from ClientValueObject
+```
+Class ProjectResourceCreationInformation
 ```
 
 ### JSOM
