@@ -2,7 +2,7 @@
 
 Represents an enterprise resource that is published on Project Server.
 
-PublishedProjectResource inherits properties from the ProjectResource class.
+PublishedProjectResource inherits properties from the [ProjectResource](ProjectResource.MD) class.
 
 ## Syntax
 

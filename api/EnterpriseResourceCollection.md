@@ -39,7 +39,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation) object to the collection.|
+|[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.|
 |[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Get an enterprise resource from the collection with the specified GUID.|
 |[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets an enterprise resource from the collection with the Name value.|
 |[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Returns an enterprise resource from the collection linked to the SharePoint user.|
@@ -64,7 +64,7 @@ Add(EnterpriseResourceCreationInformation ercinfo)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ercinfo| [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation)|Contains the properties that can be set when creating an enterprise resource.|
+|ercinfo| [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md)|Contains the properties that can be set when creating an enterprise resource.|
 
 #### Return Value
 

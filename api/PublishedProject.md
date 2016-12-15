@@ -77,7 +77,7 @@ To set the value of properties in an existing project:
 |StatusDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the status date for the project. |
 |TaskLinks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets the collection of task links for the project. |
 |Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project. |
-|TrackingMode|&#x2713;|&#x2713;|&#x2713;|[PSTrackingMode](PSTrackingMode.md)|Gets the default tracking method for all assignments in the project. |
+|TrackingMode|&#x2713;|&#x2713;|&#x2713;|[TrackingMode](TrackingMode.md)|Gets the default tracking method for all assignments in the project. |
 |UtilizationDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time of resource utilization for the current project.|
 |UtilizationType|&#x2713;|&#x2713;|&#x2713;|[UtilizationType](UtilizationType.md)|Gets the derivation source(s) of the summary resource assignments of a project. Uses the UtilizationType enumeration.|
 |WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the day of the week on which a work week starts. |
