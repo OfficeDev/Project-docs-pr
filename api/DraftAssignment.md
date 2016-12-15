@@ -57,7 +57,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 |OvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the time interval, expressed in milliseconds, for the amount of overtime that is scheduled to be performed on the assignment.|
 |OvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets the time interval for the amount of overtime that is scheduled to be performed on the assignment.|
 |Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx) |Gets the name of the user who is responsible for entering status for the current assignment.|
-|Parent|&#x2713;|&#x2713;|&#x2713;&#x02B7;|DraftAssignment|Gets the parent assignment link.|
+|Parent|&#x2713;|&#x2713;|&#x2713;&#x02B7;|[DraftAssignment](DraftAssignment.md)|Gets the parent assignment link.|
 |PercentWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the current status of the assignment, expressed as the percentage of the total work that has been completed.|
 |RegularWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets the total amount of nonovertime work that is scheduled to be performed on the assignment.|
 |RegularWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets the time interval, expressed in milliseconds, for the total amount of nonovertime work that is scheduled to be performed on the assignment.|
@@ -82,8 +82,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft/
 |**Name** |**CSOM** |**JSOM** |**REST** |**Return Type** |**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:-----|
 |[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|   void |Deletes the draft assignment.|
-|[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;|&#x2713;||void|Updates the value of a custom field associated with the draft assignment.
-|
+|[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;|&#x2713;||void|Updates the value of a custom field associated with the draft assignment.|
 
 ## Method Details
 

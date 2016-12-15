@@ -1,7 +1,7 @@
 # PublishedProject 
 Represents a project that is published on Project Server.
 
-PublishedProject inherits properties and methods from Project.
+[PublishedProject](PublishedProject.md) inherits properties and methods from [Project](Project.md).
 
 ## Syntax
 
@@ -28,9 +28,9 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')
 
 To set the value of properties in an existing project:
 
-1. Use the **PublishedProject [CheckOut](#checkout)** method.
+1. Use the **[PublishedProject](PublishedProject.md) [CheckOut](#checkout)** method.
 2. Edit the **[DraftProject](DraftProject.md)** object.
-3. Check in the edited project using the **DraftProject CheckIn** method.
+3. Check in the edited project using the **[DraftProject](DraftProject.md) CheckIn** method.
 
 ## Members
 
@@ -60,7 +60,7 @@ To set the value of properties in an existing project:
 |FieldValues|&#x2713;|&#x2713;|&#x2713;|Dictionary&lt;string, Object&gt;|Gets the custom field values for the published project. |
 |FinishDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the project finish date. |
 |FiscalYearStartMonth|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the number of the first month in the fiscal year. |
-|IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|PublishedProject|Gets a PublishedProject object that includes custom fields. |
+|IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a PublishedProject object that includes custom fields. |
 |IsEnterpriseProject|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the published project is an enterprise project (managed by Project Server). |
 |Item|&#x2713;&#x02B7;|&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project. |
 |MinutesPerDay|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the default number of minutes per day. |
@@ -90,7 +90,7 @@ To set the value of properties in an existing project:
 |:-----|:-----: |:-----: |:-----: |:-----|:-----|
 |[CheckOut()](#checkout)|&#x2713; |&#x2713; |&#x2713; |[DraftProject](DraftProject.md)|Checks out the draft version of the project.|
 |[CreateProjectSite(String siteName)](#createprojectsite)|&#x2713;|&#x2713;|&#x2713;|void|Creates a project site. |
-|[DeleteObject()](#deleteobject)|&#x2713; |&#x2713; |&#x2713; |[QueueJob](QueueJob.md)|Deletes the PublishedProject object.|
+|[DeleteObject()](#deleteobject)|&#x2713; |&#x2713; |&#x2713; |[QueueJob](QueueJob.md)|Deletes the [PublishedProject](PublishedProject.md) object.|
 |[SubmitToWorkflow()](#submittoworkflow)|&#x2713; |&#x2713; |&#x2713; |void|Causes the workflow to run.|
 |[UpdateVisibilityCustomFields()](#updatevisibilitycustomfields)|&#x2713; |&#x2713; |&#x2713; |[QueueJob](QueueJob.md)|Updates the custom fields for a project in visibility mode.|
 
@@ -144,7 +144,7 @@ void
 
 ### <a name="deleteobject"></a> DeleteObject()
 
-Deletes the PublishedProject object.
+Deletes the [PublishedProject](PublishedProject.md) object.
 
 #### Syntax
 

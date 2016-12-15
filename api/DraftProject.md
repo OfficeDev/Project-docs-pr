@@ -27,12 +27,12 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')/Draft
 
 ## Remarks
 
-The **DraftProject** class and the **[PublishedProject](PublishedProject.md)** class derive from the **[Project](Project.md)** class. 
+The **[DraftProject](DraftProject.md)** class and the **[PublishedProject](PublishedProject.md)** class derive from the **[Project](Project.md)** class. 
 
 To set the value of properties in an existing project:
 
-1. Use the **PublishedProject CheckOut** method.
-2. Edit the **DraftProject** object.
+1. Use the **[PublishedProject](PublishedProject) CheckOut** method.
+2. Edit the **[DraftProject](DraftProject.md)** object.
 3. Check in the edited project using the **DraftProject [CheckIn](#checkin)** method.
 
 ## Members

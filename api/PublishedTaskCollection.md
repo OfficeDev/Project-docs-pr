@@ -6,8 +6,8 @@ Represents a collection of tasks in a published project.
 
 ### CSOM
 
-```C#
-class PublishedTaskCollection Inherits ClientObjectCollection(of PublishedTask)
+```
+class PublishedTaskCollection 
 ```
 
 ### JSOM
@@ -39,37 +39,15 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Tasks
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|PublishedTask|Gets a task in the collection with the Id value.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|PublishedTask|Gets a task in the collection with the specified GUID.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a task in the collection with the specified Guid.|
+|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a task in the collection with the Id value.|
 
 
 ## Method Details
 
-### <a name="getbyid"></a>GetById(string id)
-
-Gets a task in the collection with the Id value.
-
-#### Syntax
-
-```
-GetById(string id)
-```
-
-#### Parameters
-
-|**Name** |**Type**|**Description**|
-|:------ |:----|:------ |
-|id| string|The string representation of the task GUID.
-
-#### Return Value
-
-PublishedTask<br />
-The task in the published project.
-
-
 ### <a name="getbyguid"></a> GetByGuid(Guid uid)
 
-Gets a task in the collection with the specified GUID.
+Gets a task in the collection with the specified Guid.
 
 #### Syntax
 
@@ -85,7 +63,31 @@ GetByGuid(Guid uid)
 
 #### Return Value
 
-PublishedTask<br />
+[PublishedTask](PublishedTask.md)<br />
 The task in the published project.
+
+
+
+### <a name="getbyid"></a>GetById(string id)
+
+Gets a task in the collection with the Id value.
+
+#### Syntax
+
+```
+GetById(string id)
+```
+
+#### Parameters
+
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|id| string|The string representation of the task Guid.
+
+#### Return Value
+
+[PublishedTask](PublishedTask.md)<br />
+The task in the published project.
+
 
 

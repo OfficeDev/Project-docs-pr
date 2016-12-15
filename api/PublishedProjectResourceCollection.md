@@ -6,8 +6,8 @@ Represents a collection of resources in a published project.
 
 ### CSOM
 
-```C#
-class PublishedProjectResourceCollection Inherits ClientObjectCollection(of PublishedProjectResource)
+```
+class PublishedProjectResourceCollection 
 ```
 
 ### JSOM
@@ -39,8 +39,8 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/ProjectR
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|PublishedProjectResource|Gets a resource from the collection with the specified GUID.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|PublishedProjectResource|Gets a resource from the collection with the Id value.|
+|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a resource from the collection with the specified Guid.|
+|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a resource from the collection with the Id value.|
 
 
 ## Method Details
@@ -48,7 +48,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/ProjectR
 
 ### <a name="getbyguid"></a> GetByGuid(Guid uid)
 
-Gets a resource from the collection with the specified GUID.
+Gets a resource from the collection with the specified Guid.
 
 #### Syntax
 
@@ -64,8 +64,8 @@ GetByGuid(Guid uid)
 
 #### Return Value
 
-PublishedProjectResource<br />
-A PublishedProjectResource object.
+[PublishedProjectResource](PublishedProjectResource.md)<br />
+A [PublishedProjectResource](PublishedProjectResource.md) object.
 
 
 
@@ -87,6 +87,6 @@ GetById(string id)
 
 #### Return Value
 
-PublishedProjectResource<br />
-The PublishedProjectResource with the specified ID.
+[PublishedProjectResource](PublishedProjectResource.md)<br />
+The [PublishedProjectResource](PublishedProjectResource.md) with the specified ID.
 

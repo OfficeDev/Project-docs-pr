@@ -2,7 +2,7 @@
 # DraftTask class
 Represents a task in a checked-out project.
 
-DraftTask inherits properties from the [Task](Task.md) object.
+[DraftTask](DraftTask.md) inherits properties from the [Task](Task.md) object.
 
 ## Syntax
 
@@ -65,7 +65,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |LevelingCanSplit|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether leveling can interrupt and split a task.|
 |Name|&#x2713;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of a task.|
 |OutlineLevel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the task outline level in a hierarchical task list.|
-|Parent|&#x2713;|&#x2713;|&#x2713;|DraftTask|Gets the parent task.|
+|Parent|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the parent task.|
 |ParentId|||&#x2713;|Guid|Gets the Guid of the parent task in a hierarchical task list.|
 |PercentComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the percent of duration completed on a task.|
 |PercentPhysicalWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the percentage of physical work completed on a task.|
@@ -88,14 +88,14 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 
 |**Name**|**CSOM** |**JSOM** |**REST** |**Return Type**|**Description**|
 |:----- |:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;| &#x2713;|void|Deletes the DraftTask object.|
+|[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;| &#x2713;|void|Deletes the [DraftTask](DraftTask.md) object.|
 |[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;| &#x2713;| |void|Sets a custom field on the task.|
 
 ## Method Details
 
 ### <a name="deleteobject"></a> DeleteObject() 
 
-Deletes the DraftTask object.
+Deletes the [DraftTask](DraftTask.md) object.
 
 #### Syntax
 

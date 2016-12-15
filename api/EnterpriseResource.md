@@ -79,9 +79,9 @@ Enterprise resources are part of an organization’s entire list of resources an
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the EnterpriseResource object.|
+|[DeleteObject()](#deleteobject)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the [EnterpriseResource](EnterpriseResource.md) object.|
 |[ForceCheckin()](#forcecheckin)|&#x2713;|&#x2713;|&#x2713;|void|Forces a project to be checked in after it is left in a state of being checked out following the interruption or unexpected closing of Project Server.|
-|[getSelf(ClientRuntimeContext context)](#getself)|&#x2713;|&#x2713;| |EnterpriseResource|Gets the currently logged-on user.|
+|[getSelf(ClientRuntimeContext context)](#getself)|&#x2713;|&#x2713;| |[EnterpriseResource](EnterpriseResource.md)|Gets the currently logged-on user.|
 |[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;| &#x2713;| |void|Sets a custom field on the enterprise resource.|
 
 
@@ -89,7 +89,7 @@ Enterprise resources are part of an organization’s entire list of resources an
 
 ### <a name="deleteobject"></a> DeleteObject()
 
-Deletes the EnterpriseResource object.
+Deletes the [EnterpriseResource](EnterpriseResource.md) object.
 
 #### Syntax
 
@@ -145,8 +145,8 @@ GetSelf(ClientRuntimeContext context)
 
 #### Return Value
 
-EnterpriseResource<br />
-The EnterpriseResource who is currently logged on.
+[EnterpriseResource](EnterpriseResource.md)<br />
+The [EnterpriseResource](EnterpriseResource.md) who is currently logged on.
 
 
 ### <a name="setcustomfieldvalue"></a> SetCustomFieldValue(String fieldName, Object value)

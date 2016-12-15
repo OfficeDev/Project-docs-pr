@@ -2,7 +2,7 @@
 # PublishedAssignment
 Represents an assignment in a published project.
 
-PublishedAssignment inherits properties from the Assignment class.
+[PublishedAssignment](PublishedAssignment.md) inherits properties from the [Assignment](Assignment.md) class.
 
 
 ## Syntax
@@ -57,7 +57,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignme
 |OvertimeWorkMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the amount of overtime that is scheduled to be performed on the assignment.|
 |OvertimeWorkTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of overtime that is scheduled to be performed on the assignment.|
 |Owner|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the name of the user who is responsible for entering status for the current assignment.|
-|Parent|&#x2713;|&#x2713;|&#x2713;|PublishedAssignment|Gets the parent assignment link.|
+|Parent|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets the parent assignment link.|
 |PercentWorkComplete|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the current status of the assignment, expressed as the percentage of the total work that has been completed.|
 |RegularWork|&#x2713;|&#x2713;|&#x2713;|String|Gets the total amount of nonovertime work that is scheduled to be performed on the assignment.|
 |RegularWorkMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the total amount of nonovertime work that is scheduled to be performed on the assignment.|
