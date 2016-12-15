@@ -38,7 +38,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/DraftTasks('taskid')
 |ActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of work that has already been performed on a task.|
 |ActualWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of work that has already been performed on a task.|
 |AddAfterId|||&#x2713;|Guid| Id of the task that immediately precedes the current task.|
-|Assignments|&#x2713;|&#x2713;|&#x2713;|[DraftAssignmentCollection](DraftAssignmentCollection)|Gets the assignments for a task.|
+|Assignments|&#x2713;|&#x2713;|&#x2713;|[DraftAssignmentCollection](DraftAssignmentCollection.md)|Gets the assignments for a task.|
 |BudgetWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of work that is estimated to be performed on a task.|
 |BudgetWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of work that is estimated to be performed on a task.|
 |BudgetWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of work that is estimated to be performed on a task.|

@@ -4,7 +4,7 @@
 
 Represents an enterprise resource in a checked-out project. A resource can be a work resource, a material resource, or a cost resource.
 
-[DraftProjectResouce](DraftProjectResouce.md) inherits from the [ProjectResouce](ProjectResouce.md) object. 
+[DraftProjectResource](DraftProjectResource.md) inherits from the [ProjectResource](ProjectResource.md) object. 
 
 ## Syntax
 
@@ -60,7 +60,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Pr
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#deleteobject)|&#x2713;| &#x2713;|&#x2713;|void|Deletes the [DraftProjectResouce](DraftProjectResouce.md) object.|
+|[DeleteObject()](#deleteobject)|&#x2713;| &#x2713;|&#x2713;|void|Deletes the [DraftProjectResource](DraftProjectResource.md) object.|
 |[SetCustomFieldValue(String fieldName, Object value)](#setcustomfieldvalue)|&#x2713;| &#x2713;| |void|Sets a custom field on the project resource.|
 
 
@@ -68,7 +68,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Pr
 
 ### <a name="deleteobject"></a> DeleteObject()
 
-Deletes the [DraftProjectResouce](DraftProjectResouce.md) object.
+Deletes the [DraftProjectResource](DraftProjectResource.md) object.
 
 #### Syntax
 
@@ -109,4 +109,4 @@ void
 
 ## See Also
 
-[ProjectResouce](ProjectResouce.md)
+[ProjectResource](ProjectResource.md)

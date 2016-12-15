@@ -31,7 +31,7 @@ The **[DraftProject](DraftProject.md)** class and the **[PublishedProject](Publi
 
 To set the value of properties in an existing project:
 
-1. Use the **[PublishedProject](PublishedProject) CheckOut** method.
+1. Use the **[PublishedProject](PublishedProject.md) CheckOut** method.
 2. Edit the **[DraftProject](DraftProject.md)** object.
 3. Check in the edited project using the **DraftProject [CheckIn](#checkin)** method.
 
