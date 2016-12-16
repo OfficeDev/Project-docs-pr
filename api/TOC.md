@@ -48,7 +48,7 @@
 # [EnterpriseResourceType enumeration](EnterpriseResourceType.md) 
 # [EntityLink class](EntityLink.md) 
 # [EntityLinkCreationInformation class](EntityLinkCreationInformation.md) 
-# [EntityLinksCollection class](EntityLinksCollection.md) 
+# [EntityLinkCollection class](EntityLinkCollection.md) 
 # [EntityTypes class](EntityTypes.md) 
 # [Event class](Event.md) 
 # [EventCollection class](EventCollection.md) 
@@ -164,3 +164,4 @@
 # [WorkflowDesigner class](WorkflowDesigner.md) 
 # [WorkflowDesignerField class](WorkflowDesignerField.md) 
 # [WorkflowDesignerFieldCollection class](WorkflowDesignerFieldCollection.md) 
+# [WorkFormat](WorkFormat.md)
