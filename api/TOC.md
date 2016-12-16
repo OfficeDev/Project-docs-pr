@@ -134,6 +134,7 @@
 # [StageDetailPageCollection class](StageDetailPageCollection.md) 
 # [StageDetailPageCreationInformation class](StageDetailPageCreationInformation.md) 
 # [StandardRateFormat](StandardRateFormat.md)
+# [StatusApprovalType](StatusApprovalType.md)
 # [StatusAssignment class](StatusAssignment.md) 
 # [StatusAssignmentCollection class](StatusAssignmentCollection.md) 
 # [StatusAssignmentCreationInformation class](StatusAssignmentCreationInformation.md) 
