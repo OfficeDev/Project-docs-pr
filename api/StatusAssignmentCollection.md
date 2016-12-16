@@ -77,7 +77,7 @@ StatusAssignment Add(StatusAssignmentCreationInformation parameters)
 
 ### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a status assignment object from the collection with the specified GUID.
+Gets a status assignment object from the collection with the specified Guid.
 
 #### Syntax
 
@@ -88,7 +88,7 @@ StatusAssignment GetByGuid(Guid uid)
 #### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid| Guid | A Guid value.
 
 
 #### Return Value
@@ -97,7 +97,7 @@ StatusAssignment GetByGuid(Guid uid)
 
 ### <a id="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a status assignment object from the collection with the [Id](b3bba5ce-3eac-6d4a-6190-f9cee66c0c40.md) value.
+Gets a status assignment object from the collection with the specified Id value.
 
 #### Syntax
 
@@ -108,7 +108,7 @@ StatusAssignment GetById(String objectId)
 #### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the GUID for the status assignment.
+|objectId| String | The string representation of the Guid for the status assignment.
 
 
 #### Return Value
@@ -179,7 +179,7 @@ Boolean
 
 ### <a id="SubmitAllStatusUpdates_String_comment_"></a>SubmitAllStatusUpdates(String comment)
  
-Submit all updates to assignments in the StatusAssignmentCollection for approval.
+Submit all updates to assignments in the [StatusAssignmentCollection](StatusAssignmentCollection.md) for approval.
 
 #### Syntax
 

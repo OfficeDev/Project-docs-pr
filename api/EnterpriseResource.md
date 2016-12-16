@@ -67,7 +67,7 @@ Enterprise resources are part of an organization’s entire list of resources an
 |RequiresEngagements|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether an enterprise resource requires a limited-availability resource. When True, an engagement to use the the enterprise resource must established by appropriate resource and project managers. |
 |ResourceCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md) |Gets a collection of exceptions to the base calendar that are specific to an enterprise resource.|
 |ResourceType|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceType](EnterpriseResourceType.md)|Gets an enumerated value that represents the type of an enterprise resource.|
-|Self|||&#x2713;|[EnterpriseResource](EnterpriseResource)|Gets the currently logged-on user.|
+|Self|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the currently logged-on user.|
 |TerminationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time after which the resource can no longer be used.|
 |TimesheetManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the manager who reviews and approves the timesheet of an enterprise resource.|
 |User|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the SharePoint user that is linked to the Enterprise Resource.|

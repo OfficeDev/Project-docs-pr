@@ -278,7 +278,7 @@ UpdateProjectStageStatus(Stage stage, String statusInformation, UpdateProjectSta
 
 |**Name** |**Type**|**Description**|
 |:------ |:----   |:------ |
-| stage | [Stage](Stage) | The workflow stage to be updated.|
+| stage | [Stage](Stage.md) | The workflow stage to be updated.|
 | statusInformation | String | The status message.
 | stageStatusValue | [UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md) | An enumeration constant that indicates the stage status. |
 | append | Boolean | True if the status message is appended to the current stage status; False if the status message overwrites the current status.|

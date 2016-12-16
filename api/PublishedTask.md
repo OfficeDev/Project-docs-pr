@@ -45,7 +45,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Tasks('taskid')
 |Calendar|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets the task calendar.|
 |Completion|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets a completion date for the task.|
 |ConstraintStartEnd|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets a constraint start date or end date.|
-|ConstraintType|&#x2713;|&#x2713;|&#x2713;|[ConstraintType](ConstraintType)|Gets the choices for the type of constraint that can be applied to the scheduling of a task.|
+|ConstraintType|&#x2713;|&#x2713;|&#x2713;|[ConstraintType](ConstraintType.md)|Gets the choices for the type of constraint that can be applied to the scheduling of a task.|
 |Cost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the total scheduled or projected cost for the task.|
 |Deadline|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that was entered as a deadline for the task.|
 |Duration|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of time it takes to complete a task.|
