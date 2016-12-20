@@ -83,11 +83,6 @@ Supported.  Please see REST Interface in [PublishedAssignment](PublishedAssignme
 |<a name="WorkVarianceMilliseconds"></a>WorkVarianceMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the difference between baseline work and currently scheduled work on the assignment.|
 |<a name="WorkVarianceTimeSpan"></a>WorkVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the difference between baseline work and currently scheduled work on the assignment.|
 
-
-
-
-
-
 ## <a name="seeAlso"></a>See Also
 
 [DraftAssignment](DraftAssignment.md)<br/>
