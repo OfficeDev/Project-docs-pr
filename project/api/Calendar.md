@@ -1,20 +1,19 @@
 [comment]: # (Name:Calendar)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# Calendar
+# <a name="name"></a>Calendar class
 
-Represents a Project Server calendar.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents a Project service calendar.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class Calendar 
+class Calendar 
 ```
 ### JSOM
 
@@ -23,43 +22,35 @@ PS.Calendar
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
-
 ```
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|BaseCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md)|Gets the collection of exceptions to base calendars.|
-|Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was created.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the calendar.|
-|IsStandardCalendar|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the calendar is Gregorian.|
-|Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was modified.|
-|Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the calendar.|
+|<a name="BaseCalendarExceptions"></a>BaseCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md)|Gets the collection of exceptions to base calendars.|
+|<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was created.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the calendar.|
+|<a name="IsStandardCalendar"></a>IsStandardCalendar|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the calendar is Gregorian.|
+|<a name="Modified"></a>Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was modified.|
+|<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the calendar.|
 
-
-
-
-
-### Methods
+### <a name="methods"></a>Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CopyTo(String name)](#CopyTo_String_name_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Makes a copy of the calendar and gives the copy a new name.|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the Calendar object.|
 
-
-
 ## Method Details
 
-
 ### <a name="CopyTo_String_name_"></a>CopyTo(String name)
+
+
  
 Makes a copy of the calendar and gives the copy a new name.
 
@@ -81,6 +72,8 @@ Calendar CopyTo(String name)
 
 ### <a name="DeleteObject__"></a>DeleteObject()
  
+ 
+
 Deletes the Calendar object.
 
 #### Syntax
@@ -97,5 +90,12 @@ None
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[CalendarCollection](CalendarCollection.md)<br/>
+[CalendarException](CalendarException.md)<br/>
+[DraftProject](DraftProject.md)<br/>
+[DraftTask](DraftTask.md)<br/>
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[PublishedProject](PublishedProject.md)<br/>
+[PublishedTask](PublishedTask.md)<br/>
