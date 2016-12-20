@@ -1,7 +1,7 @@
 
 [comment]: # (Name:Assignment)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 
 # <a name="name"></a>Assignment class
