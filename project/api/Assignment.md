@@ -1,14 +1,14 @@
 
 [comment]: # (Name:Assignment)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 
 # <a name="name"></a>Assignment class
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>Contains the common properties for draft assignments and published assignments.
+<a name="description"></a>Contains the common properties for [DraftAssignments](DraftAssignment.md) and [PublishedAssignments](PublishedAssignment.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -25,7 +25,7 @@ PS.Assignment
 ```
 ### REST Interface
 
-Supported.  Please see REST Interface in (PublishedAssignment)[PublishedAssignment.md#syntax].
+Supported.  Please see REST Interface in [PublishedAssignment](PublishedAssignment.md#syntax).
 
 
 ## <a name="members"></a>Members
@@ -80,7 +80,7 @@ Supported.  Please see REST Interface in (PublishedAssignment)[PublishedAssignme
 |<a name="Stop"></a>Stop|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time when a resource stops work on the assignment.|
 |<a name="WorkContourType"></a>WorkContourType|&#x2713;|&#x2713;|&#x2713;|[WorkContourType](WorkContourType.md)|Indicates how to distribute work for an assignment across the duration of the assignment.|
 |<a name="WorkVariance"></a>WorkVariance|&#x2713;|&#x2713;|&#x2713;|String|Gets the difference between baseline work and currently scheduled work on the assignment.|
-|<a name="WorkVarianceMilliseconds"></a>WorkVarianceMilliseconds||&#x2713;|&#x2713;|Integer||
+|<a name="WorkVarianceMilliseconds"></a>WorkVarianceMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the difference between baseline work and currently scheduled work on the assignment.|
 |<a name="WorkVarianceTimeSpan"></a>WorkVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the difference between baseline work and currently scheduled work on the assignment.|
 
 
