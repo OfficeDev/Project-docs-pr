@@ -1,39 +1,43 @@
 [comment]: # (Name:BookingType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Status:Verified)
 
-# BookingType
+# <a name="name"></a>BookingType enumeration
 
-Specifies how resources are booked for assignments.
+<a name="description"></a>Specifies how resources are booked for assignments.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class BookingType 
+enum BookingType 
 ```
-### JSOM/REST
+### JSOM
 
 ```
 PS.BookingType
 ```
+### REST Interface
 
+BookingType enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0| The resource booking type is not specified. This is the default value. This constant is used in place of a DBNull value.|
-|Committed|1| Resources are booked as "Committed.|
-|Proposed|2||
+|<a name="NotSpecified"></a>NotSpecified|0| The resource booking type is not specified. This is the default value. This constant is used in place of a DBNull value.|
+|<a name="Committed"></a>Committed|1| Resources are booked as "Committed".|
+|<a name="Proposed"></a>Proposed|2|Resources are booked as "Proposed".|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[DraftAssignment](DraftAssignment.md)<br/>
+[DraftProjectResource](DraftProjectResource.md)<br/>
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[PlanAssignment](PlanAssignment.md)<br/>
+[PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)<br/>
+[PublishedAssignment](PublishedAssignment.md)<br/>
+[PublishedProjectResource](PublishedProjectResource.md)<br/>
