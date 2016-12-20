@@ -1,3 +1,4 @@
+
 [comment]: # (Name:Assignment)
 [comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
@@ -24,11 +25,7 @@ PS.Assignment
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
-
-```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
-```
+Supported.  Please see REST Interface in (PublishedAssignment)[PublishedAssignment.md#syntax].
 
 
 ## <a name="members"></a>Members
@@ -44,7 +41,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 |<a name="BaselineFinish">BaselineFinish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the planned completion date for an assignment, at the time of the project baseline.|
 |<a name="BaselineStart">BaselineStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the planned start date for an assignment, at the time of the project baseline.|
 |<a name="BaselineWork">BaselineWork|&#x2713;|&#x2713;|&#x2713;|String|Gets total planned person-hours scheduled for an assignment, at the time of the project baseline.|
-|<a name="BaselineWorkMilliseconds">BaselineWorkMilliseconds||&#x2713;|&#x2713;|Integer||
+|<a name="BaselineWorkMilliseconds">BaselineWorkMilliseconds||&#x2713;|&#x2713;|Integer|Gets the total time in milliseconds, of planned person-hours scheduled for an assignment, at the time of the project baseline.|
 |<a name="BaselineWorkTimeSpan">BaselineWorkTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the total time interval of planned person-hours scheduled for an assignment, at the time of the project baseline.|
 |<a name="BudgetedCostWorkPerformed">BudgetedCostWorkPerformed|&#x2713;|&#x2713;|&#x2713;|Double|Gets the budgeted cost of work performed (BCWP).|
 |<a name="BudgetedCostWorkScheduled">BudgetedCostWorkScheduled|&#x2713;|&#x2713;|&#x2713;|Double|Gets the budgeted cost of work scheduled (BCWS) for the assignment.|
@@ -54,7 +51,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 |<a name="CurrentCostVariance">CurrentCostVariance|&#x2713;|&#x2713;|&#x2713;|Double|Gets the current cost variance (CV).|
 |<a name="CustomFields">CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets the collection of custom fields for the assignment.|
 |<a name="Delay">Delay|&#x2713;|&#x2713;|&#x2713;|String|Specifies the amount of time (formatted) that the resource is to wait after the task start date, before starting work on the task.|
-|<a name="DelayMilliseconds">DelayMilliseconds||&#x2713;|&#x2713;|Integer|Specifies the amount of time in milliseconds that the resource is to wait after the task start date, before starting work on the task.|
+|<a name="DelayMilliseconds">DelayMilliseconds||&#x2713;|&#x2713;|Integer|Specifies the amount of time in milliseconds, that the resource is to wait after the task start date, before starting work on the task.|
 |<a name="DelayTimeSpan">DelayTimeSpan|&#x2713;||&#x2713;|TimeSpan|Specifies the time interval that the resource is to wait after the task start date, before starting work on the task.|
 |<a name="Finish">Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Specifies the date and time that this resource is scheduled to finish this task.|
 |<a name="FinishVariance">FinishVariance|&#x2713;|&#x2713;|&#x2713;|String|Gets the variance of the finish date of the assignment.|
