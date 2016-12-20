@@ -8,7 +8,7 @@
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>Contains the common properties for draft assignments and published assignments.
+<a name="description"></a>Contains the common properties for [DraftAssignments](DraftAssignment.md) and [PublishedAssignments](PublishedAssignment.md).
 
 ## <a name="syntax"></a>Syntax
 
