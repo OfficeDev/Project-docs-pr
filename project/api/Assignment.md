@@ -25,7 +25,7 @@ PS.Assignment
 ```
 ### REST Interface
 
-Supported.  Please see REST Interface in (PublishedAssignment)[PublishedAssignment.md#syntax].
+Supported.  Please see REST Interface in [PublishedAssignment](PublishedAssignment.md#syntax).
 
 
 ## <a name="members"></a>Members
