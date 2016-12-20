@@ -3,7 +3,7 @@
 [comment]: # (Status:Verified)
 
 
-# <a name="name"></a>AccrueAt
+# <a name="name"></a>AccrueAt enumeration
 
 
 
@@ -15,7 +15,7 @@
 ### CSOM
 
 ```C#
-Class AccrueAt 
+enum AccrueAt 
 ```
 ### JSOM
 
