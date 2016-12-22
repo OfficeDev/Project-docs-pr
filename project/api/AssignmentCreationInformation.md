@@ -1,6 +1,6 @@
 [comment]: # (Name:AssignmentCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>AssignmentCreationInformation class
 <a name="description"></a>Contains the properties that can be set when creating an [Assignment](Assignment.md).
@@ -21,10 +21,32 @@ PS.AssignmentCreationInformation
 
 ### REST Interface
 
-This resource supports POST commands.
+This resource supports POST HTTP commands.
 
 ```
 http://<sitecollection>/<site>/_api/ProjectServer/Draft/Assignments/Add
+POST Example
+
+```
+
+body = {
+
+	'parameters': {
+
+		'Finish':'value', 
+
+		'Id':'value', 
+
+		'Notes':'value', 
+
+		'ResourceId':'value', 
+
+		'Start':'value', 
+
+		'TaskId':'value'		
+
+	}
+
 ```
 
 ## <a name="members"></a>Members
@@ -42,4 +64,5 @@ http://<sitecollection>/<site>/_api/ProjectServer/Draft/Assignments/Add
 
 ## <a name="seeAlso"></a>See Also
 
+[DraftAssignment](DraftAssignment.md)<br/>
 [DraftAssignmentCollection](DraftAssignmentCollection.md)<br/>

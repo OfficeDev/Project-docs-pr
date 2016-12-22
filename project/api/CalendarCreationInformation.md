@@ -1,20 +1,17 @@
 [comment]: # (Name:CalendarCreationInformation)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# CalendarCreationInformation
+# <a name="name"></a>CalendarCreationInformation class
 
-Represents information that is used to create a new calendar.
+<a name="description"></a>Represents information that is used to create a new calendar.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class CalendarCreationInformation 
+class CalendarCreationInformation 
 ```
 ### JSOM
 
@@ -23,26 +20,40 @@ PS.CalendarCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
+POST Example
 
+```
 
-## Members
+body = {
 
-### Properties
+	'parameters': {
+
+		'Id':'value', 
+
+		'Name':'value', 
+
+		'OriginalId':'value'		
+
+	}
+
+```
+
+## <a name="members"></a>Members
+
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the new calendar.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the new calendar.|
-|OriginalId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the original GUID of the new calendar.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the new calendar.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the new calendar.|
+|<a name="OriginalId"></a>OriginalId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the original GUID of the new calendar.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[Calendar](Calendar.md)<br/>
+[CalendarCollection](CalendarCollection.md)<br/>

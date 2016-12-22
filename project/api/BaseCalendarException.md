@@ -1,6 +1,6 @@
 [comment]: # (Name:BaseCalendarException)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>BaseCalendarException class
 
@@ -22,9 +22,11 @@ PS.BaseCalendarException
 ```
 ### REST Interface
 
+This resource supports GET and POST HTTP commands.
+
 ```
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions({id})
 ```
 
 ## <a name="seeAlso"></a>See Also
-[CalendarException](CalendarException.md)
+

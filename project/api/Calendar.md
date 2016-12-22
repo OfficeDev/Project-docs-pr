@@ -22,6 +22,8 @@ PS.Calendar
 ```
 ### REST Interface
 
+This resource supports GET and POST HTTP commands.
+
 ```
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 ```
@@ -46,7 +48,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 |[CopyTo(String name)](#CopyTo_String_name_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Makes a copy of the calendar and gives the copy a new name.|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the Calendar object.|
 
-### Method Details
+#### Method Details
 
 #### <a name="CopyTo_String_name_"></a>CopyTo(String name)
 
@@ -93,6 +95,7 @@ void
 ## <a name="seeAlso"></a>See Also
 
 [CalendarCollection](CalendarCollection.md)<br/>
+[CalendarCreationInformation](CalendarCreationInformation.md)<br/>
 [CalendarException](CalendarException.md)<br/>
 [DraftProject](DraftProject.md)<br/>
 [DraftTask](DraftTask.md)<br/>

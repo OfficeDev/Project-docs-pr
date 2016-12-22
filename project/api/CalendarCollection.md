@@ -177,4 +177,5 @@ void
 ## <a name="seeAlso"></a>See Also
 
 [Calendar](Calendar.md)<br/>
+[CalendarCreationInformation](CalendarCreationInformation.md)<br/>
 [ProjectContext](ProjectContext.md)<br/>
