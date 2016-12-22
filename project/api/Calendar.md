@@ -46,47 +46,47 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 |[CopyTo(String name)](#CopyTo_String_name_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Makes a copy of the calendar and gives the copy a new name.|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the Calendar object.|
 
-## Method Details
+### Method Details
 
-### <a name="CopyTo_String_name_"></a>CopyTo(String name)
+#### <a name="CopyTo_String_name_"></a>CopyTo(String name)
 
 
  
 Makes a copy of the calendar and gives the copy a new name.
 
-#### Syntax
+##### Syntax
 
 ```
 Calendar CopyTo(String name)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |name| String | The name of the new calendar.
 
 
-#### Return Value
+##### Return Value
 
 [Calendar](Calendar.md)
 
-### <a name="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
  
 
 Deletes the Calendar object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
