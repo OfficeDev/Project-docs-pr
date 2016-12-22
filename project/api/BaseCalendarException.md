@@ -29,4 +29,4 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/BaseC
 ```
 
 ## <a name="seeAlso"></a>See Also
-
+[CalendarException](CalendarException.md)
