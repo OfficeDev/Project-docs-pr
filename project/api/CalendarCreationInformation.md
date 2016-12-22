@@ -23,7 +23,7 @@ PS.CalendarCreationInformation
 This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://<sitecollection>/<site>/api/ProjectServer/Calendars/Add
 ```
 POST Example
 
