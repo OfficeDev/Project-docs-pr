@@ -70,7 +70,9 @@ Gets a calendar exception from the collection of exceptions with the specified o
 ##### Syntax
 
 ```
-CalendarException GetById(Int32 id)
+
+CalendarException GetById(Integer id)
+
 ```
 
 ##### Parameters
@@ -92,7 +94,9 @@ Removes the specified CalendarException object from the collection of calendar e
 ##### Syntax
 
 ```
-Boolean Remove(CalendarException exception)
+
+Boolean Remove([CalendarException](CalendarException.md) exception)
+
 ```
 
 ##### Parameters
