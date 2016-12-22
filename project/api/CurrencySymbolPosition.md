@@ -1,7 +1,6 @@
 [comment]: # (Name:CurrencySymbolPosition)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Status:Verified)
 
 # CurrencySymbolPosition
 

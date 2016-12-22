@@ -1,42 +1,40 @@
 [comment]: # (Name:CommittedDecisionResult)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Status:Verified)
 
-# CommittedDecisionResult
+# <a name="name"></a>CommittedDecisionResult enumeration
 
-Specifies whether an item is included in an optimizer function or a planner function for project portfolio analysis.
+<a name="description"></a>Specifies whether an item is included in an optimizer function or a planner function for project portfolio analysis.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class CommittedDecisionResult 
+enum CommittedDecisionResult 
 ```
-### JSOM/REST
+### JSOM
 
 ```
 PS.CommittedDecisionResult
 ```
+### REST Interface
 
+CommittedDecisionResult enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0| The committed decision result is not specified. This constant is used in place of a DBNull value.|
-|ForcedIn|1| The item is forced into the function, regardless of other filters.|
-|ForcedOut|2| The item is forced out of the function, regardless of other filters.|
-|CommittedOut|3| The item is not included in the function.|
-|CommittedIn|4| The item is included in the function.
+|<a name="NotSpecified"></a>NotSpecified|0| The committed decision result is not specified. This constant is used in place of a DBNull value.|
+|<a name="ForcedIn"></a>ForcedIn|1| The item is forced into the function, regardless of other filters.|
+|<a name="ForcedOut"></a>ForcedOut|2| The item is forced out of the function, regardless of other filters.|
+|<a name="CommittedOut"></a>CommittedOut|3| The item is not included in the function.|
+|<a name="CommittedIn"></a>CommittedIn|4| The item is included in the function.
 |
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[Project](Project.md)<br/>
