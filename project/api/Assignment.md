@@ -20,7 +20,7 @@ class Assignment
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.Assignment
 ```
 ### REST Interface
