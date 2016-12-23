@@ -79,7 +79,7 @@ Adds the custom field that is specified by the [CustomFieldCreationInformation](
 
 ```
 
-CustomField Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
+CustomField Add(CustomFieldCreationInformation parameters)
 
 ```
 
