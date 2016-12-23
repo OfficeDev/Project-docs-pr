@@ -30,50 +30,28 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/Add
 POST Example
 
 ```
-
 body = {
 	'parameters': {
-
 		'Finish':'value', 
-
 		'Name':'value', 
-
 		'RecurrenceDays':'value', 
-
 		'RecurrenceFrequency':'value', 
-
 		'RecurrenceMonth':'value', 
-
 		'RecurrenceMonthDay':'value', 
-
 		'RecurrenceType':'value', 
-
 		'RecurrenceWeek':'value', 
-
 		'Shift1Finish':'value', 
-
 		'Shift1Start':'value', 
-
 		'Shift2Finish':'value', 
-
 		'Shift2Start':'value', 
-
 		'Shift3Finish':'value', 
-
 		'Shift3Start':'value', 
-
 		'Shift4Finish':'value', 
-
 		'Shift4Start':'value', 
-
 		'Shift5Finish':'value', 
-
 		'Shift5Start':'value', 
-
 		'Start':'value'		
-
 	}
-
 ```
 
 ## <a name="members"></a>Members
