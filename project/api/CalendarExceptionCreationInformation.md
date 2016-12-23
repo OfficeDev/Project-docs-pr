@@ -15,7 +15,7 @@ class CalendarExceptionCreationInformation
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarExceptionCreationInformation
 ```
 ### REST Interface
@@ -32,7 +32,6 @@ POST Example
 ```
 
 body = {
-
 	'parameters': {
 
 		'Finish':'value', 
