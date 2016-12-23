@@ -1,49 +1,47 @@
 [comment]: # (Name:CustomFieldRollupType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Status:Verified)
 
-# CustomFieldRollupType
+# <a name="name"></a>CustomFieldRollupType enumeration
 
-Specifies the summary roll-up type for a custom field.
+<a name="description"></a>Specifies the summary roll-up type for a custom field.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class CustomFieldRollupType 
+enum CustomFieldRollupType 
 ```
-### JSOM/REST
+### JSOM
 
 ```
 PS.CustomFieldRollupType
 ```
+### REST Interface
 
+CustomFieldRollupType enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0||
-|Max|1||
-|Min|2| Minimum.|
-|Count|3| Count.|
-|Sum|4| Sum.|
-|Average|5| Average.|
-|AverageSublevel|6| Average sublevel.|
-|CountSublevel|7| Count sublevel.|
-|CountNonSummary|8| Count non-summary.|
-|StdDev|9| Standard deviation.|
-|Formula|10| Formula.|
-|None|11| None.
+|<a name="NotSpecified"></a>NotSpecified|0||
+|<a name="Max"></a>Max|1||
+|<a name="Min"></a>Min|2| Minimum.|
+|<a name="Count"></a>Count|3| Count.|
+|<a name="Sum"></a>Sum|4| Sum.|
+|<a name="Average"></a>Average|5| Average.|
+|<a name="AverageSublevel"></a>AverageSublevel|6| Average sublevel.|
+|<a name="CountSublevel"></a>CountSublevel|7| Count sublevel.|
+|<a name="CountNonSummary"></a>CountNonSummary|8| Count non-summary.|
+|<a name="StdDev"></a>StdDev|9| Standard deviation.|
+|<a name="Formula"></a>Formula|10| Formula.|
+|<a name="None"></a>None|11| None.
 |
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[CustomField](CustomField.md)<br/>

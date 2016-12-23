@@ -39,7 +39,7 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields
 |[&#39;{CustomFieldId}&#39;](#&#39;{CustomFieldId}&#39;)|||&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.|
 |[Add(CustomFieldCreationInformation parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|	Returns the custom field that is specified by the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the Guid value.|
 |[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the Id value.|
 |[Remove(CustomField field)](#Remove_[CustomField]_CustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified custom field from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the custom field collection.|
