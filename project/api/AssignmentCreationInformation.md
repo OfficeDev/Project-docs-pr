@@ -27,28 +27,19 @@ This resource supports POST HTTP commands.
 PS.AssignmentCreationInformation
 
 http://<sitecollection>/<site>/_api/ProjectServer/Draft/Assignments/Add
+```
 POST Example
 
 ```
-
 body = {
-
 	'parameters': {
-
 		'Finish':'value', 
-
 		'Id':'value', 
-
 		'Notes':'value', 
-
 		'ResourceId':'value', 
-
 		'Start':'value', 
-
 		'TaskId':'value'		
-
 	}
-
 ```
 
 ## <a name="members"></a>Members
