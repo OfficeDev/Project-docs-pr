@@ -23,6 +23,8 @@ PS.CalendarExceptionCreationInformation
 This resource supports POST HTTP commands.
 
 ```
+PS.CalendarExceptionCreationInformation
+
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/Add
 ```
 POST Example

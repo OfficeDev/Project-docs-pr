@@ -24,6 +24,8 @@ PS.AssignmentCreationInformation
 This resource supports POST HTTP commands.
 
 ```
+PS.AssignmentCreationInformation
+
 http://<sitecollection>/<site>/_api/ProjectServer/Draft/Assignments/Add
 POST Example
 

@@ -22,10 +22,11 @@ PS.CalendarException
 ```
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
+This resource supports GET, POST,  and DELETE HTTP commands.
 
-Supported.  See [BaseCalendarException](BaseCalendarException.md) or [ResourceCalendarException](ResourceCalendarException.md) for more REST details.
-
+```
+PS.CalendarException
+```
 
 ## <a name="members"></a>Members
 

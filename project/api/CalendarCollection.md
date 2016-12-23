@@ -22,9 +22,11 @@ PS.CalendarCollection
 ```
 ### REST Interface
 
-This resource supports GET,  and POST HTTP commands.
+This resource supports GET and POST HTTP commands.
 
 ```
+PS.CalendarCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Calendars
 ```
 
@@ -41,6 +43,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars
 |[Remove(Calendar calendar)](#Remove_[Calendar]_Calendar.md__calendar_)|&#x2713;|&#x2713;||Boolean|Removes the specified calendar from the collection of calendars.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the calendar collection.|
 
+<br/>
 #### Method Details
 
 #### <a name="&#39;{CalendarId}&#39;"></a>&#39;{CalendarId}&#39;

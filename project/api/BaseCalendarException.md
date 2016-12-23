@@ -25,6 +25,8 @@ PS.BaseCalendarException
 This resource supports GET and POST HTTP commands.
 
 ```
+PS.BaseCalendarException
+
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions({id})
 ```
 

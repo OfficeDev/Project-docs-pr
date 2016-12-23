@@ -26,6 +26,9 @@ This resource supports GET and POST HTTP commands.
 
 Supported.  See [BaseCalendarException](BaseCalendarException.md) or [ResourceCalendarException](ResourceCalendarException.md) for more REST details.
 
+```
+PS.CalendarExceptionCollection
+```
 
 ## <a name="members"></a>Members
 
@@ -34,9 +37,10 @@ Supported.  See [BaseCalendarException](BaseCalendarException.md) or [ResourceCa
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(CalendarExceptionCreationInformation parameters)](#Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Adds a calendar exception to the collection of calendar exceptions.|
-|[GetById(Int32 id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a calendar exception from the collection of exceptions with the specified object identifier.|
+|[GetById(Integer id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a calendar exception from the collection of exceptions with the specified object identifier.|
 |[Remove(CalendarException exception)](#Remove_[CalendarException]_CalendarException.md__exception_)|&#x2713;|&#x2713;||Boolean|Removes the specified CalendarException object from the collection of calendar exceptions.|
 
+<br/>
 #### Method Details
 
 #### <a name="Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_"></a>Add([CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) parameters)
@@ -95,7 +99,7 @@ Removes the specified CalendarException object from the collection of calendar e
 
 ```
 
-Boolean Remove([CalendarException](CalendarException.md) exception)
+Boolean Remove(CalendarException exception)
 
 ```
 

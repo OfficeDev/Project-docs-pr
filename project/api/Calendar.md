@@ -25,6 +25,8 @@ PS.Calendar
 This resource supports GET and POST HTTP commands.
 
 ```
+PS.Calendar
+
 http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 ```
 

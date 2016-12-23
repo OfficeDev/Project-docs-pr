@@ -1,20 +1,19 @@
 [comment]: # (Name:CustomFieldCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 18:12:21Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# CustomFieldCollection
+# <a name="name"></a>CustomFieldCollection class
 
-Represents a collection of [CustomField](acf3db55-750f-609d-ee02-a0e8d2cc793d.md) objects.
+inherits members from [ClientObjectCollection<CustomField>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [CustomField](CustomField.md) objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class CustomFieldCollection 
+class CustomFieldCollection 
 ```
 ### JSOM
 
@@ -23,153 +22,197 @@ PS.CustomFieldCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET and POST HTTP commands.
 
 ```
+PS.CustomFieldCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/CustomFields
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="methods"></a>Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the custom field that is specified by the [CustomFieldCreationInformation](f562b50c-ff5b-2a92-8569-7699df5d9f2d.md) object to the collection.|
+|[&#39;{CustomFieldId}&#39;](#&#39;{CustomFieldId}&#39;)|||&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.|
+|[Add(CustomFieldCreationInformation parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)||
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the [Id](14b89fff-c0a0-da1d-fe00-a148a074ca76.md) value.|
-|[Remove([CustomField](CustomField.md) field)](#Remove_[CustomField]_CustomField.md__field_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified custom field from the collection.|
-|[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void|Updates the custom field collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|	Returns the custom field that is specified by the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the Id value.|
+|[Remove(CustomField field)](#Remove_[CustomField]_CustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified custom field from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the custom field collection.|
+
+<br/>
+#### Method Details
+
+#### <a name="&#39;{CustomFieldId}&#39;"></a>&#39;{CustomFieldId}&#39;
 
 
 
-## Method Details
+Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.
+
+##### Syntax
+
+```
+
+CustomField http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{CustomFieldId}')
+
+```
+
+##### Parameters
+
+None
+
+##### Return Value
+
+[CustomField](CustomField.md)
+
+#### <a name="Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_"></a>Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
 
 
-### <a name="Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_"></a>Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
  
-Adds the custom field that is specified by the [CustomFieldCreationInformation](f562b50c-ff5b-2a92-8569-7699df5d9f2d.md) object to the collection.
+Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.
 
-#### Syntax
+##### Syntax
 
 ```
-CustomField Add(CustomFieldCreationInformation parameters)
+
+CustomField Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
+
 ```
 
-#### Parameters
+##### Parameters
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters| [CustomFieldCreationInformation](CustomFieldCreationInformation.md) | An object that contains the information for the creation of a custom field.
 
-
-#### Return Value
+##### Return Value
 
 [CustomField](CustomField.md)
 
-### <a name="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
+#### <a name="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
+
+
  
 Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.
 
-#### Syntax
+##### Syntax
 
 ```
+
 CustomField GetByAppAlternateId(String objectId)
+
 ```
 
-#### Parameters
+##### Parameters
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId| String | The alternate custom field GUID.
 
-
-#### Return Value
+##### Return Value
 
 [CustomField](CustomField.md)
 
-### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
 
 
-#### Syntax
+##### Syntax
 
 ```
 CustomField GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid| Guid | 
 
-
-#### Return Value
+##### Return Value
 
 [CustomField](CustomField.md)
 
-### <a name="GetById_String_objectId_"></a>GetById(String objectId)
- 
-Returns the custom field that is specified by the [Id](14b89fff-c0a0-da1d-fe00-a148a074ca76.md) value.
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-#### Syntax
+
+ 
+Returns the custom field that is specified by the Id value.
+
+##### Syntax
 
 ```
 CustomField GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId| String | The custom field GUID.
 
-
-#### Return Value
+##### Return Value
 
 [CustomField](CustomField.md)
 
-### <a name="Remove_[CustomField]_CustomField.md__field_"></a>Remove([CustomField](CustomField.md) field)
+#### <a name="Remove_[CustomField]_CustomField.md__field_"></a>Remove([CustomField](CustomField.md) field)
+
+
  
 Removes the specified custom field from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
+
 Boolean Remove(CustomField field)
+
 ```
 
-#### Parameters
+##### Parameters
+
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |field| [CustomField](CustomField.md) | The custom field to remove.
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a name="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
+
+
  
 Updates the custom field collection.
 
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[Assignment](Assignment.md)<br/>
+[CustomField](CustomField.md)<br/>
+[CustomFieldCreationInformation](CustomFieldCreationInformation.md)<br/>
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[PlanAssignment](PlanAssignment.md)<br/>
+[Project](Project.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>
+[ProjectResource](ProjectResource.md)<br/>
+[StatusAssignment](StatusAssignment.md)<br/>
+[StatusTask](StatusTask.md)<br/>
+[Task](Task.md)<br/>

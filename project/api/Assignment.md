@@ -27,6 +27,9 @@ PS.Assignment
 
 Supported.  Please see REST Interface in [PublishedAssignment](PublishedAssignment.md#syntax).
 
+```
+PS.Assignment
+```
 
 ## <a name="members"></a>Members
 
