@@ -15,7 +15,7 @@ class AssignmentCreationInformation
 
 ### JSOM
 
-```
+```JavaScript
 PS.AssignmentCreationInformation
 ```
 
