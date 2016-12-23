@@ -30,39 +30,22 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields/Add
 POST Example
 
 ```
-
 body = {
-
 	'parameters': {
-
 		'Description':'value', 
-
 		'EntityTypeId':'value', 
-
 		'FieldType':'value', 
-
 		'Formula':'value', 
-
 		'Id':'value', 
-
 		'IsEditableInVisibility':'value', 
-
 		'IsMultilineText':'value', 
-
 		'IsRequired':'value', 
-
 		'IsWorkflowControlled':'value', 
-
 		'LookupAllowMultiSelect':'value', 
-
 		'LookupDefaultValue':'value', 
-
 		'LookupTableId':'value', 
-
 		'Name':'value'		
-
 	}
-
 ```
 
 ## <a name="members"></a>Members

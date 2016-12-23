@@ -17,7 +17,7 @@ class CustomFieldCollection
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CustomFieldCollection
 ```
 ### REST Interface
@@ -71,8 +71,6 @@ None
 
 #### <a name="Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_"></a>Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
 
-
- 
 Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.
 
 ##### Syntax
@@ -95,8 +93,6 @@ CustomField Add(CustomFieldCreationInformation parameters)
 
 #### <a name="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
 
-
- 
 Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.
 
 ##### Syntax
@@ -139,8 +135,6 @@ CustomField GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-
- 
 Returns the custom field that is specified by the Id value.
 
 ##### Syntax
@@ -161,8 +155,6 @@ CustomField GetById(String objectId)
 
 #### <a name="Remove_[CustomField]_CustomField.md__field_"></a>Remove([CustomField](CustomField.md) field)
 
-
- 
 Removes the specified custom field from the collection.
 
 ##### Syntax

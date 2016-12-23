@@ -15,7 +15,7 @@ enum CustomFieldRollupType
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CustomFieldRollupType
 ```
 ### REST Interface

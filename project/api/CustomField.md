@@ -17,7 +17,7 @@ class CustomField
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CustomField
 ```
 ### REST Interface
@@ -68,8 +68,6 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{fieldid}')
 
 #### <a name="DeleteObject__"></a>DeleteObject()
 
-
- 
 Deletes the CustomField object.
 
 ##### Syntax

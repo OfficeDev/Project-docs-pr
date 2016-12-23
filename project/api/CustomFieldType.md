@@ -15,7 +15,7 @@ enum CustomFieldType
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CustomFieldType
 ```
 ### REST Interface
@@ -33,8 +33,7 @@ CustomFieldType enumeration is not expliclity defined in REST.  Use the values b
 |<a name="COST"></a>COST|9| Value in 1/100 dollars.|
 |<a name="NUMBER"></a>NUMBER|15| A number value.|
 |<a name="FLAG"></a>FLAG|17| Index into yes/no string table.|
-|<a name="TEXT"></a>TEXT|21| A string value.
-|
+|<a name="TEXT"></a>TEXT|21|A string value.|
 |<a name="FINISHDATE"></a>FINISHDATE|27| A date value; if no time is included, the default finish time is used. HIWORD contains days offset from 1/1/84. LOWORD contains minute off-set, ranging from 0 to 1440, from 12:00 A.M. (midnight).|
 
 ## <a name="seeAlso"></a>See Also
