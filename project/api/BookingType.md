@@ -15,7 +15,7 @@ enum BookingType
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.BookingType
 ```
 ### REST Interface
