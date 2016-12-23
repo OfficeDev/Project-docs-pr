@@ -15,7 +15,7 @@ enum CalendarRecurrenceWeek
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarRecurrenceWeek
 ```
 ### REST Interface
