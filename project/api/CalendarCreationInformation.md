@@ -15,7 +15,7 @@ class CalendarCreationInformation
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarCreationInformation
 ```
 ### REST Interface
