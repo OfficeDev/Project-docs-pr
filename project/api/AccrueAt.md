@@ -19,7 +19,7 @@ enum AccrueAt
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.AccrueAt
 ```
 ### REST Interface
