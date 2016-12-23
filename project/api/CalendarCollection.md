@@ -17,7 +17,7 @@ class CalendarCollection
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarCollection
 ```
 ### REST Interface
