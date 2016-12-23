@@ -15,7 +15,7 @@ enum CalendarRecurrenceType
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarRecurrenceType
 ```
 ### REST Interface
