@@ -17,7 +17,7 @@ class Calendar
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.Calendar
 ```
 ### REST Interface
