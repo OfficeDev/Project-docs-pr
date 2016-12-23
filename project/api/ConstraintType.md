@@ -15,7 +15,7 @@ enum ConstraintType
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ConstraintType
 ```
 ### REST Interface
