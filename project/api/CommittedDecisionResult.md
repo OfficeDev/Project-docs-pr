@@ -15,7 +15,7 @@ enum CommittedDecisionResult
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CommittedDecisionResult
 ```
 ### REST Interface
