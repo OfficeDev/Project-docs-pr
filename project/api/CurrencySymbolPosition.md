@@ -15,7 +15,7 @@ enum CurrencySymbolPosition
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CurrencySymbolPosition
 ```
 ### REST Interface
