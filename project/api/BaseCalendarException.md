@@ -17,7 +17,7 @@ class BaseCalendarException
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.BaseCalendarException
 ```
 ### REST Interface
