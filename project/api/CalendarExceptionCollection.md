@@ -17,7 +17,7 @@ class CalendarExceptionCollection
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CalendarExceptionCollection
 ```
 ### REST Interface
