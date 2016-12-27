@@ -4,7 +4,7 @@
 
 # <a name="name"></a>WorkContourType enumeration
 
-<a name="description"></a>Indicates how to distribute work for an assignment across the duration of the assignment.
+<a name="description"></a>
 
 ## <a name="syntax"></a>Syntax
 

@@ -1,47 +1,45 @@
+[comment]: # (Name:DeletedPublishedAssignment)
+[comment]: # (Type:class)
+[comment]: # (Status:Incomplete)
 
-# DeletedPublishedAssignment class
-Represents an assignment that was deleted from a [PublishedProject](PublishedProject.md).
+# <a name="name"></a>DeletedPublishedAssignment class
 
-## Syntax
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
+
+<a name="description"></a>
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class DeletedPublishedAssignment
+class DeletedPublishedAssignment 
 ```
-
 ### JSOM
+
+```JavaScript
+PS.DeletedPublishedAssignment
+```
+### REST Interface
+
+This resource supports GET and POST HTTP commands.
 
 ```
 PS.DeletedPublishedAssignment
+
+http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
-### REST Interface
+## <a name="members"></a>Members
 
-This resource supports PUT, MERGE, and DELETE HTTP command.
-
-<!-- The following endpoint is for an assignment. I don't know how to edit it for DeletedPublishedAssignment.
-
-     http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid') 
--->
-
-```
-// Endpoint goes here.
-```
-
-
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the data and time that the assignment was deleted.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid| Gets the Id of the deleted [Assignment](Assignment.md).|
-|ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the Id of the [PublishedProject](PublishedProject.md) associated with the [Assignment](Assignment.md).|
+|<a name="DeletedDate"></a>DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid||
+|<a name="ProjectId"></a>ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid||
 
+## <a name="seeAlso"></a>See Also
 
-### Methods
-
-The **DeletedPublishedAssignment** object has no methods.
-
+[DeletedPublishedAssignmentCollection](DeletedPublishedAssignmentCollection.md)<br/>

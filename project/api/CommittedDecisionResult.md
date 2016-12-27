@@ -32,8 +32,7 @@ CommittedDecisionResult enumeration is not expliclity defined in REST.  Use the 
 |<a name="ForcedIn"></a>ForcedIn|1| The item is forced into the function, regardless of other filters.|
 |<a name="ForcedOut"></a>ForcedOut|2| The item is forced out of the function, regardless of other filters.|
 |<a name="CommittedOut"></a>CommittedOut|3| The item is not included in the function.|
-|<a name="CommittedIn"></a>CommittedIn|4| The item is included in the function.
-|
+|<a name="CommittedIn"></a>CommittedIn|4|The item is included in the function.|
 
 ## <a name="seeAlso"></a>See Also
 

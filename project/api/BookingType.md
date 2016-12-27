@@ -29,7 +29,7 @@ BookingType enumeration is not expliclity defined in REST.  Use the values below
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The resource booking type is not specified. This is the default value. This constant is used in place of a DBNull value.|
-|<a name="Committed"></a>Committed|1| Resources are booked as "Committed".|
+|<a name="Committed"></a>Committed|1|Resources are booked as "Committed".|
 |<a name="Proposed"></a>Proposed|2|Resources are booked as "Proposed".|
 
 ## <a name="seeAlso"></a>See Also

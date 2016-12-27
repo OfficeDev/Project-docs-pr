@@ -32,6 +32,13 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields
 
 ## <a name="members"></a>Members
 
+### <a name="properties"></a>Properties
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
+
 ### <a name="methods"></a>Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|

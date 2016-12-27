@@ -1,19 +1,24 @@
-# DraftProject 
-Represents the draft version of a project that is either new, or a published project that is checked out for editing.
+[comment]: # (Name:DraftProject)
+[comment]: # (Type:class)
+[comment]: # (Status:Incomplete)
+
+# <a name="name"></a>DraftProject class
+
+inherits members from [Project](Project.md)<br/>
+
+<a name="description"></a>Represents the draft version of a project that is either new, or a published project that is checked out for editing.
 
 DraftProject inherits properties and methods from the [Project](Project.md) class.
 
-## Syntax
-
+## <a name="syntax"></a>Syntax
 ### CSOM
 
+```C#
+class DraftProject 
 ```
-Class DraftProject
-```
-
 ### JSOM
 
-```
+```JavaScript
 PS.DraftProject
 ```
 

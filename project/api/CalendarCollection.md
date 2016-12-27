@@ -32,6 +32,13 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars
 
 ## <a name="members"></a>Members
 
+### <a name="properties"></a>Properties
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
+
 ### <a name="methods"></a>Methods
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|

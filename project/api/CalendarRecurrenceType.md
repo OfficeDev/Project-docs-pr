@@ -32,8 +32,7 @@ CalendarRecurrenceType enumeration is not expliclity defined in REST.  Use the v
 |<a name="DailySkip"></a>DailySkip|1| Daily, with recurrence defined by skipping a set number of days.|
 |<a name="Weekly"></a>Weekly|2| Weekly recurrence.|
 |<a name="Monthly"></a>Monthly|3| Monthly recurrence.|
-|<a name="Yearly"></a>Yearly|4| Yearly recurrence.
-|
+|<a name="Yearly"></a>Yearly|4|Yearly recurrence.|
 
 ## <a name="seeAlso"></a>See Also
 

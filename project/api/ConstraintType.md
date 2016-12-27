@@ -36,8 +36,7 @@ ConstraintType enumeration is not expliclity defined in REST.  Use the values be
 |<a name="StartNoEarlierThan"></a>StartNoEarlierThan|5| Start no earlier than (SNET).|
 |<a name="StartNoLaterThan"></a>StartNoLaterThan|6| Start no later than (SNLT).|
 |<a name="FinishNoEarlierThan"></a>FinishNoEarlierThan|7| Finish no earlier than (FNET).|
-|<a name="FinishNoLaterThan"></a>FinishNoLaterThan|8| Finish no later than (FNLT).
-|
+|<a name="FinishNoLaterThan"></a>FinishNoLaterThan|8|Finish no later than (FNLT).|
 
 ## <a name="seeAlso"></a>See Also
 

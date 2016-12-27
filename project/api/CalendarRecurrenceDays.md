@@ -35,8 +35,7 @@ CalendarRecurrenceDays enumeration is not expliclity defined in REST.  Use the v
 |<a name="Wednesday"></a>Wednesday|8| Wednesday.|
 |<a name="Thursday"></a>Thursday|16| Thursday.|
 |<a name="Friday"></a>Friday|32| Friday.|
-|<a name="Saturday"></a>Saturday|64| Saturday.
-|
+|<a name="Saturday"></a>Saturday|64|Saturday.|
 
 ## <a name="seeAlso"></a>See Also
 

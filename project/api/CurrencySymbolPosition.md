@@ -32,8 +32,7 @@ CurrencySymbolPosition enumeration is not expliclity defined in REST.  Use the v
 |<a name="Before"></a>Before|1| Before, no space ($0).|
 |<a name="After"></a>After|2| After, no space (0$).|
 |<a name="BeforeWithSpace"></a>BeforeWithSpace|3| Before, with space ($ 0).|
-|<a name="AfterWithSpace"></a>AfterWithSpace|4| After, with space (0 $).
-|
+|<a name="AfterWithSpace"></a>AfterWithSpace|4|After, with space (0 $).|
 
 ## <a name="seeAlso"></a>See Also
 

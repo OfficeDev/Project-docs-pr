@@ -1,144 +1,159 @@
-# DraftAssignmentCollection class
+[comment]: # (Name:DraftAssignmentCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-Represents a collection of [DraftAssignment](DraftAssignment.md) objects.
+# <a name="name"></a>DraftAssignmentCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<DraftAssignment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of [DraftAssignment](DraftAssignment.md) objects.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-class DraftAssignmentCollection Inherits ClientObjectCollection(of DraftAssignment)
+class DraftAssignmentCollection 
 ```
 
 ### JSOM
 
-```
+```JavaScript
 PS.DraftAssignmentCollection
 ```
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands:
+This resource supports GET and POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Assignments
+PS.DraftAssignmentCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Assignments
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
+### <a name="properties"></a>Properties
 
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |[DraftAssignment](DraftAssignment.md)|Gets the current [DraftAssignment](DraftAssignment.md) from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection at the specified index.|
+
+### <a name="methods"></a>Methods
 
 
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(AssignmentCreationInformation acinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the specified GUID.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the Id value.|
-|[Remove(DraftAssignment assignment)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified draft assignment from the collection. Returns true if successful.|
+|[&#39;{DraftAssignmentId}&#39;](#&#39;{DraftAssignmentId}&#39;)|||&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the specified DraftAssignmentId.|
+|[Add(AssignmentCreationInformation parameters)](#Add_[AssignmentCreationInformation]_AssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the specified GUID.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a draft assignment from the collection with the Id value.|
+|[Remove(DraftAssignment assignment)](#Remove_[DraftAssignment]_DraftAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified draft assignment from the collection.|
 
+<br/>
+#### Method Details
 
+#### <a name="&#39;{DraftAssignmentId}&#39;"></a>&#39;{DraftAssignmentId}&#39;
+ 
+Gets a [DraftAssignment](DraftAssignment.md) from the collection with the specified DraftAssignmentId.
 
-## Method Details
+##### Syntax
 
-### <a name="add"></a> Add(AssignmentCreationInformation acinfo)
+```
+DraftAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Assignments('{DraftAssignmentId}')
+```
+
+##### Parameters
+
+None
+
+##### Return Value
+
+[DraftAssignment](DraftAssignment.md)
+
+#### <a name="Add_[AssignmentCreationInformation]_AssignmentCreationInformation.md__parameters_"></a>Add([AssignmentCreationInformation](AssignmentCreationInformation.md) parameters)
 
 Adds the draft assignment that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.
 
-#### Syntax
+##### Syntax
 
 ```
-Add(AssignmentCreationInformation Assignmentinfo)
+DraftAssignment Add(AssignmentCreationInformation parameters)
 ```
 
-#### Parameters
-
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|acinfo | [AssignmentCreationInformation](AssignmentCreationInformation.md) |Contains the properties that can be set when creating a [Assignment](Assignment.md).|
+|parameters| [AssignmentCreationInformation](AssignmentCreationInformation.md) | The properties of the draft assignment to create.
 
-#### Return Value
+##### Return Value
 
-[DraftAssignment](DraftAssignment.md)<br />
-The added Assignment.
+[DraftAssignment](DraftAssignment.md)
 
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
+Gets a draft assignment from the collection with the specified GUID.
 
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a draft assignment from the collection with the specified Guid.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+DraftAssignment GetByGuid(Guid uid)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|The guid that references the draft assignment.|
+|uid| Guid | A GUID value.
 
-#### Return Value
+##### Return Value
 
-[DraftAssignment](DraftAssignment.md)<br />
-The DraftAssignment with the specified guid.
+[DraftAssignment](DraftAssignment.md)
 
-
-
-
-### <a name="getbyid"></a>GetById(String oid)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
 Gets a draft assignment from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
-GetById(String oid)
+DraftAssignment GetById(String objectId)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id|String|The identifier of the referenced object.|
+|objectId| String | The string representation of the assignment GUID.
 
-#### Return Value
+##### Return Value
 
-[DraftAssignment](DraftAssignment.md)<br />
-The draft assignment with the specified ID.
+[DraftAssignment](DraftAssignment.md)
 
+#### <a name="Remove_[DraftAssignment]_DraftAssignment.md__assignment_"></a>Remove([DraftAssignment](DraftAssignment.md) assignment)
 
+Removes the specified draft assignment from the collection.
 
-
-
-### <a name="remove"></a> Remove(DraftAssignment assignment)
-
-Removes the [DraftAssignment](DraftAssignment.md) from the collection. Returns true if successful.
-
-#### Syntax
+##### Syntax
 
 ```
-Remove(DraftAssignment Assignment))
+Boolean Remove(DraftAssignment assignment)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|assignment | [DraftAssignment](DraftAssignment.md) |The project to remove from the collection.|
+|assignment| [DraftAssignment](DraftAssignment.md) | The draft assignment to remove.
 
-#### Return Value
+##### Return Value
 
-Boolean<br />
-Returns true if successful.
+Boolean
 
+## <a name="seeAlso"></a>See Also
+
+[AssignmentCreationInformation](AssignmentCreationInformation.md)<br/>
+[DraftAssignment](DraftAssignment.md)<br/>
+[DraftProject](DraftProject.md)<br/>
+[DraftProjectResource](DraftProjectResource.md)<br/>
+[DraftTask](DraftTask.md)<br/>
