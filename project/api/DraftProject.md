@@ -63,7 +63,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft
 |<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a project name.|
 |<a name="NewTasksAreManual"></a>NewTasksAreManual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether new tasks are manually scheduled.|
 |<a name="NumberFiscalYearFromStart"></a>NumberFiscalYearFromStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether to use the project start year for fiscal year numbering.|
-|<a name="Owner"></a>Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|SPUser|Gets or sets the project owner.|
+|<a name="Owner"></a>Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the project owner.|
 |<a name="ProjectIdentifier"></a>ProjectIdentifier|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the Project Identifer (secondary identifer)|
 |<a name="ProjectResources"></a>ProjectResources|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResourceCollection](DraftProjectResourceCollection.md)|Gets the collection of resources for a project.|
 |<a name="ProtectedActualsSynch"></a>ProtectedActualsSynch|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the project actuals are synchronized with the protected actuals.|
@@ -106,7 +106,7 @@ void ChangeEnterpriseProjectType(Guid enterpriseProjectTypeUid)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|enterpriseProjectTypeUid| Guid|Id of the new [EnterpriseProjectType](EnterpriseProjectType.md).
+|enterpriseProjectTypeUid|Guid|Id of the new [EnterpriseProjectType](EnterpriseProjectType.md).
 
 ##### Return Value
 
@@ -222,5 +222,6 @@ To set the value of properties in an existing project:
 
 ## <a name="seeAlso"></a>See Also
 
+[Collection(SP.KeyValue)](https://msdn.microsoft.com/en-us/library/office/dn600183.aspx#bk_KeyValue)<br/>
 [PublishedProject](PublishedProject.md)<br/>
 [SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>
