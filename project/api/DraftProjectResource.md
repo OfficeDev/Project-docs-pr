@@ -37,7 +37,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/P
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|<a name="[]"></a>[]|&#x2713;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft project resource.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[DraftAssignmentCollection](DraftAssignmentCollection.md)|Gets the assignments that are associated with the resource.|
 |<a name="CanLevel"></a>CanLevel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether resource leveling can be performed on the resource.|
 |<a name="Code"></a>Code|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets any code, abbreviation, or number that is entered as part of the information about the resource.|
@@ -47,10 +47,10 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/P
 |<a name="DefaultAssignmentOwner"></a>DefaultAssignmentOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the default assignment owner.|
 |<a name="DefaultBookingType"></a>DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the default booking type for the resource.|
 |<a name="Email"></a>Email|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the email address of the resource.|
-|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the project resource.|
+|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the draft project resource.|
 |<a name="Group"></a>Group|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of a group to which a project resource belongs.|
 |<a name="Initials"></a>Initials|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the short name for the resource.|
-|<a name="Item"></a>Item||&#x2713;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="Item"></a>Item||&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft project resource.|
 |<a name="MaterialLabel"></a>MaterialLabel|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the unit of measure for supplies or other consumable items that are used in a project.|
 |<a name="MaximumCapacity"></a>MaximumCapacity|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the percentage, or the number of units, that represent the maximum capacity for which the resource is available during the current time period.|
 |<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the project resource.|
@@ -100,8 +100,8 @@ void SetCustomFieldValue(String fieldName, Object value)
 
 ##### Parameters
 |**Name**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|fieldName|String| The name of the custom field.|
+|:------ |:----|:------ |
+|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
 |value|Object|The value to be set for the custom field.|
 
 ##### Return Value

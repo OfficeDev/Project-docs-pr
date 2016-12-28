@@ -57,11 +57,11 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/A
 |<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the assignment.|
 |<a name="IsLockedByManager"></a>IsLockedByManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the assignment has been locked for changes by a manager.|
 |<a name="IsWorkResource"></a>IsWorkResource|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether an assignment resource is a work resource or a material resource.|
-|<a name="Item"></a>Item||||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="Item"></a>Item||&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
 |<a name="OvertimeWork"></a>OvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of overtime that is scheduled to be performed on the assignment.|
 |<a name="OvertimeWorkMilliseconds"></a>OvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of overtime that is scheduled to be performed on the assignment.|
 |<a name="OvertimeWorkTimeSpan"></a>OvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of overtime that is scheduled to be performed on the assignment.|
-|<a name="Owner"></a>Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|SPUser|Gets or sets the name of the user who is responsible for entering status for the current assignment.|
+|<a name="Owner"></a>Owner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the name of the user who is responsible for entering status for the current assignment.|
 |<a name="Parent"></a>Parent|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets the parent assignment link.|
 |<a name="PercentWorkComplete"></a>PercentWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the amount of work that has been done on the assignment, expressed as a percentage of the total work.|
 |<a name="RegularWork"></a>RegularWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total amount of nonovertime work that is scheduled to be performed on the assignment.|
@@ -123,7 +123,7 @@ void SetCustomFieldValue(String fieldName, Object value)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|fieldName| String |CustomFieldId of the custom field to update. 
+|fieldName| String |The [InternalName](CustomField.md#InternalName) of the custom field to update.|
 |value| Object | New value of the custom field.| 
 
 ##### Return Value

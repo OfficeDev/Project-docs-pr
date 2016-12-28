@@ -36,7 +36,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|<a name="[]"></a>[]|&#x2713;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft project.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[DraftAssignmentCollection](DraftAssignmentCollection.md)|Gets the collection of assignments for a project.|
 |<a name="Calendar"></a>Calendar|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[Calendar](Calendar.md)|Gets or sets a Project Server calendar.|
 |<a name="CurrencyCode"></a>CurrencyCode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the currency code of the project, as defined in ISO 4217.|
@@ -53,11 +53,11 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft
 |<a name="DefaultTaskType"></a>DefaultTaskType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TaskType](TaskType.md)|Gets or sets the default type for tasks in the project.|
 |<a name="DefaultWorkFormat"></a>DefaultWorkFormat|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[WorkFormat](WorkFormat.md)|Gets or sets the default format for work duration.|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a project description.|
-|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the custom field values for the draft project.|
+|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the draft project.|
 |<a name="FinishDate"></a>FinishDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the project finish date.|
 |<a name="FiscalYearStartMonth"></a>FiscalYearStartMonth|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the number of the first month in the fiscal year.|
 |<a name="IncludeCustomFields"></a>IncludeCustomFields|&#x2713;|&#x2713;|&#x2713;|[DraftProject](DraftProject.md)|Gets a DraftProject object that includes custom fields.|
-|<a name="Item"></a>Item||&#x2713;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="Item"></a>Item||&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft project.|
 |<a name="MinutesPerDay"></a>MinutesPerDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the default number of minutes per day.|
 |<a name="MinutesPerWeek"></a>MinutesPerWeek|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the default number of minutes per week.|
 |<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a project name.|
@@ -182,7 +182,7 @@ QueueJob UpdateCustomFields(Collection(SP.KeyValue) customFieldDictionary)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|customFieldDictionary|Collection([SP.KeyValue](https://msdn.microsoft.com/en-us/library/office/dn600183.aspx#bk_KeyValue)| 
+|customFieldDictionary|Collection([SP.KeyValue](https://msdn.microsoft.com/en-us/library/office/dn600183.aspx#bk_KeyValue))|Collection of project custom fields to set for the project
 
 ##### Return Value
 
