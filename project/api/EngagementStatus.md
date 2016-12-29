@@ -1,41 +1,39 @@
 [comment]: # (Name:EngagementStatus)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# EngagementStatus
+# <a name="name"></a>EngagementStatus enumeration
 
+<a name="description"></a>
 
-
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class EngagementStatus 
+enum EngagementStatus 
 ```
-### JSOM/REST
+### JSOM
 
-```
+```JavaScript
 PS.EngagementStatus
 ```
+### REST Interface
 
+EngagementStatus enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|Approved|0||
-|Proposed|1||
-|Draft|2||
-|Rejected|3||
-|Reproposed|4||
+|<a name="Approved"></a>Approved|0||
+|<a name="Proposed"></a>Proposed|1||
+|<a name="Draft"></a>Draft|2||
+|<a name="Rejected"></a>Rejected|3||
+|<a name="Reproposed"></a>Reproposed|4||
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[Engagement](Engagement.md)<br/>

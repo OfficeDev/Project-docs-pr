@@ -1,49 +1,49 @@
 [comment]: # (Name:EngagementComment)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# EngagementComment
+# <a name="name"></a>EngagementComment class
 
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class EngagementComment 
+class EngagementComment 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.EngagementComment
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.EngagementComment
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Author|&#x2713;|&#x2713;|&#x2713;|SPUser||
-|Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid||
-|Message|&#x2713;|&#x2713;|&#x2713;|String||
+|<a name="Author"></a>Author|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)||
+|<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid||
+|<a name="Message"></a>Message|&#x2713;|&#x2713;|&#x2713;|String||
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[EngagementCommentCollection](EngagementCommentCollection.md)<br/>
+[ProjectEngagementComment](ProjectEngagementComment.md)<br/>
+[ResourceEngagementComment](ResourceEngagementComment.md)<br/>
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>

@@ -1,154 +1,173 @@
 [comment]: # (Name:EnterpriseProjectTypeCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# EnterpriseProjectTypeCollection
+# <a name="name"></a>EnterpriseProjectTypeCollection class
 
-Represents a collection of [EnterpriseProjectType](db9e7200-331b-5f48-8a46-33cd53f916fd.md) (EPT) objects.
+inherits members from [ClientObjectCollection<EnterpriseProjectType>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [EnterpriseProjectType](EnterpriseProjectType.md) (EPT) objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class EnterpriseProjectTypeCollection 
+class EnterpriseProjectTypeCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.EnterpriseProjectTypeCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.EnterpriseProjectTypeCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) parameters)](#Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Adds the enterprise project type (EPT) that is specified by the [EnterpriseProjectTypeCreationInformation](3f494850-19db-4f13-b10b-148db10519b2.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets an enterprise project type (EPT) from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets an enterprise project type (EPT) from the collection with the [Id](48bd5e4c-738e-a342-ae20-b3af29bda639.md) value.|
-|[Remove([EnterpriseProjectType](EnterpriseProjectType.md) ept)](#Remove_[EnterpriseProjectType]_EnterpriseProjectType.md__ept_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified enterprise project type (EPT) from the collection.|
-|[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void|Updates the enterprise project type (EPT) collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{EnterpriseProjectTypeId}&#39;](#&#39;{EnterpriseProjectTypeId}&#39;)|||&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the specified EnterpriseProjectTypeId.|
+|[Add(EnterpriseProjectTypeCreationInformation parameters)](#Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Adds the [EnterpriseProjectType](EnterpriseProjectType.md) that is specified by the [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.|
+|[Remove(EnterpriseProjectType ept)](#Remove_[EnterpriseProjectType]_EnterpriseProjectType.md__ept_)|&#x2713;|&#x2713;||Boolean|Removes the specified [EnterpriseProjectType](EnterpriseProjectType.md) from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the enterprise project type collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
+#### <a name="&#39;{EnterpriseProjectTypeId}&#39;"></a>&#39;{EnterpriseProjectTypeId}&#39;
 
-### <a id="Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_"></a>Add([EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) parameters)
+Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the specified EnterpriseProjectTypeId.
+
+##### Syntax
+
+```
+EnterpriseProjectType http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes('{EnterpriseProjectTypeId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|EnterpriseProjectTypeId|String|the id of the EnterpriseProjectType
+
+##### Return Value
+
+[EnterpriseProjectType](EnterpriseProjectType.md)
+
+#### <a name="Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_"></a>Add([EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) parameters)
  
-Adds the enterprise project type (EPT) that is specified by the [EnterpriseProjectTypeCreationInformation](3f494850-19db-4f13-b10b-148db10519b2.md) object to the collection.
+Adds the [EnterpriseProjectType](EnterpriseProjectType.md) that is specified by the [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) object to the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 EnterpriseProjectType Add(EnterpriseProjectTypeCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) | The properties of the EPT to create.
+|parameters|[EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md)|The properties that can be set when creating a enterprise project type.
 
-
-#### Return Value
+##### Return Value
 
 [EnterpriseProjectType](EnterpriseProjectType.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets an enterprise project type (EPT) from the collection with the specified GUID.
+Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 EnterpriseProjectType GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [EnterpriseProjectType](EnterpriseProjectType.md)
 
-
-#### Return Value
+##### Return Value
 
 [EnterpriseProjectType](EnterpriseProjectType.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets an enterprise project type (EPT) from the collection with the [Id](48bd5e4c-738e-a342-ae20-b3af29bda639.md) value.
+Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 EnterpriseProjectType GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the EPT GUID.
+|objectId|String|The id of the [EnterpriseProjectType](EnterpriseProjectType.md)
 
-
-#### Return Value
+##### Return Value
 
 [EnterpriseProjectType](EnterpriseProjectType.md)
 
-### <a id="Remove_[EnterpriseProjectType]_EnterpriseProjectType.md__ept_"></a>Remove([EnterpriseProjectType](EnterpriseProjectType.md) ept)
+#### <a name="Remove_[EnterpriseProjectType]_EnterpriseProjectType.md__ept_"></a>Remove([EnterpriseProjectType](EnterpriseProjectType.md) ept)
  
-Removes the specified enterprise project type (EPT) from the collection.
+Removes the specified [EnterpriseProjectType](EnterpriseProjectType.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(EnterpriseProjectType ept)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ept| [EnterpriseProjectType](EnterpriseProjectType.md) | The EPT to remove.
+|ept|[EnterpriseProjectType](EnterpriseProjectType.md)|The [EnterpriseProjectType](EnterpriseProjectType.md) to remove.
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
  
-Updates the enterprise project type (EPT) collection.
+Updates the enterprise project type collection.
 
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EnterpriseProjectType](EnterpriseProjectType.md)<br/>
+[EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>
