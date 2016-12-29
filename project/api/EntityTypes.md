@@ -1,49 +1,44 @@
 [comment]: # (Name:EntityTypes)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-15 22:38:05Z)
 
-# EntityTypes
+# <a name="name"></a>EntityTypes class
 
-Represents the types of Project Server entities that are exposed through CSOM.
+<a name="description"></a>Represents the types of Project Server entities that are exposed through CSOM.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class EntityTypes 
+class EntityTypes 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.EntityTypes
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.EntityTypes
+
+http://<sitecollection>/<site>/_api/ProjectServer/EntityTypes
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|AssignmentEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets an assignment entity type.|
-|ProjectEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a project entity type.|
-|ResourceEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a resource entity type.|
-|TaskEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a task entity type.|
+|<a name="AssignmentEntity"></a>AssignmentEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets an assignment entity type.|
+|<a name="ProjectEntity"></a>ProjectEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a project entity type.|
+|<a name="ResourceEntity"></a>ResourceEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a resource entity type.|
+|<a name="TaskEntity"></a>TaskEntity|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets a task entity type.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[ProjectContext](ProjectContext.md)<br/>

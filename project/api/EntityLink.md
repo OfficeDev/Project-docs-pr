@@ -1,68 +1,64 @@
 [comment]: # (Name:EntityLink)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# EntityLink
+# <a name="name"></a>EntityLink class
 
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
+PS.EntityLink
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks('EntityLink.Id')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
-|:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
-|EntityLinkType|&#x2713;|&#x2713;|&#x2713;|[EntityLinkType](EntityLinkType.md)||
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid||
-|Url|&#x2713;|&#x2713;|&#x2713;|String||
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void||
+|<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|<a name="EntityLinkType"></a>EntityLinkType|&#x2713;|&#x2713;|&#x2713;|[EntityLinkType](EntityLinkType.md)||
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid||
+|<a name="Url"></a>Url|&#x2713;|&#x2713;|&#x2713;|String||
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the entity link object.|
 
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+<br/>
+#### Method Details
  
+#### <a name="DeleteObject__"></a>DeleteObject()
 
+Deletes the entity link object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EntityLinkCreationInformation](EntityLinkCreationInformation.md)<br/>
+[EntityLinksCollection](EntityLinksCollection.md)<br/>

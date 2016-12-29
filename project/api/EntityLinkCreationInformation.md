@@ -1,38 +1,43 @@
 [comment]: # (Name:EntityLinkCreationInformation)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# EntityLinkCreationInformation
+# <a name="name"></a>EntityLinkCreationInformation class
 
+<a name="description"></a>Contains the properties that can be set when creating a [EntityLink](EntityLink.md).
 
-
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
+PS.EntityLinkCreationInformation
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'EntityLinkType':'value', 
+		'Id':'value', 
+		'Url':'value'		
+	}
+```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|EntityLinkType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[EntityLinkType](EntityLinkType.md)||
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid||
-|Url|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
+|<a name="EntityLinkType"></a>EntityLinkType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[EntityLinkType](EntityLinkType.md)||
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid||
+|<a name="Url"></a>Url|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[EntityLink](EntityLink.md)<br/>
+[EntityLinksCollection](EntityLinksCollection.md)<br/>

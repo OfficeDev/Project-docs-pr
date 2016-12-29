@@ -1,19 +1,21 @@
+[comment]: # (Name:EnterpriseResourceCreationInformation)
+[comment]: # (Type:class)
+[comment]: # (Status:Incomplete)
 
-# EnterpriseResourceCreationInformation class
+# <a name="name"></a>EnterpriseResourceCreationInformation class
 
-Provides information for the creation of an enterprise resource ([EnterpriseResource](EnterpriseResource.md)) object.
+<a name="description"></a>Contains the properties that can be set when creating a [EnterpriseResource](EnterpriseResource.md).
 
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
+```C#
+class EnterpriseResourceCreationInformation 
 ```
-Class EnterpriseResourceCreationInformation
-```
-
 ### JSOM
 
-```
+```JavaScript
 PS.EnterpriseResourceCreationInformation
 ```
 
@@ -24,27 +26,37 @@ PS.EnterpriseResourceCreationInformation
     This resource supports GET HTTP command.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
+PS.EnterpriseResourceCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'Id':'value', 
+		'IsBudget':'value', 
+		'IsGeneric':'value', 
+		'IsInactive':'value', 
+		'Name':'value', 
+		'ResourceType':'value'		
+	}
 ```
 
-    End of comment  -->
+## <a name="members"></a>Members
 
-
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the enterprise resource.|
-|IsBudget|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this is a budget resource.|
-|IsGeneric|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this is a generic resource.|
-|IsInactive|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this resource should be created in an inactive state.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the enterprise resource.|
-|ResourceType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[EnterpriseResourceType](EnterpriseResourceType.md)|Gets or sets a value that represents the resource type.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the enterprise resource.|
+|<a name="IsBudget"></a>IsBudget|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this is a budget resource.|
+|<a name="IsGeneric"></a>IsGeneric|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this is a generic resource.|
+|<a name="IsInactive"></a>IsInactive|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this resource should be created in an inactive state.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the enterprise resource.|
+|<a name="ResourceType"></a>ResourceType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[EnterpriseResourceType](EnterpriseResourceType.md)|Gets or sets a value that represents the resource type.|
 
+## <a name="seeAlso"></a>See Also
 
-### Methods
-
-The **EnterpriseResourceCreationInformation** object has no methods.
-
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[EnterpriseResourceCollection](EnterpriseResourceCollection.md)<br/>

@@ -1,154 +1,173 @@
 [comment]: # (Name:EventHandlerCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# EventHandlerCollection
+# <a name="name"></a>EventHandlerCollection class
 
-Represents a collection of [EventHandler](bf4842f3-2584-e397-7928-53344b68db86.md) objects.
+inherits members from [ClientObjectCollection<EventHandler>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [EventHandler](EventHandler.md) objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class EventHandlerCollection 
+class EventHandlerCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.EventHandlerCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.EventHandlerCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/EventHandlers
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([EventHandlerCreationInformation](EventHandlerCreationInformation.md) parameters)](#Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Adds the event handler that is specified by the [EventHandlerCreationInformation](c026da35-57f5-7ca4-fd5e-e3f57a58e6a4.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets an event handler from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Get an event handler element from the collection using the object ID.|
-|[Remove([EventHandler](EventHandler.md) handler)](#Remove_[EventHandler]_EventHandler.md__handler_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified event handler from the collection.|
-|[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void|Updates the event handler collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{EventHandlerId}&#39;](#&#39;{EventHandlerId}&#39;)|||&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the specified EventHandlerId.|
+|[Add(EventHandlerCreationInformation parameters)](#Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Adds the [EventHandler](EventHandler.md) that is specified by the [EventHandlerCreationInformation](EventHandlerCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.|
+|[Remove(EventHandler handler)](#Remove_[EventHandler]_EventHandler.md__handler_)|&#x2713;|&#x2713;||Boolean|Removes the specified [EventHandler](EventHandler.md) from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the event handler collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_"></a>Add([EventHandlerCreationInformation](EventHandlerCreationInformation.md) parameters)
+#### <a name="&#39;{EventHandlerId}&#39;"></a>&#39;{EventHandlerId}&#39;
  
-Adds the event handler that is specified by the [EventHandlerCreationInformation](c026da35-57f5-7ca4-fd5e-e3f57a58e6a4.md) object to the collection.
+Gets a [EventHandler](EventHandler.md) from the collection with the specified EventHandlerId.
 
-#### Syntax
+##### Syntax
+
+```
+EventHandler http://<sitecollection>/<site>/api/ProjectServer/EventHandlers('{EventHandlerId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|EventHandlerId|String|the id of the EventHandler
+
+##### Return Value
+
+[EventHandler](EventHandler.md)
+
+#### <a name="Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_"></a>Add([EventHandlerCreationInformation](EventHandlerCreationInformation.md) parameters)
+ 
+Adds the [EventHandler](EventHandler.md) that is specified by the [EventHandlerCreationInformation](EventHandlerCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 EventHandler Add(EventHandlerCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [EventHandlerCreationInformation](EventHandlerCreationInformation.md) | The properties of the event handler to create.
+|parameters|[EventHandlerCreationInformation](EventHandlerCreationInformation.md)|The properties that can be set when creating a event handler.
 
-
-#### Return Value
+##### Return Value
 
 [EventHandler](EventHandler.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets an event handler from the collection with the specified GUID.
+Gets a [EventHandler](EventHandler.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 EventHandler GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [EventHandler](EventHandler.md)
 
-
-#### Return Value
+##### Return Value
 
 [EventHandler](EventHandler.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Get an event handler element from the collection using the object ID.
+Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 EventHandler GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The object ID in string form.
+|objectId|String|The id of the [EventHandler](EventHandler.md)
 
-
-#### Return Value
+##### Return Value
 
 [EventHandler](EventHandler.md)
 
-### <a id="Remove_[EventHandler]_EventHandler.md__handler_"></a>Remove([EventHandler](EventHandler.md) handler)
+#### <a name="Remove_[EventHandler]_EventHandler.md__handler_"></a>Remove([EventHandler](EventHandler.md) handler)
  
-Removes the specified event handler from the collection.
+Removes the specified [EventHandler](EventHandler.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(EventHandler handler)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|handler| [EventHandler](EventHandler.md) | The event handler to remove.
+|handler|[EventHandler](EventHandler.md)|The [EventHandler](EventHandler.md) to remove.
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
  
 Updates the event handler collection.
 
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EventHandler](EventHandler.md)<br/>
+[EventHandlerCreationInformation](EventHandlerCreationInformation.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>
