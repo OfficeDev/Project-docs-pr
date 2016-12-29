@@ -32,6 +32,13 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 
 ## <a name="members"></a>Members
 
+### <a name="properties"></a>Properties
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[DeletedPublishedAssignment](DeletedPublishedAssignment.md)|Gets a [DeletedPublishedAssignment](DeletedPublishedAssignment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[DeletedPublishedAssignment](DeletedPublishedAssignment.md)|Gets a [DeletedPublishedAssignment](DeletedPublishedAssignment.md) from the collection at the specified index.|
+
 ## <a name="seeAlso"></a>See Also
 
 [DeletedPublishedAssignment](DeletedPublishedAssignment.md)<br/>

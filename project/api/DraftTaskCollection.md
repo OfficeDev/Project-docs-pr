@@ -1,142 +1,156 @@
-# DraftTaskCollection class
+[comment]: # (Name:DraftTaskCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-Represents a collection of [DraftTask](DraftTask.md) objects.
+# <a name="name"></a>DraftTaskCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<DraftTask>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of [DraftTask](DraftTask.md) objects.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
+```C#
+class DraftTaskCollection 
 ```
-class DraftTaskCollection Inherits ClientObjectCollection(of DraftTask)
-```
-
 ### JSOM
 
-```
+```JavaScript
 PS.DraftTaskCollection
 ```
 
 ### REST Interface
 
-This resource supports GET and POST HTTP commands:
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Draft/Tasks
+PS.DraftTaskCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Tasks
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
-
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |[DraftTask](DraftTask.md)|Gets the current draft task from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(TaskCreationInformation taskinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.||
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the specified GUID.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a draft task from the collection with the Id value.|
-|[Remove(DraftTask task)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the draft task from the collection. Returns true if successful.|
+|[&#39;{DraftTaskId}&#39;](#&#39;{DraftTaskId}&#39;)|||&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the specified DraftTaskId.|
+|[Add(TaskCreationInformation parameters)](#Add_[TaskCreationInformation]_TaskCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the [DraftTask](DraftTask.md) that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.|
+|[Remove(DraftTask task)](#Remove_[DraftTask]_DraftTask.md__task_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftTask](DraftTask.md) from the collection.|
+
+<br/>
+#### Method Details
 
 
-## Method Details
+#### <a name="&#39;{DraftTaskId}&#39;"></a>&#39;{DraftTaskId}&#39;
+ 
+Gets a [DraftTask](DraftTask.md) from the collection with the specified DraftTaskId.
 
-### <a name="add"></a> Add(TaskCreationInformation taskinfo)
-
-Adds the draft task that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.
-
-#### Syntax
+##### Syntax
 
 ```
-Add(TaskCreationInformation taskinfo)
+DraftTask http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Tasks('{DraftTaskId}')
 ```
 
-#### Parameters
-
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|taskinfo | TaskCreationInformation |Contains the properties that can be set when creating a task.|
+|DraftTaskId|String|the id of the DraftTask
 
-#### Return Value
+##### Return Value
 
-[DraftTask](DraftTask.md)<br />
-The added task.
+[DraftTask](DraftTask.md)
 
+#### <a name="Add_[TaskCreationInformation]_TaskCreationInformation.md__parameters_"></a>Add([TaskCreationInformation](TaskCreationInformation.md) parameters)
 
+Adds the [DraftTask](DraftTask.md) that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.
 
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a draft task from the collection with the specified GUID.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+DraftTask Add(TaskCreationInformation parameters)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|The guid that references the [DraftTask](DraftTask.md).
+|parameters|[TaskCreationInformation](TaskCreationInformation.md)|The properties that can be set when creating a draft task.
 
-#### Return Value
+##### Return Value
 
-[DraftTask](DraftTask.md)<br />
-The [DraftTask](DraftTask.md) with the specified guid.
+[DraftTask](DraftTask.md)
 
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
+Gets a [DraftTask](DraftTask.md) from the collection with the Id value.
 
-### <a name="getbyid"></a>GetById(string id)
-
-Gets a draft task from the collection with the Id value.
-
-#### Syntax
+##### Syntax
 
 ```
-GetById(string id)
+DraftTask GetByGuid(Guid uid)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| string|The identifier of the referenced object.
+|uid|Guid|The Guid of the [DraftTask](DraftTask.md)
 
-#### Return Value
+##### Return Value
 
-[DraftTask](DraftTask.md)<br />
-The [DraftTask](DraftTask.md) with the specified ID.
+[DraftTask](DraftTask.md)
 
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
+Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.
 
-
-
-### <a name="remove"></a> Remove(DraftTask task)
-
-Removes the specified draft task from the collection. Returns true if successful.
-
-#### Syntax
+##### Syntax
 
 ```
-Remove(DraftTask task)
+DraftTask GetById(String objectId)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|task | [DraftTask](DraftTask.md) |The draft task to remove from the collection.|
+|objectId|String|The id of the [DraftTask](DraftTask.md)
 
-#### Return Value
+##### Return Value
 
-Boolean<br />
-Returns true if successful.
+[DraftTask](DraftTask.md)
 
+#### <a name="Remove_[DraftTask]_DraftTask.md__task_"></a>Remove([DraftTask](DraftTask.md) task)
+
+Removes the specified [DraftTask](DraftTask.md) from the collection.
+
+##### Syntax
+
+```
+Boolean Remove(DraftTask task)
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|task|[DraftTask](DraftTask.md)|The [DraftTask](DraftTask.md) to remove.
+
+##### Return Value
+
+Boolean
+
+## <a name="seeAlso"></a>See Also
+
+[DraftProject](DraftProject.md)<br/>
+[DraftTask](DraftTask.md)<br/>
+[TaskCreationInformation](TaskCreationInformation.md)<br/>

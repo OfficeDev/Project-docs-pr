@@ -22,9 +22,7 @@ PS.CalendarExceptionCollection
 ```
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
-
-Supported.  See [BaseCalendarException](BaseCalendarException.md) or [ResourceCalendarException](ResourceCalendarException.md) for more REST details.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.CalendarExceptionCollection
@@ -41,20 +39,18 @@ PS.CalendarExceptionCollection
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add(CalendarExceptionCreationInformation parameters)](#Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Adds a calendar exception to the collection of calendar exceptions.|
-|[GetById(Integer id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a calendar exception from the collection of exceptions with the specified object identifier.|
-|[Remove(CalendarException exception)](#Remove_[CalendarException]_CalendarException.md__exception_)|&#x2713;|&#x2713;||Boolean|Removes the specified CalendarException object from the collection of calendar exceptions.|
+|[Add(CalendarExceptionCreationInformation parameters)](#Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Adds the [CalendarException](CalendarException.md) that is specified by the [CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) object to the collection.|
+|[GetById(Integer id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a [CalendarException](CalendarException.md) from the collection with the Guid value.|
+|[Remove(CalendarException exception)](#Remove_[CalendarException]_CalendarException.md__exception_)|&#x2713;|&#x2713;||Boolean|Removes the specified [CalendarException](CalendarException.md) from the collection.|
 
 <br/>
 #### Method Details
 
 #### <a name="Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_"></a>Add([CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) parameters)
 
-
-
-Adds a calendar exception to the collection of calendar exceptions.
+Adds the [CalendarException](CalendarException.md) that is specified by the [CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) object to the collection.
 
 ##### Syntax
 
@@ -66,7 +62,7 @@ CalendarException Add(CalendarExceptionCreationInformation parameters)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) | An object that contains information, for example start and finish times and dates, about a new calendar exception.
+|parameters|[CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md)|The properties that can be set when creating a calendar exception.
 
 ##### Return Value
 
@@ -74,9 +70,7 @@ CalendarException Add(CalendarExceptionCreationInformation parameters)
 
 #### <a name="GetById_Integer_id_"></a>GetById(Integer id)
 
-
- 
-Gets a calendar exception from the collection of exceptions with the specified object identifier.
+Gets a [CalendarException](CalendarException.md) from the collection with the Guid value.
 
 ##### Syntax
 

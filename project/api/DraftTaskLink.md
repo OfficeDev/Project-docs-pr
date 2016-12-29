@@ -1,77 +1,75 @@
 [comment]: # (Name:DraftTaskLink)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# DraftTaskLink
+# <a name="name"></a>DraftTaskLink class
 
-Creates an object to access the task links in a draft project.
+inherits members from [TaskLink](TaskLink.md)<br/>
 
+<a name="description"></a>Represents a task link in a checked-out project.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class DraftTaskLink 
+class DraftTaskLink 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.DraftTaskLink
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
+PS.DraftTaskLink
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{linkid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
-|:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|DependencyType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[DependencyType](DependencyType.md)|Gets or sets the type of link relationship between two tasks.|
-|End|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the task at the end of the link.|
-|Start|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the task at the start of the link.|
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the DraftTaskLink object.|
+|<a name="DependencyType"></a>DependencyType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[DependencyType](DependencyType.md)|Gets or sets the type of link relationship between two tasks.|
+|<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the task at the end of the link.|
+|<a name="EndId"></a>EndId|||&#x2713;|Guid|Gets the id of the task at the end of the link.|
+|<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the task at the start of the link.|
+|<a name="StartId"></a>StartId|||&#x2713;|Guid|Gets the id of the at the start of the link.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft task link object.|
 
-## Method Details
+<br/>
+#### Method Details
 
+#### <a name="DeleteObject__"></a>DeleteObject()
 
-### <a id="DeleteObject__"></a>DeleteObject()
- 
-Deletes the DraftTaskLink object.
+Deletes the draft task link object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[DraftTaskLinkCollection](DraftTaskLinkCollection.md)<br/>
+[TaskLinkCreationInformation](TaskLinkCreationInformation.md)<br/>

@@ -39,8 +39,7 @@ CustomFieldRollupType enumeration is not expliclity defined in REST.  Use the va
 |<a name="CountNonSummary"></a>CountNonSummary|8| Count non-summary.|
 |<a name="StdDev"></a>StdDev|9| Standard deviation.|
 |<a name="Formula"></a>Formula|10| Formula.|
-|<a name="None"></a>None|11| None.
-|
+|<a name="None"></a>None|11|None.|
 
 ## <a name="seeAlso"></a>See Also
 

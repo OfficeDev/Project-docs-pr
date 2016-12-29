@@ -22,7 +22,7 @@ PS.CustomFieldCollection
 ```
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.CustomFieldCollection
@@ -41,14 +41,14 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CustomFieldId}&#39;](#&#39;{CustomFieldId}&#39;)|||&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.|
-|[Add(CustomFieldCreationInformation parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.|
+|[Add(CustomFieldCreationInformation parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the [CustomField](CustomField.md) that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the Guid value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Returns the custom field that is specified by the Id value.|
-|[Remove(CustomField field)](#Remove_[CustomField]_CustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified custom field from the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the Guid value.|
+|[Remove(CustomField field)](#Remove_[CustomField]_CustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified [CustomField](CustomField.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the custom field collection.|
 
 <br/>
@@ -69,8 +69,9 @@ CustomField http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{Cust
 ```
 
 ##### Parameters
-
-None
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|CustomFieldId|String|the id of the CustomField
 
 ##### Return Value
 
@@ -78,7 +79,7 @@ None
 
 #### <a name="Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_"></a>Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
 
-Adds the custom field that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.
+Adds the [CustomField](CustomField.md) that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.
 
 ##### Syntax
 
@@ -92,7 +93,7 @@ CustomField Add(CustomFieldCreationInformation parameters)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [CustomFieldCreationInformation](CustomFieldCreationInformation.md) | An object that contains the information for the creation of a custom field.
+|parameters|[CustomFieldCreationInformation](CustomFieldCreationInformation.md)|The properties that can be set when creating a custom field.
 
 ##### Return Value
 
@@ -122,7 +123,7 @@ CustomField GetByAppAlternateId(String objectId)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-
+Gets a [CustomField](CustomField.md) from the collection with the Id value.
 
 ##### Syntax
 
@@ -134,7 +135,7 @@ CustomField GetByGuid(Guid uid)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | 
+|uid|Guid|The Guid of the [CustomField](CustomField.md)
 
 ##### Return Value
 
@@ -142,7 +143,7 @@ CustomField GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Returns the custom field that is specified by the Id value.
+Gets a [CustomField](CustomField.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -154,7 +155,7 @@ CustomField GetById(String objectId)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The custom field GUID.
+|objectId|String|The id of the [CustomField](CustomField.md)
 
 ##### Return Value
 
@@ -162,7 +163,7 @@ CustomField GetById(String objectId)
 
 #### <a name="Remove_[CustomField]_CustomField.md__field_"></a>Remove([CustomField](CustomField.md) field)
 
-Removes the specified custom field from the collection.
+Removes the specified [CustomField](CustomField.md) from the collection.
 
 ##### Syntax
 
@@ -176,7 +177,7 @@ Boolean Remove(CustomField field)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|field| [CustomField](CustomField.md) | The custom field to remove.
+|field|[CustomField](CustomField.md)|The [CustomField](CustomField.md) to remove.
 
 ##### Return Value
 

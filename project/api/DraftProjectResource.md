@@ -62,17 +62,17 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/P
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the [DraftProjectResource](DraftProjectResource.md) object.|
-|[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the project resource.|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft project resource object.|
+|[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the draft project resource.|
 
 <br/>
 #### Method Details
 
 #### <a name="DeleteObject__"></a>DeleteObject()
 
-Deletes the [DraftProjectResource](DraftProjectResource.md) object.
+Deletes the draft project resource object.
 
 ##### Syntax
 
@@ -90,7 +90,7 @@ void
 
 #### <a name="SetCustomFieldValue_String_fieldName,_Object_value_"></a>SetCustomFieldValue(String fieldName, Object value)
 
-Sets a custom field on the project resource.
+Sets a custom field on the draft project resource.
 
 ##### Syntax
 
@@ -101,8 +101,8 @@ void SetCustomFieldValue(String fieldName, Object value)
 ##### Parameters
 |**Name**|**Type**|**Description**|
 |:------ |:----|:------ |
-|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
-|value|Object|The value to be set for the custom field.|
+|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.
+|value|Object|New value of the custom field.
 
 ##### Return Value
 

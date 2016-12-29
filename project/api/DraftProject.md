@@ -81,7 +81,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[ChangeEnterpriseProjectType(Guid enterpriseProjectTypeUid)](#ChangeEnterpriseProjectType_Guid_enterpriseProjectTypeUid_)|||&#x2713;|void|Changes or sets an [EnterpriseProjectType](EnterpriseProjectType.md) associated with a project.|
 |[CheckIn(Boolean force)](#CheckIn_Boolean_force_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Queues a check-in job for a draft project if it is still checked out.|

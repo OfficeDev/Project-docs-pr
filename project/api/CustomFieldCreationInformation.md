@@ -15,7 +15,7 @@ class CustomFieldCreationInformation
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.CustomFieldCreationInformation
 ```
 ### REST Interface

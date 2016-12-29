@@ -22,7 +22,7 @@ PS.CalendarCollection
 ```
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.CalendarCollection
@@ -41,21 +41,19 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CalendarId}&#39;](#&#39;{CalendarId}&#39;)|||&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.|
-|[Add(CalendarCreationInformation parameters)](#Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Adds a new calendar to the collection of calendars.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a calendar from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a calendar from the collection with the Id value.|
-|[Remove(Calendar calendar)](#Remove_[Calendar]_Calendar.md__calendar_)|&#x2713;|&#x2713;||Boolean|Removes the specified calendar from the collection of calendars.|
+|[Add(CalendarCreationInformation parameters)](#Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Adds the [Calendar](Calendar.md) that is specified by the [CalendarCreationInformation](CalendarCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Guid value.|
+|[Remove(Calendar calendar)](#Remove_[Calendar]_Calendar.md__calendar_)|&#x2713;|&#x2713;||Boolean|Removes the specified [Calendar](Calendar.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the calendar collection.|
 
 <br/>
 #### Method Details
 
 #### <a name="&#39;{CalendarId}&#39;"></a>&#39;{CalendarId}&#39;
-
- 
 
 Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.
 
@@ -68,8 +66,9 @@ Calendar http://<sitecollection>/<site>/api/ProjectServer/Calendars('{CalendarId
 ```
 
 ##### Parameters
-
-None
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|CalendarId|String|the id of the Calendar
 
 ##### Return Value
 
@@ -77,9 +76,7 @@ None
 
 #### <a name="Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_"></a>Add([CalendarCreationInformation](CalendarCreationInformation.md) parameters)
 
-
-
-Adds a new calendar to the collection of calendars.
+Adds the [Calendar](Calendar.md) that is specified by the [CalendarCreationInformation](CalendarCreationInformation.md) object to the collection.
 
 ##### Syntax
 
@@ -91,7 +88,7 @@ Calendar Add(CalendarCreationInformation parameters)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [CalendarCreationInformation](CalendarCreationInformation.md) | An object that contains information, for example name and GUID, about a new calendar.
+|parameters|[CalendarCreationInformation](CalendarCreationInformation.md)|The properties that can be set when creating a calendar.
 
 ##### Return Value
 
@@ -99,9 +96,7 @@ Calendar Add(CalendarCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-
- 
-Gets a calendar from the collection with the specified GUID.
+Gets a [Calendar](Calendar.md) from the collection with the Id value.
 
 ##### Syntax
 
@@ -113,8 +108,7 @@ Calendar GetByGuid(Guid uid)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-
-|uid| Guid | The calendar Guid to return.
+|uid|Guid|The Guid of the [Calendar](Calendar.md)
 
 ##### Return Value
 
@@ -122,9 +116,7 @@ Calendar GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-
- 
-Gets a calendar from the collection with the Id value.
+Gets a [Calendar](Calendar.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -136,7 +128,7 @@ Calendar GetById(String objectId)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | A string value that represents a calendar identifier.
+|objectId|String|The id of the [Calendar](Calendar.md)
 
 ##### Return Value
 
@@ -144,9 +136,7 @@ Calendar GetById(String objectId)
 
 #### <a name="Remove_[Calendar]_Calendar.md__calendar_"></a>Remove([Calendar](Calendar.md) calendar)
 
-
- 
-Removes the specified calendar from the collection of calendars.
+Removes the specified [Calendar](Calendar.md) from the collection.
 
 ##### Syntax
 
@@ -158,7 +148,7 @@ Boolean Remove(Calendar calendar)
 
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|calendar| [Calendar](Calendar.md) | The Calendar object to be removed.
+|calendar|[Calendar](Calendar.md)|The [Calendar](Calendar.md) to remove.
 
 ##### Return Value
 

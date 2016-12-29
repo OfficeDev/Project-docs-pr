@@ -22,7 +22,7 @@ PS.BaseCalendarException
 ```
 ### REST Interface
 
-This resource supports GET, POST,  and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
 PS.BaseCalendarException

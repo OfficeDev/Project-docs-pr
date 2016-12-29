@@ -2,9 +2,13 @@
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
-Represents a collection of [DraftProjectResource](DraftProjectResource.md) objects.
+# <a name="name"></a>DraftProjectResourceCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<DraftProjectResource>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of [DraftProjectResource](DraftProjectResource.md) objects.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
@@ -38,15 +42,15 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/P
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftProjectResourceId}&#39;](#&#39;{DraftProjectResourceId}&#39;)|||&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the specified DraftProjectResourceId.|
-|[Add(ProjectResourceCreationInformation parameters)](#Add_[ProjectResourceCreationInformation]_ProjectResourceCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Adds a new project resource that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.|
+|[Add(ProjectResourceCreationInformation parameters)](#Add_[ProjectResourceCreationInformation]_ProjectResourceCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Adds the [DraftProjectResource](DraftProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.|
 |[AddEnterpriseResource(EnterpriseResource resource)](#AddEnterpriseResource_[EnterpriseResource]_EnterpriseResource.md__resource_)|&#x2713;|&#x2713;||[DraftProjectResource](DraftProjectResource.md)|Adds an existing enterprise resource to the draft project resource collection.|
-|[AddEnterpriseResourceById(Guid resourceId)](#AddEnterpriseResourceById_Guid_resourceId_)|||&#x2713;|[QueueJob](QueueJob.md)|Adds an existing enterprise resource with the specified Id value to the draft project resource collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a draft project resource from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a draft project resource from the collection with the Id value.|
-|[Remove(DraftProjectResource resource)](#Remove_[DraftProjectResource]_DraftProjectResource.md__resource_)|&#x2713;|&#x2713;||Boolean|Removes the specified draft project resource from the collection.|
+|[AddEnterpriseResourceById(Guid resourceId)](#AddEnterpriseResourceById_Guid_resourceId_)|||&#x2713;|[QueueJob](QueueJob.md)|Adds an existing enterprise resource with the specified Id value to the draft project resource collection.||[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.|
+|[Remove(DraftProjectResource resource)](#Remove_[DraftProjectResource]_DraftProjectResource.md__resource_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftProjectResource](DraftProjectResource.md) from the collection.|
 
 <br/>
 #### Method Details
@@ -62,8 +66,9 @@ DraftProjectResource http://<sitecollection>/<site>/api/ProjectServer/Projects('
 ```
 
 ##### Parameters
-
-None
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|DraftProjectResourceId|String|the id of the DraftProjectResource
 
 ##### Return Value
 
@@ -71,7 +76,7 @@ None
 
 #### <a name="Add_[ProjectResourceCreationInformation]_ProjectResourceCreationInformation.md__parameters_"></a>Add([ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) parameters)
 
-Adds a new [ProjectResource](ProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.
+Adds the [DraftProjectResource](DraftProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.
 
 ##### Syntax
 
@@ -82,12 +87,11 @@ DraftProjectResource Add(ProjectResourceCreationInformation parameters)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[ProjectResourceCreationInformation](ProjectResourceCreationInformation.md)|The properties of the project resource to create.
+|parameters|[ProjectResourceCreationInformation](ProjectResourceCreationInformation.md)|The properties that can be set when creating a draft project resource.
 
 ##### Return Value
 
-[DraftProjectResource](DraftProjectResource.md)<br />
-The added [DraftProjectResource](DraftProjectResource.md).
+[DraftProjectResource](DraftProjectResource.md)
 
 #### <a name="AddEnterpriseResource_[EnterpriseResource]_EnterpriseResource.md__resource_"></a>AddEnterpriseResource([EnterpriseResource](EnterpriseResource.md) resource)
 
@@ -106,10 +110,7 @@ DraftProjectResource AddEnterpriseResource(EnterpriseResource resource)
 
 ##### Return Value
 
-[DraftProjectResource](DraftProjectResource.md)<br />
-The added [DraftProjectResource](DraftProjectResource.md).
-
-
+[DraftProjectResource](DraftProjectResource.md)
 
 #### <a name="AddEnterpriseResourceById_Guid_resourceId_"></a>AddEnterpriseResourceById(Guid resourceId)
  
@@ -126,7 +127,7 @@ QueueJob AddEnterpriseResourceById(Guid resourceId)
 |:------ |:----|:------ |
 |resourceId|Guid|The guid of the enterprise resource to add to the collection.|
 
-#### Return Value
+##### Return Value
 
 [QueueJob](QueueJob.md)<br />
 The [QueueJob](QueueJob.md) includes the JobState property that identifies the result of the AddEnterpriseResource request.
@@ -135,7 +136,7 @@ The [QueueJob](QueueJob.md) includes the JobState property that identifies the r
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the specified GUID.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.
 
 ##### Syntax
 
@@ -146,7 +147,7 @@ DraftProjectResource GetByGuid(Guid uid)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The project resource guid.|
+|uid|Guid|The Guid of the [DraftProjectResource](DraftProjectResource.md)
 
 ##### Return Value
 
@@ -154,7 +155,7 @@ DraftProjectResource GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -169,10 +170,7 @@ DraftProjectResource GetById(String objectId)
 
 ##### Return Value
 
-[DraftProjectResource](DraftProjectResource.md)<br />
-The [DraftProjectResource](DraftProjectResource.md) with the specified ID.
-
-
+[DraftProjectResource](DraftProjectResource.md)
 
 #### <a name="Remove_[DraftProjectResource]_DraftProjectResource.md__resource_"></a>Remove([DraftProjectResource](DraftProjectResource.md) resource)
 
@@ -191,8 +189,8 @@ Boolean Remove(DraftProjectResource resource)
 
 ##### Return Value
 
-Boolean<br />
-Returns true if successful.
+Boolean
+
 ## <a name="seeAlso"></a>See Also
 
 [DraftProject](DraftProject.md)<br/>

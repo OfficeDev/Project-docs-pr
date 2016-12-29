@@ -22,7 +22,7 @@ PS.DeletedPublishedAssignment
 ```
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.DeletedPublishedAssignment

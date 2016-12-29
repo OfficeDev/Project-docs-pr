@@ -24,7 +24,7 @@ PS.DraftAssignment
 
 ### REST Interface
 
-This resource supports GET, POST,  and DELETE HTTP commands.
+This resource supports GET, POST, and DELETE HTTP commands.
 
 ```
 PS.DraftAssignment
@@ -38,7 +38,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/A
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft assignment.|
 |<a name="ActualCost"></a>ActualCost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the costs incurred for work already performed on the assignment, together with any other recorded costs that are associated with the assignment.|
 |<a name="ActualFinish"></a>ActualFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time when the assignment is complete.|
 |<a name="ActualOvertimeWork"></a>ActualOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the actual amount of overtime work that has already been performed on the assignment.|
@@ -54,10 +54,10 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/A
 |<a name="BudgetedWorkTimeSpan"></a>BudgetedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the budgeted work for the assignment.|
 |<a name="Cost"></a>Cost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the total scheduled or projected cost for the assignment.|
 |<a name="DefaultBookingType"></a>DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the default booking type for the assignment.|
-|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the assignment.|
+|<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the draft assignment.|
 |<a name="IsLockedByManager"></a>IsLockedByManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the assignment has been locked for changes by a manager.|
 |<a name="IsWorkResource"></a>IsWorkResource|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether an assignment resource is a work resource or a material resource.|
-|<a name="Item"></a>Item||&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project.|
+|<a name="Item"></a>Item||&#x2713;&#x02B7;||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft assignment.|
 |<a name="OvertimeWork"></a>OvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of overtime that is scheduled to be performed on the assignment.|
 |<a name="OvertimeWorkMilliseconds"></a>OvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the amount of overtime that is scheduled to be performed on the assignment.|
 |<a name="OvertimeWorkTimeSpan"></a>OvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the amount of overtime that is scheduled to be performed on the assignment.|
@@ -84,17 +84,17 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/A
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft assignment.|
-|[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Updates the value of a custom field associated with the draft assignment.|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft assignment object.|
+|[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the draft assignment.|
 
 <br/>
 #### Method Details
 
 #### <a name="DeleteObject__"></a>DeleteObject()
  
-Deletes the draft assignment.
+Deletes the draft assignment object.
 
 ##### Syntax
 
@@ -112,7 +112,7 @@ void
 
 #### <a name="SetCustomFieldValue_String_fieldName,_Object_value_"></a>SetCustomFieldValue(String fieldName, Object value)
  
-Updates the value of a custom field associated with the draft assignment.
+Sets a custom field on the draft assignment.
 
 ##### Syntax
 
@@ -123,8 +123,8 @@ void SetCustomFieldValue(String fieldName, Object value)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|fieldName| String |The [InternalName](CustomField.md#InternalName) of the custom field to update.|
-|value| Object | New value of the custom field.| 
+|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.
+|value|Object|New value of the custom field.
 
 ##### Return Value
 

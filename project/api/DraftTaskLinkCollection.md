@@ -1,135 +1,155 @@
 [comment]: # (Name:DraftTaskLinkCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# DraftTaskLinkCollection
+# <a name="name"></a>DraftTaskLinkCollection class
 
-Represents a collection of [DraftTaskLink](756bdcf9-908a-bb46-fca9-b4ebbe6c67e4.md) objects.
+inherits members from [ClientObjectCollection<DraftTaskLink>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [DraftTaskLink](DraftTaskLink.md) objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class DraftTaskLinkCollection 
+class DraftTaskLinkCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.DraftTaskLinkCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.DraftTaskLinkCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([TaskLinkCreationInformation](TaskLinkCreationInformation.md) parameters)](#Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Adds the draft task link that is specified by the [TaskLinkCreationInformation](b04589c3-9d29-7802-a139-de60af117d85.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a draft task link from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a draft task link from the collection with the [Id](a4048967-b356-2376-6df1-a2beff00d6b8.md) value.|
-|[Remove([DraftTaskLink](DraftTaskLink.md) TaskLink)](#Remove_[DraftTaskLink]_DraftTaskLink.md__TaskLink_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified draft task link from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{DraftTaskLinkId}&#39;](#&#39;{DraftTaskLinkId}&#39;)|||&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the specified DraftTaskLinkId.|
+|[Add(TaskLinkCreationInformation parameters)](#Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Adds the [DraftTaskLink](DraftTaskLink.md) that is specified by the [TaskLinkCreationInformation](TaskLinkCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.|
+|[Remove(DraftTaskLink TaskLink)](#Remove_[DraftTaskLink]_DraftTaskLink.md__TaskLink_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftTaskLink](DraftTaskLink.md) from the collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
+#### <a name="&#39;{DraftTaskLinkId}&#39;"></a>&#39;{DraftTaskLinkId}&#39;
 
-### <a id="Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_"></a>Add([TaskLinkCreationInformation](TaskLinkCreationInformation.md) parameters)
+Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the specified DraftTaskLinkId.
+
+##### Syntax
+
+```
+DraftTaskLink http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{DraftTaskLinkId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|DraftTaskLinkId|String|the id of the DraftTaskLink
+
+##### Return Value
+
+[DraftTaskLink](DraftTaskLink.md)
+
+#### <a name="Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_"></a>Add([TaskLinkCreationInformation](TaskLinkCreationInformation.md) parameters)
  
-Adds the draft task link that is specified by the [TaskLinkCreationInformation](b04589c3-9d29-7802-a139-de60af117d85.md) object to the collection.
+Adds the [DraftTaskLink](DraftTaskLink.md) that is specified by the [TaskLinkCreationInformation](TaskLinkCreationInformation.md) object to the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 DraftTaskLink Add(TaskLinkCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [TaskLinkCreationInformation](TaskLinkCreationInformation.md) | The properties of the draft task link to create.
+|parameters|[TaskLinkCreationInformation](TaskLinkCreationInformation.md)|The properties that can be set when creating a draft task link.
 
-
-#### Return Value
+##### Return Value
 
 [DraftTaskLink](DraftTaskLink.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a draft task link from the collection with the specified GUID.
+Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 DraftTaskLink GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [DraftTaskLink](DraftTaskLink.md)
 
-
-#### Return Value
+##### Return Value
 
 [DraftTaskLink](DraftTaskLink.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a draft task link from the collection with the [Id](a4048967-b356-2376-6df1-a2beff00d6b8.md) value.
+Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 DraftTaskLink GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the task link GUID.
+|objectId|String|The id of the [DraftTaskLink](DraftTaskLink.md)
 
-
-#### Return Value
+##### Return Value
 
 [DraftTaskLink](DraftTaskLink.md)
 
-### <a id="Remove_[DraftTaskLink]_DraftTaskLink.md__TaskLink_"></a>Remove([DraftTaskLink](DraftTaskLink.md) TaskLink)
+#### <a name="Remove_[DraftTaskLink]_DraftTaskLink.md__TaskLink_"></a>Remove([DraftTaskLink](DraftTaskLink.md) TaskLink)
  
-Removes the specified draft task link from the collection.
+Removes the specified [DraftTaskLink](DraftTaskLink.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(DraftTaskLink TaskLink)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|TaskLink| [DraftTaskLink](DraftTaskLink.md) | The draft task link to remove.
+|TaskLink|[DraftTaskLink](DraftTaskLink.md)|The [DraftTaskLink](DraftTaskLink.md) to remove.
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[DraftProject](DraftProject.md)<br/>
+[DraftTask](DraftTask.md)<br/>
+[DraftTaskLink](DraftTaskLink.md)<br/>
+[TaskLinkCreationInformation](TaskLinkCreationInformation.md)<br/>
