@@ -1,49 +1,46 @@
 [comment]: # (Name:LookupText)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# LookupText
+# <a name="name"></a>LookupText class
 
-Defines an entry in a lookup table of type Text.
+inherits members from [LookupEntry](LookupEntry.md)<br/>
 
+<a name="description"></a>Defines an entry in a lookup table of type Text.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupText 
+class LookupText 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupText
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.LookupText
+
 http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|HasChildren|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether an entry in a hierarchical text lookup table has descendants.|
-|Mask|&#x2713;|&#x2713;|&#x2713;|[LookupMask](LookupMask.md)|Gets the mask for an entry in a hierarhical text lookup table.|
-|Parent|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[LookupText](LookupText.md)|Gets or sets the GUID of a parent entry in a hierarchical text lookup table.|
-|Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a data value of type Text.|
+|<a name="HasChildren"></a>HasChildren|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether an entry in a hierarchical text lookup table has descendants.|
+|<a name="Mask"></a>Mask|&#x2713;|&#x2713;|&#x2713;|[LookupMask](LookupMask.md)|Gets the mask for an entry in a hierarhical text lookup table.|
+|<a name="Parent"></a>Parent|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[LookupText](LookupText.md)|Gets or sets the GUID of a parent entry in a hierarchical text lookup table.|
+|<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a data value of type Text.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[LookupEntry](LookupEntry.md)

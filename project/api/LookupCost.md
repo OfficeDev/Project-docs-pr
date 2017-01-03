@@ -1,46 +1,43 @@
 [comment]: # (Name:LookupCost)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# LookupCost
+# <a name="name"></a>LookupCost class
 
-Contains a data value for a lookup table of type Cost.
+inherits members from [LookupEntry](LookupEntry.md)<br/>
 
+<a name="description"></a>Contains a data value for a lookup table of type Cost.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupCost 
+class LookupCost 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupCost
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.LookupCost
+
 http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets a data value of type Cost.|
+|<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets a data value of type Cost.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[LookupEntry](LookupEntry.md)

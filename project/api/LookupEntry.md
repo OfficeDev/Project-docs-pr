@@ -1,80 +1,81 @@
 [comment]: # (Name:LookupEntry)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# LookupEntry
+# <a name="name"></a>LookupEntry class
 
-Represents a lookup table entry.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents a lookup table entry.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupEntry 
+class LookupEntry 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupEntry
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.LookupEntry
+
+http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate GUID that is specified in an App package for Project Online.|
-|Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the lookup table entry.|
-|FullValue|&#x2713;|&#x2713;|&#x2713;|String|Gets the concatenated value of a hierarchical text lookup table entry.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the lookup table entry.|
-|InternalName|&#x2713;|&#x2713;|&#x2713;|String|Gets the internal name of the lookup table entry. Reserved for internal use..|
-|SortIndex|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets an index number for the lookup table entry.|
+|<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate GUID that is specified in an App package for Project Online.|
+|<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the lookup table entry.|
+|<a name="FullValue"></a>FullValue|&#x2713;|&#x2713;|&#x2713;|String|Gets the concatenated value of a hierarchical text lookup table entry.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the lookup table entry.|
+|<a name="InternalName"></a>InternalName|&#x2713;|&#x2713;|&#x2713;|String|Gets the internal name of the lookup table entry. Reserved for internal use..|
+|<a name="SortIndex"></a>SortIndex|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets an index number for the lookup table entry.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the LookupEntry object.|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the lookup entry object.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
-Deletes the LookupEntry object.
+Deletes the lookup entry object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[LookupCost](LookupCost.md)<br/>
+[LookupDate](LookupDate.md)<br/>
+[LookupDuration](LookupDuration.md)<br/>
+[LookupEntryCollection](LookupEntryCollection.md)<br/>
+[LookupEntryCreationInformation](LookupEntryCreationInformation.md)<br/>
+[LookupNumber](LookupNumber.md)<br/>
+[LookupText](LookupText.md)<br/>

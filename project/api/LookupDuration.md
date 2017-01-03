@@ -1,48 +1,44 @@
 [comment]: # (Name:LookupDuration)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# LookupDuration
+# <a name="name"></a>LookupDuration class
 
-Contains a data value for a lookup table of type Duration.
+inherits members from [LookupEntry](LookupEntry.md)<br/>
 
+<a name="description"></a>Contains a data value for a lookup table of type Duration.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupDuration 
+class LookupDuration 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupDuration
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.LookupDuration
+
 http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the string value in a lookup table of type Duration.|
-|ValueMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|ValueTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the duration as a TimeSpan value in a lookup table of typeDuration.|
+|<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the string value in a lookup table of type Duration.|
+|<a name="ValueMilliseconds"></a>ValueMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the duration in milliseconds, in a lookup table of typeDuration.|
+|<a name="ValueTimeSpan"></a>ValueTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the duration as a TimeSpan value in a lookup table of typeDuration.|
 
-
-
-
-
-
-## See Also
+## <a name="seeAlso"></a>See Also
+[LookupEntry](LookupEntry.md)

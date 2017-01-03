@@ -1,156 +1,176 @@
 [comment]: # (Name:LookupEntryCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# LookupEntryCollection
+# <a name="name"></a>LookupEntryCollection class
 
-Represents a collection of [LookupEntry](67da167a-c3d9-c801-ca45-dc46221d7df0.md) objects for a lookup table.
+inherits members from [ClientObjectCollection<LookupEntry>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [LookupEntry](LookupEntry.md) objects for a lookup table.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupEntryCollection 
+class LookupEntryCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupEntryCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.LookupEntryCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([LookupEntryCreationInformation](LookupEntryCreationInformation.md) parameters)](#Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Adds the lookup entry that is specified by the [LookupEntryCreationInformation](e69e0f6f-1d75-4b73-f523-f629e4d5ec7c.md) object to the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection at the specified index.|
+
+### <a name="methods"></a>Methods
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{LookupEntryId}&#39;](#&#39;{LookupEntryId}&#39;)|||&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the specified LookupEntryId.|
+|[Add(LookupEntryCreationInformation parameters)](#Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Adds the [LookupEntry](LookupEntry.md) that is specified by the [LookupEntryCreationInformation](LookupEntryCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a lookup entry from the collection by using the alternate lookup entry GUID that is specified in an App package for Project Server online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a lookup entry from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Returns the lookup entry that is specified by the [Id](060405f9-202e-2ab3-2d01-3757ae35223a.md) value.|
-|[Remove([LookupEntry](LookupEntry.md) entry)](#Remove_[LookupEntry]_LookupEntry.md__entry_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified lookup entry from the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.|
+|[Remove(LookupEntry entry)](#Remove_[LookupEntry]_LookupEntry.md__entry_)|&#x2713;|&#x2713;||Boolean|Removes the specified [LookupEntry](LookupEntry.md) from the collection.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_"></a>Add([LookupEntryCreationInformation](LookupEntryCreationInformation.md) parameters)
+#### <a name="&#39;{LookupEntryId}&#39;"></a>&#39;{LookupEntryId}&#39;
  
-Adds the lookup entry that is specified by the [LookupEntryCreationInformation](e69e0f6f-1d75-4b73-f523-f629e4d5ec7c.md) object to the collection.
+Gets a [LookupEntry](LookupEntry.md) from the collection with the specified LookupEntryId.
 
-#### Syntax
+##### Syntax
+
+```
+LookupEntry http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{LookupEntryId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|LookupEntryId|String|the id of the LookupEntry
+
+##### Return Value
+
+[LookupEntry](LookupEntry.md)
+
+#### <a name="Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_"></a>Add([LookupEntryCreationInformation](LookupEntryCreationInformation.md) parameters)
+ 
+Adds the [LookupEntry](LookupEntry.md) that is specified by the [LookupEntryCreationInformation](LookupEntryCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 LookupEntry Add(LookupEntryCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [LookupEntryCreationInformation](LookupEntryCreationInformation.md) | The properties of the lookup entry to create.
+|parameters|[LookupEntryCreationInformation](LookupEntryCreationInformation.md)|The properties that can be set when creating a lookup entry.
 
-
-#### Return Value
+##### Return Value
 
 [LookupEntry](LookupEntry.md)
 
-### <a id="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
+#### <a name="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
  
 Gets a lookup entry from the collection by using the alternate lookup entry GUID that is specified in an App package for Project Server online.
 
-#### Syntax
+##### Syntax
 
 ```
 LookupEntry GetByAppAlternateId(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | A string object identifier.
+|objectId|String|A string object identifier.
 
-
-#### Return Value
+##### Return Value
 
 [LookupEntry](LookupEntry.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a lookup entry from the collection with the specified GUID.
+Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 LookupEntry GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [LookupEntry](LookupEntry.md)
 
-
-#### Return Value
+##### Return Value
 
 [LookupEntry](LookupEntry.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Returns the lookup entry that is specified by the [Id](060405f9-202e-2ab3-2d01-3757ae35223a.md) value.
+Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 LookupEntry GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the lookup entry GUID.
+|objectId|String|The id of the [LookupEntry](LookupEntry.md)
 
-
-#### Return Value
+##### Return Value
 
 [LookupEntry](LookupEntry.md)
 
-### <a id="Remove_[LookupEntry]_LookupEntry.md__entry_"></a>Remove([LookupEntry](LookupEntry.md) entry)
+#### <a name="Remove_[LookupEntry]_LookupEntry.md__entry_"></a>Remove([LookupEntry](LookupEntry.md) entry)
  
-Removes the specified lookup entry from the collection.
+Removes the specified [LookupEntry](LookupEntry.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(LookupEntry entry)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|entry| [LookupEntry](LookupEntry.md) | The lookup entry to remove.
+|entry|[LookupEntry](LookupEntry.md)|The [LookupEntry](LookupEntry.md) to remove.
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[CustomField](CustomField.md)<br/>
+[LookupEntry](LookupEntry.md)<br/>
+[LookupEntryCreationInformation](LookupEntryCreationInformation.md)<br/>
+[LookupTable](LookupTable.md)<br/>
+[WorkflowDesignerField](WorkflowDesignerField.md)<br/>

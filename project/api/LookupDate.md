@@ -1,46 +1,43 @@
 [comment]: # (Name:LookupDate)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# LookupDate
+# <a name="name"></a>LookupDate class
 
-Contains a data value for a lookup table of type Date.
+inherits members from [LookupEntry](LookupEntry.md)<br/>
 
+<a name="description"></a>Contains a data value for a lookup table of type Date.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class LookupDate 
+class LookupDate 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.LookupDate
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.LookupDate
+
 http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a data value of type Date.|
+|<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a data value of type Date.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[LookupEntry](LookupEntry.md)
