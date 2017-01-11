@@ -6,7 +6,7 @@
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>
+<a name="description"></a>Represents an published assignment that has been deleted from the draft project and the project has been published.
 
 ## <a name="syntax"></a>Syntax
 
@@ -22,12 +22,14 @@ PS.DeletedPublishedAssignment
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+This resource supports POST HTTP commands.
+
+Endpoint returns a collection of published assignments.  No way to query for specific assignments or projects.
 
 ```
 PS.DeletedPublishedAssignment
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://<sitecollection>/<site>/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
 ```
 
 ## <a name="members"></a>Members
@@ -36,10 +38,11 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|<a name="DeletedDate"></a>DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime||
-|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid||
-|<a name="ProjectId"></a>ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid||
+|<a name="DeletedDate"></a>DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|When the assignment was deleted.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|The Id of the assignment.|
+|<a name="ProjectId"></a>ProjectId|&#x2713;|&#x2713;|&#x2713;|Guid|The Id of the project the assignment was from.|
 
 ## <a name="seeAlso"></a>See Also
 
 [DeletedPublishedAssignmentCollection](DeletedPublishedAssignmentCollection.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>

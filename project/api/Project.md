@@ -114,7 +114,7 @@ void EnterProjectStage(Stage stage)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|stage| [Stage](Stage.md)|The workflow stage.
+|stage|[Stage](Stage.md)|The workflow stage.|
 
 ##### Return Value
 
@@ -256,10 +256,10 @@ void UpdateProjectStageStatus(Stage stage, String statusInformation, UpdateProje
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----   |:------ |
-|stage|[Stage](Stage.md)|The workflow stage to be updated.
-| statusInformation | String | The status message.
-|stageStatusValue|[UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md)|An enumeration constant that indicates the stage status.
-|append|Boolean|True if the status message is appended to the current stage status;False if the status message overwrites the current status.
+|stage|[Stage](Stage.md)|The workflow stage to be updated.|
+|statusInformation|String|The status message.|
+|stageStatusValue|[UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md)|An enumeration constant that indicates the stage status.|
+|append|Boolean|True if the status message is appended to the current stage status;False if the status message overwrites the current status.|
 
 ##### Return Value
 

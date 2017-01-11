@@ -1,48 +1,53 @@
 [comment]: # (Name:PhaseCreationInformation)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# PhaseCreationInformation
+# <a name="name"></a>PhaseCreationInformation class
 
-Provides methods and property settings that are used in the creation of a workflow phase.
+<a name="description"></a>Contains the properties that can be set when creating a [Phase](Phase.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class PhaseCreationInformation 
+class PhaseCreationInformation 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.PhaseCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.PhaseCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/Phases/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'Description':'value', 
+		'Id':'value', 
+		'Name':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the phase.|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the phase.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the phase.|
+|<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the phase.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the phase.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the phase.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[Phase](Phase.md)<br/>
+[PhaseCollection](PhaseCollection.md)<br/>
