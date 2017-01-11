@@ -39,7 +39,7 @@ http://<sitecollection>/<site>/api/ProjectServer
 |<a name="EngagementsTimephasedPageSize"></a>EngagementsTimephasedPageSize|&#x2713;|&#x2713;|&#x2713;|Integer||
 |<a name="EnterpriseProjectTypes"></a>EnterpriseProjectTypes|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectTypeCollection](EnterpriseProjectTypeCollection.md)|Gets the collection of enterprise project types (EPTs) in the Project Web App instance.|
 |<a name="EnterpriseResources"></a>EnterpriseResources|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceCollection](EnterpriseResourceCollection.md)|Gets the collection of enterprise resources in a Project Web App instance.|
-|<a name="EnterpriseResourcesPageSize"></a>EnterpriseResourcesPageSize|&#x2713;|&#x2713;|&#x2713;|Integer||
+|<a name="EnterpriseResourcesPageSize"></a>EnterpriseResourcesPageSize|&#x2713;|&#x2713;|&#x2713;|Integer|The number of [EnterpriseResource](EnterpriseResource.md) that can be pulled down with child elements in a single request|
 |<a name="EntityTypes"></a>EntityTypes|&#x2713;|&#x2713;|&#x2713;|[EntityTypes](EntityTypes.md)|Gets the types of Project Server entities that are exposed through the CSOM.|
 |<a name="EventHandlers"></a>EventHandlers|&#x2713;|&#x2713;|&#x2713;|[EventHandlerCollection](EventHandlerCollection.md)|Gets the collection of event handlers that are defined in a Project Web App instance.|
 |<a name="Events"></a>Events|&#x2713;|&#x2713;|&#x2713;|[EventCollection](EventCollection.md)|Gets the collection of event objects in a Project Web App instance.|
@@ -49,7 +49,7 @@ http://<sitecollection>/<site>/api/ProjectServer
 |<a name="Phases"></a>Phases|&#x2713;|&#x2713;|&#x2713;|[PhaseCollection](PhaseCollection.md)|Gets the collection of Project Server workflow phases in the Project Web App instance.|
 |<a name="ProjectDetailPages"></a>ProjectDetailPages|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPageCollection](ProjectDetailPageCollection.md)|Gets a collection of project detail pages in the Project Server instance.|
 |<a name="Projects"></a>Projects|&#x2713;|&#x2713;|&#x2713;|[ProjectCollection](ProjectCollection.md)|Gets the collection of projects in the Project Web App instance.|
-|<a name="ProjectsPageSize"></a>ProjectsPageSize|&#x2713;|&#x2713;|&#x2713;|Integer||
+|<a name="ProjectsPageSize"></a>ProjectsPageSize|&#x2713;|&#x2713;|&#x2713;|Integer|The number of [PublishedProject](PublishedProject.md) objects that can be in a single request when also requesting child entities.|
 |<a name="ServiceStatus"></a>ServiceStatus|&#x2713;|&#x2713;|&#x2713;|[ServiceStatus](ServiceStatus.md)|Gets information about the status of the Project Server service.|
 |<a name="Stages"></a>Stages|&#x2713;|&#x2713;|&#x2713;|[StageCollection](StageCollection.md)|Gets the collection of Project Server workflow stages in a Project Web App instance.|
 |<a name="TimeSheetPeriods"></a>TimeSheetPeriods|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)|Gets a collection of time sheet periods.|
@@ -79,7 +79,7 @@ DeletedPublishedAssignmentCollection GetDeletedPublishedAssignments(DateTime del
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|deletedDate|DateTime||
+|deletedDate|DateTime|The earliest date to retrieve deleted published assignments from.|
 
 ##### Return Value
 
