@@ -1,135 +1,154 @@
 [comment]: # (Name:PlanAssignmentCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# PlanAssignmentCollection
+# <a name="name"></a>PlanAssignmentCollection class
 
-Represents a collection of plan assignment objects.
+inherits members from [ClientObjectCollection<PlanAssignment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of plan assignment objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class PlanAssignmentCollection 
+class PlanAssignmentCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.PlanAssignmentCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.PlanAssignmentCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) parameters)](#Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Adds a new plan assignment to the collection of plan assignments.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a plan assignment from the collection, by using the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a plan assignment from the collection, by using the specified object identifier.|
-|[Remove([PlanAssignment](PlanAssignment.md) assignment)](#Remove_[PlanAssignment]_PlanAssignment.md__assignment_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified plan assignment from the collection of plan assignments.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{PlanAssignmentId}&#39;](#&#39;{PlanAssignmentId}&#39;)|||&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the specified PlanAssignmentId.|
+|[Add(PlanAssignmentCreationInformation parameters)](#Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Adds the [PlanAssignment](PlanAssignment.md) that is specified by the [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.|
+|[Remove(PlanAssignment assignment)](#Remove_[PlanAssignment]_PlanAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [PlanAssignment](PlanAssignment.md) from the collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_"></a>Add([PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) parameters)
+#### <a name="&#39;{PlanAssignmentId}&#39;"></a>&#39;{PlanAssignmentId}&#39;
  
-Adds a new plan assignment to the collection of plan assignments.
+Gets a [PlanAssignment](PlanAssignment.md) from the collection with the specified PlanAssignmentId.
 
-#### Syntax
+##### Syntax
+
+```
+PlanAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{PlanAssignmentId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|PlanAssignmentId|String|the id of the PlanAssignment|
+
+##### Return Value
+
+[PlanAssignment](PlanAssignment.md)
+
+#### <a name="Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_"></a>Add([PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) parameters)
+ 
+Adds the [PlanAssignment](PlanAssignment.md) that is specified by the [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 PlanAssignment Add(PlanAssignmentCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) | An object that contains information, for example name and GUID, about a new plan assignment.
+|parameters|[PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)|The properties that can be set when creating a plan assignment.|
 
-
-#### Return Value
+##### Return Value
 
 [PlanAssignment](PlanAssignment.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a plan assignment from the collection, by using the specified GUID.
+Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 PlanAssignment GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [PlanAssignment](PlanAssignment.md)|
 
-
-#### Return Value
+##### Return Value
 
 [PlanAssignment](PlanAssignment.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a plan assignment from the collection, by using the specified object identifier.
+Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 PlanAssignment GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | A string value that is the object identifier.
+|objectId|String|The id of the [PlanAssignment](PlanAssignment.md)|
 
-
-#### Return Value
+##### Return Value
 
 [PlanAssignment](PlanAssignment.md)
 
-### <a id="Remove_[PlanAssignment]_PlanAssignment.md__assignment_"></a>Remove([PlanAssignment](PlanAssignment.md) assignment)
+#### <a name="Remove_[PlanAssignment]_PlanAssignment.md__assignment_"></a>Remove([PlanAssignment](PlanAssignment.md) assignment)
  
-Removes the specified plan assignment from the collection of plan assignments.
+Removes the specified [PlanAssignment](PlanAssignment.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(PlanAssignment assignment)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|assignment| [PlanAssignment](PlanAssignment.md) | The PlanAssignment object to be removed.
+|assignment|[PlanAssignment](PlanAssignment.md)|The [PlanAssignment](PlanAssignment.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[PlanAssignment](PlanAssignment.md)<br/>
+[PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)<br/>
+[ResourcePlan](ResourcePlan.md)<br/>

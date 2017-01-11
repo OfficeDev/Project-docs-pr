@@ -6,7 +6,7 @@
 
 inherits members from [ClientObjectCollection<DeletedPublishedAssignment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
-<a name="description"></a>
+<a name="description"></a>Retrieves the published assignments that have been deleted from the draft project and the project has been published.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,7 +27,7 @@ This resource supports POST HTTP commands.
 ```
 PS.DeletedPublishedAssignmentCollection
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://<sitecollection>/<site>/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
 ```
 
 ## <a name="members"></a>Members

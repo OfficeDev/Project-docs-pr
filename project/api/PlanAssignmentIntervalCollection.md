@@ -1,93 +1,93 @@
 [comment]: # (Name:PlanAssignmentIntervalCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# PlanAssignmentIntervalCollection
+# <a name="name"></a>PlanAssignmentIntervalCollection class
 
-Represents a collection of PlanAssignmentInterval objects.
+inherits members from [ClientObjectCollection<PlanAssignmentInterval>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of PlanAssignmentInterval objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class PlanAssignmentIntervalCollection 
+class PlanAssignmentIntervalCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.PlanAssignmentIntervalCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.PlanAssignmentIntervalCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{assignmentid}')/Intervals
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String id)](#GetById_String_id_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a plan assignment interval from the collection of plan assignment intervals, with the specified object identifier.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection at the specified index.|
+
+### <a name="methods"></a>Methods
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[GetById(String id)](#GetById_String_id_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Guid value.|
 |[GetByStart(DateTime start)](#GetByStart_DateTime_start_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a plan assignment interval from the collection of plan assignment intervals, with the specified start date.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="GetById_String_id_"></a>GetById(String id)
+#### <a name="GetById_String_id_"></a>GetById(String id)
  
-Gets a plan assignment interval from the collection of plan assignment intervals, with the specified object identifier.
+Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 PlanAssignmentInterval GetById(String id)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| String | A string value that represents an identifier for a plan assignment interval object.
+|id|String|The id of the [PlanAssignmentInterval](PlanAssignmentInterval.md)|
 
-
-#### Return Value
+##### Return Value
 
 [PlanAssignmentInterval](PlanAssignmentInterval.md)
 
-### <a id="GetByStart_DateTime_start_"></a>GetByStart(DateTime start)
+#### <a name="GetByStart_DateTime_start_"></a>GetByStart(DateTime start)
  
 Gets a plan assignment interval from the collection of plan assignment intervals, with the specified start date.
 
-#### Syntax
+##### Syntax
 
 ```
 PlanAssignmentInterval GetByStart(DateTime start)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| DateTime | A start date.
+|start|DateTime|A start date.|
 
-
-#### Return Value
+##### Return Value
 
 [PlanAssignmentInterval](PlanAssignmentInterval.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[PlanAssignment](PlanAssignment.md)<br/>
+[PlanAssignmentInterval](PlanAssignmentInterval.md)<br/>
