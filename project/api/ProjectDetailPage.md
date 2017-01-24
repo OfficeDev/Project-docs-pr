@@ -1,49 +1,49 @@
 [comment]: # (Name:ProjectDetailPage)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# ProjectDetailPage
+# <a name="name"></a>ProjectDetailPage class
 
-Represents a project detail page (PDP), which is a Web Part page for creating, viewing, or managing the properties of projects in Project Web App.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents a project detail page (PDP), which is a Web Part page for creating, viewing, or managing the properties of projects in Project Web App.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ProjectDetailPage 
+class ProjectDetailPage 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectDetailPage
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ProjectDetailPage
+
 http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages('{pageid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project detail page.|
-|Item|&#x2713;|&#x2713;|&#x2713;|SPListItem|Gets an item from the list of items on the project detail page.|
-|Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the title or name of the project detail page.|
-|PageType|&#x2713;|&#x2713;|&#x2713;|[PageType](PageType.md)|Gets the type of the project detail page.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project detail page.|
+|<a name="Item"></a>Item|&#x2713;|&#x2713;|&#x2713;|SPListItem|Gets an item from the list of items on the project detail page.|
+|<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the title or name of the project detail page.|
+|<a name="PageType"></a>PageType|&#x2713;|&#x2713;|&#x2713;|[PageType](PageType.md)|Gets the type of the project detail page.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[ProjectDetailPageCollection](ProjectDetailPageCollection.md)<br/>
+[SPListItem](https://msdn.microsoft.com/library/microsoft.sharepoint.splistitem)<br/>
+[Stage](Stage.md)<br/>
+[StageDetailPage](StageDetailPage.md)<br/>

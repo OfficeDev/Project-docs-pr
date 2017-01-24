@@ -1,136 +1,128 @@
 [comment]: # (Name:ProjectEngagement)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ProjectEngagement
+# <a name="name"></a>ProjectEngagement class
 
+inherits members from [Engagement](Engagement.md)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ProjectEngagement 
+class ProjectEngagement 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectEngagement
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
+PS.ProjectEngagement
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
-|:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|ApprovedFinish|&#x2713;|&#x2713;|&#x2713;|DateTime||
-|ApprovedMaxUnits|&#x2713;|&#x2713;|&#x2713;|Double||
-|ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime||
-|ApprovedWork|&#x2713;|&#x2713;|&#x2713;|String||
-|ApprovedWorkMilliseconds||&#x2713;|&#x2713;|Integer||
-|ApprovedWorkTimeSpan|&#x2713;||&#x2713;|TimeSpan||
-|HasUnsubmittedChanges|&#x2713;|&#x2713;|&#x2713;|Boolean||
-|Project|&#x2713;|&#x2713;|&#x2713;|[Project](Project.md)||
-|RequestedFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
-|RequestedMaxUnits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double||
-|RequestedStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
-|RequestedWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
-|RequestedWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|RequestedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan||
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void||
-|[GetTimephased(DateTime start, DateTime end, [TimeScale](TimeScale.md) timescale, [EngagementContourType](EngagementContourType.md) contourType)](#GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_)|&#x2713;|&#x2713;||[ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)||
+|<a name="ApprovedFinish"></a>ApprovedFinish|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|<a name="ApprovedMaxUnits"></a>ApprovedMaxUnits|&#x2713;|&#x2713;|&#x2713;|Double||
+|<a name="ApprovedStart"></a>ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime||
+|<a name="ApprovedWork"></a>ApprovedWork|&#x2713;|&#x2713;|&#x2713;|String||
+|<a name="ApprovedWorkMilliseconds"></a>ApprovedWorkMilliseconds||&#x2713;|&#x2713;|Integer||
+|<a name="ApprovedWorkTimeSpan"></a>ApprovedWorkTimeSpan|&#x2713;||&#x2713;|TimeSpan||
+|<a name="HasUnsubmittedChanges"></a>HasUnsubmittedChanges|&#x2713;|&#x2713;|&#x2713;|Boolean||
+|<a name="Project"></a>Project|&#x2713;|&#x2713;|&#x2713;|[Project](Project.md)||
+|<a name="RequestedFinish"></a>RequestedFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
+|<a name="RequestedMaxUnits"></a>RequestedMaxUnits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double||
+|<a name="RequestedStart"></a>RequestedStart|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
+|<a name="RequestedWork"></a>RequestedWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
+|<a name="RequestedWorkMilliseconds"></a>RequestedWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
+|<a name="RequestedWorkTimeSpan"></a>RequestedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan||
+
+### <a name="methods"></a>Methods
+
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the project engagement object.|
+|[GetTimephased(DateTime start, DateTime end, TimeScale timescale, EngagementContourType contourType)](#GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_)|&#x2713;|&#x2713;||[ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)||
 |[GetTimephasedByUrl(String start, String end, String scale, String contourType)](#GetTimephasedByUrl_String_start,_String_end,_String_scale,_String_contourType_)|||&#x2713;|[ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)||
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
+Deletes the project engagement object.
 
-
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_"></a>GetTimephased(DateTime start, DateTime end, [TimeScale](TimeScale.md) timescale, [EngagementContourType](EngagementContourType.md) contourType)
+#### <a name="GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_"></a>GetTimephased(DateTime start, DateTime end, [TimeScale](TimeScale.md) timescale, [EngagementContourType](EngagementContourType.md) contourType)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 ProjectEngagementTimephasedCollection GetTimephased(DateTime start, DateTime end, TimeScale timescale, EngagementContourType contourType)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| DateTime | 
-|end| DateTime | 
-|timescale| [TimeScale](TimeScale.md) | 
-|contourType| [EngagementContourType](EngagementContourType.md) | 
+|start|DateTime||
+|end|DateTime||
+|timescale|[TimeScale](TimeScale.md)||
+|contourType|[EngagementContourType](EngagementContourType.md)||
 
-
-#### Return Value
+##### Return Value
 
 [ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)
 
-### <a id="GetTimephasedByUrl_String_start,_String_end,_String_scale,_String_contourType_"></a>GetTimephasedByUrl(String start, String end, String scale, String contourType)
+#### <a name="GetTimephasedByUrl_String_start,_String_end,_String_scale,_String_contourType_"></a>GetTimephasedByUrl(String start, String end, String scale, String contourType)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 ProjectEngagementTimephasedCollection GetTimephasedByUrl(String start, String end, String scale, String contourType)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| String | 
-|end| String | 
-|scale| String | 
-|contourType| String | 
+|start|String||
+|end|String||
+|scale|String||
+|contourType|String||
 
-
-#### Return Value
+##### Return Value
 
 [ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[ProjectEngagementCollection](ProjectEngagementCollection.md)<br/>
+[ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)<br/>

@@ -1,35 +1,41 @@
+[comment]: # (Name:ProjectResource)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# ProjectResource class
+# <a name="name"></a>ProjectResource class
 
-Contains information about a project resource. The properties of ProjectResource are inheritable and common to draft and published project resources.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-## Syntax
+<a name="description"></a>Provides information about a project resource.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
+```C#
+class ProjectResource 
 ```
-Class ProjectResource 
-```
-
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectResource
 ```
 
 ### REST Interface
 
-This resource supports the DELETE, MERGE, and PUT HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ProjectResource
+
 http://<sitecollection> /<site> /_api/ProjectServer/ProjectResource('projectresourceid')
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
+### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the costs incurred for work that has been performed by the project resource, along with any other recorded costs. |
 |ActualCostWorkPerformed|&#x2713;|&#x2713;|&#x2713;|String|Gets the actual cost for work that has been performed by the project resource to date. |
@@ -97,8 +103,8 @@ http://<sitecollection> /<site> /_api/ProjectServer/ProjectResource('projectreso
 |WorkVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the difference between baseline work of a project resource and the currently scheduled work. |
 
 
-## See Also
 
-[DraftProjectResource class](DraftProjectResource.md) <br />
-[PublishedProjectResource class](PublishedProjectResource.md)
+## <a name="seeAlso"></a>See Also
 
+[DraftProjectResource](DraftProjectResource.md)<br/>
+[PublishedProjectResource](PublishedProjectResource.md)<br/>

@@ -1,154 +1,173 @@
 [comment]: # (Name:ProjectEngagementCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ProjectEngagementCollection
+# <a name="name"></a>ProjectEngagementCollection class
 
+inherits members from [ClientObjectCollection<ProjectEngagement>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ProjectEngagementCollection 
+class ProjectEngagementCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectEngagementCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ProjectEngagementCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) parameters)](#Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)||
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)||
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)||
-|[Remove([Engagement](Engagement.md) engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean||
-|[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void||
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{ProjectEngagementId}&#39;](#&#39;{ProjectEngagementId}&#39;)|||&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the specified ProjectEngagementId.|
+|[Add(ProjectEngagementCreationInformation parameters)](#Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Adds the [ProjectEngagement](ProjectEngagement.md) that is specified by the [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.|
+|[Remove(Engagement engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean|Removes the specified [ProjectEngagement](ProjectEngagement.md) from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the project engagement collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_"></a>Add([ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) parameters)
+#### <a name="&#39;{ProjectEngagementId}&#39;"></a>&#39;{ProjectEngagementId}&#39;
  
+Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the specified ProjectEngagementId.
 
+##### Syntax
 
-#### Syntax
+```
+ProjectEngagement http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{ProjectEngagementId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|ProjectEngagementId|String|the id of the ProjectEngagement|
+
+##### Return Value
+
+[ProjectEngagement](ProjectEngagement.md)
+
+#### <a name="Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_"></a>Add([ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) parameters)
+ 
+Adds the [ProjectEngagement](ProjectEngagement.md) that is specified by the [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 ProjectEngagement Add(ProjectEngagementCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) | 
+|parameters|[ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)|The properties that can be set when creating a project engagement.|
 
-
-#### Return Value
+##### Return Value
 
 [ProjectEngagement](ProjectEngagement.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
+Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.
 
-
-#### Syntax
+##### Syntax
 
 ```
 ProjectEngagement GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | 
+|uid|Guid|The Guid of the [ProjectEngagement](ProjectEngagement.md)|
 
-
-#### Return Value
+##### Return Value
 
 [ProjectEngagement](ProjectEngagement.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
+Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.
 
-
-#### Syntax
+##### Syntax
 
 ```
 ProjectEngagement GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | 
+|objectId|String|The id of the [ProjectEngagement](ProjectEngagement.md).|
 
-
-#### Return Value
+##### Return Value
 
 [ProjectEngagement](ProjectEngagement.md)
 
-### <a id="Remove_[Engagement]_Engagement.md__engagement_"></a>Remove([Engagement](Engagement.md) engagement)
+#### <a name="Remove_[Engagement]_Engagement.md__engagement_"></a>Remove([Engagement](Engagement.md) engagement)
  
+Removes the specified [ProjectEngagement](ProjectEngagement.md) from the collection.
 
-
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(Engagement engagement)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|engagement| [Engagement](Engagement.md) | 
+|engagement|[Engagement](Engagement.md)|The [ProjectEngagement](ProjectEngagement.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
  
+Updates the project engagement collection.
 
-
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[Project](Project.md)<br/>
+[ProjectEngagement](ProjectEngagement.md)<br/>
+[ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)<br/>

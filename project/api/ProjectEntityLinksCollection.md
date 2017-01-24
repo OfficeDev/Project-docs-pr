@@ -1,31 +1,27 @@
 [comment]: # (Name:ProjectEntityLinksCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ProjectEntityLinksCollection
+# <a name="name"></a>ProjectEntityLinksCollection class
 
+inherits members from [ClientObjectCollection<EntityLink>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ProjectEntityLinksCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks
 ```
 
+## <a name="members"></a>Members
 
-## Members
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-
-
-## See Also
+[EntityLink](EntityLink.md)<br/>

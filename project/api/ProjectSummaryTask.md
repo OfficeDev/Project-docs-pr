@@ -1,39 +1,44 @@
+[comment]: # (Name:ProjectSummaryTask)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# ProjectSummaryTask class
+# <a name="name"></a>ProjectSummaryTask class
+
+inherits members from [Task](Task.md)<br/>
+
+<a name="description"></a>
 
 Represents an entire project as a single task, with start and and finish dates, and 
 calculated values for project details. 
 
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
+```C#
+class ProjectSummaryTask 
 ```
-Class ProjectSummaryTask 
-```
-
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectSummaryTask
 ```
 
 ### REST Interface
 
-This resource supports the PUT, DELETE, and MERGE HTTP commands.
-
-<!-- 
-Need syntax for REST 
-```
+This resource supports the GET HTTP commands.
 
 ```
-   End of comment -->
+PS.ProjectSummaryTask
 
-## Members
+http://<sitecollection>/<site>/api/ProjectServer/ProjectsProjects('projectid')/ProjectSummaryTask
+```
 
-### Properties
+## <a name="members"></a>Members
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+### <a name="properties"></a>Properties
+
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets costs incurred for work already performed on the project, together with any other recorded costs that are associated with the project.|
 |ActualWork|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of work that has already been performed on the project.|
@@ -60,9 +65,6 @@ Need syntax for REST
 |WorkTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the total time scheduled for the project.|
 
 
-### Methods
+## <a name="seeAlso"></a>See Also
 
-The  **ProjectSummaryTask** object has no methods.
-
-
-
+[Project](Project.md)<br/>

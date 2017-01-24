@@ -128,7 +128,7 @@ PublishedProject GetById(String objectId)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [PublishedProject](PublishedProject.md)|
+|objectId|String|The id of the [PublishedProject](PublishedProject.md).|
 
 ##### Return Value
 

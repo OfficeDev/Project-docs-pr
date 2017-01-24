@@ -1,98 +1,116 @@
 [comment]: # (Name:ProjectDetailPageCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# ProjectDetailPageCollection
+# <a name="name"></a>ProjectDetailPageCollection class
 
-Represents a collection of project detail pages (PDPs).
+inherits members from [ClientObjectCollection<ProjectDetailPage>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of project detail pages (PDPs).
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ProjectDetailPageCollection 
+class ProjectDetailPageCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ProjectDetailPageCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ProjectDetailPageCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages
 ```
 
+## <a name="members"></a>Members
 
-## Members
-
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
-|:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|List|&#x2713;|&#x2713;|&#x2713;|SPList|Gets a list of available project detail pages.|
-
-
-
-
-
-### Methods
+### <a name="properties"></a>Properties
 
 |**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a project detail page from the list of available project detail pages by using a GUID identifier.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a project detail page from the list of available project detail pages by using a string identifier.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection at the specified index.|
+|<a name="List"></a>List|&#x2713;|&#x2713;|&#x2713;|SPList|Gets a list of available project detail pages.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{ProjectDetailPageId}&#39;](#&#39;{ProjectDetailPageId}&#39;)|||&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the specified ProjectDetailPageId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="&#39;{ProjectDetailPageId}&#39;"></a>&#39;{ProjectDetailPageId}&#39;
  
-Gets a project detail page from the list of available project detail pages by using a GUID identifier.
+Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the specified ProjectDetailPageId.
 
-#### Syntax
+##### Syntax
+
+```
+ProjectDetailPage http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages('{ProjectDetailPageId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|ProjectDetailPageId|String|the id of the ProjectDetailPage|
+
+##### Return Value
+
+[ProjectDetailPage](ProjectDetailPage.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+ 
+Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.
+
+##### Syntax
 
 ```
 ProjectDetailPage GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | The GUID identifier of a project detail page.
+|uid|Guid|The Guid of the [ProjectDetailPage](ProjectDetailPage.md)|
 
-
-#### Return Value
+##### Return Value
 
 [ProjectDetailPage](ProjectDetailPage.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a project detail page from the list of available project detail pages by using a string identifier.
+Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 ProjectDetailPage GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string identifier of a project detail page.
+|objectId|String|The id of the [ProjectDetailPage](ProjectDetailPage.md).|
 
-
-#### Return Value
+##### Return Value
 
 [ProjectDetailPage](ProjectDetailPage.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EnterpriseProjectType](EnterpriseProjectType.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>
+[ProjectDetailPage](ProjectDetailPage.md)<br/>
+[SPList](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.splist.aspx)<br/>
