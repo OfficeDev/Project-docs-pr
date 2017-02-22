@@ -1,18 +1,24 @@
-# PublishedAssignmentCollection class
+[comment]: # (Name:PublishedAssignmentCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-Represents a collection of published assignments.
+# <a name="name"></a>PublishedAssignmentCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<PublishedAssignment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of published assignments.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```
+```C#
 class PublishedAssignmentCollection
 ```
 
 ### JSOM
 
-```
+```JavaScript
 PS.PublishedAssignmentCollection
 ```
 
@@ -21,70 +27,91 @@ PS.PublishedAssignmentCollection
 This resource supports GET HTTP command:
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments
+PS.PublishedAssignmentCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Assignments
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
+### <a name="properties"></a>Properties
 
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |[PublishedAssignment](PublishedAssignment.md)|Gets the current PublishedAssignment from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-### Methods
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{PublishedAssignmentId}&#39;](#&#39;{PublishedAssignmentId}&#39;)|||&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the specified PublishedAssignmentId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.|
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
-|:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a published assignment from the collection with the specified Guid.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a published assignment from the collection with the Id value.|
+<br/>
+#### Method Details
 
+#### <a name="&#39;{PublishedAssignmentId}&#39;"></a>&#39;{PublishedAssignmentId}&#39;
+ 
+Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the specified PublishedAssignmentId.
 
-## Method Details
-
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a published assignment from the collection with the specified Guid.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+PublishedAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Assignments('{PublishedAssignmentId}')
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|A Guid value.
+|PublishedAssignmentId|String|the id of the PublishedAssignment|
 
-#### Return Value
+##### Return Value
 
-[PublishedAssignment](PublishedAssignment.md)<br />
-The assignment in the published project.
+[PublishedAssignment](PublishedAssignment.md)
 
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-### <a name="getbyid"></a>GetById(String id)
+Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.
 
-Gets a published assignment from the collection with the Id value.
-
-#### Syntax
+##### Syntax
 
 ```
-GetById(string id)
+PublishedAssignment GetByGuid(Guid uid)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| string|The string representation of the published assignment GUID.
+|uid|Guid|The Guid of the [PublishedAssignment](PublishedAssignment.md)|
 
-#### Return Value
+##### Return Value
+
+[PublishedAssignment](PublishedAssignment.md)
+
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
+
+Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.
+
+##### Syntax
+
+```
+PublishedAssignment GetById(String objectId)
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|objectId|String|The id of the [PublishedAssignment](PublishedAssignment.md).|
+
+##### Return Value
+
+[PublishedAssignment](PublishedAssignment.md)
+
+## <a name="seeAlso"></a>See Also
 
 [PublishedAssignment](PublishedAssignment.md)<br />
-The assignment in the published project.
-
+[PublishedProject](PublishedProject.md)<br/>
+[PublishedProjectResource](PublishedProjectResource.md)<br/>
+[PublishedTask](PublishedTask.md)<br/>

@@ -1,56 +1,54 @@
 [comment]: # (Name:ProjectType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-15 22:38:06Z)
+[comment]: # (Status:Verified)
 
-# ProjectType
+# <a name="name"></a>ProjectType enumeration
 
-Specifies the type of project.
+<a name="description"></a>Specifies the type of project.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ProjectType 
+enum ProjectType 
 ```
-### JSOM/REST
+### JSOM
 
-```
+```JavaScript
 PS.ProjectType
 ```
+### REST Interface
 
+ProjectType enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|Void|-1||
-|MinRequestValue|0||
-|Project|0| A standard project.|
-|Template|1| A project that is used as a template when creating other projects.|
-|Global|2| The enterprise global project.|
-|ResGlobal|3| The enterprise resource pool.|
-|LightWeightProject|4| Deprecated, do not use.|
-|InsertedProject|5| A subproject.|
-|MasterProject|6| A master project, which contains one or more subprojects.|
-|TimesheetAdminProject|7| Timesheet administrative project, used in upgrades from Microsoft Office Project Server 2007. For more information, see the Reporting database schema reference.|
-|NewProject|100| Internal only; do not use.|
-|NewOffset|100| Internal only; do not use.|
-|NewTemplate|101| Internal only; do not use.|
-|MaxRequestValue|101||
-|NewGlobal|102| Internal only; do not use.|
-|NewResGlobal|103| Internal only; do not use.|
-|InactiveProject|1000| Internal only; do not use.|
-|InactiveOffset|1000| Internal only; do not use.|
-|InactiveTemplate|1001| Internal only; do not use.|
-|InactiveGlobal|1002| Internal only; do not use.|
+|<a name="Void"></a>Void|-1|Internal only; do not use.|
+|<a name="MinRequestValue"></a>MinRequestValue|0|Internal only; do not use.|
+|<a name="Project"></a>Project|0|A standard project.|
+|<a name="Template"></a>Template|1|A project that is used as a template when creating other projects.|
+|<a name="Global"></a>Global|2|The enterprise global project.|
+|<a name="ResGlobal"></a>ResGlobal|3|The enterprise resource pool.|
+|<a name="LightWeightProject"></a>LightWeightProject|4|Deprecated, do not use.|
+|<a name="InsertedProject"></a>InsertedProject|5|A subproject.|
+|<a name="MasterProject"></a>MasterProject|6|A master project, which contains one or more subprojects.|
+|<a name="TimesheetAdminProject"></a>TimesheetAdminProject|7|Timesheet administrative project, used in upgrades from Microsoft Office Project Server 2007. For more information, see the Reporting database schema reference.|
+|<a name="NewProject"></a>NewProject|100|Internal only; do not use.|
+|<a name="NewOffset"></a>NewOffset|100|Internal only; do not use.|
+|<a name="NewTemplate"></a>NewTemplate|101|Internal only; do not use.|
+|<a name="MaxRequestValue"></a>MaxRequestValue|101|Internal only; do not use.|
+|<a name="NewGlobal"></a>NewGlobal|102|Internal only; do not use.|
+|<a name="NewResGlobal"></a>NewResGlobal|103|Internal only; do not use.|
+|<a name="InactiveProject"></a>InactiveProject|1000|Internal only; do not use.|
+|<a name="InactiveOffset"></a>InactiveOffset|1000|Internal only; do not use.|
+|<a name="InactiveTemplate"></a>InactiveTemplate|1001|Internal only; do not use.|
+|<a name="InactiveGlobal"></a>InactiveGlobal|1002|Internal only; do not use.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[Project](Project.md)<br/>

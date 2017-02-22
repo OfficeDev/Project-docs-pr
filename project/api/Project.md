@@ -29,14 +29,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.Project
 
-http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')
+http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ApprovedEnd"></a>ApprovedEnd|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved end date in the project portfolio planner.|
 |<a name="ApprovedStart"></a>ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved start date in the project portfolio planner.|
@@ -87,7 +87,7 @@ http://<sitecollection> /<site> /_api/ProjectServer/Projects('projectid')
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[EnterProjectStage(Stage stage)](#EnterProjectStage_[Stage]_Stage.md__stage_)|&#x2713;|&#x2713;|&#x2713;|void|Switches the project to the specified stage in a Project Server workflow.|
 |[GetResourcePlan(DateTime start, DateTime end, TimeScale timeScale)](#GetResourcePlan_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timeScale_)|&#x2713;|&#x2713;||[ResourcePlan](ResourcePlan.md)|Gets resource plan data for a project by filtering project data with date range and timescale parameters.|
