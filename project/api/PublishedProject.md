@@ -81,7 +81,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')
 |<a name="SummaryTaskId"></a>SummaryTaskId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the hidden project summary task. (Inherited from[Project](Project.md).)|
 |<a name="TaskLinks"></a>TaskLinks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets the collection of task links for the project.|
 |<a name="Tasks"></a>Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project.|
-|<a name="TrackingMode"></a>TrackingMode|&#x2713;|&#x2713;|&#x2713;|[PSTrackingModeEnum](PSTrackingModeEnum.md)|Gets the default tracking method for all assignments in the project.|
+|<a name="TrackingMode"></a>TrackingMode|&#x2713;|&#x2713;|&#x2713;|[TrackingMode](TrackingMode.md)|Gets the default tracking method for all assignments in the project.|
 |<a name="UtilizationDate"></a>UtilizationDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time of resource utilization for the current project.|
 |<a name="UtilizationType"></a>UtilizationType|&#x2713;|&#x2713;|&#x2713;|[UtilizationType](UtilizationType.md)|Gets the derivation source(s) of the summary resource assignments of a project.|
 |<a name="WeekStartDay"></a>WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the day of the week on which a work week starts.|

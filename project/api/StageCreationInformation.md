@@ -1,55 +1,67 @@
 [comment]: # (Name:StageCreationInformation)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# StageCreationInformation
+# <a name="name"></a>StageCreationInformation class
 
-Provides methods and properties that are used to create a project workflow stage.
+<a name="description"></a>Contains the properties that can be set when creating a [Stage](Stage.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StageCreationInformation 
+class StageCreationInformation 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StageCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.StageCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/Stages/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'Behavior':'value', 
+		'CheckInRequired':'value', 
+		'CustomFields':'value', 
+		'Description':'value', 
+		'Id':'value', 
+		'Name':'value', 
+		'PhaseId':'value', 
+		'ProjectDetailPages':'value', 
+		'SubmitDescription':'value', 
+		'WorkflowStatusPageId':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Behavior|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[StrategicImpactBehavior](StrategicImpactBehavior.md)|Gets or sets the Strategic Impact value for a project stage; for example, Read Only.|
-|CheckInRequired|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether project check in is required.|
-|CustomFields|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|ReadOnlyCollection`1|Gets or sets the collection of all the custom fields that have values set for the project stage.|
-|Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the stage description.|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the project stage.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the project stage.|
-|PhaseId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the phase that contains the project stage.|
-|ProjectDetailPages|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|ReadOnlyCollection`1|Gets or sets a collection of project detail pages for the project stage.|
-|SubmitDescription|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description for submit.|
-|WorkflowStatusPageId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the stage workflow status project detail page.|
+|<a name="Behavior"></a>Behavior|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[StrategicImpactBehavior](StrategicImpactBehavior.md)|Gets or sets the Strategic Impact value for a project stage; for example, Read Only.|
+|<a name="CheckInRequired"></a>CheckInRequired|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether project check in is required.|
+|<a name="CustomFields"></a>CustomFields|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CustomFieldCollection](CustomFieldCollection.md)|Gets or sets the collection of all the custom fields that have values set for the project stage.|
+|<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the stage description.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the project stage.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the project stage.|
+|<a name="PhaseId"></a>PhaseId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the phase that contains the project stage.|
+|<a name="ProjectDetailPages"></a>ProjectDetailPages|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[ProjectDetailPageCollection](ProjectDetailPageCollection.md)|Gets or sets a collection of project detail pages for the project stage.|
+|<a name="SubmitDescription"></a>SubmitDescription|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description for submit.|
+|<a name="WorkflowStatusPageId"></a>WorkflowStatusPageId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the stage workflow status project detail page.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[Stage](Stage.md)<br/>
+[StageCollection](StageCollection.md)<br/>
