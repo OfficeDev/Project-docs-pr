@@ -50,7 +50,7 @@ http://<sitecollection>/<site>/api/ProjectServer
 |<a name="ProjectDetailPages"></a>ProjectDetailPages|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPageCollection](ProjectDetailPageCollection.md)|Gets a collection of project detail pages in the Project Server instance.|
 |<a name="Projects"></a>Projects|&#x2713;|&#x2713;|&#x2713;|[ProjectCollection](ProjectCollection.md)|Gets the collection of projects in the Project Web App instance.|
 |<a name="ProjectsPageSize"></a>ProjectsPageSize|&#x2713;|&#x2713;|&#x2713;|Integer|The number of [PublishedProject](PublishedProject.md) objects that can be in a single request when also requesting child entities.|
-|<a name="ServiceStatus"></a>ServiceStatus|&#x2713;|&#x2713;|&#x2713;|[ServiceStatus](ServiceStatus.md)|Gets information about the status of the Project Server service.|
+|<a name="ServiceStatus"></a>ServiceStatus|&#x2713;|&#x2713;||[ServiceStatus](ServiceStatus.md)|Gets information about the status of the Project Server service.|
 |<a name="Stages"></a>Stages|&#x2713;|&#x2713;|&#x2713;|[StageCollection](StageCollection.md)|Gets the collection of Project Server workflow stages in a Project Web App instance.|
 |<a name="TimeSheetPeriods"></a>TimeSheetPeriods|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)|Gets a collection of time sheet periods.|
 |<a name="UserPermissions"></a>UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)||

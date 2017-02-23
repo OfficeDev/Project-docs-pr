@@ -1,93 +1,114 @@
 [comment]: # (Name:PublishedTaskLinkCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# PublishedTaskLinkCollection
+# <a name="name"></a>PublishedTaskLinkCollection class
 
-Represents a collection of task links in a published project.
+inherits members from [ClientObjectCollection<PublishedTaskLink>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of task links in a published project.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class PublishedTaskLinkCollection 
+class PublishedTaskLinkCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.PublishedTaskLinkCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET HTTP commands.
 
 ```
+PS.PublishedTaskLinkCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/TaskLinks
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a task link from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Returns a task link in the collection with the [Id](a4048967-b356-2376-6df1-a2beff00d6b8.md) value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{PublishedTaskLinkId}&#39;](#&#39;{PublishedTaskLinkId}&#39;)|||&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the specified PublishedTaskLinkId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the Guid value.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="&#39;{PublishedTaskLinkId}&#39;"></a>&#39;{PublishedTaskLinkId}&#39;
  
-Gets a task link from the collection with the specified GUID.
+Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the specified PublishedTaskLinkId.
 
-#### Syntax
+##### Syntax
+
+```
+PublishedTaskLink http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/TaskLinks('{PublishedTaskLinkId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|PublishedTaskLinkId|String|the id of the PublishedTaskLink|
+
+##### Return Value
+
+[PublishedTaskLink](PublishedTaskLink.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+ 
+Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the Id value.
+
+##### Syntax
 
 ```
 PublishedTaskLink GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [PublishedTaskLink](PublishedTaskLink.md)|
 
-
-#### Return Value
+##### Return Value
 
 [PublishedTaskLink](PublishedTaskLink.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Returns a task link in the collection with the [Id](a4048967-b356-2376-6df1-a2beff00d6b8.md) value.
+Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 PublishedTaskLink GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the task link GUID.
+|objectId|String|The id of the [PublishedTaskLink](PublishedTaskLink.md).|
 
-
-#### Return Value
+##### Return Value
 
 [PublishedTaskLink](PublishedTaskLink.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[PublishedProject](PublishedProject.md)<br/>
+[PublishedTask](PublishedTask.md)<br/>
+[PublishedTaskLink](PublishedTaskLink.md)<br/>

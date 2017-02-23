@@ -108,3 +108,4 @@ void
 
 [PlanAssignmentCollection](PlanAssignmentCollection.md)<br/>
 [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)<br/>
+[ResourceType](ResourceType.md)<br/>

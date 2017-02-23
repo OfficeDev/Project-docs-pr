@@ -1,70 +1,64 @@
 [comment]: # (Name:ResourceCalendarException)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# ResourceCalendarException
+# <a name="name"></a>ResourceCalendarException class
 
-Represents a resource calendar exception.
+inherits members from [CalendarException](CalendarException.md)<br/>
 
+<a name="description"></a>Represents a resource calendar exception.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ResourceCalendarException 
+class ResourceCalendarException 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ResourceCalendarException
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST and DELETE HTTP commands.
 
 ```
+PS.ResourceCalendarException
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/ResourceCalendarExceptions({id})
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="methods"></a>Methods
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the CalendarException object. (Inherited from[CalendarException](71c6306e-4fcf-161c-9188-2edc9c5fba96.md).)|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the resource calendar exception object.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
-Deletes the CalendarException object. (Inherited from[CalendarException](71c6306e-4fcf-161c-9188-2edc9c5fba96.md).)
+Deletes the resource calendar exception object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[CalendarException](CalendarException.md)<br/>

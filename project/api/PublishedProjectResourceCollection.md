@@ -1,18 +1,24 @@
-# PublishedProjectResourceCollection class
+[comment]: # (Name:PublishedProjectResourceCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Incomplete)
 
-Represents a collection of resources in a published project.
+# <a name="name"></a>PublishedProjectResourceCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<PublishedProjectResource>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of resources in a published project.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```
+```C#
 class PublishedProjectResourceCollection 
 ```
 
 ### JSOM
 
-```
+```JavaScript
 PS.PublishedProjectResourceCollection
 ```
 
@@ -21,72 +27,90 @@ PS.PublishedProjectResourceCollection
 This resource supports GET and POST HTTP commands:
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/ProjectResources
+PS.PublishedProjectResourceCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/ProjectResources
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
+### <a name="properties"></a>Properties
 
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |PublishedProjectResource|Gets the current resource from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a resource from the collection with the specified Guid.|
-|[GetById(String id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a resource from the collection with the Id value.|
+|[&#39;{PublishedProjectResourceId}&#39;](#&#39;{PublishedProjectResourceId}&#39;)|||&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the specified PublishedProjectResourceId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.|
 
+<br/>
+#### Method Details
 
-## Method Details
+#### <a name="&#39;{PublishedProjectResourceId}&#39;"></a>&#39;{PublishedProjectResourceId}&#39;
+ 
+Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the specified PublishedProjectResourceId.
 
-
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a resource from the collection with the specified Guid.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+PublishedProjectResource http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/ProjectResources('{PublishedProjectResourceId}')
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|A guid value.
+|PublishedProjectResourceId|String|the id of the PublishedProjectResource|
 
-#### Return Value
+##### Return Value
+
+[PublishedProjectResource](PublishedProjectResource.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+
+Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.
+
+##### Syntax
+
+```
+PublishedProjectResource GetByGuid(Guid uid)
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|uid|Guid|The Guid of the [PublishedProjectResource](PublishedProjectResource.md)|
+
+##### Return Value
 
 [PublishedProjectResource](PublishedProjectResource.md)<br />
 A [PublishedProjectResource](PublishedProjectResource.md) object.
 
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
+Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.
 
-### <a name="getbyid"></a>GetById(string id)
-
-Gets a resource from the collection with the Id value.
-
-#### Syntax
+##### Syntax
 
 ```
-GetById(string id)
+PublishedProjectResource GetById(String objectId)
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| string|The string representation of the project resource GUID.
+|objectId|String|The id of the [PublishedProjectResource](PublishedProjectResource.md).|
 
-#### Return Value
+##### Return Value
 
+[PublishedProjectResource](PublishedProjectResource.md)
+
+## <a name="seeAlso"></a>See Also
+
+[PublishedProject](PublishedProject.md)<br/>
 [PublishedProjectResource](PublishedProjectResource.md)<br />
-The [PublishedProjectResource](PublishedProjectResource.md) with the specified ID.
-

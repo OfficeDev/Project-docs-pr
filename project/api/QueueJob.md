@@ -1,82 +1,83 @@
 [comment]: # (Name:QueueJob)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# QueueJob
+# <a name="name"></a>QueueJob class
 
-Queues a project for publishing.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Queues a project for publishing.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class QueueJob 
+class QueueJob 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.QueueJob
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET HTTP commands.
 
 ```
+PS.QueueJob
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs('{jobid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the queue job.|
-|JobState|&#x2713;|&#x2713;|&#x2713;|[JobState](JobState.md)|Gets the current progress of a job that is queued.|
-|MessageType|&#x2713;|&#x2713;|&#x2713;|[QueueMsgType](QueueMsgType.md)|Gets the queue message type, for sending a job to the Project Server Queue System..|
-|PercentComplete|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the percentage complete value for the queue job.|
-|Project|&#x2713;|&#x2713;|&#x2713;|[Project](Project.md)|Gets the project that is queued.|
-|Submitter|&#x2713;|&#x2713;|&#x2713;|SPUser|Gets the resource that submitted the queue job.|
-|WaitMilliseconds||&#x2713;|&#x2713;|Integer||
-|WaitTime|&#x2713;||&#x2713;|TimeSpan|Gets the expected wait time before the queue job will complete.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the queue job.|
+|<a name="JobState"></a>JobState|&#x2713;|&#x2713;|&#x2713;|[JobState](JobState.md)|Gets the current progress of a job that is queued.|
+|<a name="MessageType"></a>MessageType|&#x2713;|&#x2713;|&#x2713;|[QueueMsgType](QueueMsgType.md)|Gets the queue message type, for sending a job to the Project Server Queue System..|
+|<a name="PercentComplete"></a>PercentComplete|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the percentage complete value for the queue job.|
+|<a name="Project"></a>Project|&#x2713;|&#x2713;|&#x2713;|[Project](Project.md)|Gets the project that is queued.|
+|<a name="Submitter"></a>Submitter|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the resource that submitted the queue job.|
+|<a name="WaitMilliseconds"></a>WaitMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for expected wait time before the queue job will complete.|
+|<a name="WaitTime"></a>WaitTime|&#x2713;||&#x2713;|TimeSpan|Gets the expected wait time before the queue job will complete.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Cancel()](#Cancel__)|&#x2713;|&#x2713;|&#x2713;|void|Cancels the queue job.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="Cancel__"></a>Cancel()
+#### <a name="Cancel__"></a>Cancel()
  
 Cancels the queue job.
 
-#### Syntax
+##### Syntax
 
 ```
 void Cancel()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[DraftProject](DraftProject.md)<br/>
+[DraftProjectResourceCollection](DraftProjectResourceCollection.md)<br/>
+[ProjectCollection](ProjectCollection.md)<br/>
+[PublishedProject](PublishedProject.md)<br/>
+[QueueJobCollection](QueueJobCollection.md)<br/>
+[ResourcePlan](ResourcePlan.md)<br/>
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>

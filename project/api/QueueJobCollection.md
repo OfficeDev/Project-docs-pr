@@ -1,93 +1,113 @@
 [comment]: # (Name:QueueJobCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# QueueJobCollection
+# <a name="name"></a>QueueJobCollection class
 
-Represents a collection of QueueJob objects.
+inherits members from [ClientObjectCollection<QueueJob>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of QueueJob objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class QueueJobCollection 
+class QueueJobCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.QueueJobCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET HTTP commands.
 
 ```
+PS.QueueJobCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a queue job from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a queue job from the collection with the [Id](6b36690a-0871-f067-635a-bc6b265e2e66.md) value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{QueueJobId}&#39;](#&#39;{QueueJobId}&#39;)|||&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the specified QueueJobId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="&#39;{QueueJobId}&#39;"></a>&#39;{QueueJobId}&#39;
  
-Gets a queue job from the collection with the specified GUID.
+Gets a [QueueJob](QueueJob.md) from the collection with the specified QueueJobId.
 
-#### Syntax
+##### Syntax
+
+```
+QueueJob http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs('{QueueJobId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|QueueJobId|String|the id of the QueueJob|
+
+##### Return Value
+
+[QueueJob](QueueJob.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+ 
+Gets a [QueueJob](QueueJob.md) from the collection with the Id value.
+
+##### Syntax
 
 ```
 QueueJob GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [QueueJob](QueueJob.md)|
 
-
-#### Return Value
+##### Return Value
 
 [QueueJob](QueueJob.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a queue job from the collection with the [Id](6b36690a-0871-f067-635a-bc6b265e2e66.md) value.
+Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 QueueJob GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the queue job GUID.
+|objectId|String|The id of the [QueueJob](QueueJob.md).|
 
-
-#### Return Value
+##### Return Value
 
 [QueueJob](QueueJob.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[Project](Project.md)<br/>
+[QueueJob](QueueJob.md)<br/>

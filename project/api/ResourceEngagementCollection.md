@@ -1,133 +1,152 @@
 [comment]: # (Name:ResourceEngagementCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ResourceEngagementCollection
+# <a name="name"></a>ResourceEngagementCollection class
 
+inherits members from [ClientObjectCollection<ResourceEngagement>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ResourceEngagementCollection 
+class ResourceEngagementCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ResourceEngagementCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ResourceEngagementCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)||
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)||
-|[Remove([Engagement](Engagement.md) engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean||
-|[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void||
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{ResourceEngagementId}&#39;](#&#39;{ResourceEngagementId}&#39;)|||&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the specified ResourceEngagementId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.|
+|[Remove(Engagement engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean|Removes the specified [ResourceEngagement](ResourceEngagement.md) from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the resource engagement collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="&#39;{ResourceEngagementId}&#39;"></a>&#39;{ResourceEngagementId}&#39;
  
+Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the specified ResourceEngagementId.
 
+##### Syntax
 
-#### Syntax
+```
+ResourceEngagement http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{ResourceEngagementId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|ResourceEngagementId|String|the id of the ResourceEngagement|
+
+##### Return Value
+
+[ResourceEngagement](ResourceEngagement.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+ 
+Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.
+
+##### Syntax
 
 ```
 ResourceEngagement GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | 
+|uid|Guid|The Guid of the [ResourceEngagement](ResourceEngagement.md)|
 
-
-#### Return Value
+##### Return Value
 
 [ResourceEngagement](ResourceEngagement.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
+Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.
 
-
-#### Syntax
+##### Syntax
 
 ```
 ResourceEngagement GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | 
+|objectId|String|The id of the [ResourceEngagement](ResourceEngagement.md).|
 
-
-#### Return Value
+##### Return Value
 
 [ResourceEngagement](ResourceEngagement.md)
 
-### <a id="Remove_[Engagement]_Engagement.md__engagement_"></a>Remove([Engagement](Engagement.md) engagement)
+#### <a name="Remove_[Engagement]_Engagement.md__engagement_"></a>Remove([Engagement](Engagement.md) engagement)
  
+Removes the specified [ResourceEngagement](ResourceEngagement.md) from the collection.
 
-
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(Engagement engagement)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|engagement| [Engagement](Engagement.md) | 
+|engagement|[Engagement](Engagement.md)|The [ResourceEngagement](ResourceEngagement.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
  
+Updates the resource engagement collection.
 
-
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[ResourceEngagement](ResourceEngagement.md)<br/>

@@ -1,48 +1,45 @@
 [comment]: # (Name:PublishedTaskLink)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# PublishedTaskLink
+# <a name="name"></a>PublishedTaskLink class
 
-Represents a dependency relationship between the start and finish dates of two tasks.
+inherits members from [TaskLink](TaskLink.md)<br/>
 
+<a name="description"></a>Represents a dependency relationship between the start and finish dates of two tasks.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class PublishedTaskLink 
+class PublishedTaskLink 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.PublishedTaskLink
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.PublishedTaskLink
+
 http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/TaskLinks('{linkid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|DependencyType|&#x2713;|&#x2713;|&#x2713;|[DependencyType](DependencyType.md)|Gets the type of link relationship between two tasks.|
-|End|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets the task at the end of the link.|
-|Start|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets the task at the start of the link.|
+|<a name="DependencyType"></a>DependencyType|&#x2713;|&#x2713;|&#x2713;|[DependencyType](DependencyType.md)|Gets the type of link relationship between two tasks.|
+|<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets the task at the end of the link.|
+|<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets the task at the start of the link.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)<br/>

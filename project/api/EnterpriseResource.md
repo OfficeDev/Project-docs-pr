@@ -35,7 +35,7 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourcei
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the enterprise resource.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets a collection of status assignments for an enterprise resource.|
@@ -77,7 +77,7 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourcei
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the enterprise resource object.|
 |[ForceCheckIn()](#ForceCheckIn__)|&#x2713;|&#x2713;|&#x2713;|void|Forces a project to be checked in after it is left in a state of being checked out following the interruption or unexpected closing of Project Server.|
@@ -159,8 +159,8 @@ void SetCustomFieldValue(String fieldName, Object value)
 ##### Parameters
 |**Name**|**Type**|**Description**|
 |:------ |:----|:------ |
-|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.
-|value|Object|New value of the custom field.
+|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
+|value|Object|New value of the custom field.|
 
 ##### Return Value
 

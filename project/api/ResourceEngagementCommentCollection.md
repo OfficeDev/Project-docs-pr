@@ -1,41 +1,44 @@
 [comment]: # (Name:ResourceEngagementCommentCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ResourceEngagementCommentCollection
+# <a name="name"></a>ResourceEngagementCommentCollection class
 
+inherits members from [ClientObjectCollection<EngagementComment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ResourceEngagementCommentCollection 
+class ResourceEngagementCommentCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ResourceEngagementCommentCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ResourceEngagementCommentCollection
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[EngagementComment](EngagementComment.md)|Gets a [EngagementComment](EngagementComment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[EngagementComment](EngagementComment.md)|Gets a [EngagementComment](EngagementComment.md) from the collection at the specified index.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[EngagementComment](EngagementComment.md)<br/>

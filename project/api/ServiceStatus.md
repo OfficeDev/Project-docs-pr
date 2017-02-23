@@ -1,76 +1,63 @@
 [comment]: # (Name:ServiceStatus)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ServiceStatus
+# <a name="name"></a>ServiceStatus class
 
-Provides information about the status of the Project Server service.
+<a name="description"></a>Provides information about the status of the Project Server service.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ServiceStatus 
+class ServiceStatus 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ServiceStatus
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
-
-```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+See [ProjectContext](ProjectContext.md) for the REST properties/methods.
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|IsDelegate|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the current user has started a delegation session in PWA.|
-|IsReadOnly|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the Project Server database is in read-only mode.|
+|<a name="IsDelegate"></a>IsDelegate|&#x2713;|&#x2713;||Boolean|Gets a value that indicates whether the current user has started a delegation session in PWA.|
+|<a name="IsReadOnly"></a>IsReadOnly|&#x2713;|&#x2713;||Boolean|Gets a value that indicates whether the Project Server database is in read-only mode.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[StopDelegation()](#StopDelegation__)|&#x2713;|&#x2713;|&#x2713;|void|Stops the current delegation session.|
+|[StopDelegation()](#StopDelegation__)|&#x2713;|&#x2713;||void|Stops the current delegation session.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="StopDelegation__"></a>StopDelegation()
+#### <a name="StopDelegation__"></a>StopDelegation()
  
 Stops the current delegation session.
 
-#### Syntax
+##### Syntax
 
 ```
 void StopDelegation()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also

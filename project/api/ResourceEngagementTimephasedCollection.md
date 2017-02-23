@@ -1,93 +1,91 @@
 [comment]: # (Name:ResourceEngagementTimephasedCollection)
-[comment]: # (Type:Object)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# ResourceEngagementTimephasedCollection
+# <a name="name"></a>ResourceEngagementTimephasedCollection class
 
+inherits members from [ClientObjectCollection<ResourceEngagementTimephasedPeriod>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class ResourceEngagementTimephasedCollection 
+class ResourceEngagementTimephasedCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.ResourceEngagementTimephasedCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.ResourceEngagementTimephasedCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{engagementid}')/GetTimephasedByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}',contourType='{contourType}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)|Gets a [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)|Gets a [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetByStart(DateTime date)](#GetByStart_DateTime_date_)|&#x2713;|&#x2713;||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)||
 |[GetByStartUrl(String date)](#GetByStartUrl_String_date_)|||&#x2713;|[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)||
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="GetByStart_DateTime_date_"></a>GetByStart(DateTime date)
+#### <a name="GetByStart_DateTime_date_"></a>GetByStart(DateTime date)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 ResourceEngagementTimephasedPeriod GetByStart(DateTime date)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|date| DateTime | 
+|date|DateTime||
 
-
-#### Return Value
+##### Return Value
 
 [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)
 
-### <a id="GetByStartUrl_String_date_"></a>GetByStartUrl(String date)
+#### <a name="GetByStartUrl_String_date_"></a>GetByStartUrl(String date)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 ResourceEngagementTimephasedPeriod GetByStartUrl(String date)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|date| String | 
+|date|String||
 
-
-#### Return Value
+##### Return Value
 
 [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[ResourceEngagement](ResourceEngagement.md)<br/>
+[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)<br/>

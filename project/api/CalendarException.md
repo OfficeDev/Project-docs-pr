@@ -32,7 +32,7 @@ PS.CalendarException
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Calendar"></a>Calendar|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets the name of the calendar that is associated with the exception.|
 |<a name="Finish"></a>Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time that the calendar exception ends.|
@@ -58,7 +58,7 @@ PS.CalendarException
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the calendar exception object.|
 

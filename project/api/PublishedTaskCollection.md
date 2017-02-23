@@ -1,18 +1,24 @@
-# PublishedTaskCollection class
+[comment]: # (Name:PublishedTaskCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-Represents a collection of tasks in a published project.
+# <a name="name"></a>PublishedTaskCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<PublishedTask>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of tasks in a published project.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```
+```C#
 class PublishedTaskCollection 
 ```
 
 ### JSOM
 
-```
+```JavaScript
 PS.PublishedTaskCollection
 ```
 
@@ -21,73 +27,88 @@ PS.PublishedTaskCollection
 This resource supports GET HTTP command:
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Tasks
+PS.PublishedTaskCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
-
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+### <a name="properties"></a>Properties
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |PublishedTask|Gets the current PublishedTask from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-### Methods
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{PublishedTaskId}&#39;](#&#39;{PublishedTaskId}&#39;)|||&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the specified PublishedTaskId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.|
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
-|:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a task in the collection with the specified Guid.|
-|[GetById(string id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a task in the collection with the Id value.|
+<br/>
+#### Method Details
 
+#### <a name="&#39;{PublishedTaskId}&#39;"></a>&#39;{PublishedTaskId}&#39;
 
-## Method Details
+Gets a [PublishedTask](PublishedTask.md) from the collection with the specified PublishedTaskId.
 
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Gets a task in the collection with the specified Guid.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+PublishedTask http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks('{PublishedTaskId}')
 ```
 
-#### Parameters
-
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|A guid value.
+|PublishedTaskId|String|the id of the PublishedTask|
 
-#### Return Value
+##### Return Value
 
+[PublishedTask](PublishedTask.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+
+Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.
+
+##### Syntax
+
+```
+PublishedTask GetByGuid(Guid uid)
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|uid|Guid|The Guid of the [PublishedTask](PublishedTask.md)|
+
+##### Return Value
+
+[PublishedTask](PublishedTask.md)
+
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
+
+Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.
+
+##### Syntax
+
+```
+PublishedTask GetById(String objectId)
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|objectId|String|The id of the [PublishedTask](PublishedTask.md).|
+
+##### Return Value
 [PublishedTask](PublishedTask.md)<br />
 The task in the published project.
 
+## <a name="seeAlso"></a>See Also
 
-
-### <a name="getbyid"></a>GetById(string id)
-
-Gets a task in the collection with the Id value.
-
-#### Syntax
-
-```
-GetById(string id)
-```
-
-#### Parameters
-
-|**Name** |**Type**|**Description**|
-|:------ |:----|:------ |
-|id| string|The string representation of the task Guid.
-
-#### Return Value
-
-[PublishedTask](PublishedTask.md)<br />
-The task in the published project.
-
-
-
+[PublishedProject](PublishedProject.md)<br/>
+[PublishedTask](PublishedTask.md)<br/>

@@ -1,6 +1,6 @@
 [comment]: # (Name:PublishedProject)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>PublishedProject class
 
