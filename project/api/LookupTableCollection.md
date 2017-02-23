@@ -34,14 +34,14 @@ http://<sitecollection>/<site>/api/ProjectServer/LookupTables
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{LookupTableId}&#39;](#&#39;{LookupTableId}&#39;)|||&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the specified LookupTableId.|
 |[Add(LookupTableCreationInformation parameters)](#Add_[LookupTableCreationInformation]_LookupTableCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Adds the [LookupTable](LookupTable.md) that is specified by the [LookupTableCreationInformation](LookupTableCreationInformation.md) object to the collection.|
@@ -67,7 +67,7 @@ LookupTable http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{Look
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|LookupTableId|String|the id of the LookupTable
+|LookupTableId|String|the id of the LookupTable|
 
 ##### Return Value
 
@@ -86,7 +86,7 @@ LookupTable Add(LookupTableCreationInformation parameters)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[LookupTableCreationInformation](LookupTableCreationInformation.md)|The properties that can be set when creating a lookup table.
+|parameters|[LookupTableCreationInformation](LookupTableCreationInformation.md)|The properties that can be set when creating a lookup table.|
 
 ##### Return Value
 
@@ -105,7 +105,7 @@ LookupTable GetByAppAlternateId(String objectId)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The alternate custom field GUID.
+|objectId|String|The alternate custom field GUID.|
 
 ##### Return Value
 
@@ -124,7 +124,7 @@ LookupTable GetByGuid(Guid uid)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [LookupTable](LookupTable.md)
+|uid|Guid|The Guid of the [LookupTable](LookupTable.md)|
 
 ##### Return Value
 
@@ -143,7 +143,7 @@ LookupTable GetById(String objectId)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [LookupTable](LookupTable.md)
+|objectId|String|The id of the [LookupTable](LookupTable.md).|
 
 ##### Return Value
 
@@ -162,7 +162,7 @@ Boolean Remove(LookupTable table)
 ##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|table|[LookupTable](LookupTable.md)|The [LookupTable](LookupTable.md) to remove.
+|table|[LookupTable](LookupTable.md)|The [LookupTable](LookupTable.md) to remove.|
 
 ##### Return Value
 
