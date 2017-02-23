@@ -38,9 +38,9 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{fieldid}')
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate custom field GUID that is specified in an App package for Project Online.|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the custom field.|
-|<a name="EntityType"></a>EntityType|&#x2713;|&#x2713;|&#x2713;|[Entity](Entity.md)|Gets the type of entity (project, task, or resource) for the custom field.|
+|<a name="EntityType"></a>EntityType|&#x2713;|&#x2713;|&#x2713;|[EntityType](EntityType.md)|Gets the type of entity (project, task, or resource) for the custom field.|
 |<a name="EntityTypeId"></a>EntityTypeId|||&#x2713;|Guid|Gets the type of entity type id(project, task, or resource) for the custom field.|
-|<a name="FieldType"></a>FieldType|&#x2713;|&#x2713;|&#x2713;|[Type](Type.md)|Gets the type of the custom field.|
+|<a name="FieldType"></a>FieldType|&#x2713;|&#x2713;|&#x2713;|[CustomFieldType](CustomFieldType.md)|Gets the type of the custom field.|
 |<a name="Formula"></a>Formula|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the formula that calculates the value of a custom field.|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the custom field.|
 |<a name="InternalName"></a>InternalName|&#x2713;|&#x2713;|&#x2713;|String|Gets the internal name of the custom field. Reserved for internal use.|
