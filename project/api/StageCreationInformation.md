@@ -1,6 +1,6 @@
 [comment]: # (Name:StageCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>StageCreationInformation class
 

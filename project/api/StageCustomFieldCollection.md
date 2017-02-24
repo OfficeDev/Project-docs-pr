@@ -1,135 +1,154 @@
 [comment]: # (Name:StageCustomFieldCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StageCustomFieldCollection
+# <a name="name"></a>StageCustomFieldCollection class
 
-Represents a collection of [StageCustomField](ba506544-b74f-12ec-c4a8-214bf0be1d9a.md) objects, which are custom fields in a workflow stage.
+inherits members from [ClientObjectCollection<StageCustomField>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [StageCustomField](StageCustomField.md) objects, which are custom fields in a workflow stage.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StageCustomFieldCollection 
+class StageCustomFieldCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StageCustomFieldCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.StageCustomFieldCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) creationInfo)](#Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Adds the custom field that is specified by the [StageCustomFieldCreationInformation](e2eff307-e918-7cd7-e5f8-6828ac9fb82d.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a stage custom field from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a stage custom field from the collection with the [Id](a17f3213-48ec-dc7f-bb50-4f8550506ae8.md) value.|
-|[Remove([StageCustomField](StageCustomField.md) field)](#Remove_[StageCustomField]_StageCustomField.md__field_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified stage custom field from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{StageCustomFieldId}&#39;](#&#39;{StageCustomFieldId}&#39;)|||&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the specified StageCustomFieldId.|
+|[Add(StageCustomFieldCreationInformation creationInfo)](#Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Adds the [StageCustomField](StageCustomField.md) that is specified by the [StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.|
+|[Remove(StageCustomField field)](#Remove_[StageCustomField]_StageCustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StageCustomField](StageCustomField.md) from the collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_"></a>Add([StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) creationInfo)
+#### <a name="&#39;{StageCustomFieldId}&#39;"></a>&#39;{StageCustomFieldId}&#39;
  
-Adds the custom field that is specified by the [StageCustomFieldCreationInformation](e2eff307-e918-7cd7-e5f8-6828ac9fb82d.md) object to the collection.
+Gets a [StageCustomField](StageCustomField.md) from the collection with the specified StageCustomFieldId.
 
-#### Syntax
+##### Syntax
+
+```
+StageCustomField http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields('{StageCustomFieldId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|StageCustomFieldId|String|the id of the StageCustomField|
+
+##### Return Value
+
+[StageCustomField](StageCustomField.md)
+
+#### <a name="Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_"></a>Add([StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) creationInfo)
+ 
+Adds the [StageCustomField](StageCustomField.md) that is specified by the [StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 StageCustomField Add(StageCustomFieldCreationInformation creationInfo)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|creationInfo| [StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) | The properties of the custom field to add to the stage.
+|creationInfo|[StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md)|The properties that can be set when creating a stage custom field.|
 
-
-#### Return Value
+##### Return Value
 
 [StageCustomField](StageCustomField.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a stage custom field from the collection with the specified GUID.
+Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 StageCustomField GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [StageCustomField](StageCustomField.md)|
 
-
-#### Return Value
+##### Return Value
 
 [StageCustomField](StageCustomField.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a stage custom field from the collection with the [Id](a17f3213-48ec-dc7f-bb50-4f8550506ae8.md) value.
+Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 StageCustomField GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the stage custom field GUID.
+|objectId|String|The id of the [StageCustomField](StageCustomField.md).|
 
-
-#### Return Value
+##### Return Value
 
 [StageCustomField](StageCustomField.md)
 
-### <a id="Remove_[StageCustomField]_StageCustomField.md__field_"></a>Remove([StageCustomField](StageCustomField.md) field)
+#### <a name="Remove_[StageCustomField]_StageCustomField.md__field_"></a>Remove([StageCustomField](StageCustomField.md) field)
  
-Removes the specified stage custom field from the collection.
+Removes the specified [StageCustomField](StageCustomField.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(StageCustomField field)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|field| [StageCustomField](StageCustomField.md) | The custom field to remove.
+|field|[StageCustomField](StageCustomField.md)|The [StageCustomField](StageCustomField.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[Stage](Stage.md)<br/>
+[StageCustomField](StageCustomField.md)<br/>
+[StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md)<br/>

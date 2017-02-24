@@ -1,80 +1,76 @@
 [comment]: # (Name:StageDetailPage)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StageDetailPage
+# <a name="name"></a>StageDetailPage class
 
-Represents a project detail page (PDP) for a workflow stage.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents a project detail page (PDP) for a workflow stage.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StageDetailPage 
+class StageDetailPage 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StageDetailPage
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
+PS.StageDetailPage
+
 http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/ProjectDetailPages('{pageid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the PDP. Read-write String.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the PDP. Read-only Guid.|
-|Page|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[ProjectDetailPage](ProjectDetailPage.md)|Gets or sets the PDP in a workflow stage. Read/write ProjectDetailPage.|
-|Position|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the position of the PDP relative to the other PDPs that are displayed in the workflow stage.|
-|RequiresAttention|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the PDP requires attention.|
-|Stage|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a link to the related workflow stage for the PDP. Read-only Stage. Read-only Stage.|
+|<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the PDP. Read-write String.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the PDP. Read-only Guid.|
+|<a name="Page"></a>Page|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[ProjectDetailPage](ProjectDetailPage.md)|Gets or sets the PDP in a workflow stage. Read/write ProjectDetailPage.|
+|<a name="Position"></a>Position|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the position of the PDP relative to the other PDPs that are displayed in the workflow stage.|
+|<a name="RequiresAttention"></a>RequiresAttention|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the PDP requires attention.|
+|<a name="Stage"></a>Stage|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a link to the related workflow stage for the PDP. Read-only Stage. Read-only Stage.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the PDP for the workflow stage.|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the stage detail page object.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
-Deletes the PDP for the workflow stage.
+Deletes the stage detail page object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[StageDetailPageCollection](StageDetailPageCollection.md)<br/>
+[StageDetailPageCreationInformation](StageDetailPageCreationInformation.md)<br/>

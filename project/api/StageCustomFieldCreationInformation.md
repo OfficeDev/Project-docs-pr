@@ -1,48 +1,53 @@
 [comment]: # (Name:StageCustomFieldCreationInformation)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StageCustomFieldCreationInformation
+# <a name="name"></a>StageCustomFieldCreationInformation class
 
-Provides property settings and methods that are used to add a custom field to project stage information.
+<a name="description"></a>Contains the properties that can be set when creating a [StageCustomField](StageCustomField.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StageCustomFieldCreationInformation 
+class StageCustomFieldCreationInformation 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StageCustomFieldCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.StageCustomFieldCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'Id':'value', 
+		'ReadOnly':'value', 
+		'Required':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the custom field.|
-|ReadOnly|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the custom field is read-only in the stage.|
-|Required|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the custom field is required in the stage.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the custom field.|
+|<a name="ReadOnly"></a>ReadOnly|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the custom field is read-only in the stage.|
+|<a name="Required"></a>Required|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the custom field is required in the stage.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[StageCustomField](StageCustomField.md)<br/>
+[StageCustomFieldCollection](StageCustomFieldCollection.md)<br/>
