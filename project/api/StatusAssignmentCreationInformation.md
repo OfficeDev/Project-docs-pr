@@ -1,45 +1,57 @@
+[comment]: # (Name:StatusAssignmentCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.StatusAssignmentCreationInformation)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StatusAssignmentCreationInformation class
-Contains the properties that can be set when creating an assignment.
+# <a name="name"></a>StatusAssignmentCreationInformation class
 
-## Syntax
+<a name="description"></a>Contains the properties that can be set when creating a [StatusAssignment](StatusAssignment.md).
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class AssignmentCreationInformation Inherits from ClientValueObject
+class StatusAssignmentCreationInformation 
 ```
 
 ### JSOM
 
+```JavaScript
+PS.StatusAssignmentCreationInformation
 ```
-PS.Assignment
-```
-
 ### REST Interface
 
-This resource supports GET HTTP command.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
+PS.StatusAssignmentCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'Comment':'value', 
+		'Id':'value', 
+		'ProjectId':'value', 
+		'Task':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the assignment finish date and time.|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the assignment.|
-|Notes|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the notes for the assignment.|
-|ResourceId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the resource for the assignment.|
-|Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the assignment start date and time.|
-|TaskId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the task for the assignment.|
+|<a name="Comment"></a>Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the comment for the status submission.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the status assignment.|
+|<a name="ProjectId"></a>ProjectId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the project that contains the status assignment.|
+|<a name="Task"></a>Task|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[StatusTaskCreationInformation](StatusTaskCreationInformation.md)|Gets or sets the task parameters for the status assignment.|
 
+## <a name="seeAlso"></a>See Also
 
-### Methods
-
-The **AssignmentCreationInformation** object has no methods.
-
+[StatusAssignment](StatusAssignment.md)<br/>
+[StatusAssignmentCollection](StatusAssignmentCollection.md)<br/>

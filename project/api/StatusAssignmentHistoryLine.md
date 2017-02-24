@@ -1,43 +1,50 @@
+[comment]: # (Name:StatusAssignmentHistoryLine)
+[comment]: # (Name:Microsoft.ProjectServer.StatusAssignmentHistoryLine)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StatusAssignmentHistoryLine
+# <a name="name"></a>StatusAssignmentHistoryLine class
 
-<!-- Need description here. 
-   A statusing transaction entry for one or more assignments and/or tasks.  
-   Gleaned from Statusing.ReadAssignmentHistory method topic.
--->
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-## Syntax
+<a name="description"></a>Represents assignment history information for a transaction.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StatusAssignmentHistoryLine 
+class StatusAssignmentHistoryLine 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StatusAssignmentHistoryLine
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
-http://<sitecollection> /<site> /_api/ProjectServer/?????
+PS.StatusAssignmentHistoryLine
+
+http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/History('{transactionId}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**CSOM**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Author|&#x2713;|&#x2713;|&#x2713;|SPUser| |
-|Comment|&#x2713;|&#x2713;|&#x2713;|String| |
-|Decision|&#x2713;|&#x2713;|&#x2713;|StatusApprovalType| |
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid| |
-|Submitted|&#x2713;|&#x2713;|&#x2713;|DateTime| |
-|UpdateType|&#x2713;|&#x2713;|&#x2713;|StatusUpdateType| |
+|<a name="Author"></a>Author|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the author that created the transaction.|
+|<a name="Comment"></a>Comment|&#x2713;|&#x2713;|&#x2713;|String|Gets the comment made by the author for the transaction.|
+|<a name="Decision"></a>Decision|&#x2713;|&#x2713;|&#x2713;|[StatusApprovalType](StatusApprovalType.md)|Gets the decision the project manager has taken for the transaction.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the transactionn Guid.|
+|<a name="Submitted"></a>Submitted|&#x2713;|&#x2713;|&#x2713;|DateTime|Specifies the date when the transaction was submitted.|
+|<a name="UpdateType"></a>UpdateType|&#x2713;|&#x2713;|&#x2713;|[StatusUpdateType](StatusUpdateType.md)|Gets the type of transaction.|
 
-## See Also
+## <a name="seeAlso"></a>See Also
+
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>
+[StatusAssignmentHistoryLineCollection](StatusAssignmentHistoryLineCollection.md)<br/>

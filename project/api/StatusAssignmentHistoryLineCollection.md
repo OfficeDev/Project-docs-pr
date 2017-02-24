@@ -1,60 +1,74 @@
+[comment]: # (Name:StatusAssignmentHistoryLineCollection)
+[comment]: # (Name:Microsoft.ProjectServer.StatusAssignmentHistoryLineCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StatusAssignmentHistoryLineCollection
+# <a name="name"></a>StatusAssignmentHistoryLineCollection class
 
-Represents a collection of [StatusAssignmentHistoryLineCollection](StatusAssignmentHistoryLineCollection.md) objects.
+inherits members from [ClientObjectCollection<StatusAssignmentHistoryLine>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
-## Syntax
+<a name="description"></a>Represents information about assignment history.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class StatusAssignmentHistoryLineCollection 
+class StatusAssignmentHistoryLineCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StatusAssignmentHistoryLineCollection 
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
-http://<sitecollection> /<site> /_api/ProjectServer/?????
+PS.StatusAssignmentHistoryLineCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/History
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Methods
+### <a name="properties"></a>Properties
 
-|**CSOM**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String oid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|StatusAssignmentHistoryLine||
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)|Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)|Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
-## Method Details
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)|Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Guid value.|
 
-### <a name="getbyguid"></a>GetByGuid(Guid oid)
+<br/>
+#### Method Details
  
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
+Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
-StatusAssignmentHistoryLine GetByGuid(Guid uid)
+StatusAssignmentHistoryLine GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|oid| String | String representation of the StatusAssignmentHistoryLine Id.  
+|objectId|String|The id of the [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md).|
 
+##### Return Value
 
-#### Return Value
+[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)
 
-StatusAssignmentHistoryLine<br />
-A StatusAssignmentHistoryLine object.
+## <a name="seeAlso"></a>See Also
 
-
-
-StatusAssignmentHistoryLine GetById(String objectId)	Y/Y/Y
+[StatusAssignment](StatusAssignment.md)<br/>
+[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)<br/>

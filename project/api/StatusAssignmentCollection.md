@@ -1,219 +1,237 @@
 [comment]: # (Name:StatusAssignmentCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Name:Microsoft.ProjectServer.StatusAssignmentCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# StatusAssignmentCollection
+# <a name="name"></a>StatusAssignmentCollection class
 
-Represents a collection of [StatusAssignment](StatusAssignment.md) objects that comprise the assignments in a status update.
+inherits members from [ClientObjectCollection<StatusAssignment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of [StatusAssignment](StatusAssignment.md) objects, which are assignments in a status update.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```
-Class StatusAssignmentCollection 
+```C#
+class StatusAssignmentCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.StatusAssignmentCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.StatusAssignmentCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) parameters)](#Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Adds the assignment that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a status assignment object from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a status assignment object from the collection with the Id value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection at the specified index.|
+
+### <a name="methods"></a>Methods
+
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{StatusAssignmentId}&#39;](#&#39;{StatusAssignmentId}&#39;)|||&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the specified StatusAssignmentId.|
+|[Add(StatusAssignmentCreationInformation parameters)](#Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Adds the [StatusAssignment](StatusAssignment.md) that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.|
 |[GetTimePhase(DateTime start, DateTime end)](#GetTimePhase_DateTime_start,_DateTime_end_)|&#x2713;|&#x2713;||[TimePhase](TimePhase.md)|Reads the timephased data for assignments that are within the specified start date and end date.|
-|[GetTimePhaseByUrl(String start, String end)](#GetTimePhaseByUrl_String_start,_String_end_)|||&#x2713;|[TimePhase](TimePhase.md)||
-|[Remove([StatusAssignment](StatusAssignment.md) assignment)](#Remove_[StatusAssignment]_StatusAssignment.md__assignment_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified assignment from the collection.|
+|[GetTimePhaseByUrl(String start, String end)](#GetTimePhaseByUrl_String_start,_String_end_)|||&#x2713;|[TimePhase](TimePhase.md)|Reads the timephased data for assignments that are within the specified start date and end date.|
+|[Remove(StatusAssignment assignment)](#Remove_[StatusAssignment]_StatusAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StatusAssignment](StatusAssignment.md) from the collection.|
 |[SubmitAllStatusUpdates(String comment)](#SubmitAllStatusUpdates_String_comment_)|&#x2713;|&#x2713;|&#x2713;|void|Submit all updates to assignments in the StatusAssignmentCollection for approval.|
-|[Update()](#Update)|&#x2713;|&#x2713;|&#x2713;|void|Updates the status assignment collection and saves changes in the collection to Project Server.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the status assignment collection.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_"></a>Add([StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) parameters)
+#### <a name="&#39;{StatusAssignmentId}&#39;"></a>&#39;{StatusAssignmentId}&#39;
  
-Adds the assignment that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.
+Gets a [StatusAssignment](StatusAssignment.md) from the collection with the specified StatusAssignmentId.
 
-#### Syntax
+##### Syntax
+
+```
+StatusAssignment http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments('{StatusAssignmentId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|StatusAssignmentId|String|the id of the StatusAssignment|
+
+##### Return Value
+
+[StatusAssignment](StatusAssignment.md)
+
+#### <a name="Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_"></a>Add([StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) parameters)
+ 
+Adds the [StatusAssignment](StatusAssignment.md) that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 StatusAssignment Add(StatusAssignmentCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) | The properties of the status assignment to create.
+|parameters|[StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md)|The properties that can be set when creating a status assignment.|
 
-
-#### Return Value
+##### Return Value
 
 [StatusAssignment](StatusAssignment.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a status assignment object from the collection with the specified Guid.
+Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 StatusAssignment GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A Guid value.
+|uid|Guid|The Guid of the [StatusAssignment](StatusAssignment.md)|
 
-
-#### Return Value
+##### Return Value
 
 [StatusAssignment](StatusAssignment.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a status assignment object from the collection with the specified Id value.
+Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 StatusAssignment GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the Guid for the status assignment.
+|objectId|String|The id of the [StatusAssignment](StatusAssignment.md).|
 
-
-#### Return Value
+##### Return Value
 
 [StatusAssignment](StatusAssignment.md)
 
-### <a id="GetTimePhase_DateTime_start,_DateTime_end_"></a>GetTimePhase(DateTime start, DateTime end)
+#### <a name="GetTimePhase_DateTime_start,_DateTime_end_"></a>GetTimePhase(DateTime start, DateTime end)
  
 Reads the timephased data for assignments that are within the specified start date and end date.
 
-#### Syntax
+##### Syntax
 
 ```
 TimePhase GetTimePhase(DateTime start, DateTime end)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| DateTime | The start date.
-|end| DateTime | The end date.
+|start|DateTime|The start date.|
+|end|DateTime|The end date.|
 
-
-#### Return Value
+##### Return Value
 
 [TimePhase](TimePhase.md)
 
-### <a id="GetTimePhaseByUrl_String_start,_String_end_"></a>GetTimePhaseByUrl(String start, String end)
+#### <a name="GetTimePhaseByUrl_String_start,_String_end_"></a>GetTimePhaseByUrl(String start, String end)
  
+Reads the timephased data for assignments that are within the specified start date and end date. 
 
-
-#### Syntax
+##### Syntax
 
 ```
 TimePhase GetTimePhaseByUrl(String start, String end)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| String | The start date.
-|end| String | The end date.
+|start|DateTime|The start date.|
+|end|DateTime|The end date.|
 
-
-#### Return Value
+##### Return Value
 
 [TimePhase](TimePhase.md)
 
-### <a id="Remove_[StatusAssignment]_StatusAssignment.md__assignment_"></a>Remove([StatusAssignment](StatusAssignment.md) assignment)
+#### <a name="Remove_[StatusAssignment]_StatusAssignment.md__assignment_"></a>Remove([StatusAssignment](StatusAssignment.md) assignment)
  
-Removes the specified assignment from the collection.
+Removes the specified [StatusAssignment](StatusAssignment.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(StatusAssignment assignment)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|assignment| [StatusAssignment](StatusAssignment.md) | The assignment to remove.
+|assignment|[StatusAssignment](StatusAssignment.md)|The [StatusAssignment](StatusAssignment.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="SubmitAllStatusUpdates_String_comment_"></a>SubmitAllStatusUpdates(String comment)
+#### <a name="SubmitAllStatusUpdates_String_comment_"></a>SubmitAllStatusUpdates(String comment)
  
-Submit all updates to assignments in the [StatusAssignmentCollection](StatusAssignmentCollection.md) for approval.
+Submit all updates to assignments in the StatusAssignmentCollection for approval.
 
-#### Syntax
+##### Syntax
 
 ```
 void SubmitAllStatusUpdates(String comment)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|comment| String | The text comment for the status submission.
+|comment|String|The text comment for the status submission.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="Update"></a>Update()
+#### <a name="Update__"></a>Update()
  
-Updates the status assignment collection and saves changes in the collection to Project Server.
+Updates the status assignment collection.
 
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[StatusAssignment](StatusAssignment.md)<br/>
+[StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md)<br/>
+[TimePhase](TimePhase.md)<br/>
