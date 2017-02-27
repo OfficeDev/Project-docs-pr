@@ -1,48 +1,46 @@
 [comment]: # (Name:TimePhase)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimePhase)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimePhase
+# <a name="name"></a>TimePhase class
 
-Represents assignment progress information that is distributed over time.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents assignment progress information that is distributed over time.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimePhase 
+class TimePhase 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimePhase
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.TimePhase
+
 http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/GetTimePhaseByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets the status of assignments associated with a timephase.|
-|End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timephase period.|
-|Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the start date of the timephase period.|
+|<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets the status of assignments associated with a timephase.|
+|<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timephase period.|
+|<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the start date of the timephase period.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[StatusAssignmentCollection](StatusAssignmentCollection.md)<br/>

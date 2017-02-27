@@ -1,55 +1,71 @@
+[comment]: # (Name:TaskCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.TaskCreationInformation)
+[comment]: # (Type:class)
+[comment]: # (Status:Complete)
 
-# TaskCreationInformation class
+# <a name="name"></a>TaskCreationInformation class
 
-Provides property settings and methods that are used to create a task.
+<a name="description"></a>Provides property settings and methods that are used to create a task.
 
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TaskCreationInformation Inherits from ClientValueObject
+class TaskCreationInformation 
 ```
 
 ### JSOM
 
-```
+```JavaScript
 PS.TaskCreationInformation
 ```
 
 ### REST Interface
 
-<!-- 
-    This needs to be verified, then added to the document. 
-    This resource supports GET HTTP command.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Assignments('assignmentid')
+PS.TaskCreationInformation
+
+http://<sitecollection>/<site>/_api/ProjectServer/?????
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'AddAfterId':'value', 
+		'Duration':'value', 
+		'Finish':'value', 
+		'Id':'value', 
+		'IsManual':'value', 
+		'Name':'value', 
+		'Notes':'value', 
+		'ParentId':'value', 
+		'Start':'value', 
+		'StatusManager':'value'		
+	}
 ```
 
-    End of comment  -->
+## <a name="members"></a>Members
 
+### <a name="properties"></a>Properties
 
-## Members
-
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|AddAfterId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID value of the task that specifies the insertion point.|
-|Duration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the task duration.|
-|Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task finish date.|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the task.|
-|IsManual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the task is manually scheduled.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the task name.|
-|Notes|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets notes about the task.|
-|ParentId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the parent task in a hierarchical task list.|
-|Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task start date.|
-|StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;||User (SP)|Name of the enterprise resource to receive task status updates.<br />The list contains names of all resources identified as status managers for the current project.|
+|<a name="AddAfterId"></a>AddAfterId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID value of the task that specifies the insertion point.|
+|<a name="Duration"></a>Duration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the task duration.|
+|<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task finish date.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the task.|
+|<a name="IsManual"></a>IsManual|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the task is manually scheduled.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the task name.|
+|<a name="Notes"></a>Notes|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets notes about the task.|
+|<a name="ParentId"></a>ParentId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the parent task in a hierarchical task list.|
+|<a name="Start"></a>Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task start date.|
+|<a name="StatusManager"></a>StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the status manager of the task.|
 
-Ask not what your country can do for you. Ask what you can do for your country.
+## <a name="seeAlso"></a>See Also
 
-### Methods
-
-The **ProjectResourceCreationInformation** object has no methods.
-
+[DraftTask](DraftTask.md)<br/>
+[DraftTaskCollection](DraftTaskCollection.md)<br/>
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>

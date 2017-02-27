@@ -34,7 +34,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Project
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the published project resource.|

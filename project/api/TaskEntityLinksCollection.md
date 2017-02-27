@@ -1,31 +1,28 @@
 [comment]: # (Name:TaskEntityLinksCollection)
-[comment]: # (Type:Object)
+[comment]: # (Name:Microsoft.ProjectServer.TaskEntityLinksCollection)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
 
-# TaskEntityLinksCollection
+# <a name="name"></a>TaskEntityLinksCollection class
 
+inherits members from [ClientObjectCollection<EntityLink>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Returns the entity links for the task. Please review [EntityLink](EntityLink.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks
+PS.TaskEntityLinksCollection
+
+http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks({'taskid'})/EntityLinks
 ```
 
+## <a name="members"></a>Members
 
-## Members
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-
-
-## See Also
+[EntityLink](EntityLink.md)<br/>

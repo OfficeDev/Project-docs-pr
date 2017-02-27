@@ -1,7 +1,7 @@
 [comment]: # (Name:StatusUpdateType)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.StatusUpdateType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Verified)
+[comment]: # (Status:Incomplete)
 
 # <a name="name"></a>StatusUpdateType enumeration
 

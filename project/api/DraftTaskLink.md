@@ -1,4 +1,5 @@
 [comment]: # (Name:DraftTaskLink)
+[comment]: # (Name:Microsoft.ProjectServer.DraftTaskLink)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -34,7 +35,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/T
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="DependencyType"></a>DependencyType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[DependencyType](DependencyType.md)|Gets or sets the type of link relationship between two tasks.|
 |<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets the task at the end of the link.|
@@ -44,7 +45,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/T
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft task link object.|
 
