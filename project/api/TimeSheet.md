@@ -18,14 +18,14 @@ class TimeSheet
 ```
 ### JSOM
 
-```javaScript
+```javascript
 PS.TimeSheet
 ```
 ### REST Interface
 
 This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
-```
+```html
 PS.TimeSheet
 
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet
