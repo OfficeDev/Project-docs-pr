@@ -1,160 +1,157 @@
 [comment]: # (Name:TimeSheet)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheet)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheet
+# <a name="name"></a>TimeSheet class
 
-Contains the methods and properties for managing a timesheet.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Contains the methods and properties for managing a timesheet.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```C#
-Class TimeSheet 
+```cs
+class TimeSheet 
 ```
 ### JSOM
 
-```
+```javaScript
 PS.TimeSheet
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
+PS.TimeSheet
+
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Comments|&#x2713;|&#x2713;|&#x2713;|String|Gets the timesheet comments.|
-|Creator|&#x2713;|&#x2713;|&#x2713;|SPUser|Gets the timesheet creator.|
-|EntryMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetEntryMode](TimeSheetEntryMode.md)|Gets or sets the timesheet entry mode.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the time sheet.|
-|IsControlledByOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the timesheet is controlled by the owner.|
-|IsProcessed|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the timesheet is finalized and should not be changed.|
-|Lines|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLineCollection](TimeSheetLineCollection.md)|Gets the collection of lines in the timesheet.|
-|Manager|&#x2713;|&#x2713;|&#x2713;|SPUser|Gets the timesheet manager.|
-|Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet name.|
-|Period|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets the timesheet period.|
-|Status|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetStatus](TimeSheetStatus.md)|Gets or sets the timesheet line status.|
-|TotalActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total actual work.|
-|TotalActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|TotalActualWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total actual work.|
-|TotalNonBillableOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total non-billable overtime work.|
-|TotalNonBillableOvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|TotalNonBillableOvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total non-billable overtime work.|
-|TotalNonBillableWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total non-billable work.|
-|TotalNonBillableWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|TotalNonBillableWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total non-billable work.|
-|TotalOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total overtime work.|
-|TotalOvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|TotalOvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total overtime work.|
-|TotalWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet grand total of all work.|
-|TotalWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
-|TotalWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet grand total of all work.|
-|WeekStartsOn|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Byte|Gets or sets the day of the week on which the timesheet starts.|
+|<a name="Comments"></a>Comments|&#x2713;|&#x2713;|&#x2713;|String|Gets the timesheet comments.|
+|<a name="Creator"></a>Creator|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the timesheet creator.|
+|<a name="EntryMode"></a>EntryMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetEntryMode](TimeSheetEntryMode.md)|Gets or sets the timesheet entry mode.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the time sheet.|
+|<a name="IsControlledByOwner"></a>IsControlledByOwner|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the timesheet is controlled by the owner.|
+|<a name="IsProcessed"></a>IsProcessed|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the timesheet is finalized and should not be changed.|
+|<a name="Lines"></a>Lines|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLineCollection](TimeSheetLineCollection.md)|Gets the collection of lines in the timesheet.|
+|<a name="Manager"></a>Manager|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the timesheet manager.|
+|<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet name.|
+|<a name="Period"></a>Period|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets the timesheet period.|
+|<a name="Status"></a>Status|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetStatus](TimeSheetStatus.md)|Gets or sets the timesheet line status.|
+|<a name="TotalActualWork"></a>TotalActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total actual work.|
+|<a name="TotalActualWorkMilliseconds"></a>TotalActualWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the timesheet total actual work.|
+|<a name="TotalActualWorkTimeSpan"></a>TotalActualWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total actual work.|
+|<a name="TotalNonBillableOvertimeWork"></a>TotalNonBillableOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total non-billable overtime work.|
+|<a name="TotalNonBillableOvertimeWorkMilliseconds"></a>TotalNonBillableOvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the timesheet total non-billable overtime work.|
+|<a name="TotalNonBillableOvertimeWorkTimeSpan"></a>TotalNonBillableOvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total non-billable overtime work.|
+|<a name="TotalNonBillableWork"></a>TotalNonBillableWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total non-billable work.|
+|<a name="TotalNonBillableWorkMilliseconds"></a>TotalNonBillableWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the timesheet total non-billable work.|
+|<a name="TotalNonBillableWorkTimeSpan"></a>TotalNonBillableWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total non-billable work.|
+|<a name="TotalOvertimeWork"></a>TotalOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet total overtime work.|
+|<a name="TotalOvertimeWorkMilliseconds"></a>TotalOvertimeWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the timesheet total overtime work.|
+|<a name="TotalOvertimeWorkTimeSpan"></a>TotalOvertimeWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet total overtime work.|
+|<a name="TotalWork"></a>TotalWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet grand total of all work.|
+|<a name="TotalWorkMilliseconds"></a>TotalWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the timesheet grand total of all work.|
+|<a name="TotalWorkTimeSpan"></a>TotalWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the timesheet grand total of all work.|
+|<a name="WeekStartsOn"></a>WeekStartsOn|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Byte|Gets or sets the day of the week on which the timesheet starts.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the TimeSheet object.|
+|[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the time sheet object.|
 |[Recall()](#Recall__)|&#x2713;|&#x2713;|&#x2713;|void|Recalls the timesheet.|
 |[Submit(String comment)](#Submit_String_comment_)|&#x2713;|&#x2713;|&#x2713;|void|Submits the timesheet.|
 |[Update()](#Update__)|&#x2713;|&#x2713;|&#x2713;|void|Saves changes in a new timesheet.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="DeleteObject__"></a>DeleteObject()
+#### <a name="DeleteObject__"></a>DeleteObject()
  
-Deletes the TimeSheet object.
+Deletes the time sheet object.
 
-#### Syntax
+##### Syntax
 
 ```
 void DeleteObject()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="Recall__"></a>Recall()
+#### <a name="Recall__"></a>Recall()
  
 Recalls the timesheet.
 
-#### Syntax
+##### Syntax
 
 ```
 void Recall()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="Submit_String_comment_"></a>Submit(String comment)
+#### <a name="Submit_String_comment_"></a>Submit(String comment)
  
 Submits the timesheet.
 
-#### Syntax
+##### Syntax
 
 ```
 void Submit(String comment)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|comment| String | A comment on the timesheet.
+|comment|String|A comment on the timesheet.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="Update__"></a>Update()
+#### <a name="Update__"></a>Update()
  
 Saves changes in a new timesheet.
 
-#### Syntax
+##### Syntax
 
 ```
 void Update()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>
+[TimeSheetLine](TimeSheetLine.md)<br/>
+[TimeSheetPeriod](TimeSheetPeriod.md)<br/>
