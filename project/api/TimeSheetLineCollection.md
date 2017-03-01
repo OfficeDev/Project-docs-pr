@@ -1,135 +1,155 @@
 [comment]: # (Name:TimeSheetLineCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetLineCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetLineCollection
+# <a name="name"></a>TimeSheetLineCollection class
 
-Represents a collection of timesheet lines.
+inherits members from [ClientObjectCollection<TimeSheetLine>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of timesheet lines.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetLineCollection 
+class TimeSheetLineCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetLineCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.TimeSheetLineCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) parameters)](#Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Adds the specified timesheet line to the timesheet line collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets the timesheet line from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets the timesheet line from the collection with the  **Id()** value.|
-|[Remove([TimeSheetLine](TimeSheetLine.md) line)](#Remove_[TimeSheetLine]_TimeSheetLine.md__line_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes the specified timesheet line from the timesheet line collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{TimeSheetLineId}&#39;](#&#39;{TimeSheetLineId}&#39;)|||&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the specified TimeSheetLineId.|
+|[Add(TimeSheetLineCreationInformation parameters)](#Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Adds the [TimeSheetLine](TimeSheetLine.md) that is specified by the [TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.|
+|[Remove(TimeSheetLine line)](#Remove_[TimeSheetLine]_TimeSheetLine.md__line_)|&#x2713;|&#x2713;||Boolean|Removes the specified [TimeSheetLine](TimeSheetLine.md) from the collection.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_"></a>Add([TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) parameters)
+#### <a name="&#39;{TimeSheetLineId}&#39;"></a>&#39;{TimeSheetLineId}&#39;
  
-Adds the specified timesheet line to the timesheet line collection.
+Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the specified TimeSheetLineId.
 
-#### Syntax
+##### Syntax
+
+```
+TimeSheetLine http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{TimeSheetLineId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|TimeSheetLineId|String|the id of the TimeSheetLine|
+
+##### Return Value
+
+[TimeSheetLine](TimeSheetLine.md)
+
+#### <a name="Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_"></a>Add([TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) parameters)
+ 
+Adds the [TimeSheetLine](TimeSheetLine.md) that is specified by the [TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) object to the collection.
+
+##### Syntax
 
 ```
 TimeSheetLine Add(TimeSheetLineCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) | A TimeSheetLineCreationInformation object.
+|parameters|[TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md)|The properties that can be set when creating a time sheet line.|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetLine](TimeSheetLine.md)
 
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets the timesheet line from the collection with the specified GUID.
+Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetLine GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [TimeSheetLine](TimeSheetLine.md)|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetLine](TimeSheetLine.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets the timesheet line from the collection with the  **Id()** value.
+Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetLine GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the timesheet line GUID.
+|objectId|String|The id of the [TimeSheetLine](TimeSheetLine.md).|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetLine](TimeSheetLine.md)
 
-### <a id="Remove_[TimeSheetLine]_TimeSheetLine.md__line_"></a>Remove([TimeSheetLine](TimeSheetLine.md) line)
+#### <a name="Remove_[TimeSheetLine]_TimeSheetLine.md__line_"></a>Remove([TimeSheetLine](TimeSheetLine.md) line)
  
-Removes the specified timesheet line from the timesheet line collection.
+Removes the specified [TimeSheetLine](TimeSheetLine.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(TimeSheetLine line)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|line| [TimeSheetLine](TimeSheetLine.md) | A TimeSheetLine object.
+|line|[TimeSheetLine](TimeSheetLine.md)|The [TimeSheetLine](TimeSheetLine.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[TimeSheet](TimeSheet.md)<br/>
+[TimeSheetLine](TimeSheetLine.md)<br/>
+[TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md)<br/>

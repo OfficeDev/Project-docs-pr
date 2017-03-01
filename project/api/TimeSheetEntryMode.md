@@ -1,40 +1,38 @@
 [comment]: # (Name:TimeSheetEntryMode)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetEntryMode)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Status:Verified)
 
-# TimeSheetEntryMode
+# <a name="name"></a>TimeSheetEntryMode enumeration
 
-Contains the timesheet entry modes.
+<a name="description"></a>Contains the timesheet entry modes.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetEntryMode 
+enum TimeSheetEntryMode 
 ```
-### JSOM/REST
+### JSOM
 
-```
+```JavaScript
 PS.TimeSheetEntryMode
 ```
+### REST Interface
 
+TimeSheetEntryMode enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0| Not Specified.|
-|Daily|1| Daily.|
-|Weekly|2| Weekly.
-|
+|<a name="NotSpecified"></a>NotSpecified|0|Not Specified.|
+|<a name="Daily"></a>Daily|1|Daily.|
+|<a name="Weekly"></a>Weekly|2|Weekly.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[TimeSheet](TimeSheet.md)<br/>

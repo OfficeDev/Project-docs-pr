@@ -1,135 +1,135 @@
 [comment]: # (Name:TimeSheetWorkCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetWorkCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetWorkCollection
+# <a name="name"></a>TimeSheetWorkCollection class
 
-Provides a collection of actual work entries for a timesheet. 
+inherits members from [ClientObjectCollection<TimeSheetWork>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Provides a collection of actual work entries for a timesheet.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetWorkCollection 
+class TimeSheetWorkCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetWorkCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.TimeSheetWorkCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[Add([TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) parameters)](#Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Adds an actual work value to a timesheet.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a timesheet actual work object from the collection with the  **Id()** value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection at the specified index.|
+
+### <a name="methods"></a>Methods
+
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[Add(TimeSheetWorkCreationInformation parameters)](#Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Adds the [TimeSheetWork](TimeSheetWork.md) that is specified by the [TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) object to the collection.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Guid value.|
 |[GetByStartDate(DateTime start)](#GetByStartDate_DateTime_start_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a timesheet actual work object from the collection with a specified start date.|
-|[Remove([TimeSheetWork](TimeSheetWork.md) work)](#Remove_[TimeSheetWork]_TimeSheetWork.md__work_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Removes a specified actual work value from a timesheet.|
+|[Remove(TimeSheetWork work)](#Remove_[TimeSheetWork]_TimeSheetWork.md__work_)|&#x2713;|&#x2713;||Boolean|Removes the specified [TimeSheetWork](TimeSheetWork.md) from the collection.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_"></a>Add([TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) parameters)
+#### <a name="Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_"></a>Add([TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) parameters)
  
-Adds an actual work value to a timesheet.
+Adds the [TimeSheetWork](TimeSheetWork.md) that is specified by the [TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) object to the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetWork Add(TimeSheetWorkCreationInformation parameters)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters| [TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) | An object that contains information for the creation of an actual work item.
+|parameters|[TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md)|The properties that can be set when creating a time sheet work.|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetWork](TimeSheetWork.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a timesheet actual work object from the collection with the  **Id()** value.
+Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetWork GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of a timesheet actual work GUID.
+|objectId|String|The id of the [TimeSheetWork](TimeSheetWork.md).|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetWork](TimeSheetWork.md)
 
-### <a id="GetByStartDate_DateTime_start_"></a>GetByStartDate(DateTime start)
+#### <a name="GetByStartDate_DateTime_start_"></a>GetByStartDate(DateTime start)
  
 Gets a timesheet actual work object from the collection with a specified start date.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetWork GetByStartDate(DateTime start)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|start| DateTime | The start date and time.
+|start|DateTime|The start date and time.|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetWork](TimeSheetWork.md)
 
-### <a id="Remove_[TimeSheetWork]_TimeSheetWork.md__work_"></a>Remove([TimeSheetWork](TimeSheetWork.md) work)
+#### <a name="Remove_[TimeSheetWork]_TimeSheetWork.md__work_"></a>Remove([TimeSheetWork](TimeSheetWork.md) work)
  
-Removes a specified actual work value from a timesheet.
+Removes the specified [TimeSheetWork](TimeSheetWork.md) from the collection.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean Remove(TimeSheetWork work)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|work| [TimeSheetWork](TimeSheetWork.md) | The actual work element to remove.
+|work|[TimeSheetWork](TimeSheetWork.md)|The [TimeSheetWork](TimeSheetWork.md) to remove.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[TimeSheetLine](TimeSheetLine.md)<br/>
+[TimeSheetWork](TimeSheetWork.md)<br/>
+[TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md)<br/>

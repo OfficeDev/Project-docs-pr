@@ -1,44 +1,42 @@
 [comment]: # (Name:TimeSheetStatus)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetStatus)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Status:Verified)
 
-# TimeSheetStatus
+# <a name="name"></a>TimeSheetStatus enumeration
 
-Represents status settings that can be applied to a timesheet.
+<a name="description"></a>Represents status settings that can be applied to a timesheet.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetStatus 
+enum TimeSheetStatus 
 ```
-### JSOM/REST
+### JSOM
 
-```
+```JavaScript
 PS.TimeSheetStatus
 ```
+### REST Interface
 
+TimeSheetStatus enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0| Not specified.|
-|InProgress|1| In progress.|
-|Submitted|2| Submitted.|
-|Acceptable|3| Acceptable.|
-|Approved|4| Approved.|
-|Rejected|5| Rejected.|
-|PendingSubmit|6| Pending submission; used when one or more timesheet lines are pending approval after a timesheet is submitted and project manager coordination is required.
-|
+|<a name="NotSpecified"></a>NotSpecified|0|Not specified.|
+|<a name="InProgress"></a>InProgress|1|In progress.|
+|<a name="Submitted"></a>Submitted|2|Submitted.|
+|<a name="Acceptable"></a>Acceptable|3|Acceptable.|
+|<a name="Approved"></a>Approved|4|Approved.|
+|<a name="Rejected"></a>Rejected|5|Rejected.|
+|<a name="PendingSubmit"></a>PendingSubmit|6|Pending submission; used when one or more timesheet lines are pending approval after a timesheet is submitted and project manager coordination is required.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[TimeSheet](TimeSheet.md)<br/>

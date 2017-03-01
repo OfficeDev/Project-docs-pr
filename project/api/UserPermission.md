@@ -1,37 +1,35 @@
 [comment]: # (Name:UserPermission)
-[comment]: # (Type:Object)
+[comment]: # (Name:Microsoft.ProjectServer.UserPermission)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
 
-# UserPermission
+# <a name="name"></a>UserPermission class
 
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.UserPermission
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|HasPermission|||&#x2713;|Boolean||
-|Permission|||&#x2713;|String||
+|<a name="HasPermission"></a>HasPermission|||&#x2713;|Boolean||
+|<a name="Permission"></a>Permission|||&#x2713;|String||
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[UserPermissionCollection](UserPermissionCollection.md)<br/>

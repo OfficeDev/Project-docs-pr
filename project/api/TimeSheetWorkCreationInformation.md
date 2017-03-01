@@ -1,53 +1,64 @@
 [comment]: # (Name:TimeSheetWorkCreationInformation)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetWorkCreationInformation)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetWorkCreationInformation
+# <a name="name"></a>TimeSheetWorkCreationInformation class
 
-Provides property settings and methods that are used to create a timesheet work object.
+<a name="description"></a>Contains the properties that can be set when creating a [TimeSheetWork](TimeSheetWork.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetWorkCreationInformation 
+class TimeSheetWorkCreationInformation 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetWorkCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.TimeSheetWorkCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'ActualWork':'value', 
+		'Comment':'value', 
+		'End':'value', 
+		'NonBillableOvertimeWork':'value', 
+		'NonBillableWork':'value', 
+		'OvertimeWork':'value', 
+		'PlannedWork':'value', 
+		'Start':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|ActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of actual work that is on a timesheet.|
-|Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet work comment.|
-|End|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the end time of work that is on a timesheet.|
-|NonBillableOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of non-billable overtime work that is on a timesheet.|
-|NonBillableWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of non-billable work that is on a timesheet.|
-|OvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of overtime work that is on a timesheet.|
-|PlannedWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of planned work that is on a timesheet.|
-|Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the start time of work that is on a timesheet.|
+|<a name="ActualWork"></a>ActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of actual work that is on a timesheet.|
+|<a name="Comment"></a>Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet work comment.|
+|<a name="End"></a>End|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the end time of work that is on a timesheet.|
+|<a name="NonBillableOvertimeWork"></a>NonBillableOvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of non-billable overtime work that is on a timesheet.|
+|<a name="NonBillableWork"></a>NonBillableWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of non-billable work that is on a timesheet.|
+|<a name="OvertimeWork"></a>OvertimeWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of overtime work that is on a timesheet.|
+|<a name="PlannedWork"></a>PlannedWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of planned work that is on a timesheet.|
+|<a name="Start"></a>Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the start time of work that is on a timesheet.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[TimeSheetWork](TimeSheetWork.md)<br/>
+[TimeSheetWorkCollection](TimeSheetWorkCollection.md)<br/>

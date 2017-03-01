@@ -1,6 +1,7 @@
 [comment]: # (Name:TrackingMode)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.PSTrackingModeEnum)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verifed)
 
 # <a name="name"></a>TrackingMode enumeration
 

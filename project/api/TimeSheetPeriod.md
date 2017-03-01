@@ -1,79 +1,76 @@
 [comment]: # (Name:TimeSheetPeriod)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetPeriod)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetPeriod
+# <a name="name"></a>TimeSheetPeriod class
 
-Represents a defined period of time on a timesheet.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Represents a defined period of time on a timesheet.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetPeriod 
+class TimeSheetPeriod 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetPeriod
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.TimeSheetPeriod
+
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timesheet period.|
-|Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the timesheet period.|
-|Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the timesheet period.|
-|Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the start date of the timesheet period.|
-|TimeSheet|&#x2713;|&#x2713;|&#x2713;|[TimeSheet](TimeSheet.md)|Gets the timesheet that is associated with the timesheet period.|
+|<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timesheet period.|
+|<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the timesheet period.|
+|<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the timesheet period.|
+|<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the start date of the timesheet period.|
+|<a name="TimeSheet"></a>TimeSheet|&#x2713;|&#x2713;|&#x2713;|[TimeSheet](TimeSheet.md)|Gets the timesheet that is associated with the timesheet period.|
 
+### <a name="methods"></a>Methods
 
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CreateTimeSheet()](#CreateTimeSheet__)|&#x2713;|&#x2713;|&#x2713;|[TimeSheet](TimeSheet.md)|Creates a new TimeSheet object.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="CreateTimeSheet__"></a>CreateTimeSheet()
+#### <a name="CreateTimeSheet__"></a>CreateTimeSheet()
  
 Creates a new TimeSheet object.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheet CreateTimeSheet()
 ```
 
-#### Parameters
+##### Parameters
 
 None
 
-#### Return Value
+##### Return Value
 
 [TimeSheet](TimeSheet.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[TimeSheet](TimeSheet.md)<br/>
+[TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)<br/>

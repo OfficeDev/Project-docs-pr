@@ -1,93 +1,114 @@
 [comment]: # (Name:TimeSheetPeriodCollection)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetPeriodCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetPeriodCollection
+# <a name="name"></a>TimeSheetPeriodCollection class
 
-Represents a collection of TimeSheetPeriod objects.
+inherits members from [ClientObjectCollection<TimeSheetPeriod>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a collection of TimeSheetPeriod objects.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetPeriodCollection 
+class TimeSheetPeriodCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetPeriodCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.TimeSheetPeriodCollection
+
 http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a timesheet period from the collection with the specified GUID.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a timesheet period from the collection with the  **Id()** value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[&#39;{TimeSheetPeriodId}&#39;](#&#39;{TimeSheetPeriodId}&#39;)|||&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the specified TimeSheetPeriodId.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+#### <a name="&#39;{TimeSheetPeriodId}&#39;"></a>&#39;{TimeSheetPeriodId}&#39;
  
-Gets a timesheet period from the collection with the specified GUID.
+Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the specified TimeSheetPeriodId.
 
-#### Syntax
+##### Syntax
+
+```
+TimeSheetPeriod http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{TimeSheetPeriodId}')
+```
+
+##### Parameters
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|TimeSheetPeriodId|String|the id of the TimeSheetPeriod|
+
+##### Return Value
+
+[TimeSheetPeriod](TimeSheetPeriod.md)
+
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
+ 
+Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.
+
+##### Syntax
 
 ```
 TimeSheetPeriod GetByGuid(Guid uid)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid | A GUID value.
+|uid|Guid|The Guid of the [TimeSheetPeriod](TimeSheetPeriod.md)|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetPeriod](TimeSheetPeriod.md)
 
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a timesheet period from the collection with the  **Id()** value.
+Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 TimeSheetPeriod GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the timesheet period GUID.
+|objectId|String|The id of the [TimeSheetPeriod](TimeSheetPeriod.md).|
 
-
-#### Return Value
+##### Return Value
 
 [TimeSheetPeriod](TimeSheetPeriod.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[ProjectContext](ProjectContext.md)<br/>
+[TimeSheetPeriod](TimeSheetPeriod.md)<br/>

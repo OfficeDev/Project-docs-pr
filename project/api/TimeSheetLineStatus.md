@@ -1,43 +1,41 @@
 [comment]: # (Name:TimeSheetLineStatus)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetLineStatus)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Status:Verified)
 
-# TimeSheetLineStatus
+# <a name="name"></a>TimeSheetLineStatus enumeration
 
-Represents status settings that can be applied to a timesheet line.
+<a name="description"></a>Represents status settings that can be applied to a timesheet line.
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetLineStatus 
+enum TimeSheetLineStatus 
 ```
-### JSOM/REST
+### JSOM
 
-```
+```JavaScript
 PS.TimeSheetLineStatus
 ```
+### REST Interface
 
+TimeSheetLineStatus enumeration is not expliclity defined in REST.  Use the values below to understand what can be returned and set.
 
-## Members
+## <a name="members"></a>Members
 
-
+<a name="enumMembers"></a>
 
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|NotSpecified|0| Not specified.|
-|Pending|1| Pending.|
-|Approved|2| Approved.|
-|Rejected|3| Rejected.|
-|NotApplicable|4| Not applicable.|
-|PendingApproval|5| Pending Approval.
-|
+|<a name="NotSpecified"></a>NotSpecified|0|Not specified.|
+|<a name="Pending"></a>Pending|1|Pending.|
+|<a name="Approved"></a>Approved|2|Approved.|
+|<a name="Rejected"></a>Rejected|3|Rejected.|
+|<a name="NotApplicable"></a>NotApplicable|4|Not applicable.|
+|<a name="PendingApproval"></a>PendingApproval|5|Pending Approval.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-## See Also
+[TimeSheetLine](TimeSheetLine.md)<br/>

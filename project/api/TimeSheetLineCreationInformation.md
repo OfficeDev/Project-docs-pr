@@ -1,51 +1,60 @@
 [comment]: # (Name:TimeSheetLineCreationInformation)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.TimeSheetLineCreationInformation)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# TimeSheetLineCreationInformation
+# <a name="name"></a>TimeSheetLineCreationInformation class
 
-Provides property settings and methods that are used to create a timesheet line.
+<a name="description"></a>Contains the properties that can be set when creating a [TimeSheetLine](TimeSheetLine.md).
 
-
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class TimeSheetLineCreationInformation 
+class TimeSheetLineCreationInformation 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.TimeSheetLineCreationInformation
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports POST HTTP commands.
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+PS.TimeSheetLineCreationInformation
+
+http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines/Add
+```
+POST Example (not all fields may be required)
+```
+body = {
+	'parameters': {
+		'AssignmentId':'value', 
+		'Comment':'value', 
+		'Id':'value', 
+		'LineClass':'value', 
+		'ProjectId':'value', 
+		'TaskName':'value'		
+	}
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|AssignmentId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the assignment that is associated with the timesheet line.|
-|Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the comment for the timesheet line.|
-|Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the timesheet line.|
-|LineClass|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetLineClass](TimeSheetLineClass.md)|Gets or sets the line class type of the timesheet line.|
-|ProjectId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the project that is associated with the timesheet line.|
-|TaskName|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the time sheet line task name.|
+|<a name="AssignmentId"></a>AssignmentId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the assignment that is associated with the timesheet line.|
+|<a name="Comment"></a>Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the comment for the timesheet line.|
+|<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the timesheet line.|
+|<a name="LineClass"></a>LineClass|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TimeSheetLineClass](TimeSheetLineClass.md)|Gets or sets the line class type of the timesheet line.|
+|<a name="ProjectId"></a>ProjectId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the project that is associated with the timesheet line.|
+|<a name="TaskName"></a>TaskName|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the time sheet line task name.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[TimeSheetLine](TimeSheetLine.md)<br/>
+[TimeSheetLineCollection](TimeSheetLineCollection.md)<br/>

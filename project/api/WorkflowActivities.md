@@ -1,45 +1,41 @@
 [comment]: # (Name:WorkflowActivities)
-[comment]: # (Type:Object)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
+[comment]: # (Name:Microsoft.ProjectServer.WorkflowActivities)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-# WorkflowActivities
+# <a name="name"></a>WorkflowActivities class
 
-Contains methods that encapsulate Project Server workflow activities and methods, for use with version 4 of Windows Workflow Foundation (WF4).
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Contains methods that encapsulate Project Server workflow activities and methods, for use with version 4 of Windows Workflow Foundation (WF4).
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class WorkflowActivities 
+class WorkflowActivities 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.WorkflowActivities
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.WorkflowActivities
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="methods"></a>Methods
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CheckInWithJobId(Guid projId, Guid jobId, Boolean force)](#CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_)|||&#x2713;|void||
 |[CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)](#CreateProjectFromListItem_Guid_webId,_Guid_listId,_Integer_itemId,_Guid_eptId_)|&#x2713;|&#x2713;|&#x2713;|Guid|Creates a project from a SharePoint list item, where the project uses the specified enterprise project type (EPT).|
@@ -63,528 +59,500 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 |[UpdateIdeaListItemStatus(Guid projectId, String status)](#UpdateIdeaListItemStatus_Guid_projectId,_String_status_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the  **Status** column in the SharePoint project idea list with a status string.|
 |[UpdateIntegerProperty(Guid projectId, String propertyId, Integer value)](#UpdateIntegerProperty_Guid_projectId,_String_propertyId,_Integer_value_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the value of of the specified project property by using the SharePoint SPFieldType.Integer type.|
 |[UpdateNumberProperty(Guid projectId, String propertyId, Double value)](#UpdateNumberProperty_Guid_projectId,_String_propertyId,_Double_value_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the value of of the specified project property by using the SharePoint SPFieldType.Number type.|
-|[UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInformation, [UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md) stageStatusValue, Boolean append)](#UpdateProjectStageStatus_Guid_projectId,_Guid_stageId,_String_statusInformation,_[UpdateProjectStageStatusFieldValue]_UpdateProjectStageStatusFieldValue.md__stageStatusValue,_Boolean_append_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the status value and the status information for a Project Server workflow stage.|
+|[UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInformation, UpdateProjectStageStatusFieldValue stageStatusValue, Boolean append)](#UpdateProjectStageStatus_Guid_projectId,_Guid_stageId,_String_statusInformation,_[UpdateProjectStageStatusFieldValue]_UpdateProjectStageStatusFieldValue.md__stageStatusValue,_Boolean_append_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the status value and the status information for a Project Server workflow stage.|
 |[UpdateTextProperty(Guid projectId, String propertyId, String value)](#UpdateTextProperty_Guid_projectId,_String_propertyId,_String_value_)|&#x2713;|&#x2713;|&#x2713;|void|Updates the value of of the specified project property by using the SharePoint SPFieldType.Text type.|
 
+<br/>
+#### Method Details
 
-
-## Method Details
-
-
-### <a id="CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_"></a>CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
+#### <a name="CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_"></a>CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 void CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projId| Guid | 
-|jobId| Guid | 
-|force| Boolean | 
+|projId|Guid||
+|jobId|Guid||
+|force|Boolean||
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="CreateProjectFromListItem_Guid_webId,_Guid_listId,_Integer_itemId,_Guid_eptId_"></a>CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)
+#### <a name="CreateProjectFromListItem_Guid_webId,_Guid_listId,_Integer_itemId,_Guid_eptId_"></a>CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)
  
 Creates a project from a SharePoint list item, where the project uses the specified enterprise project type (EPT).
 
-#### Syntax
+##### Syntax
 
 ```
-Guid CreateProjectFromListItem(Guid webId, Guid listId, Int32 itemId, Guid eptId)
+Guid CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|webId| Guid |  that contains the list.
-|listId| Guid |  that contains the project item.
-|itemId| Integer |  within the list.
-|eptId| Guid | The GUID of the EPT.
+|webId|Guid|that contains the list.|
+|listId|Guid|that contains the project item.|
+|itemId|Integer|within the list.|
+|eptId|Guid|The GUID of the EPT.|
 
-
-#### Return Value
+##### Return Value
 
 Guid
 
-### <a id="EnterProjectStage_Guid_projectId,_Guid_stageId_"></a>EnterProjectStage(Guid projectId, Guid stageId)
+#### <a name="EnterProjectStage_Guid_projectId,_Guid_stageId_"></a>EnterProjectStage(Guid projectId, Guid stageId)
  
 Attempts to enter the specified workflow stage for the project.
 
-#### Syntax
+##### Syntax
 
 ```
 void EnterProjectStage(Guid projectId, Guid stageId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|stageId| Guid | The GUID of the workflow stage.
+|projectId|Guid|The GUID of the project.|
+|stageId|Guid|The GUID of the workflow stage.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="LeaveProjectStage_Guid_projectId_"></a>LeaveProjectStage(Guid projectId)
+#### <a name="LeaveProjectStage_Guid_projectId_"></a>LeaveProjectStage(Guid projectId)
  
 Sets the project complete and leaves the current workflow stage.
 
-#### Syntax
+##### Syntax
 
 ```
 void LeaveProjectStage(Guid projectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
+|projectId|Guid|The GUID of the project.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="PublishSummaryWithJobId_Guid_projId,_Guid_jobId_"></a>PublishSummaryWithJobId(Guid projId, Guid jobId)
+#### <a name="PublishSummaryWithJobId_Guid_projId,_Guid_jobId_"></a>PublishSummaryWithJobId(Guid projId, Guid jobId)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 void PublishSummaryWithJobId(Guid projId, Guid jobId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projId| Guid | 
-|jobId| Guid | 
+|projId|Guid||
+|jobId|Guid||
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="PublishWithJobId_Guid_projectId,_Guid_jobId_"></a>PublishWithJobId(Guid projectId, Guid jobId)
+#### <a name="PublishWithJobId_Guid_projectId,_Guid_jobId_"></a>PublishWithJobId(Guid projectId, Guid jobId)
  
 
-
-#### Syntax
+##### Syntax
 
 ```
 void PublishWithJobId(Guid projectId, Guid jobId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | 
-|jobId| Guid | 
+|projectId|Guid||
+|jobId|Guid||
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="ReadBooleanProperty_Guid_projectId,_String_propertyId_"></a>ReadBooleanProperty(Guid projectId, String propertyId)
+#### <a name="ReadBooleanProperty_Guid_projectId,_String_propertyId_"></a>ReadBooleanProperty(Guid projectId, String propertyId)
  
 Reads the value of the specified project property by using the SharePoint SPFieldType.Boolean type.
 
-#### Syntax
+##### Syntax
 
 ```
 Boolean ReadBooleanProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 Boolean
 
-### <a id="ReadCurrencyProperty_Guid_projectId,_String_propertyId_"></a>ReadCurrencyProperty(Guid projectId, String propertyId)
+#### <a name="ReadCurrencyProperty_Guid_projectId,_String_propertyId_"></a>ReadCurrencyProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.Currency type.
 
-#### Syntax
+##### Syntax
 
 ```
 Double ReadCurrencyProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 Double
 
-### <a id="ReadDateTimeProperty_Guid_projectId,_String_propertyId_"></a>ReadDateTimeProperty(Guid projectId, String propertyId)
+#### <a name="ReadDateTimeProperty_Guid_projectId,_String_propertyId_"></a>ReadDateTimeProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.DateTime type.
 
-#### Syntax
+##### Syntax
 
 ```
 DateTime ReadDateTimeProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 DateTime
 
-### <a id="ReadGuidProperty_Guid_projectId,_String_propertyId_"></a>ReadGuidProperty(Guid projectId, String propertyId)
+#### <a name="ReadGuidProperty_Guid_projectId,_String_propertyId_"></a>ReadGuidProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.Guid type.
 
-#### Syntax
+##### Syntax
 
 ```
 Guid ReadGuidProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 Guid
 
-### <a id="ReadIntegerProperty_Guid_projectId,_String_propertyId_"></a>ReadIntegerProperty(Guid projectId, String propertyId)
+#### <a name="ReadIntegerProperty_Guid_projectId,_String_propertyId_"></a>ReadIntegerProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.Integer type.
 
-#### Syntax
+##### Syntax
 
 ```
 Integer ReadIntegerProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 Integer
 
-### <a id="ReadNumberProperty_Guid_projectId,_String_propertyId_"></a>ReadNumberProperty(Guid projectId, String propertyId)
+#### <a name="ReadNumberProperty_Guid_projectId,_String_propertyId_"></a>ReadNumberProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.Number type.
 
-#### Syntax
+##### Syntax
 
 ```
 Double ReadNumberProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 Double
 
-### <a id="ReadProjectProperty_Guid_projectId,_String_propertyId_"></a>ReadProjectProperty(Guid projectId, String propertyId)
+#### <a name="ReadProjectProperty_Guid_projectId,_String_propertyId_"></a>ReadProjectProperty(Guid projectId, String propertyId)
  
 Reads the String value of of the specified project property.
 
-#### Syntax
+##### Syntax
 
 ```
 String ReadProjectProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 String
 
-### <a id="ReadTextProperty_Guid_projectId,_String_propertyId_"></a>ReadTextProperty(Guid projectId, String propertyId)
+#### <a name="ReadTextProperty_Guid_projectId,_String_propertyId_"></a>ReadTextProperty(Guid projectId, String propertyId)
  
 Reads the value of of the specified project property by using the SharePoint SPFieldType.Text type.
 
-#### Syntax
+##### Syntax
 
 ```
 String ReadTextProperty(Guid projectId, String propertyId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
 
-
-#### Return Value
+##### Return Value
 
 String
 
-### <a id="ReadyToLeaveProjectStage_Guid_projectId_"></a>ReadyToLeaveProjectStage(Guid projectId)
+#### <a name="ReadyToLeaveProjectStage_Guid_projectId_"></a>ReadyToLeaveProjectStage(Guid projectId)
  
 Checks whether the current workflow stage requirements are satisfied.
 
-#### Syntax
+##### Syntax
 
 ```
 ReadyToLeaveProjectStageValue ReadyToLeaveProjectStage(Guid projectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
+|projectId|Guid|The GUID of the project.|
 
-
-#### Return Value
+##### Return Value
 
 [ReadyToLeaveProjectStageValue](ReadyToLeaveProjectStageValue.md)
 
-### <a id="UpdateBooleanProperty_Guid_projectId,_String_propertyId,_Boolean_value_"></a>UpdateBooleanProperty(Guid projectId, String propertyId, Boolean value)
+#### <a name="UpdateBooleanProperty_Guid_projectId,_String_propertyId,_Boolean_value_"></a>UpdateBooleanProperty(Guid projectId, String propertyId, Boolean value)
  
 Updates the value of the specified project property by using the SharePoint SPFieldType.Boolean type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateBooleanProperty(Guid projectId, String propertyId, Boolean value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| Boolean | The Boolean value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|Boolean|The Boolean value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateCurrencyProperty_Guid_projectId,_String_propertyId,_Double_value_"></a>UpdateCurrencyProperty(Guid projectId, String propertyId, Double value)
+#### <a name="UpdateCurrencyProperty_Guid_projectId,_String_propertyId,_Double_value_"></a>UpdateCurrencyProperty(Guid projectId, String propertyId, Double value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.Currency type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateCurrencyProperty(Guid projectId, String propertyId, Double value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| Double | The Currency value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|Double|The Currency value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateDateTimeProperty_Guid_projectId,_String_propertyId,_DateTime_value_"></a>UpdateDateTimeProperty(Guid projectId, String propertyId, DateTime value)
+#### <a name="UpdateDateTimeProperty_Guid_projectId,_String_propertyId,_DateTime_value_"></a>UpdateDateTimeProperty(Guid projectId, String propertyId, DateTime value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.DateTime type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateDateTimeProperty(Guid projectId, String propertyId, DateTime value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| DateTime | The DateTime value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|DateTime|The DateTime value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateGuidProperty_Guid_projectId,_String_propertyId,_Guid_value_"></a>UpdateGuidProperty(Guid projectId, String propertyId, Guid value)
+#### <a name="UpdateGuidProperty_Guid_projectId,_String_propertyId,_Guid_value_"></a>UpdateGuidProperty(Guid projectId, String propertyId, Guid value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.Guid type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateGuidProperty(Guid projectId, String propertyId, Guid value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| Guid | The Guid value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|Guid|The Guid value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateIdeaListItemStatus_Guid_projectId,_String_status_"></a>UpdateIdeaListItemStatus(Guid projectId, String status)
+#### <a name="UpdateIdeaListItemStatus_Guid_projectId,_String_status_"></a>UpdateIdeaListItemStatus(Guid projectId, String status)
  
 Updates the  **Status** column in the SharePoint project idea list with a status string.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateIdeaListItemStatus(Guid projectId, String status)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|status| String | The status message to write to the idea status column.
+|projectId|Guid|The GUID of the project.|
+|status|String|The status message to write to the idea status column.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateIntegerProperty_Guid_projectId,_String_propertyId,_Integer_value_"></a>UpdateIntegerProperty(Guid projectId, String propertyId, Integer value)
+#### <a name="UpdateIntegerProperty_Guid_projectId,_String_propertyId,_Integer_value_"></a>UpdateIntegerProperty(Guid projectId, String propertyId, Integer value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.Integer type.
 
-#### Syntax
+##### Syntax
 
 ```
-void UpdateIntegerProperty(Guid projectId, String propertyId, Int32 value)
+void UpdateIntegerProperty(Guid projectId, String propertyId, Integer value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| Integer | The Integer value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|Integer|The Integer value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateNumberProperty_Guid_projectId,_String_propertyId,_Double_value_"></a>UpdateNumberProperty(Guid projectId, String propertyId, Double value)
+#### <a name="UpdateNumberProperty_Guid_projectId,_String_propertyId,_Double_value_"></a>UpdateNumberProperty(Guid projectId, String propertyId, Double value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.Number type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateNumberProperty(Guid projectId, String propertyId, Double value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| Double | The Number value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|Double|The Number value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateProjectStageStatus_Guid_projectId,_Guid_stageId,_String_statusInformation,_[UpdateProjectStageStatusFieldValue]_UpdateProjectStageStatusFieldValue.md__stageStatusValue,_Boolean_append_"></a>UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInformation, [UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md) stageStatusValue, Boolean append)
+#### <a name="UpdateProjectStageStatus_Guid_projectId,_Guid_stageId,_String_statusInformation,_[UpdateProjectStageStatusFieldValue]_UpdateProjectStageStatusFieldValue.md__stageStatusValue,_Boolean_append_"></a>UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInformation, [UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md) stageStatusValue, Boolean append)
  
 Updates the status value and the status information for a Project Server workflow stage.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInformation, UpdateProjectStageStatusFieldValue stageStatusValue, Boolean append)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|stageId| Guid | The GUID of the workflow stage.
-|statusInformation| String | The status information value to update.
-|stageStatusValue| [UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md) |  enumeration.
-|append| Boolean | True if the information text is appended;false if the information text is replaced.
+|projectId|Guid|The GUID of the project.|
+|stageId|Guid|The GUID of the workflow stage.|
+|statusInformation|String|The status information value to update.|
+|stageStatusValue|[UpdateProjectStageStatusFieldValue](UpdateProjectStageStatusFieldValue.md)|enumeration.|
+|append|Boolean|True if the information text is appended;false if the information text is replaced.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
-### <a id="UpdateTextProperty_Guid_projectId,_String_propertyId,_String_value_"></a>UpdateTextProperty(Guid projectId, String propertyId, String value)
+#### <a name="UpdateTextProperty_Guid_projectId,_String_propertyId,_String_value_"></a>UpdateTextProperty(Guid projectId, String propertyId, String value)
  
 Updates the value of of the specified project property by using the SharePoint SPFieldType.Text type.
 
-#### Syntax
+##### Syntax
 
 ```
 void UpdateTextProperty(Guid projectId, String propertyId, String value)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId| Guid | The GUID of the project.
-|propertyId| String | The GUID of the property to read.
-|value| String | The Text value to update.
+|projectId|Guid|The GUID of the project.|
+|propertyId|String|The GUID of the property to read.|
+|value|String|The Text value to update.|
 
-
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[ProjectContext](ProjectContext.md)<br/>

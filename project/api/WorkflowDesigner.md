@@ -1,46 +1,44 @@
 [comment]: # (Name:WorkflowDesigner)
-[comment]: # (Type:Object)
+[comment]: # (Name:Microsoft.ProjectServer.WorkflowDesigner)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
 
-# WorkflowDesigner
+# <a name="name"></a>WorkflowDesigner class
 
-Creates an object that can be used to design a workflow.
+inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
+<a name="description"></a>Creates an object that can be used to design a workflow.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class WorkflowDesigner 
+class WorkflowDesigner 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.WorkflowDesigner
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.WorkflowDesigner
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-### Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|Fields|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerFieldCollection](WorkflowDesignerFieldCollection.md)|Gets custom field definitions that apply to project entities.|
+|<a name="Fields"></a>Fields|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerFieldCollection](WorkflowDesignerFieldCollection.md)|Gets custom field definitions that apply to project entities.|
 
+## <a name="seeAlso"></a>See Also
 
-
-
-
-
-## See Also
+[ProjectContext](ProjectContext.md)<br/>

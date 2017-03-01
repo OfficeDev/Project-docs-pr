@@ -1,72 +1,74 @@
 [comment]: # (Name:WorkflowDesignerFieldCollection)
-[comment]: # (Type:Object)
+[comment]: # (Name:Microsoft.ProjectServer.WorkflowDesignerFieldCollection)
+[comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:23Z)
 
-# WorkflowDesignerFieldCollection
+# <a name="name"></a>WorkflowDesignerFieldCollection class
 
-Represents a filtered collection of enterprise project custom fields that can be used in a workflow designer.
+inherits members from [ClientObjectCollection<WorkflowDesignerField>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
+<a name="description"></a>Represents a filtered collection of enterprise project custom fields that can be used in a workflow designer.
 
-
-## Syntax
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
 ```C#
-Class WorkflowDesignerFieldCollection 
+class WorkflowDesignerFieldCollection 
 ```
 ### JSOM
 
-```
+```JavaScript
 PS.WorkflowDesignerFieldCollection
 ```
 ### REST Interface
 
-This resource supports PUT, MERGE, and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
+PS.WorkflowDesignerFieldCollection
+
 http://<sitecollection>/<site>/_api/ProjectServer/?????
 ```
 
+## <a name="members"></a>Members
 
-## Members
+### <a name="properties"></a>Properties
 
-
-
-
-
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a workflow designer field from the collection with the [Id](18d798a4-03d6-4b82-67c5-f6071edc6f6f.md) value.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection at the specified index.|
 
+### <a name="methods"></a>Methods
 
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Guid value.|
 
-## Method Details
+<br/>
+#### Method Details
 
-
-### <a id="GetById_String_objectId_"></a>GetById(String objectId)
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a workflow designer field from the collection with the [Id](18d798a4-03d6-4b82-67c5-f6071edc6f6f.md) value.
+Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Guid value.
 
-#### Syntax
+##### Syntax
 
 ```
 WorkflowDesignerField GetById(String objectId)
 ```
 
-#### Parameters
+##### Parameters
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The string representation of the GUID for the workflow designer field.
+|objectId|String|The id of the [WorkflowDesignerField](WorkflowDesignerField.md).|
 
-
-#### Return Value
+##### Return Value
 
 [WorkflowDesignerField](WorkflowDesignerField.md)
 
+## <a name="seeAlso"></a>See Also
 
-## See Also
+[WorkflowDesigner](WorkflowDesigner.md)<br/>
+[WorkflowDesignerField](WorkflowDesignerField.md)<br/>
