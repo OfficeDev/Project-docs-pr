@@ -15,12 +15,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum AccrueAt 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.AccrueAt
 ```
 ### REST Interface

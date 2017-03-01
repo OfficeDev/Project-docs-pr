@@ -16,19 +16,19 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class Assignment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Assignment
 ```
 ### REST Interface
 
 Supported.  Please see REST Interface in [PublishedAssignment](PublishedAssignment.md#syntax).
 
-```
+```html
 PS.Assignment
 ```
 
