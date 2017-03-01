@@ -1,4 +1,5 @@
 [comment]: # (Name:DeletedPublishedAssignmentCollection)
+[comment]: # (Name:Microsoft.ProjectServer.DeletedPublishedAssignmentCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
 
@@ -27,14 +28,14 @@ This resource supports POST HTTP commands.
 ```
 PS.DeletedPublishedAssignmentCollection
 
-http://<sitecollection>/<site>/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[DeletedPublishedAssignment](DeletedPublishedAssignment.md)|Gets a [DeletedPublishedAssignment](DeletedPublishedAssignment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[DeletedPublishedAssignment](DeletedPublishedAssignment.md)|Gets a [DeletedPublishedAssignment](DeletedPublishedAssignment.md) from the collection at the specified index.|

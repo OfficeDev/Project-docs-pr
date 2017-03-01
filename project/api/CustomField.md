@@ -1,4 +1,5 @@
 [comment]: # (Name:CustomField)
+[comment]: # (Name:Microsoft.ProjectServer.CustomField)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.CustomField
 
-http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{fieldid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields('{fieldid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate custom field GUID that is specified in an App package for Project Online.|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the custom field.|
@@ -58,8 +59,8 @@ http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{fieldid}')
 |<a name="RollupType"></a>RollupType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CustomFieldRollupType](CustomFieldRollupType.md)|Gets or sets the way that the custom field rolls up to summary tasks.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the custom field object.|
 
@@ -88,3 +89,4 @@ void
 
 [CustomFieldCollection](CustomFieldCollection.md)<br/>
 [CustomFieldCreationInformation](CustomFieldCreationInformation.md)<br/>
+[LocalCustomField](LocalCustomField.md)<br/>

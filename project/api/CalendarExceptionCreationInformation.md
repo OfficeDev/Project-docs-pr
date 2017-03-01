@@ -1,4 +1,5 @@
 [comment]: # (Name:CalendarExceptionCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.CalendarExceptionCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -25,10 +26,9 @@ This resource supports POST HTTP commands.
 ```
 PS.CalendarExceptionCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Calendars('{calendarid}')/Add
 ```
-POST Example
-
+POST Example (not all fields may be required)
 ```
 body = {
 	'parameters': {
@@ -57,8 +57,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time that the calendar exception ends.|
 |<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name given for the calendar exception, such as Vacation.|

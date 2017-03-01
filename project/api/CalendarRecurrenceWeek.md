@@ -1,4 +1,5 @@
 [comment]: # (Name:CalendarRecurrenceWeek)
+[comment]: # (Name:Microsoft.ProjectServer.CalendarRecurrenceWeek)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ CalendarRecurrenceWeek enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0||

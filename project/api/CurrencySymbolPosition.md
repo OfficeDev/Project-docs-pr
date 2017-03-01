@@ -1,4 +1,5 @@
 [comment]: # (Name:CurrencySymbolPosition)
+[comment]: # (Name:Microsoft.ProjectServer.CurrencySymbolPosition)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ CurrencySymbolPosition enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The currency symbol position is not specified. This constant is used in place of a DBNull value.|

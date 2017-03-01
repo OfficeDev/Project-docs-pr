@@ -1,4 +1,5 @@
 [comment]: # (Name:Calendar)
+[comment]: # (Name:Microsoft.ProjectServer.Calendar)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.Calendar
 
-http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="BaseCalendarExceptions"></a>BaseCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md)|Gets the collection of exceptions to base calendars.|
 |<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was created.|
@@ -45,8 +46,8 @@ http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')
 |<a name="OriginalId"></a>OriginalId|||&#x2713;|Guid||
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CopyTo(String name)](#CopyTo_String_name_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Makes a copy of the calendar and gives the copy a new name.|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the calendar object.|

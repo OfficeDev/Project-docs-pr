@@ -1,4 +1,5 @@
 [comment]: # (Name:CustomFieldCollection)
+[comment]: # (Name:Microsoft.ProjectServer.CustomFieldCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.CustomFieldCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/CustomFields
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CustomFieldId}&#39;](#&#39;{CustomFieldId}&#39;)|||&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.|
 |[Add(CustomFieldCreationInformation parameters)](#Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CustomField](CustomField.md)|Adds the [CustomField](CustomField.md) that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.|
@@ -63,15 +64,14 @@ Gets a [CustomField](CustomField.md) from the collection with the specified Cust
 ##### Syntax
 
 ```
-
-CustomField http://<sitecollection>/<site>/api/ProjectServer/CustomFields('{CustomFieldId}')
-
+CustomField http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields('{CustomFieldId}')
 ```
 
 ##### Parameters
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|CustomFieldId|String|the id of the CustomField
+|CustomFieldId|String|the id of the CustomField|
 
 ##### Return Value
 
@@ -90,10 +90,10 @@ CustomField Add(CustomFieldCreationInformation parameters)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[CustomFieldCreationInformation](CustomFieldCreationInformation.md)|The properties that can be set when creating a custom field.
+|parameters|[CustomFieldCreationInformation](CustomFieldCreationInformation.md)|The properties that can be set when creating a custom field.|
 
 ##### Return Value
 
@@ -112,10 +112,10 @@ CustomField GetByAppAlternateId(String objectId)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId| String | The alternate custom field GUID.
+|objectId|String|The alternate custom field GUID.|
 
 ##### Return Value
 
@@ -132,10 +132,10 @@ CustomField GetByGuid(Guid uid)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [CustomField](CustomField.md)
+|uid|Guid|The Guid of the [CustomField](CustomField.md)|
 
 ##### Return Value
 
@@ -152,10 +152,10 @@ CustomField GetById(String objectId)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [CustomField](CustomField.md)
+|objectId|String|The id of the [CustomField](CustomField.md).|
 
 ##### Return Value
 
@@ -174,10 +174,10 @@ Boolean Remove(CustomField field)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|field|[CustomField](CustomField.md)|The [CustomField](CustomField.md) to remove.
+|field|[CustomField](CustomField.md)|The [CustomField](CustomField.md) to remove.|
 
 ##### Return Value
 

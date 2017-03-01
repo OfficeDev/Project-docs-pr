@@ -1,4 +1,5 @@
 [comment]: # (Name:CalendarException)
+[comment]: # (Name:Microsoft.ProjectServer.CalendarException)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -31,8 +32,8 @@ PS.CalendarException
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Calendar"></a>Calendar|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets the name of the calendar that is associated with the exception.|
 |<a name="Finish"></a>Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time that the calendar exception ends.|
@@ -58,7 +59,8 @@ PS.CalendarException
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the calendar exception object.|
 

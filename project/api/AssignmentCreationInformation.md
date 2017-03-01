@@ -3,6 +3,7 @@
 [comment]: # (Status:Verified)
 
 # <a name="name"></a>AssignmentCreationInformation class
+
 <a name="description"></a>Contains the properties that can be set when creating an [Assignment](Assignment.md).
 
 ## <a name="syntax"></a>Syntax
@@ -26,10 +27,9 @@ This resource supports POST HTTP commands.
 ```
 PS.AssignmentCreationInformation
 
-http://<sitecollection>/<site>/_api/ProjectServer/Draft/Assignments/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Draft/Assignments/Add
 ```
-POST Example
-
+POST Example (not all fields may be required)
 ```
 body = {
 	'parameters': {
@@ -45,8 +45,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the assignment finish date and time.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the assignment.|

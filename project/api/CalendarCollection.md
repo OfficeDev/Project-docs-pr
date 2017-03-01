@@ -1,4 +1,5 @@
 [comment]: # (Name:CalendarCollection)
+[comment]: # (Name:Microsoft.ProjectServer.CalendarCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.CalendarCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Calendars
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CalendarId}&#39;](#&#39;{CalendarId}&#39;)|||&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.|
 |[Add(CalendarCreationInformation parameters)](#Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Adds the [Calendar](Calendar.md) that is specified by the [CalendarCreationInformation](CalendarCreationInformation.md) object to the collection.|
@@ -60,15 +61,14 @@ Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId
 ##### Syntax
 
 ```
-
-Calendar http://<sitecollection>/<site>/api/ProjectServer/Calendars('{CalendarId}')
-
+Calendar http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{CalendarId}')
 ```
 
 ##### Parameters
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|CalendarId|String|the id of the Calendar
+|CalendarId|String|the id of the Calendar|
 
 ##### Return Value
 
@@ -85,10 +85,10 @@ Calendar Add(CalendarCreationInformation parameters)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[CalendarCreationInformation](CalendarCreationInformation.md)|The properties that can be set when creating a calendar.
+|parameters|[CalendarCreationInformation](CalendarCreationInformation.md)|The properties that can be set when creating a calendar.|
 
 ##### Return Value
 
@@ -105,10 +105,10 @@ Calendar GetByGuid(Guid uid)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [Calendar](Calendar.md)
+|uid|Guid|The Guid of the [Calendar](Calendar.md)|
 
 ##### Return Value
 
@@ -125,10 +125,10 @@ Calendar GetById(String objectId)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [Calendar](Calendar.md)
+|objectId|String|The id of the [Calendar](Calendar.md).|
 
 ##### Return Value
 
@@ -145,10 +145,10 @@ Boolean Remove(Calendar calendar)
 ```
 
 ##### Parameters
-
+[!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|calendar|[Calendar](Calendar.md)|The [Calendar](Calendar.md) to remove.
+|calendar|[Calendar](Calendar.md)|The [Calendar](Calendar.md) to remove.|
 
 ##### Return Value
 

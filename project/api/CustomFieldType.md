@@ -1,4 +1,5 @@
 [comment]: # (Name:CustomFieldType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.CustomField+Type)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ CustomFieldType enumeration is not expliclity defined in REST.  Use the values b
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="DATE"></a>DATE|4| A date value. HIWORD contains days offset from 1/1/84. LOWORD contains minute off-set, ranging from 0 to 1440, from 12:00 A.M. (midnight).|

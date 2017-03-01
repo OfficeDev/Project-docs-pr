@@ -27,7 +27,7 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.BaseCalendarException
 
-http://<sitecollection>/<site>/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions({id})
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions({id})
 ```
 
 ## <a name="seeAlso"></a>See Also

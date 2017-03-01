@@ -25,7 +25,7 @@ BookingType enumeration is not expliclity defined in REST.  Use the values below
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The resource booking type is not specified. This is the default value. This constant is used in place of a DBNull value.|

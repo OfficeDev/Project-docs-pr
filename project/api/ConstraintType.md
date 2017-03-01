@@ -1,4 +1,5 @@
 [comment]: # (Name:ConstraintType)
+[comment]: # (Name:Microsoft.ProjectServer.ConstraintType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ ConstraintType enumeration is not expliclity defined in REST.  Use the values be
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The task constraint type is not specified. This constant is used in place of a DBNull value.|

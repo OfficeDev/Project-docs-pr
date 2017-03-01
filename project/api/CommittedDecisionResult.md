@@ -1,4 +1,5 @@
 [comment]: # (Name:CommittedDecisionResult)
+[comment]: # (Name:Microsoft.ProjectServer.CommittedDecisionResult)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ CommittedDecisionResult enumeration is not expliclity defined in REST.  Use the 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The committed decision result is not specified. This constant is used in place of a DBNull value.|

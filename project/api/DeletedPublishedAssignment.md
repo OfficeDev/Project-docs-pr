@@ -1,4 +1,5 @@
 [comment]: # (Name:DeletedPublishedAssignment)
+[comment]: # (Name:Microsoft.ProjectServer.DeletedPublishedAssignment)
 [comment]: # (Type:class)
 [comment]: # (Status:Incomplete)
 
@@ -29,14 +30,14 @@ Endpoint returns a collection of published assignments.  No way to query for spe
 ```
 PS.DeletedPublishedAssignment
 
-http://<sitecollection>/<site>/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/GetDeletedPublishedAssignments('datetime')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+[!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="DeletedDate"></a>DeletedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|When the assignment was deleted.|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|The Id of the assignment.|

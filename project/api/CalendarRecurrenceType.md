@@ -1,4 +1,5 @@
 [comment]: # (Name:CalendarRecurrenceType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.CalendarConstants+CalendarRecurrenceType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -25,7 +26,7 @@ CalendarRecurrenceType enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+[!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Daily"></a>Daily|0| Daily recurrence.|
