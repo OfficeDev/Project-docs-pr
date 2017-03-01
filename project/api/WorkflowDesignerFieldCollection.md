@@ -1,7 +1,7 @@
 [comment]: # (Name:WorkflowDesignerFieldCollection)
 [comment]: # (Name:Microsoft.ProjectServer.WorkflowDesignerFieldCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>WorkflowDesignerFieldCollection class
 

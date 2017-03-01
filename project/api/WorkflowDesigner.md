@@ -1,7 +1,7 @@
 [comment]: # (Name:WorkflowDesigner)
 [comment]: # (Name:Microsoft.ProjectServer.WorkflowDesigner)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>WorkflowDesigner class
 

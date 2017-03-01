@@ -1,7 +1,7 @@
 [comment]: # (Name:WorkFormat)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.Project+WorkFormat)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>WorkFormat enumeration
 
