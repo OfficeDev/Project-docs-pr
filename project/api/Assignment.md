@@ -35,7 +35,7 @@ PS.Assignment
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+>[!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ActualCostWorkPerformed"></a>ActualCostWorkPerformed|&#x2713;|&#x2713;|&#x2713;|Double|Gets the actual cost of work performed (ACWP) for the assignment to date.|
