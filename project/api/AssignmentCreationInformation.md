@@ -1,4 +1,5 @@
 [comment]: # (Name:AssignmentCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.AssignmentCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,13 +11,13 @@
 
 ### CSOM
 
-```C#
+```cs
 class AssignmentCreationInformation 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.AssignmentCreationInformation
 ```
 
@@ -45,7 +46,7 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the assignment finish date and time.|

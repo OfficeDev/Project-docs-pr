@@ -33,7 +33,7 @@ AccrueAt enumeration is not expliclity defined in REST.  Use the values below to
 
 
 <a name="enumMembers"></a>
->[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0| The cost accrual mode is not specified. This constant is used in place of a DBNull value.|
