@@ -73,7 +73,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |<a name="StatusDate"></a>StatusDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the current status date for the project.|
 |<a name="TaskLinks"></a>TaskLinks|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLinkCollection](DraftTaskLinkCollection.md)|Gets the collection of draft task link objects for the project.|
 |<a name="Tasks"></a>Tasks|&#x2713;|&#x2713;|&#x2713;|[DraftTaskCollection](DraftTaskCollection.md)|Gets the collection of task objects for the project.|
-|<a name="TrackingMode"></a>TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[PSTrackingModeEnum](PSTrackingModeEnum.md)|Gets or sets the default tracking method for all assignments in the project.|
+|<a name="TrackingMode"></a>TrackingMode|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[TrackingMode](TrackingMode.md)|Gets or sets the default tracking method for all assignments in the project.|
 |<a name="UtilizationDate"></a>UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
 |<a name="UtilizationType"></a>UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[UtilizationType](UtilizationType.md)||
 |<a name="WeekStartDay"></a>WeekStartDay|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the day of the week on which a work week starts.|

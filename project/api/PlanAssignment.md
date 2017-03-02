@@ -28,7 +28,7 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.PlanAssignment
 
-http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{assignmentid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{assignmentid}')
 ```
 
 ## <a name="members"></a>Members
@@ -110,4 +110,3 @@ void
 
 [PlanAssignmentCollection](PlanAssignmentCollection.md)<br/>
 [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)<br/>
-[ResourceType](ResourceType.md)<br/>
