@@ -106,7 +106,6 @@
 # [ProjectEntityLinksCollection class](api/ProjectEntityLinksCollection.md) 
 # [ProjectResource class](api/ProjectResource.md) 
 # [ProjectResourceCreationInformation class](api/ProjectResourceCreationInformation.md) 
-# [ProjectServerData class](api/ProjectServerData.md) 
 # [ProjectSummaryTask class](api/ProjectSummaryTask.md) 
 # [ProjectType enumeration](api/ProjectType.md) 
 # [ProjectUtilizationType enumeration](api/ProjectUtilizationType.md) 
