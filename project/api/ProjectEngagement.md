@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEngagement)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEngagement)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEngagement class
 
@@ -12,12 +13,12 @@ inherits members from [Engagement](Engagement.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class ProjectEngagement 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectEngagement
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.ProjectEngagement
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ApprovedFinish"></a>ApprovedFinish|&#x2713;|&#x2713;|&#x2713;|DateTime||
 |<a name="ApprovedMaxUnits"></a>ApprovedMaxUnits|&#x2713;|&#x2713;|&#x2713;|Double||
@@ -52,8 +53,8 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagem
 |<a name="RequestedWorkTimeSpan"></a>RequestedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan||
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the project engagement object.|
 |[GetTimephased(DateTime start, DateTime end, TimeScale timescale, EngagementContourType contourType)](#GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_)|&#x2713;|&#x2713;||[ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)||
@@ -90,6 +91,7 @@ ProjectEngagementTimephasedCollection GetTimephased(DateTime start, DateTime end
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime||
@@ -111,6 +113,7 @@ ProjectEngagementTimephasedCollection GetTimephasedByUrl(String start, String en
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|String||

@@ -1,4 +1,5 @@
 [comment]: # (Name:BaseCalendarException)
+[comment]: # (Name:Microsoft.ProjectServer.BaseCalendarException)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [CalendarException](CalendarException.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class BaseCalendarException 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.BaseCalendarException
 ```
 ### REST Interface

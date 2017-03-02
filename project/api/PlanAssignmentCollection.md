@@ -1,4 +1,5 @@
 [comment]: # (Name:PlanAssignmentCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PlanAssignmentCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<PlanAssignment>](https://msdn.micr
 
 ### CSOM
 
-```C#
+```cs
 class PlanAssignmentCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PlanAssignmentCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.PlanAssignmentCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PlanAssignmentId}&#39;](#&#39;{PlanAssignmentId}&#39;)|||&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the specified PlanAssignmentId.|
 |[Add(PlanAssignmentCreationInformation parameters)](#Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Adds the [PlanAssignment](PlanAssignment.md) that is specified by the [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) object to the collection.|
@@ -59,10 +60,11 @@ Gets a [PlanAssignment](PlanAssignment.md) from the collection with the specifie
 ##### Syntax
 
 ```
-PlanAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{PlanAssignmentId}')
+PlanAssignment http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{PlanAssignmentId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PlanAssignmentId|String|the id of the PlanAssignment|
@@ -82,6 +84,7 @@ PlanAssignment Add(PlanAssignmentCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md)|The properties that can be set when creating a plan assignment.|
@@ -101,6 +104,7 @@ PlanAssignment GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [PlanAssignment](PlanAssignment.md)|
@@ -120,9 +124,10 @@ PlanAssignment GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [PlanAssignment](PlanAssignment.md)|
+|objectId|String|The id of the [PlanAssignment](PlanAssignment.md).|
 
 ##### Return Value
 
@@ -139,6 +144,7 @@ Boolean Remove(PlanAssignment assignment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |assignment|[PlanAssignment](PlanAssignment.md)|The [PlanAssignment](PlanAssignment.md) to remove.|

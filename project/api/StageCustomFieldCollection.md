@@ -1,4 +1,5 @@
 [comment]: # (Name:StageCustomFieldCollection)
+[comment]: # (Name:Microsoft.ProjectServer.StageCustomFieldCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<StageCustomField>](https://msdn.mi
 
 ### CSOM
 
-```C#
+```cs
 class StageCustomFieldCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageCustomFieldCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.StageCustomFieldCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/CustomFields
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageCustomFieldId}&#39;](#&#39;{StageCustomFieldId}&#39;)|||&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the specified StageCustomFieldId.|
 |[Add(StageCustomFieldCreationInformation creationInfo)](#Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Adds the [StageCustomField](StageCustomField.md) that is specified by the [StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) object to the collection.|
@@ -59,10 +60,11 @@ Gets a [StageCustomField](StageCustomField.md) from the collection with the spec
 ##### Syntax
 
 ```
-StageCustomField http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields('{StageCustomFieldId}')
+StageCustomField http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/CustomFields('{StageCustomFieldId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |StageCustomFieldId|String|the id of the StageCustomField|
@@ -82,6 +84,7 @@ StageCustomField Add(StageCustomFieldCreationInformation creationInfo)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |creationInfo|[StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md)|The properties that can be set when creating a stage custom field.|
@@ -101,6 +104,7 @@ StageCustomField GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [StageCustomField](StageCustomField.md)|
@@ -120,6 +124,7 @@ StageCustomField GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [StageCustomField](StageCustomField.md).|
@@ -139,6 +144,7 @@ Boolean Remove(StageCustomField field)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |field|[StageCustomField](StageCustomField.md)|The [StageCustomField](StageCustomField.md) to remove.|

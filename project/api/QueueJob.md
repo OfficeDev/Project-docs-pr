@@ -1,4 +1,5 @@
 [comment]: # (Name:QueueJob)
+[comment]: # (Name:Microsoft.ProjectServer.QueueJob)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,29 +13,29 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class QueueJob 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.QueueJob
 ```
 ### REST Interface
 
-This resource supports GET HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.QueueJob
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs('{jobid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/QueueJobs('{jobid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the queue job.|
 |<a name="JobState"></a>JobState|&#x2713;|&#x2713;|&#x2713;|[JobState](JobState.md)|Gets the current progress of a job that is queued.|
@@ -46,8 +47,8 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJo
 |<a name="WaitTime"></a>WaitTime|&#x2713;||&#x2713;|TimeSpan|Gets the expected wait time before the queue job will complete.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Cancel()](#Cancel__)|&#x2713;|&#x2713;|&#x2713;|void|Cancels the queue job.|
 

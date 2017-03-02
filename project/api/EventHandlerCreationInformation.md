@@ -1,4 +1,5 @@
 [comment]: # (Name:EventHandlerCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.EventHandlerCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class EventHandlerCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EventHandlerCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.EventHandlerCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/EventHandlers/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EventHandlers/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -45,8 +46,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AssemblyName"></a>AssemblyName|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the assembly that is associated with the event handler.|
 |<a name="ClassName"></a>ClassName|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the class that is associated with the event handler.|

@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<Calendar>](https://msdn.microsoft.
 
 ### CSOM
 
-```C#
+```cs
 class CalendarCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarCollection
 ```
 ### REST Interface
@@ -34,14 +34,14 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CalendarId}&#39;](#&#39;{CalendarId}&#39;)|||&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.|
@@ -55,7 +55,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars
 #### Method Details
 
 #### <a name="&#39;{CalendarId}&#39;"></a>&#39;{CalendarId}&#39;
-
+ 
 Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.
 
 ##### Syntax
@@ -65,7 +65,7 @@ Calendar http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{C
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |CalendarId|String|the id of the Calendar|
@@ -75,7 +75,7 @@ Calendar http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{C
 [Calendar](Calendar.md)
 
 #### <a name="Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_"></a>Add([CalendarCreationInformation](CalendarCreationInformation.md) parameters)
-
+ 
 Adds the [Calendar](Calendar.md) that is specified by the [CalendarCreationInformation](CalendarCreationInformation.md) object to the collection.
 
 ##### Syntax
@@ -85,7 +85,7 @@ Calendar Add(CalendarCreationInformation parameters)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[CalendarCreationInformation](CalendarCreationInformation.md)|The properties that can be set when creating a calendar.|
@@ -95,7 +95,7 @@ Calendar Add(CalendarCreationInformation parameters)
 [Calendar](Calendar.md)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
-
+ 
 Gets a [Calendar](Calendar.md) from the collection with the Id value.
 
 ##### Syntax
@@ -105,7 +105,7 @@ Calendar GetByGuid(Guid uid)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [Calendar](Calendar.md)|
@@ -115,7 +115,7 @@ Calendar GetByGuid(Guid uid)
 [Calendar](Calendar.md)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
-
+ 
 Gets a [Calendar](Calendar.md) from the collection with the Guid value.
 
 ##### Syntax
@@ -125,7 +125,7 @@ Calendar GetById(String objectId)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [Calendar](Calendar.md).|
@@ -135,7 +135,7 @@ Calendar GetById(String objectId)
 [Calendar](Calendar.md)
 
 #### <a name="Remove_[Calendar]_Calendar.md__calendar_"></a>Remove([Calendar](Calendar.md) calendar)
-
+ 
 Removes the specified [Calendar](Calendar.md) from the collection.
 
 ##### Syntax
@@ -145,7 +145,7 @@ Boolean Remove(Calendar calendar)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |calendar|[Calendar](Calendar.md)|The [Calendar](Calendar.md) to remove.|
@@ -155,8 +155,6 @@ Boolean Remove(Calendar calendar)
 Boolean
 
 #### <a name="Update__"></a>Update()
-
-
  
 Updates the calendar collection.
 

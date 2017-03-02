@@ -1,6 +1,7 @@
 [comment]: # (Name:LookupEntryValue)
+[comment]: # (Name:Microsoft.ProjectServer.LookupEntryValue)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>LookupEntryValue class
 
@@ -11,12 +12,12 @@ Used when creating a [LookupEntryCreationInformation](LookupEntryCreationInforma
 
 ### CSOM
 
-```C#
+```cs
 class LookupEntryValue 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupEntryValue
 ```
 ### REST Interface
@@ -29,8 +30,8 @@ PS.LookupEntryValue
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="DateValue"></a>DateValue|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets a date and time entry value.|
 |<a name="DurationValue"></a>DurationValue|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a duration entry value as a string.|

@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum WorkFormat 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.WorkFormat
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ WorkFormat enumeration is not expliclity defined in REST.  Use the values below 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Minute"></a>Minute|1|Minutes.|

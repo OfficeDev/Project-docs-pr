@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectDetailPageCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectDetailPageCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class ProjectDetailPageCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectDetailPageCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.ProjectDetailPageCreationInformation
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```
@@ -40,8 +41,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of a project detail page.|
 |<a name="IsCreate"></a>IsCreate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether a project detail page is created.|

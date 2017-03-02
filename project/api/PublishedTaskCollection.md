@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedTaskCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedTaskCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,13 +13,13 @@ inherits members from [ClientObjectCollection<PublishedTask>](https://msdn.micro
 
 ### CSOM
 
-```C#
+```cs
 class PublishedTaskCollection 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedTaskCollection
 ```
 
@@ -29,20 +30,21 @@ This resource supports GET HTTP command:
 ```
 PS.PublishedTaskCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/Tasks
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedTaskId}&#39;](#&#39;{PublishedTaskId}&#39;)|||&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the specified PublishedTaskId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.|
@@ -58,10 +60,11 @@ Gets a [PublishedTask](PublishedTask.md) from the collection with the specified 
 ##### Syntax
 
 ```
-PublishedTask http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks('{PublishedTaskId}')
+PublishedTask http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/Tasks('{PublishedTaskId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PublishedTaskId|String|the id of the PublishedTask|
@@ -81,6 +84,7 @@ PublishedTask GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [PublishedTask](PublishedTask.md)|
@@ -100,6 +104,7 @@ PublishedTask GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [PublishedTask](PublishedTask.md).|

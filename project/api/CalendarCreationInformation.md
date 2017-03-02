@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class CalendarCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarCreationInformation
 ```
 ### REST Interface
@@ -41,7 +41,7 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the new calendar.|

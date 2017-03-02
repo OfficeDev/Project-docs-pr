@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class StatusTaskCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusTaskCreationInformation
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.StatusTaskCreationInformation
 
-http://<sitecollection> /<site> /_api/ProjectServer/?????
+See [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) - Task property.
 ```
 POST Example (not all fields may be required)
 ```
@@ -44,8 +44,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date when a task is scheduled to be completed.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the status task object.|

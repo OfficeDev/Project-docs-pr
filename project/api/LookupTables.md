@@ -1,6 +1,7 @@
 [comment]: # (Name:LookupTables)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.LookupTables)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>LookupTables class
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class LookupTables 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupTables
 ```
 ### REST Interface
@@ -30,7 +31,8 @@ PS_LookupTables_InvalidNameCharacters
 
 ### <a name="methods"></a>Methods
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[InvalidNameCharacters()](#InvalidNameCharacters__)|&#x2713;|&#x2713;|&#x2713;|Char[]||
 

@@ -1,6 +1,7 @@
 [comment]: # (Name:LookupNumber)
+[comment]: # (Name:Microsoft.ProjectServer.LookupNumber)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>LookupNumber class
 
@@ -12,12 +13,12 @@ inherits members from [LookupEntry](LookupEntry.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class LookupNumber 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupNumber
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.LookupNumber
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets a data value of type Number.|
 

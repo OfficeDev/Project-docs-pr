@@ -1,6 +1,7 @@
 [comment]: # (Name:EnterpriseResource)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseResource)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EnterpriseResource class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class EnterpriseResource 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EnterpriseResource
 ```
 
@@ -28,14 +29,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.EnterpriseResource
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources('{resourceid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the enterprise resource.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets a collection of status assignments for an enterprise resource.|
@@ -76,8 +77,8 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourcei
 |<a name="UserPermissions"></a>UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)|Gets a UserPermissionCollection that represents the users and their permissions for the enterprise resource.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the enterprise resource object.|
 |[ForceCheckIn()](#ForceCheckIn__)|&#x2713;|&#x2713;|&#x2713;|void|Forces a project to be checked in after it is left in a state of being checked out following the interruption or unexpected closing of Project Server.|
@@ -157,6 +158,7 @@ void SetCustomFieldValue(String fieldName, Object value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Type**|**Description**|
 |:------ |:----|:------ |
 |fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|

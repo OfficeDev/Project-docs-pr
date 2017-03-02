@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<CustomField>](https://msdn.microso
 
 ### CSOM
 
-```C#
+```cs
 class CustomFieldCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CustomFieldCollection
 ```
 ### REST Interface
@@ -34,14 +34,14 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CustomFieldId}&#39;](#&#39;{CustomFieldId}&#39;)|||&#x2713;|[CustomField](CustomField.md)|Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.|
@@ -56,9 +56,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields
 #### Method Details
 
 #### <a name="&#39;{CustomFieldId}&#39;"></a>&#39;{CustomFieldId}&#39;
-
-
-
+ 
 Gets a [CustomField](CustomField.md) from the collection with the specified CustomFieldId.
 
 ##### Syntax
@@ -68,7 +66,7 @@ CustomField http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFiel
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |CustomFieldId|String|the id of the CustomField|
@@ -78,19 +76,17 @@ CustomField http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFiel
 [CustomField](CustomField.md)
 
 #### <a name="Add_[CustomFieldCreationInformation]_CustomFieldCreationInformation.md__parameters_"></a>Add([CustomFieldCreationInformation](CustomFieldCreationInformation.md) parameters)
-
+ 
 Adds the [CustomField](CustomField.md) that is specified by the [CustomFieldCreationInformation](CustomFieldCreationInformation.md) object to the collection.
 
 ##### Syntax
 
 ```
-
 CustomField Add(CustomFieldCreationInformation parameters)
-
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[CustomFieldCreationInformation](CustomFieldCreationInformation.md)|The properties that can be set when creating a custom field.|
@@ -100,19 +96,17 @@ CustomField Add(CustomFieldCreationInformation parameters)
 [CustomField](CustomField.md)
 
 #### <a name="GetByAppAlternateId_String_objectId_"></a>GetByAppAlternateId(String objectId)
-
+ 
 Gets a custom field from the collection by using the alternate custom field GUID that is specified in an App package for Project Online.
 
 ##### Syntax
 
 ```
-
 CustomField GetByAppAlternateId(String objectId)
-
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The alternate custom field GUID.|
@@ -132,7 +126,7 @@ CustomField GetByGuid(Guid uid)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [CustomField](CustomField.md)|
@@ -142,7 +136,7 @@ CustomField GetByGuid(Guid uid)
 [CustomField](CustomField.md)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
-
+ 
 Gets a [CustomField](CustomField.md) from the collection with the Guid value.
 
 ##### Syntax
@@ -152,7 +146,7 @@ CustomField GetById(String objectId)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [CustomField](CustomField.md).|
@@ -162,19 +156,17 @@ CustomField GetById(String objectId)
 [CustomField](CustomField.md)
 
 #### <a name="Remove_[CustomField]_CustomField.md__field_"></a>Remove([CustomField](CustomField.md) field)
-
+ 
 Removes the specified [CustomField](CustomField.md) from the collection.
 
 ##### Syntax
 
 ```
-
 Boolean Remove(CustomField field)
-
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |field|[CustomField](CustomField.md)|The [CustomField](CustomField.md) to remove.|
@@ -184,8 +176,6 @@ Boolean Remove(CustomField field)
 Boolean
 
 #### <a name="Update__"></a>Update()
-
-
  
 Updates the custom field collection.
 

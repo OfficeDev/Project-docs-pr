@@ -1,6 +1,7 @@
 [comment]: # (Name:Engagement)
+[comment]: # (Name:Microsoft.ProjectServer.Engagement)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>Engagement class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class Engagement 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Engagement
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.Engagement
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Comments"></a>Comments|&#x2713;|&#x2713;|&#x2713;|[EngagementCommentCollection](EngagementCommentCollection.md)||
 |<a name="CreatedDate"></a>CreatedDate|&#x2713;|&#x2713;|&#x2713;|DateTime||

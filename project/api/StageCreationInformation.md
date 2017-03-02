@@ -1,4 +1,5 @@
 [comment]: # (Name:StageCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.StageCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class StageCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.StageCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -47,8 +48,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Behavior"></a>Behavior|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[StrategicImpactBehavior](StrategicImpactBehavior.md)|Gets or sets the Strategic Impact value for a project stage; for example, Read Only.|
 |<a name="CheckInRequired"></a>CheckInRequired|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether project check in is required.|

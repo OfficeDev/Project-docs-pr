@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedAssignment)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedAssignment)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [Assignment](Assignment.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class PublishedAssignment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedAssignment
 ```
 
@@ -28,14 +29,14 @@ This resource supports the GET HTTP command.
 ```
 PS.PublishedAssignment
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Assignments('{assignmentid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Assignments('{assignmentid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the published assignment.|
 |<a name="ActualCost"></a>ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the costs incurred for work already performed on the assignment, together with any other recorded costs that are associated with the assignment.|

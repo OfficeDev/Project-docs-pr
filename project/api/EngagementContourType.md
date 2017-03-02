@@ -1,6 +1,7 @@
 [comment]: # (Name:EngagementContourType)
+[comment]: # (Name:Microsoft.ProjectServer.EngagementContourType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EngagementContourType enumeration
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum EngagementContourType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EngagementContourType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ EngagementContourType enumeration is not expliclity defined in REST.  Use the va
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Approved"></a>Approved|0||

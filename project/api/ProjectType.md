@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.Project+ProjectType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum ProjectType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ ProjectType enumeration is not expliclity defined in REST.  Use the values below
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Void"></a>Void|-1|Internal only; do not use.|

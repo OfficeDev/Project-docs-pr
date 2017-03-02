@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupEntry)
+[comment]: # (Name:Microsoft.ProjectServer.LookupEntry)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class LookupEntry 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupEntry
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.LookupEntry
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate GUID that is specified in an App package for Project Online.|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the lookup table entry.|
@@ -44,8 +45,8 @@ http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entri
 |<a name="SortIndex"></a>SortIndex|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Decimal|Gets or sets an index number for the lookup table entry.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the lookup entry object.|
 

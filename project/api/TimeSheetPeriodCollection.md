@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<TimeSheetPeriod>](https://msdn.mic
 
 ### CSOM
 
-```C#
+```cs
 class TimeSheetPeriodCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetPeriodCollection
 ```
 ### REST Interface
@@ -28,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.TimeSheetPeriodCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{TimeSheetPeriodId}&#39;](#&#39;{TimeSheetPeriodId}&#39;)|||&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the specified TimeSheetPeriodId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.|
@@ -58,10 +58,11 @@ Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the specif
 ##### Syntax
 
 ```
-TimeSheetPeriod http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{TimeSheetPeriodId}')
+TimeSheetPeriod http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{TimeSheetPeriodId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |TimeSheetPeriodId|String|the id of the TimeSheetPeriod|
@@ -81,6 +82,7 @@ TimeSheetPeriod GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [TimeSheetPeriod](TimeSheetPeriod.md)|
@@ -100,6 +102,7 @@ TimeSheetPeriod GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [TimeSheetPeriod](TimeSheetPeriod.md).|

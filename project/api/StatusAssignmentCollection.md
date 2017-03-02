@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<StatusAssignment>](https://msdn.mi
 
 ### CSOM
 
-```C#
+```cs
 class StatusAssignmentCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusAssignmentCollection
 ```
 ### REST Interface
@@ -28,28 +28,28 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.StatusAssignmentCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StatusAssignmentId}&#39;](#&#39;{StatusAssignmentId}&#39;)|||&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the specified StatusAssignmentId.|
 |[Add(StatusAssignmentCreationInformation parameters)](#Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Adds the [StatusAssignment](StatusAssignment.md) that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.|
 |[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.|
 |[GetTimePhase(DateTime start, DateTime end)](#GetTimePhase_DateTime_start,_DateTime_end_)|&#x2713;|&#x2713;||[TimePhase](TimePhase.md)|Reads the timephased data for assignments that are within the specified start date and end date.|
-|[GetTimePhaseByUrl(String start, String end)](#GetTimePhaseByUrl_String_start,_String_end_)|||&#x2713;|[TimePhase](TimePhase.md)|Reads the timephased data for assignments that are within the specified start date and end date.|
+|[GetTimePhaseByUrl(String start, String end)](#GetTimePhaseByUrl_String_start,_String_end_)|||&#x2713;|[TimePhase](TimePhase.md)||
 |[Remove(StatusAssignment assignment)](#Remove_[StatusAssignment]_StatusAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StatusAssignment](StatusAssignment.md) from the collection.|
 |[SubmitAllStatusUpdates(String comment)](#SubmitAllStatusUpdates_String_comment_)|&#x2713;|&#x2713;|&#x2713;|void|Submit all updates to assignments in the StatusAssignmentCollection for approval.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the status assignment collection.|
@@ -64,10 +64,11 @@ Gets a [StatusAssignment](StatusAssignment.md) from the collection with the spec
 ##### Syntax
 
 ```
-StatusAssignment http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments('{StatusAssignmentId}')
+StatusAssignment http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments('{StatusAssignmentId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |StatusAssignmentId|String|the id of the StatusAssignment|
@@ -87,6 +88,7 @@ StatusAssignment Add(StatusAssignmentCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md)|The properties that can be set when creating a status assignment.|
@@ -106,6 +108,7 @@ StatusAssignment GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [StatusAssignment](StatusAssignment.md)|
@@ -125,6 +128,7 @@ StatusAssignment GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [StatusAssignment](StatusAssignment.md).|
@@ -144,6 +148,7 @@ TimePhase GetTimePhase(DateTime start, DateTime end)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime|The start date.|
@@ -164,6 +169,7 @@ TimePhase GetTimePhaseByUrl(String start, String end)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime|The start date.|
@@ -184,6 +190,7 @@ Boolean Remove(StatusAssignment assignment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |assignment|[StatusAssignment](StatusAssignment.md)|The [StatusAssignment](StatusAssignment.md) to remove.|
@@ -203,6 +210,7 @@ void SubmitAllStatusUpdates(String comment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |comment|String|The text comment for the status submission.|

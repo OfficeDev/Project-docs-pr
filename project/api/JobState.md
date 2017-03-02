@@ -1,6 +1,7 @@
 [comment]: # (Name:JobState)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.QueueConstants+JobState)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>JobState enumeration
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum JobState 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.JobState
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ JobState enumeration is not expliclity defined in REST.  Use the values below to
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Unknown"></a>Unknown|0|The queue job is unknown.|

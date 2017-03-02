@@ -1,4 +1,5 @@
 [comment]: # (Name:QueueJobCollection)
+[comment]: # (Name:Microsoft.ProjectServer.QueueJobCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<QueueJob>](https://msdn.microsoft.
 
 ### CSOM
 
-```C#
+```cs
 class QueueJobCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.QueueJobCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET HTTP commands.
 ```
 PS.QueueJobCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/QueueJobs
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{QueueJobId}&#39;](#&#39;{QueueJobId}&#39;)|||&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the specified QueueJobId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Id value.|
@@ -57,10 +58,11 @@ Gets a [QueueJob](QueueJob.md) from the collection with the specified QueueJobId
 ##### Syntax
 
 ```
-QueueJob http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/QueueJobs('{QueueJobId}')
+QueueJob http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/QueueJobs('{QueueJobId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |QueueJobId|String|the id of the QueueJob|
@@ -80,6 +82,7 @@ QueueJob GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [QueueJob](QueueJob.md)|
@@ -99,6 +102,7 @@ QueueJob GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [QueueJob](QueueJob.md).|

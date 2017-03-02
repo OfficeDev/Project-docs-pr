@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<WorkflowDesignerField>](https://ms
 
 ### CSOM
 
-```C#
+```cs
 class WorkflowDesignerFieldCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.WorkflowDesignerFieldCollection
 ```
 ### REST Interface
@@ -28,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.WorkflowDesignerFieldCollection
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Guid value.|
 
@@ -60,6 +60,7 @@ WorkflowDesignerField GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [WorkflowDesignerField](WorkflowDesignerField.md).|

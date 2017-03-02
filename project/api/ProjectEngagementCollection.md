@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEngagementCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEngagementCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEngagementCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<ProjectEngagement>](https://msdn.m
 
 ### CSOM
 
-```C#
+```cs
 class ProjectEngagementCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectEngagementCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectEngagementCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ProjectEngagementId}&#39;](#&#39;{ProjectEngagementId}&#39;)|||&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the specified ProjectEngagementId.|
 |[Add(ProjectEngagementCreationInformation parameters)](#Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Adds the [ProjectEngagement](ProjectEngagement.md) that is specified by the [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) object to the collection.|
@@ -60,10 +61,11 @@ Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the sp
 ##### Syntax
 
 ```
-ProjectEngagement http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{ProjectEngagementId}')
+ProjectEngagement http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements('{ProjectEngagementId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |ProjectEngagementId|String|the id of the ProjectEngagement|
@@ -83,6 +85,7 @@ ProjectEngagement Add(ProjectEngagementCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)|The properties that can be set when creating a project engagement.|
@@ -102,6 +105,7 @@ ProjectEngagement GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [ProjectEngagement](ProjectEngagement.md)|
@@ -121,6 +125,7 @@ ProjectEngagement GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [ProjectEngagement](ProjectEngagement.md).|
@@ -140,6 +145,7 @@ Boolean Remove(Engagement engagement)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |engagement|[Engagement](Engagement.md)|The [ProjectEngagement](ProjectEngagement.md) to remove.|

@@ -1,6 +1,7 @@
 [comment]: # (Name:EntityLinksCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EntityLinksCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EntityLinksCollection class
 
@@ -17,14 +18,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EntityLinksCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/EntityLinks
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{EntityLinkId}&#39;](#&#39;{EntityLinkId}&#39;)|||&#x2713;|[EntityLink](EntityLink.md)|Gets a [EntityLink](EntityLink.md) from the collection with the specified EntityLinkId.|
 |[Add(EntityLinkCreationInformation parameters)](#Add_[EntityLinkCreationInformation]_EntityLinkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EntityLink](EntityLink.md)|Adds the [EntityLink](EntityLink.md) that is specified by the [EntityLinkCreationInformation](EntityLinkCreationInformation.md) object to the collection.|
@@ -41,10 +42,11 @@ Gets a [EntityLink](EntityLink.md) from the collection with the specified Entity
 ##### Syntax
 
 ```
-EntityLink http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks('{EntityLinkId}')
+EntityLink http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/EntityLinks('{EntityLinkId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |EntityLinkId|String|the id of the EntityLink|
@@ -64,6 +66,7 @@ EntityLink Add(EntityLinkCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[EntityLinkCreationInformation](EntityLinkCreationInformation.md)|The properties that can be set when creating a entity link.|
@@ -83,6 +86,7 @@ EntityLink GetByGuid(Guid id)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |id|Guid||

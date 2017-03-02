@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupEntryCollection)
+[comment]: # (Name:Microsoft.ProjectServer.LookupEntryCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<LookupEntry>](https://msdn.microso
 
 ### CSOM
 
-```C#
+```cs
 class LookupEntryCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupEntryCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.LookupEntryCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Entries
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{LookupEntryId}&#39;](#&#39;{LookupEntryId}&#39;)|||&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the specified LookupEntryId.|
 |[Add(LookupEntryCreationInformation parameters)](#Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Adds the [LookupEntry](LookupEntry.md) that is specified by the [LookupEntryCreationInformation](LookupEntryCreationInformation.md) object to the collection.|
@@ -60,13 +61,14 @@ Gets a [LookupEntry](LookupEntry.md) from the collection with the specified Look
 ##### Syntax
 
 ```
-LookupEntry http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{LookupEntryId}')
+LookupEntry http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Entries('{LookupEntryId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|LookupEntryId|String|the id of the LookupEntry
+|LookupEntryId|String|the id of the LookupEntry|
 
 ##### Return Value
 
@@ -83,9 +85,10 @@ LookupEntry Add(LookupEntryCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[LookupEntryCreationInformation](LookupEntryCreationInformation.md)|The properties that can be set when creating a lookup entry.
+|parameters|[LookupEntryCreationInformation](LookupEntryCreationInformation.md)|The properties that can be set when creating a lookup entry.|
 
 ##### Return Value
 
@@ -102,9 +105,10 @@ LookupEntry GetByAppAlternateId(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|A string object identifier.
+|objectId|String|A string object identifier.|
 
 ##### Return Value
 
@@ -121,9 +125,10 @@ LookupEntry GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [LookupEntry](LookupEntry.md)
+|uid|Guid|The Guid of the [LookupEntry](LookupEntry.md)|
 
 ##### Return Value
 
@@ -140,9 +145,10 @@ LookupEntry GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [LookupEntry](LookupEntry.md)
+|objectId|String|The id of the [LookupEntry](LookupEntry.md).|
 
 ##### Return Value
 
@@ -159,9 +165,10 @@ Boolean Remove(LookupEntry entry)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|entry|[LookupEntry](LookupEntry.md)|The [LookupEntry](LookupEntry.md) to remove.
+|entry|[LookupEntry](LookupEntry.md)|The [LookupEntry](LookupEntry.md) to remove.|
 
 ##### Return Value
 

@@ -1,6 +1,7 @@
 [comment]: # (Name:EngagementTimephasedPeriodCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.EngagementTimephasedPeriodCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EngagementTimephasedPeriodCreationInformation class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class EngagementTimephasedPeriodCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EngagementTimephasedPeriodCreationInformation
 ```
 ### REST Interface
@@ -27,9 +28,9 @@ This resource supports POST HTTP commands.
 ```
 PS.EngagementTimephasedPeriodCreationInformation
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
-POST Example
+POST Example (not all fields may be required)
 ```
 body = {
 	'parameters': {
@@ -45,8 +46,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="End"></a>End|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
 |<a name="MaxUnits"></a>MaxUnits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double||

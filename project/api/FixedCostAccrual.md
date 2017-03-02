@@ -1,6 +1,7 @@
 [comment]: # (Name:FixedCostAccrual)
+[comment]: # (Name:Microsoft.ProjectServer.FixedCostAccrual)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>FixedCostAccrual enumeration
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum FixedCostAccrual 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.FixedCostAccrual
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ FixedCostAccrual enumeration is not expliclity defined in REST.  Use the values 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0|The fixed cost accrual mode is not specified. This constant is used in place of a DBNull value.|

@@ -1,7 +1,7 @@
 [comment]: # (Name:TrackingMode)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.PSTrackingModeEnum)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Verifed)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>TrackingMode enumeration
 
@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TrackingMode 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TrackingMode
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TrackingMode enumeration is not expliclity defined in REST.  Use the values belo
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="None"></a>None|0|Use free-form tracking for tasks, where resources can report hours by using any method (actual hours, percent complete, or timephased).|

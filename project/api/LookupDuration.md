@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupDuration)
+[comment]: # (Name:Microsoft.ProjectServer.LookupDuration)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [LookupEntry](LookupEntry.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class LookupDuration 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupDuration
 ```
 ### REST Interface
@@ -27,14 +28,15 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.LookupDuration
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Entries('{entryid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
 
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Value"></a>Value|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the string value in a lookup table of type Duration.|
 |<a name="ValueMilliseconds"></a>ValueMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the duration in milliseconds, in a lookup table of typeDuration.|

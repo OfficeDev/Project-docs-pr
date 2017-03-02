@@ -1,6 +1,7 @@
 [comment]: # (Name:ResourceEngagement)
+[comment]: # (Name:Microsoft.ProjectServer.ResourceEngagement)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ResourceEngagement class
 
@@ -12,12 +13,12 @@ inherits members from [Engagement](Engagement.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class ResourceEngagement 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ResourceEngagement
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.ResourceEngagement
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{engagementid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{engagementid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ApprovedFinish"></a>ApprovedFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
 |<a name="ApprovedMaxUnits"></a>ApprovedMaxUnits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double||
@@ -50,8 +51,8 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourcei
 |<a name="RequestedWorkTimeSpan"></a>RequestedWorkTimeSpan|&#x2713;||&#x2713;|TimeSpan||
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the resource engagement object.|
 |[GetTimephased(DateTime start, DateTime end, TimeScale timescale, EngagementContourType contourType)](#GetTimephased_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timescale,_[EngagementContourType]_EngagementContourType.md__contourType_)|&#x2713;|&#x2713;||[ResourceEngagementTimephasedCollection](ResourceEngagementTimephasedCollection.md)||
@@ -88,6 +89,7 @@ ResourceEngagementTimephasedCollection GetTimephased(DateTime start, DateTime en
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime||
@@ -109,6 +111,7 @@ ResourceEngagementTimephasedCollection GetTimephasedByUrl(String start, String e
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|String||

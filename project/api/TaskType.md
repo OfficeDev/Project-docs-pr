@@ -1,7 +1,7 @@
 [comment]: # (Name:TaskType)
 [comment]: # (Name:Microsoft.Office.Project.Scheduling.TaskType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Complete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>TaskType enumeration
 
@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TaskType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TaskType
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TaskType enumeration is not expliclity defined in REST.  Use the values below to
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="FixedUnits"></a>FixedUnits|0|The task is fixed units (Default).  The number of Assignment Units remains constant, regardless of the amount of work or the duration on the task.|

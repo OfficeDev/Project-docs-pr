@@ -1,7 +1,7 @@
 [comment]: # (Name:WorkflowDesignerField)
 [comment]: # (Name:Microsoft.ProjectServer.WorkflowDesignerField)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>WorkflowDesignerField class
 
@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class WorkflowDesignerField 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.WorkflowDesignerField
 ```
 ### REST Interface
@@ -28,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.WorkflowDesignerField
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="DisplayName"></a>DisplayName|&#x2713;|&#x2713;|&#x2713;|String|Gets the workflow designer field display name|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|String|Gets the GUID of the workflow designer field.|

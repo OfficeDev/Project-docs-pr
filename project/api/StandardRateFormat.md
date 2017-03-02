@@ -1,4 +1,5 @@
 [comment]: # (Name:StandardRateFormat)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.Resource+StandardRateFormat)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum StandardRateFormat 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StandardRateFormat
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ StandardRateFormat enumeration is not expliclity defined in REST.  Use the value
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Minute"></a>Minute|1|The resource rate is per minute.|

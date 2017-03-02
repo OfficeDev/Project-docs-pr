@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectCreationInformation class
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class ProjectCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.ProjectCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -44,8 +45,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the project.|
 |<a name="EnterpriseProjectTypeId"></a>EnterpriseProjectTypeId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the enterprise project type (EPT).|

@@ -1,4 +1,5 @@
 [comment]: # (Name:DraftAssignmentCollection)
+[comment]: # (Name:Microsoft.ProjectServer.DraftAssignmentCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,40 +13,37 @@ inherits members from [ClientObjectCollection<DraftAssignment>](https://msdn.mic
 
 ### CSOM
 
-```C#
+```cs
 class DraftAssignmentCollection 
 ```
-
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DraftAssignmentCollection
 ```
-
 ### REST Interface
 
-This resource supports GET and POST HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.DraftAssignmentCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Assignments
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/Assignments
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
-|:----- |:-----: |:-----: |:-----: |:----- |:----- |
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
+|:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftAssignmentId}&#39;](#&#39;{DraftAssignmentId}&#39;)|||&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the specified DraftAssignmentId.|
 |[Add(AssignmentCreationInformation parameters)](#Add_[AssignmentCreationInformation]_AssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the [DraftAssignment](DraftAssignment.md) that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.|
@@ -62,20 +60,21 @@ Gets a [DraftAssignment](DraftAssignment.md) from the collection with the specif
 ##### Syntax
 
 ```
-DraftAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Assignments('{DraftAssignmentId}')
+DraftAssignment http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/Assignments('{DraftAssignmentId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|DraftAssignmentId|String|the id of the DraftAssignment
+|DraftAssignmentId|String|the id of the DraftAssignment|
 
 ##### Return Value
 
 [DraftAssignment](DraftAssignment.md)
 
 #### <a name="Add_[AssignmentCreationInformation]_AssignmentCreationInformation.md__parameters_"></a>Add([AssignmentCreationInformation](AssignmentCreationInformation.md) parameters)
-
+ 
 Adds the [DraftAssignment](DraftAssignment.md) that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.
 
 ##### Syntax
@@ -85,16 +84,17 @@ DraftAssignment Add(AssignmentCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[AssignmentCreationInformation](AssignmentCreationInformation.md)|The properties that can be set when creating a draft assignment.
+|parameters|[AssignmentCreationInformation](AssignmentCreationInformation.md)|The properties that can be set when creating a draft assignment.|
 
 ##### Return Value
 
 [DraftAssignment](DraftAssignment.md)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
-
+ 
 Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.
 
 ##### Syntax
@@ -104,16 +104,17 @@ DraftAssignment GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [DraftAssignment](DraftAssignment.md)
+|uid|Guid|The Guid of the [DraftAssignment](DraftAssignment.md)|
 
 ##### Return Value
 
 [DraftAssignment](DraftAssignment.md)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
-
+ 
 Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Guid value.
 
 ##### Syntax
@@ -123,16 +124,17 @@ DraftAssignment GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [DraftAssignment](DraftAssignment.md)
+|objectId|String|The id of the [DraftAssignment](DraftAssignment.md).|
 
 ##### Return Value
 
 [DraftAssignment](DraftAssignment.md)
 
 #### <a name="Remove_[DraftAssignment]_DraftAssignment.md__assignment_"></a>Remove([DraftAssignment](DraftAssignment.md) assignment)
-
+ 
 Removes the specified [DraftAssignment](DraftAssignment.md) from the collection.
 
 ##### Syntax
@@ -142,9 +144,10 @@ Boolean Remove(DraftAssignment assignment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|assignment|[DraftAssignment](DraftAssignment.md)|The [DraftAssignment](DraftAssignment.md) to remove.
+|assignment|[DraftAssignment](DraftAssignment.md)|The [DraftAssignment](DraftAssignment.md) to remove.|
 
 ##### Return Value
 

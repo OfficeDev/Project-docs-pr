@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectDetailPageType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.ProjectDetailPages+PageType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum ProjectDetailPageType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectDetailPageType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ ProjectDetailPageType enumeration is not expliclity defined in REST.  Use the va
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="None"></a>None|0|Indicates that the page usage is not specified.|

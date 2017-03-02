@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class StatusAssignment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusAssignment
 ```
 ### REST Interface
@@ -28,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.StatusAssignment
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments('{assignmentid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments('{assignmentid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the status assignment.|
 |<a name="ActualFinish"></a>ActualFinish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time when an assignment was completed.|
@@ -79,8 +79,8 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourcei
 |<a name="WorkTimeSpan"></a>WorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the total time scheduled on a task for all assigned resources.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the status assignment object.|
 |[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the status assignment.|
@@ -118,6 +118,7 @@ void SetCustomFieldValue(String fieldName, Object value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
@@ -138,6 +139,7 @@ void SubmitStatusUpdates(String comment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |comment| String|A comment about the submission.|

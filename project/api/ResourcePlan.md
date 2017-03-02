@@ -1,4 +1,5 @@
 [comment]: # (Name:ResourcePlan)
+[comment]: # (Name:Microsoft.ProjectServer.ResourcePlan)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class ResourcePlan 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ResourcePlan
 ```
 ### REST Interface
@@ -27,25 +28,25 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.ResourcePlan
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentCollection](PlanAssignmentCollection.md)|Gets a collection of PlanAssignment objects that are associated with the resource plan.|
 |<a name="Finish"></a>Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of the resource plan.|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the resource plan.|
 |<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the start date of the resource plan.|
 |<a name="UtilizationDate"></a>UtilizationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time of resource utilization for the current resource plan.|
-|<a name="UtilizationType"></a>UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[UtilizationType](UtilizationType.md)|Gets or sets the type of resource utilization for the current resource plan.|
+|<a name="UtilizationType"></a>UtilizationType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[ProjectUtilizationType](ProjectUtilizationType.md)|Gets or sets the type of resource utilization for the current resource plan.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Deletes the resource plan object.|
 |[ForceCheckIn()](#ForceCheckIn__)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Checks in the project resource plan in case it was left checked out in Project Server.|

@@ -1,4 +1,5 @@
 [comment]: # (Name:ReadyToLeaveProjectStageValue)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.ReadyToLeaveProjectStageValue)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum ReadyToLeaveProjectStageValue 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ReadyToLeaveProjectStageValue
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ ReadyToLeaveProjectStageValue enumeration is not expliclity defined in REST.  Us
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Ready"></a>Ready|0|The stage is complete; the workflow is ready to leave the project stage.|

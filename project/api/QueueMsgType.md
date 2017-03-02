@@ -1,4 +1,5 @@
 [comment]: # (Name:QueueMsgType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.QueueConstants+QueueMsgType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum QueueMsgType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.QueueMsgType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ QueueMsgType enumeration is not expliclity defined in REST.  Use the values belo
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Unknown"></a>Unknown|0|Unknown queue message type.|

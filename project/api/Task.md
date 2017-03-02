@@ -1,25 +1,25 @@
 [comment]: # (Name:Task)
 [comment]: # (Name:Microsoft.ProjectServer.Task)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>Task class
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>A task is an activity that can have a beginning and an end. Project plans are made up of tasks. 
+<a name="description"></a>Contains methods and properties that can be used to access the details of the task.
 
 ## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```C#
+```cs
 class Task 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Task
 ```
 
@@ -30,14 +30,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.Task
 
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')/Tasks('taskid')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('projectid')/Tasks('taskid')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ActualCostWorkPerformed"></a>ActualCostWorkPerformed|&#x2713;|&#x2713;|&#x2713;|Double|Decimal value|Gets the costs incurred for work already performed by resources on the task to date.|
 |<a name="ActualDuration"></a>ActualDuration|&#x2713;|&#x2713;|&#x2713;|String|Gets the span of active working time that is required to complete a task.|

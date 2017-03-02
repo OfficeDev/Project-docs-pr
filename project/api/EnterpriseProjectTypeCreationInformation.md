@@ -1,22 +1,22 @@
 [comment]: # (Name:EnterpriseProjectTypeCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseProjectTypeCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
-[comment]: # (GeneratedDate:2016-12-13 02:07:22Z)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EnterpriseProjectTypeCreationInformation class
 
-<a name="description"></a>Provides information for the creation of an enterprise project type (EPT).
+<a name="description"></a>Contains the properties that can be set when creating a [EnterpriseProjectType](EnterpriseProjectType.md).
 
 ## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```C#
+```cs
 class EnterpriseProjectTypeCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EnterpriseProjectTypeCreationInformation
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.EnterpriseProjectTypeCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseProjectTypes/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -50,8 +50,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description for an EPT.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for an EPT.|

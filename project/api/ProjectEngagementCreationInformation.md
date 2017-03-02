@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEngagementCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEngagementCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEngagementCreationInformation class
 
@@ -12,12 +13,12 @@ inherits members from [EngagementCreationInformation](EngagementCreationInformat
 
 ### CSOM
 
-```C#
+```cs
 class ProjectEngagementCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectEngagementCreationInformation
 ```
 ### REST Interface
@@ -27,7 +28,7 @@ This resource supports POST HTTP commands.
 ```
 PS.ProjectEngagementCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -40,8 +41,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Resource"></a>Resource|&#x2713;&#x02B7;|&#x2713;&#x02B7;||[EnterpriseResource](EnterpriseResource.md)||
 |<a name="ResourceId"></a>ResourceId|||&#x2713;&#x02B7;|Guid||

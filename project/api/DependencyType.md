@@ -1,4 +1,5 @@
 [comment]: # (Name:DependencyType)
+[comment]: # (Name:Microsoft.Office.Project.Scheduling.DependencyType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum DependencyType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DependencyType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ DependencyType enumeration is not expliclity defined in REST.  Use the values be
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="FinishFinish"></a>FinishFinish|0|Finish to finish (FF) task link type. The successor task B cannot finish until the predecessor task A finishes.|

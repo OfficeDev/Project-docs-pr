@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<CalendarException>](https://msdn.m
 
 ### CSOM
 
-```C#
+```cs
 class CalendarExceptionCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarExceptionCollection
 ```
 ### REST Interface
@@ -32,14 +32,14 @@ PS.CalendarExceptionCollection
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[CalendarException](CalendarException.md)|Gets a [CalendarException](CalendarException.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[CalendarException](CalendarException.md)|Gets a [CalendarException](CalendarException.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(CalendarExceptionCreationInformation parameters)](#Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Adds the [CalendarException](CalendarException.md) that is specified by the [CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) object to the collection.|
@@ -60,7 +60,7 @@ CalendarException Add(CalendarExceptionCreationInformation parameters)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md)|The properties that can be set when creating a calendar exception.|
@@ -82,7 +82,7 @@ CalendarException GetById(Integer id)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |id|Integer|The id of the [CalendarException](CalendarException.md).|
@@ -104,7 +104,7 @@ Boolean Remove(CalendarException exception)
 ```
 
 ##### Parameters
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |exception|[CalendarException](CalendarException.md)|The [CalendarException](CalendarException.md) to remove.|

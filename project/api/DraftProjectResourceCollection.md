@@ -1,4 +1,5 @@
 [comment]: # (Name:DraftProjectResourceCollection)
+[comment]: # (Name:Microsoft.ProjectServer.DraftProjectResourceCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<DraftProjectResource>](https://msd
 
 ### CSOM
 
-```C#
+```cs
 class DraftProjectResourceCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DraftProjectResourceCollection
 ```
 
@@ -28,21 +29,21 @@ This resource supports GET, POST, PUT, PATCH,  and MERGE HTTP commands.
 ```
 PS.DraftProjectResourceCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/ProjectResources
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/ProjectResources
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftProjectResourceId}&#39;](#&#39;{DraftProjectResourceId}&#39;)|||&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the specified DraftProjectResourceId.|
 |[Add(ProjectResourceCreationInformation parameters)](#Add_[ProjectResourceCreationInformation]_ProjectResourceCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Adds the [DraftProjectResource](DraftProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.|
@@ -62,13 +63,14 @@ Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with 
 ##### Syntax
 
 ```
-DraftProjectResource http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/ProjectResources('{DraftProjectResourceId}')
+DraftProjectResource http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/ProjectResources('{DraftProjectResourceId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|DraftProjectResourceId|String|the id of the DraftProjectResource
+|DraftProjectResourceId|String|the id of the DraftProjectResource|
 
 ##### Return Value
 
@@ -85,9 +87,10 @@ DraftProjectResource Add(ProjectResourceCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[ProjectResourceCreationInformation](ProjectResourceCreationInformation.md)|The properties that can be set when creating a draft project resource.
+|parameters|[ProjectResourceCreationInformation](ProjectResourceCreationInformation.md)|The properties that can be set when creating a draft project resource.|
 
 ##### Return Value
 
@@ -104,9 +107,10 @@ DraftProjectResource AddEnterpriseResource(EnterpriseResource resource)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|resource|[EnterpriseResource](EnterpriseResource.md)|The enterprise resource to add.
+|resource|[EnterpriseResource](EnterpriseResource.md)|The enterprise resource to add.|
 
 ##### Return Value
 
@@ -123,6 +127,7 @@ QueueJob AddEnterpriseResourceById(Guid resourceId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |resourceId|Guid|The guid of the enterprise resource to add to the collection.|
@@ -145,9 +150,10 @@ DraftProjectResource GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [DraftProjectResource](DraftProjectResource.md)
+|uid|Guid|The Guid of the [DraftProjectResource](DraftProjectResource.md)|
 
 ##### Return Value
 
@@ -164,9 +170,10 @@ DraftProjectResource GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The string representation of the project resource GUID.
+|objectId|String|The id of the [DraftProjectResource](DraftProjectResource.md).|
 
 ##### Return Value
 
@@ -174,7 +181,7 @@ DraftProjectResource GetById(String objectId)
 
 #### <a name="Remove_[DraftProjectResource]_DraftProjectResource.md__resource_"></a>Remove([DraftProjectResource](DraftProjectResource.md) resource)
 
-Removes the [DraftProjectResource](DraftProjectResource.md) from the collection. Returns true if successful.
+Removes the specified [DraftProjectResource](DraftProjectResource.md) from the collection.
 
 ##### Syntax
 
@@ -183,9 +190,10 @@ Boolean Remove(DraftProjectResource resource)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|resource|[DraftProjectResource](DraftProjectResource.md)|The draft project resource to remove.
+|resource|[DraftProjectResource](DraftProjectResource.md)|The [DraftProjectResource](DraftProjectResource.md) to remove.|
 
 ##### Return Value
 

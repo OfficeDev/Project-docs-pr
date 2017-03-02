@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum StrategicImpactBehavior 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StrategicImpactBehavior
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ StrategicImpactBehavior enumeration is not expliclity defined in REST.  Use the 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0|The strategic impact is not specified in the stage.|

@@ -1,4 +1,5 @@
 [comment]: # (Name:EventCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EventCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<Event>](https://msdn.microsoft.com
 
 ### CSOM
 
-```C#
+```cs
 class EventCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EventCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EventCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Events
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Events
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[Event](Event.md)|Gets a [Event](Event.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[Event](Event.md)|Gets a [Event](Event.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets a [Event](Event.md) from the collection with the Guid value.|
 |[GetByInt(Integer id)](#GetByInt_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets an event from the collection with the specified integer identifier.|
@@ -50,7 +51,7 @@ http://<sitecollection>/<site>/api/ProjectServer/Events
 #### Method Details
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
-
+ 
 Gets a [Event](Event.md) from the collection with the Guid value.
 
 ##### Syntax
@@ -60,9 +61,10 @@ Event GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [Event](Event.md)
+|objectId|String|The id of the [Event](Event.md).|
 
 ##### Return Value
 
@@ -79,9 +81,10 @@ Event GetByInt(Integer id)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| Integer | An integer identifier.
+|id|Integer|An integer identifier.|
 
 ##### Return Value
 

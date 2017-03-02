@@ -1,4 +1,5 @@
 [comment]: # (Name:DraftTaskLinkCollection)
+[comment]: # (Name:Microsoft.ProjectServer.DraftTaskLinkCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<DraftTaskLink>](https://msdn.micro
 
 ### CSOM
 
-```C#
+```cs
 class DraftTaskLinkCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DraftTaskLinkCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.DraftTaskLinkCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftTaskLinkId}&#39;](#&#39;{DraftTaskLinkId}&#39;)|||&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the specified DraftTaskLinkId.|
 |[Add(TaskLinkCreationInformation parameters)](#Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Adds the [DraftTaskLink](DraftTaskLink.md) that is specified by the [TaskLinkCreationInformation](TaskLinkCreationInformation.md) object to the collection.|
@@ -53,19 +54,20 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/T
 #### Method Details
 
 #### <a name="&#39;{DraftTaskLinkId}&#39;"></a>&#39;{DraftTaskLinkId}&#39;
-
+ 
 Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the specified DraftTaskLinkId.
 
 ##### Syntax
 
 ```
-DraftTaskLink http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{DraftTaskLinkId}')
+DraftTaskLink http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{DraftTaskLinkId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|DraftTaskLinkId|String|the id of the DraftTaskLink
+|DraftTaskLinkId|String|the id of the DraftTaskLink|
 
 ##### Return Value
 
@@ -82,9 +84,10 @@ DraftTaskLink Add(TaskLinkCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[TaskLinkCreationInformation](TaskLinkCreationInformation.md)|The properties that can be set when creating a draft task link.
+|parameters|[TaskLinkCreationInformation](TaskLinkCreationInformation.md)|The properties that can be set when creating a draft task link.|
 
 ##### Return Value
 
@@ -101,9 +104,10 @@ DraftTaskLink GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [DraftTaskLink](DraftTaskLink.md)
+|uid|Guid|The Guid of the [DraftTaskLink](DraftTaskLink.md)|
 
 ##### Return Value
 
@@ -120,9 +124,10 @@ DraftTaskLink GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [DraftTaskLink](DraftTaskLink.md)
+|objectId|String|The id of the [DraftTaskLink](DraftTaskLink.md).|
 
 ##### Return Value
 
@@ -139,9 +144,10 @@ Boolean Remove(DraftTaskLink TaskLink)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|TaskLink|[DraftTaskLink](DraftTaskLink.md)|The [DraftTaskLink](DraftTaskLink.md) to remove.
+|TaskLink|[DraftTaskLink](DraftTaskLink.md)|The [DraftTaskLink](DraftTaskLink.md) to remove.|
 
 ##### Return Value
 

@@ -1,6 +1,7 @@
 [comment]: # (Name:DraftTask)
+[comment]: # (Name:Microsoft.ProjectServer.DraftTask)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>DraftTask class
 
@@ -12,12 +13,12 @@ inherits members from [Task](Task.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class DraftTask 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DraftTask
 ```
 
@@ -28,14 +29,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE,  and DELETE HTTP commands.
 ```
 PS.DraftTask
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/Tasks('{taskid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Draft/Tasks('{taskid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the draft task.|
 |<a name="ActualCost"></a>ActualCost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or set costs incurred for work already performed on a task, together with any other recorded costs that are associated with a task.|
@@ -91,8 +92,8 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/T
 |<a name="WorkTimeSpan"></a>WorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the total time scheduled for a task.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the draft task object.|
 |[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the draft task.|
@@ -129,10 +130,11 @@ void SetCustomFieldValue(String fieldName, Object value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Type**|**Description**|
 |:------ |:----|:------ |
-|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.
-|value|Object|New value of the custom field.
+|fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
+|value|Object|New value of the custom field.|
 
 ##### Return Value
 

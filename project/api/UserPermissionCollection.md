@@ -1,7 +1,7 @@
 [comment]: # (Name:UserPermissionCollection)
 [comment]: # (Name:Microsoft.ProjectServer.UserPermissionCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>UserPermissionCollection class
 

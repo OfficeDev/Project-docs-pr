@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum StatusUpdateType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusUpdateType
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ StatusUpdateType enumeration is not expliclity defined in REST.  Use the values 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Update"></a>Update|0||

@@ -1,7 +1,7 @@
 [comment]: # (Name:UpdateProjectStageStatusFieldValue)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.UpdateProjectStageStatusFieldValue)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Verifed)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>UpdateProjectStageStatusFieldValue enumeration
 
@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum UpdateProjectStageStatusFieldValue 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.UpdateProjectStageStatusFieldValue
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ UpdateProjectStageStatusFieldValue enumeration is not expliclity defined in REST
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="None"></a>None|0|The workflow stage status field is empty.|

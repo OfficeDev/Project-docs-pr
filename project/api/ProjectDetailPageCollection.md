@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectDetailPageCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectDetailPageCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<ProjectDetailPage>](https://msdn.m
 
 ### CSOM
 
-```C#
+```cs
 class ProjectDetailPageCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectDetailPageCollection
 ```
 ### REST Interface
@@ -27,22 +28,22 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectDetailPageCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/ProjectDetailPages
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection at the specified index.|
 |<a name="List"></a>List|&#x2713;|&#x2713;|&#x2713;|SPList|Gets a list of available project detail pages.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ProjectDetailPageId}&#39;](#&#39;{ProjectDetailPageId}&#39;)|||&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the specified ProjectDetailPageId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.|
@@ -58,10 +59,11 @@ Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the sp
 ##### Syntax
 
 ```
-ProjectDetailPage http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages('{ProjectDetailPageId}')
+ProjectDetailPage http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/ProjectDetailPages('{ProjectDetailPageId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |ProjectDetailPageId|String|the id of the ProjectDetailPage|
@@ -81,6 +83,7 @@ ProjectDetailPage GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [ProjectDetailPage](ProjectDetailPage.md)|
@@ -100,6 +103,7 @@ ProjectDetailPage GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [ProjectDetailPage](ProjectDetailPage.md).|

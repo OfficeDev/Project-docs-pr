@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedTaskLinkCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedTaskLinkCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<PublishedTaskLink>](https://msdn.m
 
 ### CSOM
 
-```C#
+```cs
 class PublishedTaskLinkCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedTaskLinkCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET HTTP commands.
 ```
 PS.PublishedTaskLinkCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/TaskLinks
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/TaskLinks
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedTaskLinkId}&#39;](#&#39;{PublishedTaskLinkId}&#39;)|||&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the specified PublishedTaskLinkId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLink](PublishedTaskLink.md)|Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the Id value.|
@@ -57,10 +58,11 @@ Gets a [PublishedTaskLink](PublishedTaskLink.md) from the collection with the sp
 ##### Syntax
 
 ```
-PublishedTaskLink http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/TaskLinks('{PublishedTaskLinkId}')
+PublishedTaskLink http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/TaskLinks('{PublishedTaskLinkId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PublishedTaskLinkId|String|the id of the PublishedTaskLink|
@@ -80,6 +82,7 @@ PublishedTaskLink GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [PublishedTaskLink](PublishedTaskLink.md)|
@@ -99,6 +102,7 @@ PublishedTaskLink GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [PublishedTaskLink](PublishedTaskLink.md).|

@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TimeSheetValidationType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetValidationType
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TimeSheetValidationType enumeration is not expliclity defined in REST.  Use the 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Unverified"></a>Unverified|0|The timesheet line is unverified.|

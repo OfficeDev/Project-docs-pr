@@ -1,4 +1,5 @@
 [comment]: # (Name:PlanAssignmentCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.PlanAssignmentCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class PlanAssignmentCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PlanAssignmentCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.PlanAssignmentCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -41,8 +42,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="BookingType"></a>BookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the booking type of the assignment.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the plan assignment.|

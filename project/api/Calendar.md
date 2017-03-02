@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class Calendar 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Calendar
 ```
 ### REST Interface
@@ -34,7 +34,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="BaseCalendarExceptions"></a>BaseCalendarExceptions|&#x2713;|&#x2713;|&#x2713;|[CalendarExceptionCollection](CalendarExceptionCollection.md)|Gets the collection of exceptions to base calendars.|
@@ -46,7 +46,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid
 |<a name="OriginalId"></a>OriginalId|||&#x2713;|Guid||
 
 ### <a name="methods"></a>Methods
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CopyTo(String name)](#CopyTo_String_name_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Makes a copy of the calendar and gives the copy a new name.|
@@ -66,6 +66,7 @@ Calendar CopyTo(String name)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |name| String | The name of the new calendar.

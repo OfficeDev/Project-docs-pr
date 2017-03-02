@@ -1,4 +1,5 @@
 [comment]: # (Name:StageCustomFieldCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.StageCustomFieldCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class StageCustomFieldCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageCustomFieldCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.StageCustomFieldCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/CustomFields/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/CustomFields/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -40,8 +41,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the custom field.|
 |<a name="ReadOnly"></a>ReadOnly|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the custom field is read-only in the stage.|

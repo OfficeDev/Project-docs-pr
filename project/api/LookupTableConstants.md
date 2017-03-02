@@ -9,12 +9,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum LookupTableConstants 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupTableConstants
 ```
 ### REST Interface
@@ -24,7 +24,7 @@ LookupTableConstants enumeration is not expliclity defined in REST.  Use the val
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="AnyLengthSequence"></a>AnyLengthSequence|0|The length that is specified for a code mask sequence, if any length is acceptable.|

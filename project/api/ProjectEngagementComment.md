@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEngagementComment)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEngagementComment)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEngagementComment class
 
@@ -12,12 +13,12 @@ inherits members from [EngagementComment](EngagementComment.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class ProjectEngagementComment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectEngagementComment
 ```
 ### REST Interface
@@ -27,7 +28,7 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectEngagementComment
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')/Comments('{commentId}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')/Comments('{commentId}')
 ```
 
 ## <a name="members"></a>Members

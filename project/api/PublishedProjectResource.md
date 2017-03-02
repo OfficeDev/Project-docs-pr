@@ -1,6 +1,7 @@
 [comment]: # (Name:PublishedProjectResource)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedProjectResource)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>PublishedProjectResource class
 
@@ -12,30 +13,29 @@ inherits members from [ProjectResource](ProjectResource.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class PublishedProjectResource 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedProjectResource
 ```
-
 ### REST Interface
 
-This resource supports GET HTTP commands.
+This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 
 ```
 PS.PublishedProjectResource
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/ProjectResources('{resourceid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/ProjectResources('{resourceid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
 > [!div class="mx-tdBreakAll"]
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the published project resource.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignmentCollection](PublishedAssignmentCollection.md)|Gets the assignments that are associated with the resource.|

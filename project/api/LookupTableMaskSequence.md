@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupTableMaskSequence)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.LookupTables+MaskSequence)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum LookupTableMaskSequence 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupTableMaskSequence
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ LookupTableMaskSequence enumeration is not expliclity defined in REST.  Use the 
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NUMBER_TEXT"></a>NUMBER_TEXT|0|Number data expressed as a string.|

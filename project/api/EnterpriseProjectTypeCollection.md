@@ -1,4 +1,5 @@
 [comment]: # (Name:EnterpriseProjectTypeCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseProjectTypeCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<EnterpriseProjectType>](https://ms
 
 ### CSOM
 
-```C#
+```cs
 class EnterpriseProjectTypeCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EnterpriseProjectTypeCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EnterpriseProjectTypeCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseProjectTypes
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{EnterpriseProjectTypeId}&#39;](#&#39;{EnterpriseProjectTypeId}&#39;)|||&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the specified EnterpriseProjectTypeId.|
 |[Add(EnterpriseProjectTypeCreationInformation parameters)](#Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Adds the [EnterpriseProjectType](EnterpriseProjectType.md) that is specified by the [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) object to the collection.|
@@ -54,19 +55,20 @@ http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes
 #### Method Details
 
 #### <a name="&#39;{EnterpriseProjectTypeId}&#39;"></a>&#39;{EnterpriseProjectTypeId}&#39;
-
+ 
 Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the specified EnterpriseProjectTypeId.
 
 ##### Syntax
 
 ```
-EnterpriseProjectType http://<sitecollection>/<site>/api/ProjectServer/EnterpriseProjectTypes('{EnterpriseProjectTypeId}')
+EnterpriseProjectType http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseProjectTypes('{EnterpriseProjectTypeId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|EnterpriseProjectTypeId|String|the id of the EnterpriseProjectType
+|EnterpriseProjectTypeId|String|the id of the EnterpriseProjectType|
 
 ##### Return Value
 
@@ -83,9 +85,10 @@ EnterpriseProjectType Add(EnterpriseProjectTypeCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md)|The properties that can be set when creating a enterprise project type.
+|parameters|[EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md)|The properties that can be set when creating a enterprise project type.|
 
 ##### Return Value
 
@@ -102,9 +105,10 @@ EnterpriseProjectType GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [EnterpriseProjectType](EnterpriseProjectType.md)
+|uid|Guid|The Guid of the [EnterpriseProjectType](EnterpriseProjectType.md)|
 
 ##### Return Value
 
@@ -121,9 +125,10 @@ EnterpriseProjectType GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [EnterpriseProjectType](EnterpriseProjectType.md)
+|objectId|String|The id of the [EnterpriseProjectType](EnterpriseProjectType.md).|
 
 ##### Return Value
 
@@ -140,9 +145,10 @@ Boolean Remove(EnterpriseProjectType ept)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ept|[EnterpriseProjectType](EnterpriseProjectType.md)|The [EnterpriseProjectType](EnterpriseProjectType.md) to remove.
+|ept|[EnterpriseProjectType](EnterpriseProjectType.md)|The [EnterpriseProjectType](EnterpriseProjectType.md) to remove.|
 
 ##### Return Value
 

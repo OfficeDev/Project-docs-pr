@@ -1,6 +1,7 @@
 [comment]: # (Name:EntityLinkCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.EntityLinkCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EntityLinkCreationInformation class
 
@@ -15,7 +16,7 @@ This resource supports POST HTTP commands.
 ```
 PS.EntityLinkCreationInformation
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```
@@ -30,8 +31,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="EntityLinkType"></a>EntityLinkType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[EntityLinkType](EntityLinkType.md)||
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid||

@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class TimeSheetWorkCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetWorkCreationInformation
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.TimeSheetWorkCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -46,8 +46,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ActualWork"></a>ActualWork|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the amount of actual work that is on a timesheet.|
 |<a name="Comment"></a>Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timesheet work comment.|

@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class WorkflowActivities 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.WorkflowActivities
 ```
 ### REST Interface
@@ -28,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.WorkflowActivities
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CheckInWithJobId(Guid projId, Guid jobId, Boolean force)](#CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_)|||&#x2713;|void||
 |[CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)](#CreateProjectFromListItem_Guid_webId,_Guid_listId,_Integer_itemId,_Guid_eptId_)|&#x2713;|&#x2713;|&#x2713;|Guid|Creates a project from a SharePoint list item, where the project uses the specified enterprise project type (EPT).|
@@ -75,6 +75,7 @@ void CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projId|Guid||
@@ -96,6 +97,7 @@ Guid CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid ept
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |webId|Guid|that contains the list.|
@@ -118,6 +120,7 @@ void EnterProjectStage(Guid projectId, Guid stageId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -138,6 +141,7 @@ void LeaveProjectStage(Guid projectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -156,6 +160,7 @@ void PublishSummaryWithJobId(Guid projId, Guid jobId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projId|Guid||
@@ -175,6 +180,7 @@ void PublishWithJobId(Guid projectId, Guid jobId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid||
@@ -195,6 +201,7 @@ Boolean ReadBooleanProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -215,6 +222,7 @@ Double ReadCurrencyProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -235,6 +243,7 @@ DateTime ReadDateTimeProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -255,6 +264,7 @@ Guid ReadGuidProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -275,6 +285,7 @@ Integer ReadIntegerProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -295,6 +306,7 @@ Double ReadNumberProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -315,6 +327,7 @@ String ReadProjectProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -335,6 +348,7 @@ String ReadTextProperty(Guid projectId, String propertyId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -355,6 +369,7 @@ ReadyToLeaveProjectStageValue ReadyToLeaveProjectStage(Guid projectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -374,6 +389,7 @@ void UpdateBooleanProperty(Guid projectId, String propertyId, Boolean value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -395,6 +411,7 @@ void UpdateCurrencyProperty(Guid projectId, String propertyId, Double value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -416,6 +433,7 @@ void UpdateDateTimeProperty(Guid projectId, String propertyId, DateTime value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -437,6 +455,7 @@ void UpdateGuidProperty(Guid projectId, String propertyId, Guid value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -458,6 +477,7 @@ void UpdateIdeaListItemStatus(Guid projectId, String status)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -478,6 +498,7 @@ void UpdateIntegerProperty(Guid projectId, String propertyId, Integer value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -499,6 +520,7 @@ void UpdateNumberProperty(Guid projectId, String propertyId, Double value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -520,6 +542,7 @@ void UpdateProjectStageStatus(Guid projectId, Guid stageId, String statusInforma
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|
@@ -543,6 +566,7 @@ void UpdateTextProperty(Guid projectId, String propertyId, String value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |projectId|Guid|The GUID of the project.|

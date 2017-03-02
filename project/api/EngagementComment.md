@@ -1,6 +1,7 @@
 [comment]: # (Name:EngagementComment)
+[comment]: # (Name:Microsoft.ProjectServer.EngagementComment)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EngagementComment class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class EngagementComment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EngagementComment
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EngagementComment
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Author"></a>Author|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)||
 |<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
@@ -45,5 +46,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 
 [EngagementCommentCollection](EngagementCommentCollection.md)<br/>
 [ProjectEngagementComment](ProjectEngagementComment.md)<br/>
+[ProjectEngagementCommentCollection](ProjectEngagementCommentCollection.md)<br/>
 [ResourceEngagementComment](ResourceEngagementComment.md)<br/>
+[ResourceEngagementCommentCollection](ResourceEngagementCommentCollection.md)<br/>
 [SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>

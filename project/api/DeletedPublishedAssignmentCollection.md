@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<DeletedPublishedAssignment>](https
 
 ### CSOM
 
-```C#
+```cs
 class DeletedPublishedAssignmentCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DeletedPublishedAssignmentCollection
 ```
 ### REST Interface
@@ -34,7 +34,7 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/GetDeletedPublishedAs
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[DeletedPublishedAssignment](DeletedPublishedAssignment.md)|Gets a [DeletedPublishedAssignment](DeletedPublishedAssignment.md) from the collection at the specified index.|

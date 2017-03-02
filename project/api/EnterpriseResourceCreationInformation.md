@@ -1,6 +1,7 @@
 [comment]: # (Name:EnterpriseResourceCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseResourceCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EnterpriseResourceCreationInformation class
 
@@ -10,25 +11,23 @@
 
 ### CSOM
 
-```C#
+```cs
 class EnterpriseResourceCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EnterpriseResourceCreationInformation
 ```
 
 ### REST Interface
 
-<!-- 
-    This needs to be verified, then added to the document. 
-    This resource supports GET HTTP command.
+This resource supports POST HTTP commands.
 
 ```
 PS.EnterpriseResourceCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -46,8 +45,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the enterprise resource.|
 |<a name="IsBudget"></a>IsBudget|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a Boolean value that indicates whether this is a budget resource.|

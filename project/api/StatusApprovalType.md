@@ -1,7 +1,7 @@
 [comment]: # (Name:StatusApprovalType)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.TaskManagement+StatusApprovalType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>StatusApprovalType enumeration
 
@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum StatusApprovalType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusApprovalType
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ StatusApprovalType enumeration is not expliclity defined in REST.  Use the value
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="None"></a>None|0|No status.|

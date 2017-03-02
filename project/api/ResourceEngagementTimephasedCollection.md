@@ -1,6 +1,7 @@
 [comment]: # (Name:ResourceEngagementTimephasedCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ResourceEngagementTimephasedCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ResourceEngagementTimephasedCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<ResourceEngagementTimephasedPeriod
 
 ### CSOM
 
-```C#
+```cs
 class ResourceEngagementTimephasedCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ResourceEngagementTimephasedCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ResourceEngagementTimephasedCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{engagementid}')/GetTimephasedByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}',contourType='{contourType}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{engagementid}')/GetTimephasedByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}',contourType='{contourType}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)|Gets a [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)|Gets a [ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetByStart(DateTime date)](#GetByStart_DateTime_date_)|&#x2713;|&#x2713;||[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)||
 |[GetByStartUrl(String date)](#GetByStartUrl_String_date_)|||&#x2713;|[ResourceEngagementTimephasedPeriod](ResourceEngagementTimephasedPeriod.md)||
@@ -59,6 +60,7 @@ ResourceEngagementTimephasedPeriod GetByStart(DateTime date)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |date|DateTime||
@@ -77,6 +79,7 @@ ResourceEngagementTimephasedPeriod GetByStartUrl(String date)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |date|String||

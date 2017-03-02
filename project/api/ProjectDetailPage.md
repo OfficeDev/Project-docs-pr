@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectDetailPage)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectDetailPage)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class ProjectDetailPage 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectDetailPage
 ```
 ### REST Interface
@@ -27,19 +28,19 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectDetailPage
 
-http://<sitecollection>/<site>/api/ProjectServer/ProjectDetailPages('{pageid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/ProjectDetailPages('{pageid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project detail page.|
 |<a name="Item"></a>Item|&#x2713;|&#x2713;|&#x2713;|SPListItem|Gets an item from the list of items on the project detail page.|
 |<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the title or name of the project detail page.|
-|<a name="PageType"></a>PageType|&#x2713;|&#x2713;|&#x2713;|[PageType](PageType.md)|Gets the type of the project detail page.|
+|<a name="PageType"></a>PageType|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPageType](ProjectDetailPageType.md)|Gets the type of the project detail page.|
 
 ## <a name="seeAlso"></a>See Also
 

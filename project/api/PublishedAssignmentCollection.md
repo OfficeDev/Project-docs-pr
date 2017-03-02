@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedAssignmentCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedAssignmentCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,13 +13,13 @@ inherits members from [ClientObjectCollection<PublishedAssignment>](https://msdn
 
 ### CSOM
 
-```C#
+```cs
 class PublishedAssignmentCollection
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedAssignmentCollection
 ```
 
@@ -29,21 +30,21 @@ This resource supports GET HTTP command:
 ```
 PS.PublishedAssignmentCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Assignments
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Assignments
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedAssignmentId}&#39;](#&#39;{PublishedAssignmentId}&#39;)|||&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the specified PublishedAssignmentId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.|
@@ -59,10 +60,11 @@ Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with th
 ##### Syntax
 
 ```
-PublishedAssignment http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Assignments('{PublishedAssignmentId}')
+PublishedAssignment http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Assignments('{PublishedAssignmentId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PublishedAssignmentId|String|the id of the PublishedAssignment|
@@ -82,6 +84,7 @@ PublishedAssignment GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [PublishedAssignment](PublishedAssignment.md)|
@@ -101,6 +104,7 @@ PublishedAssignment GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [PublishedAssignment](PublishedAssignment.md).|

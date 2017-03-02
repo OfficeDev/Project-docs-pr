@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<TimeSheetLine>](https://msdn.micro
 
 ### CSOM
 
-```C#
+```cs
 class TimeSheetLineCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetLineCollection
 ```
 ### REST Interface
@@ -28,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.TimeSheetLineCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{TimeSheetLineId}&#39;](#&#39;{TimeSheetLineId}&#39;)|||&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the specified TimeSheetLineId.|
 |[Add(TimeSheetLineCreationInformation parameters)](#Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Adds the [TimeSheetLine](TimeSheetLine.md) that is specified by the [TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) object to the collection.|

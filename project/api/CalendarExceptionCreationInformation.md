@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class CalendarExceptionCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarExceptionCreationInformation
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.CalendarExceptionCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Calendars('{calendarid}')/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```
@@ -57,7 +57,7 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Finish"></a>Finish|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time that the calendar exception ends.|

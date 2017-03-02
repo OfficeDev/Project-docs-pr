@@ -1,6 +1,7 @@
 [comment]: # (Name:EntityLinkType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.EntityLinks+EntityLinkType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EntityLinkType enumeration
 
@@ -15,7 +16,7 @@ EntityLinkType enumeration is not expliclity defined in REST.  Use the values be
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Conversation"></a>Conversation|0||

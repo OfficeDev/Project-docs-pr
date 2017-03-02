@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TimeSheetLineClass 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetLineClass
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TimeSheetLineClass enumeration is not expliclity defined in REST.  Use the value
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="StandardLine"></a>StandardLine|0|The class of timesheet line that is used to record standard work time; the default class of timesheet line.|

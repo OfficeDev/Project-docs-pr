@@ -25,17 +25,17 @@ PS.TimeSheet
 
 This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
-```html
+```
 PS.TimeSheet
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Comments"></a>Comments|&#x2713;|&#x2713;|&#x2713;|String|Gets the timesheet comments.|
 |<a name="Creator"></a>Creator|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the timesheet creator.|
@@ -66,8 +66,8 @@ http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/
 |<a name="WeekStartsOn"></a>WeekStartsOn|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Byte|Gets or sets the day of the week on which the timesheet starts.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the time sheet object.|
 |[Recall()](#Recall__)|&#x2713;|&#x2713;|&#x2713;|void|Recalls the timesheet.|
@@ -124,6 +124,7 @@ void Submit(String comment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |comment|String|A comment on the timesheet.|

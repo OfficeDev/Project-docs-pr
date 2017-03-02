@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupTable)
+[comment]: # (Name:Microsoft.ProjectServer.LookupTable)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class LookupTable 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupTable
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.LookupTable
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate lookup table GUID that is specified in an App package for Project Online.|
 |<a name="Entries"></a>Entries|&#x2713;|&#x2713;|&#x2713;|[LookupEntryCollection](LookupEntryCollection.md)|Gets the collection of entries in the lookup table.|
@@ -45,8 +46,8 @@ http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')
 |<a name="SortOrder"></a>SortOrder|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[LookupTableSortOrder](LookupTableSortOrder.md)|Gets or sets the sort-order for the entries in the table.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the lookup table object.|
 
@@ -75,7 +76,5 @@ void
 
 [CustomField](CustomField.md)<br/>
 [CustomFieldCreationInformation](CustomFieldCreationInformation.md)<br/>
-[LocalCustomField](LocalCustomField.md)<br/>
-[LocalLookupTable](LocalLookupTable.md)<br/>
 [LookupTableCollection](LookupTableCollection.md)<br/>
 [LookupTableCreationInformation](LookupTableCreationInformation.md)<br/>

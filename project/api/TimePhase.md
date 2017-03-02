@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class TimePhase 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimePhase
 ```
 ### REST Interface
@@ -28,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.TimePhase
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/GetTimePhaseByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/GetTimePhaseByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentCollection](StatusAssignmentCollection.md)|Gets the status of assignments associated with a timephase.|
 |<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timephase period.|

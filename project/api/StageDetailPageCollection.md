@@ -1,4 +1,5 @@
 [comment]: # (Name:StageDetailPageCollection)
+[comment]: # (Name:Microsoft.ProjectServer.StageDetailPageCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<StageDetailPage>](https://msdn.mic
 
 ### CSOM
 
-```C#
+```cs
 class StageDetailPageCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageDetailPageCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.StageDetailPageCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/ProjectDetailPages
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/ProjectDetailPages
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageDetailPageId}&#39;](#&#39;{StageDetailPageId}&#39;)|||&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the specified StageDetailPageId.|
 |[Add(StageDetailPageCreationInformation parameters)](#Add_[StageDetailPageCreationInformation]_StageDetailPageCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Adds the [StageDetailPage](StageDetailPage.md) that is specified by the [StageDetailPageCreationInformation](StageDetailPageCreationInformation.md) object to the collection.|
@@ -59,10 +60,11 @@ Gets a [StageDetailPage](StageDetailPage.md) from the collection with the specif
 ##### Syntax
 
 ```
-StageDetailPage http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/ProjectDetailPages('{StageDetailPageId}')
+StageDetailPage http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/ProjectDetailPages('{StageDetailPageId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |StageDetailPageId|String|the id of the StageDetailPage|
@@ -82,6 +84,7 @@ StageDetailPage Add(StageDetailPageCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[StageDetailPageCreationInformation](StageDetailPageCreationInformation.md)|The properties that can be set when creating a stage detail page.|
@@ -101,6 +104,7 @@ StageDetailPage GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [StageDetailPage](StageDetailPage.md)|
@@ -120,6 +124,7 @@ StageDetailPage GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [StageDetailPage](StageDetailPage.md).|
@@ -139,6 +144,7 @@ Boolean Remove(StageDetailPage pdp)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |pdp|[StageDetailPage](StageDetailPage.md)|The [StageDetailPage](StageDetailPage.md) to remove.|

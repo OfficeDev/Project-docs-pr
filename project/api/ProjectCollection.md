@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectCollection class
 
@@ -12,13 +13,13 @@ inherits members from [ClientObjectCollection<PublishedProject>](https://msdn.mi
 
 ### CSOM
 
-```C#
+```cs
 class ProjectCollection 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectCollection
 
 ```
@@ -30,21 +31,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedProjectId}&#39;](#&#39;{PublishedProjectId}&#39;)|||&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the specified PublishedProjectId.|
 |[Add(ProjectCreationInformation parameters)](#Add_[ProjectCreationInformation]_ProjectCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Adds the [PublishedProject](PublishedProject.md) that is specified by the [ProjectCreationInformation](ProjectCreationInformation.md) object to the collection.|
@@ -64,10 +65,11 @@ Gets a [PublishedProject](PublishedProject.md) from the collection with the spec
 ##### Syntax
 
 ```
-PublishedProject http://<sitecollection>/<site>/api/ProjectServer/Projects('{PublishedProjectId}')
+PublishedProject http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{PublishedProjectId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PublishedProjectId|String|the id of the PublishedProject|
@@ -87,6 +89,7 @@ PublishedProject Add(ProjectCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[ProjectCreationInformation](ProjectCreationInformation.md)|The properties that can be set when creating a published project.|
@@ -106,6 +109,7 @@ PublishedProject GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [PublishedProject](PublishedProject.md)|
@@ -126,6 +130,7 @@ PublishedProject GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [PublishedProject](PublishedProject.md).|

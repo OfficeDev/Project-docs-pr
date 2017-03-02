@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedProject)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedProject)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [Project](Project.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class PublishedProject 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedProject
 ```
 
@@ -28,14 +29,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.PublishedProject
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the published project.|
 |<a name="Assignments"></a>Assignments|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignmentCollection](PublishedAssignmentCollection.md)|Gets the collection of assignments in the project.|
@@ -83,13 +84,13 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')
 |<a name="Tasks"></a>Tasks|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskCollection](PublishedTaskCollection.md)|Gets the collection of tasks for the project.|
 |<a name="TrackingMode"></a>TrackingMode|&#x2713;|&#x2713;|&#x2713;|[TrackingMode](TrackingMode.md)|Gets the default tracking method for all assignments in the project.|
 |<a name="UtilizationDate"></a>UtilizationDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date and time of resource utilization for the current project.|
-|<a name="UtilizationType"></a>UtilizationType|&#x2713;|&#x2713;|&#x2713;|[UtilizationType](UtilizationType.md)|Gets the derivation source(s) of the summary resource assignments of a project.|
+|<a name="UtilizationType"></a>UtilizationType|&#x2713;|&#x2713;|&#x2713;|[ProjectUtilizationType](ProjectUtilizationType.md)|Gets the derivation source(s) of the summary resource assignments of a project.|
 |<a name="WeekStartDay"></a>WeekStartDay|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the day of the week on which a work week starts.|
 |<a name="WinprojVersion"></a>WinprojVersion|&#x2713;|&#x2713;|&#x2713;|Decimal|Gets the version of Project Professional that created the published project.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----: |:-----: |:-----: |:-----|:-----|
 |[CheckOut()](#CheckOut__)|&#x2713;|&#x2713;|&#x2713;|[DraftProject](DraftProject.md)|Checks out the draft version of the project.|
 |[CreateProjectSite(String siteName)](#CreateProjectSite_String_siteName_)|&#x2713;|&#x2713;|&#x2713;|void|Creates the project site for the project.|
@@ -131,6 +132,7 @@ void CreateProjectSite(String siteName)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |siteName| String |Name of the new project website. If empty, the website name will be the same as the project name.|

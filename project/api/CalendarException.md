@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class CalendarException 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarException
 ```
 ### REST Interface
@@ -27,12 +27,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
 PS.CalendarException
+
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Calendar"></a>Calendar|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets the name of the calendar that is associated with the exception.|
@@ -58,8 +60,7 @@ PS.CalendarException
 |<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the time and date of the start of the calendar exception.|
 
 ### <a name="methods"></a>Methods
-
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the calendar exception object.|
@@ -68,7 +69,7 @@ PS.CalendarException
 #### Method Details
 
 #### <a name="DeleteObject__"></a>DeleteObject()
-
+ 
 Deletes the calendar exception object.
 
 ##### Syntax

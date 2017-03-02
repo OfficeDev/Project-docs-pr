@@ -1,4 +1,5 @@
 [comment]: # (Name:EventHandlerCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EventHandlerCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<EventHandler>](https://msdn.micros
 
 ### CSOM
 
-```C#
+```cs
 class EventHandlerCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EventHandlerCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EventHandlerCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/EventHandlers
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EventHandlers
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{EventHandlerId}&#39;](#&#39;{EventHandlerId}&#39;)|||&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the specified EventHandlerId.|
 |[Add(EventHandlerCreationInformation parameters)](#Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Adds the [EventHandler](EventHandler.md) that is specified by the [EventHandlerCreationInformation](EventHandlerCreationInformation.md) object to the collection.|
@@ -60,13 +61,14 @@ Gets a [EventHandler](EventHandler.md) from the collection with the specified Ev
 ##### Syntax
 
 ```
-EventHandler http://<sitecollection>/<site>/api/ProjectServer/EventHandlers('{EventHandlerId}')
+EventHandler http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EventHandlers('{EventHandlerId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|EventHandlerId|String|the id of the EventHandler
+|EventHandlerId|String|the id of the EventHandler|
 
 ##### Return Value
 
@@ -83,9 +85,10 @@ EventHandler Add(EventHandlerCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|parameters|[EventHandlerCreationInformation](EventHandlerCreationInformation.md)|The properties that can be set when creating a event handler.
+|parameters|[EventHandlerCreationInformation](EventHandlerCreationInformation.md)|The properties that can be set when creating a event handler.|
 
 ##### Return Value
 
@@ -102,9 +105,10 @@ EventHandler GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid|Guid|The Guid of the [EventHandler](EventHandler.md)
+|uid|Guid|The Guid of the [EventHandler](EventHandler.md)|
 
 ##### Return Value
 
@@ -121,9 +125,10 @@ EventHandler GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [EventHandler](EventHandler.md)
+|objectId|String|The id of the [EventHandler](EventHandler.md).|
 
 ##### Return Value
 
@@ -140,9 +145,10 @@ Boolean Remove(EventHandler handler)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|handler|[EventHandler](EventHandler.md)|The [EventHandler](EventHandler.md) to remove.
+|handler|[EventHandler](EventHandler.md)|The [EventHandler](EventHandler.md) to remove.|
 
 ##### Return Value
 

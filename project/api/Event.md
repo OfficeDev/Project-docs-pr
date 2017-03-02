@@ -1,4 +1,5 @@
 [comment]: # (Name:Event)
+[comment]: # (Name:Microsoft.ProjectServer.Event)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class Event 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Event
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.Event
 
-http://<sitecollection>/<site>/api/ProjectServer/Events({id})
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Events({id})
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="EventName"></a>EventName|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of an event in Project Server.|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the identifier of a Project Server event.|

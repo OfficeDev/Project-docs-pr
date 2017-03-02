@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TimeSheetLineStatus 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetLineStatus
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TimeSheetLineStatus enumeration is not expliclity defined in REST.  Use the valu
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0|Not specified.|

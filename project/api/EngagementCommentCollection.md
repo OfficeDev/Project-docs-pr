@@ -1,6 +1,7 @@
 [comment]: # (Name:EngagementCommentCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EngagementCommentCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EngagementCommentCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<EngagementComment>](https://msdn.m
 
 ### CSOM
 
-```C#
+```cs
 class EngagementCommentCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EngagementCommentCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EngagementCommentCollection
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[EngagementComment](EngagementComment.md)|Gets a [EngagementComment](EngagementComment.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[EngagementComment](EngagementComment.md)|Gets a [EngagementComment](EngagementComment.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(String comment)](#Add_String_comment_)|&#x2713;|&#x2713;|&#x2713;|[EngagementComment](EngagementComment.md)||
 
@@ -49,7 +50,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/?????
 #### Method Details
 
 #### <a name="Add_String_comment_"></a>Add(String comment)
-
+ 
 
 ##### Syntax
 
@@ -58,9 +59,10 @@ EngagementComment Add(String comment)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|comment| String | 
+|comment|String||
 
 ##### Return Value
 

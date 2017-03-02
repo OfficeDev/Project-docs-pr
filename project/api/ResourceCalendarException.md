@@ -1,4 +1,5 @@
 [comment]: # (Name:ResourceCalendarException)
+[comment]: # (Name:Microsoft.ProjectServer.ResourceCalendarException)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,29 +13,29 @@ inherits members from [CalendarException](CalendarException.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class ResourceCalendarException 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ResourceCalendarException
 ```
 ### REST Interface
 
-This resource supports POST and DELETE HTTP commands.
+This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 
 ```
 PS.ResourceCalendarException
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/ResourceCalendarExceptions({id})
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/ResourceCalendarExceptions({id})
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the resource calendar exception object.|
 

@@ -1,4 +1,5 @@
 [comment]: # (Name:StageDetailPageCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.StageDetailPageCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class StageDetailPageCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageDetailPageCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.StageDetailPageCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages('{stageid}')/ProjectDetailPages/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/ProjectDetailPages/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -41,8 +42,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the stage PDP.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the PDP for the stage.|

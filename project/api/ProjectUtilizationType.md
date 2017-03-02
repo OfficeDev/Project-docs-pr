@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectUtilizationType)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.Project+UtilizationType)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum ProjectUtilizationType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectUtilizationType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ ProjectUtilizationType enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="ProjectPlan"></a>ProjectPlan|0|Summary resource assignments are derived from the project assignments.|

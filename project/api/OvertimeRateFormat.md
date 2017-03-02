@@ -1,6 +1,7 @@
 [comment]: # (Name:OvertimeRateFormat)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.Resource+OvertimeRateFormat)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>OvertimeRateFormat enumeration
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum OvertimeRateFormat 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.OvertimeRateFormat
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ OvertimeRateFormat enumeration is not expliclity defined in REST.  Use the value
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Minute"></a>Minute|1|The resource overtime rate is per minute.|

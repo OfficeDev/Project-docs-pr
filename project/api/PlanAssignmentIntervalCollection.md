@@ -1,6 +1,7 @@
 [comment]: # (Name:PlanAssignmentIntervalCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PlanAssignmentIntervalCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>PlanAssignmentIntervalCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<PlanAssignmentInterval>](https://m
 
 ### CSOM
 
-```C#
+```cs
 class PlanAssignmentIntervalCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PlanAssignmentIntervalCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.PlanAssignmentIntervalCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{assignmentid}')/Intervals
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/GetResourcePlanByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}')/Assignments('{assignmentid}')/Intervals
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetById(String id)](#GetById_String_id_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Guid value.|
 |[GetByStart(DateTime start)](#GetByStart_DateTime_start_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a plan assignment interval from the collection of plan assignment intervals, with the specified start date.|
@@ -60,9 +61,10 @@ PlanAssignmentInterval GetById(String id)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id|String|The id of the [PlanAssignmentInterval](PlanAssignmentInterval.md)|
+|id|String|The id of the [PlanAssignmentInterval](PlanAssignmentInterval.md).|
 
 ##### Return Value
 
@@ -79,6 +81,7 @@ PlanAssignmentInterval GetByStart(DateTime start)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime|A start date.|

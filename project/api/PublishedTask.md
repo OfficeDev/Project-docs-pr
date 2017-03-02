@@ -1,4 +1,5 @@
 [comment]: # (Name:PublishedTask)
+[comment]: # (Name:Microsoft.ProjectServer.PublishedTask)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [Task](Task.md)<br/>
 
 ### CSOM
 
-```C#
+```cs
 class PublishedTask 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PublishedTask
 ```
 ### REST Interface
@@ -27,14 +28,14 @@ This resource supports the GET and POST HTTP commands:
 ```
 PS.PublishedTask
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Tasks('{taskid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/Tasks('{taskid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the published task.|
 |<a name="ActualCost"></a>ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets the costs incurred for work already performed on the task, together with any other recorded costs that are associated with the task.|

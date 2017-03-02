@@ -1,7 +1,7 @@
 [comment]: # (Name:TaskLinkCreationInformation)
 [comment]: # (Name:Microsoft.ProjectServer.TaskLinkCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>TaskLinkCreationInformation class
 
@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class TaskLinkCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TaskLinkCreationInformation
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.TaskLinkCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{linkid}')/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}')/Draft/TaskLinks('{linkid}')/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -42,8 +42,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="DependencyType"></a>DependencyType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[DependencyType](DependencyType.md)|Gets or sets the type of link relationship between two tasks.|
 |<a name="EndId"></a>EndId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the task that is at the end of the link.|

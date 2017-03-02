@@ -1,6 +1,7 @@
 [comment]: # (Name:Project)
+[comment]: # (Name:Microsoft.ProjectServer.Project)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>Project class
 
@@ -12,13 +13,13 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class Project 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.Project
 ```
 
@@ -35,8 +36,8 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="ApprovedEnd"></a>ApprovedEnd|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved end date in the project portfolio planner.|
 |<a name="ApprovedStart"></a>ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved start date in the project portfolio planner.|
@@ -86,8 +87,8 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="WebId"></a>WebId|||&#x2713;&#x02B7;|Guid||
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[EnterProjectStage(Stage stage)](#EnterProjectStage_[Stage]_Stage.md__stage_)|&#x2713;|&#x2713;|&#x2713;|void|Switches the project to the specified stage in a Project Server workflow.|
 |[GetResourcePlan(DateTime start, DateTime end, TimeScale timeScale)](#GetResourcePlan_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timeScale_)|&#x2713;|&#x2713;||[ResourcePlan](ResourcePlan.md)|Gets resource plan data for a project by filtering project data with date range and timescale parameters.|
@@ -112,6 +113,7 @@ void EnterProjectStage(Stage stage)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |stage|[Stage](Stage.md)|The workflow stage.|
@@ -131,6 +133,7 @@ ResourcePlan GetResourcePlan(DateTime start, DateTime end, TimeScale timeScale)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime|The start date for the resource plan data.|
@@ -151,6 +154,7 @@ ResourcePlan GetResourcePlanByUrl(String start, String end, String scale)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|String|The start date for the resource plan data.|
@@ -215,6 +219,7 @@ void SetCustomFieldValue(String fieldName, Object value)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |fieldName|String|The [InternalName](CustomField.md#InternalName) of the custom field to update.|
@@ -235,6 +240,7 @@ void UpdateIdeaListItemStatus(String status)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----   |:------ |
 |status|String|The project status message.|
@@ -254,6 +260,7 @@ void UpdateProjectStageStatus(Stage stage, String statusInformation, UpdateProje
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----   |:------ |
 |stage|[Stage](Stage.md)|The workflow stage to be updated.|

@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum CalendarRecurrenceWeek 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CalendarRecurrenceWeek
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ CalendarRecurrenceWeek enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0||

@@ -1,7 +1,7 @@
 [comment]: # (Name:TaskCreationInformation)
 [comment]: # (Name:Microsoft.ProjectServer.TaskCreationInformation)
 [comment]: # (Type:class)
-[comment]: # (Status:Complete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>TaskCreationInformation class
 
@@ -11,13 +11,13 @@
 
 ### CSOM
 
-```C#
+```cs
 class TaskCreationInformation 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TaskCreationInformation
 ```
 
@@ -28,7 +28,7 @@ This resource supports POST HTTP commands.
 ```
 PS.TaskCreationInformation
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectId}')/Draft/Tasks/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -50,8 +50,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AddAfterId"></a>AddAfterId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID value of the task that specifies the insertion point.|
 |<a name="Duration"></a>Duration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the task duration.|

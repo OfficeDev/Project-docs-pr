@@ -1,4 +1,5 @@
 [comment]: # (Name:ProjectSummaryTask)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectSummaryTask)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -15,12 +16,12 @@ calculated values for project details.
 
 ### CSOM
 
-```C#
+```cs
 class ProjectSummaryTask 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectSummaryTask
 ```
 
@@ -31,14 +32,14 @@ This resource supports the GET HTTP commands.
 ```
 PS.ProjectSummaryTask
 
-http://<sitecollection>/<site>/api/ProjectServer/ProjectsProjects('projectid')/ProjectSummaryTask
+http://<sitecollection>/<site>/api/ProjectServer/Projects('projectid')/ProjectSummaryTask
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[]"></a>[]|&#x2713;&#x02B7;|||Dictionary&lt;string, Object&gt;|Gets or sets an item in the project summary task.|
 |<a name="ActualCost"></a>ActualCost|&#x2713;|&#x2713;|&#x2713;|Double|Gets costs incurred for work already performed on the project, together with any other recorded costs that are associated with the project.|

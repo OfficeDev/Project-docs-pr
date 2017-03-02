@@ -1,22 +1,22 @@
 [comment]: # (Name:WorkContourType)
 [comment]: # (Name:Microsoft.Office.Project.Server.Library.Assignment+WorkContourType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>WorkContourType enumeration
 
-<a name="description"></a>Indicates how to distribute work for an assignment across the duration of the assignment.
+<a name="description"></a>
 
 ## <a name="syntax"></a>Syntax
 
 ### CSOM
 
-```C#
+```cs
 enum WorkContourType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.WorkContourType
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ WorkContourType enumeration is not expliclity defined in REST.  Use the values b
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Flat"></a>Flat|0|The default contour with an even distribution of work.|

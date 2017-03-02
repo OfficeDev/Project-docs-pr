@@ -13,12 +13,12 @@ inherits members from [ClientObjectCollection<TimeSheetWork>](https://msdn.micro
 
 ### CSOM
 
-```C#
+```cs
 class TimeSheetWorkCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetWorkCollection
 ```
 ### REST Interface
@@ -28,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.TimeSheetWorkCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{lineid}')/Work
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(TimeSheetWorkCreationInformation parameters)](#Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Adds the [TimeSheetWork](TimeSheetWork.md) that is specified by the [TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) object to the collection.|
 |[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Guid value.|
@@ -63,6 +63,7 @@ TimeSheetWork Add(TimeSheetWorkCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md)|The properties that can be set when creating a time sheet work.|
@@ -82,6 +83,7 @@ TimeSheetWork GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [TimeSheetWork](TimeSheetWork.md).|
@@ -101,6 +103,7 @@ TimeSheetWork GetByStartDate(DateTime start)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |start|DateTime|The start date and time.|
@@ -120,6 +123,7 @@ Boolean Remove(TimeSheetWork work)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |work|[TimeSheetWork](TimeSheetWork.md)|The [TimeSheetWork](TimeSheetWork.md) to remove.|

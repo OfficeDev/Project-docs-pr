@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class CustomField 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.CustomField
 ```
 ### REST Interface
@@ -34,7 +34,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields('{fieldid
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="AppAlternateId"></a>AppAlternateId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the alternate custom field GUID that is specified in an App package for Project Online.|
@@ -59,7 +59,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/CustomFields('{fieldid
 |<a name="RollupType"></a>RollupType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CustomFieldRollupType](CustomFieldRollupType.md)|Gets or sets the way that the custom field rolls up to summary tasks.|
 
 ### <a name="methods"></a>Methods
-[!div class="mx-tdBreakAll"]
+> [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the custom field object.|

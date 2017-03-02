@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupEntryCreationInformation)
+[comment]: # (Name:Microsoft.ProjectServer.LookupEntryCreationInformation)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class LookupEntryCreationInformation 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupEntryCreationInformation
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports POST HTTP commands.
 ```
 PS.LookupEntryCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/LookupTables('{tableid}')/Entries/Add
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Entries/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -42,8 +43,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the lookup table entry.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the lookup table entry.|

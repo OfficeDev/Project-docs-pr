@@ -1,18 +1,24 @@
-# EnterpriseResourceCollection class
+[comment]: # (Name:EnterpriseResourceCollection)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseResourceCollection)
+[comment]: # (Type:class)
+[comment]: # (Status:Verified)
 
-Represents a collection of [EnterpriseResource](EnterpriseResource.md) objects.
+# <a name="name"></a>EnterpriseResourceCollection class
 
-## Syntax
+inherits members from [ClientObjectCollection<EnterpriseResource>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
+
+<a name="description"></a>Represents a collection of [EnterpriseResource](EnterpriseResource.md) objects.
+
+## <a name="syntax"></a>Syntax
 
 ### CSOM
 
+```cs
+class EnterpriseResourceCollection 
 ```
-class EnterpriseResourceCollection inherits ClientObjectCollection(of EnterpriseResource)
-```
-
 ### JSOM
 
-```
+```javascript
 PS.EnterpriseResourceCollection
 ```
 
@@ -21,146 +27,156 @@ PS.EnterpriseResourceCollection
 This resource supports GET and POST HTTP commands:
 
 ```
-http://<sitecollection>/<site>/_api/ProjectServer/EnterpriseResources
+PS.EnterpriseResourceCollection
+
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources
 ```
 
-## Members
+## <a name="members"></a>Members
 
-### Properties
-
-<!-- The following table has left-aligned columns 1,5,6; and center-aligned columns 2,3,4. -->
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+### <a name="properties"></a>Properties
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|item| |&#x2713;| |[EnterpriseResource](EnterpriseResource.md)|Gets the current resource from the collection.|
+|<a name="[Integer]"></a>[Integer]|&#x2713;|||[EnterpriseResource](EnterpriseResource.md)|Gets a [EnterpriseResource](EnterpriseResource.md) from the collection at the specified index.|
+|<a name="Item"></a>Item||&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Gets a [EnterpriseResource](EnterpriseResource.md) from the collection at the specified index.|
+|<a name="Self"></a>Self|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the enterprise resource object for the current user.|
 
-
-### Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Type**|**Description**|
+### <a name="methods"></a>Methods
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
 |[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.|
 |[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Get an enterprise resource from the collection with the specified GUID.|
 |[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets an enterprise resource from the collection with the Name value.|
 |[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Returns an enterprise resource from the collection linked to the SharePoint user.|
 |[Remove(EnterpriseResource resource)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified enterprise resource from a project.|
-|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the current member of the collection.|
+|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the enterprise resource object for the current user.|
 |[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|Void|Updates the enterprise resource collection.|
 
 
-## Method Details
+<br/>
+#### Method Details
 
-### <a name="add"></a> Add(EnterpriseResourceCreationInformation ercinfo)
+#### <a name="&#39;{EnterpriseResourceId}&#39;"></a>&#39;{EnterpriseResourceId}&#39;
+ 
+Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the specified EnterpriseResourceId.
 
-Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.
-
-#### Syntax
+##### Syntax
 
 ```
-Add(EnterpriseResourceCreationInformation ercinfo)
+EnterpriseResource http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources('{EnterpriseResourceId}')
 ```
 
-#### Parameters
-
+##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|ercinfo| [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md)|Contains the properties that can be set when creating an enterprise resource.|
+|EnterpriseResourceId|String|the id of the EnterpriseResource|
 
-#### Return Value
+##### Return Value
 
-[EnterpriseResource](EnterpriseResource.md)<br />
-An [EnterpriseResource](EnterpriseResource.md) object.
+[EnterpriseResource](EnterpriseResource.md)
 
+#### <a name="Add_[EnterpriseResourceCreationInformation]_EnterpriseResourceCreationInformation.md__parameters_"></a>Add([EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) parameters)
 
+Adds the [EnterpriseResource](EnterpriseResource.md) that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.
 
-### <a name="getbyguid"></a> GetByGuid(Guid uid)
-
-Get an enterprise resource from the collection with the specified GUID.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByGuid(Guid uid)
+EnterpriseResource Add(EnterpriseResourceCreationInformation parameters)
 ```
 
-#### Parameters
-
+##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|uid| Guid|A guid value.
+|parameters|[EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md)|The properties that can be set when creating a enterprise resource.|
 
-#### Return Value
+##### Return Value
 
-[EnterpriseResource](EnterpriseResource.md)<br />
-An [EnterpriseResource](EnterpriseResource.md) object.
+[EnterpriseResource](EnterpriseResource.md)
 
+#### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
+Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the Id value.
 
-### <a name="getbyid"></a>GetById(string id)
-
-Gets an enterprise resource from the collection with the Id value.
-
-#### Syntax
+##### Syntax
 
 ```
-GetById(string id)
+EnterpriseResource GetByGuid(Guid uid)
 ```
 
-#### Parameters
-
+##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|id| string|The string representation of the project resource GUID.
+|uid|Guid|The Guid of the [EnterpriseResource](EnterpriseResource.md)|
 
-#### Return Value
+##### Return Value
 
-[EnterpriseResource](EnterpriseResource.md)<br />
-An [EnterpriseResource](EnterpriseResource.md) object.
+[EnterpriseResource](EnterpriseResource.md)
 
+#### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
+Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the Guid value.
 
-### <a name="getbyuser"></a> GetByUser(SPUser user)
-
-Returns an enterprise resource from the collection linked to the SharePoint user.
-
-#### Syntax
+##### Syntax
 
 ```
-GetByUser(SPUser user)
+EnterpriseResource GetById(String objectId)
 ```
 
-#### Parameters
-
+##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|user| SPUser|A SharePoint user object.
+|objectId|String|The id of the [EnterpriseResource](EnterpriseResource.md).|
 
-#### Return Value
+##### Return Value
 
-[EnterpriseResource](EnterpriseResource.md)<br />
-An [EnterpriseResource](EnterpriseResource.md) object.
+[EnterpriseResource](EnterpriseResource.md)
 
+#### <a name="GetByUser_[SPUser]_https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx__user_"></a>GetByUser([SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx) user)
 
+Returns an element from the collection linked to the SharePoint user.
 
-### <a name="remove"></a> Remove(EnterpriseResource resource)
-
-Removes the specified enterprise resource from a project.
-
-#### Syntax
+##### Syntax
 
 ```
-Remove(EnterpriseResource resource)
+EnterpriseResource GetByUser(SPUser user)
 ```
 
-#### Parameters
-
+##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|resource| [EnterpriseResource](EnterpriseResource.md)|The enterprise resource to remove.
+|user|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|An object of type User.|
 
-#### Return Value
+##### Return Value
 
-Boolean<br />
+[EnterpriseResource](EnterpriseResource.md)
+
+#### <a name="Remove_[EnterpriseResource]_EnterpriseResource.md__resource_"></a>Remove([EnterpriseResource](EnterpriseResource.md) resource)
+
+Removes the specified [EnterpriseResource](EnterpriseResource.md) from the collection.
+
+##### Syntax
+
+```
+Boolean Remove(EnterpriseResource resource)
+```
+
+##### Parameters
+> [!div class="mx-tdBreakAll"]
+|**Name** |**Type**|**Description**|
+|:------ |:----|:------ |
+|resource|[EnterpriseResource](EnterpriseResource.md)|The [EnterpriseResource](EnterpriseResource.md) to remove.|
+
+##### Return Value
+
+Boolean
 True if the object is removed from the collection; otherwise, False.
 
 
@@ -185,22 +201,27 @@ none
 An [EnterpriseResource](EnterpriseResource.md) object.
 
 
-
-### <a name="update"></a> Update()
+#### <a name="Update__"></a>Update()
 
 Updates the enterprise resource collection.
 
-#### Syntax
+##### Syntax
 
 ```
-Update()
+void Update()
 ```
 
-#### Parameters
+##### Parameters
 
-none
+None
 
-#### Return Value
+##### Return Value
 
 void
 
+## <a name="seeAlso"></a>See Also
+
+[EnterpriseResource](EnterpriseResource.md)<br/>
+[EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md)<br/>
+[ProjectContext](ProjectContext.md)<br/>
+[SPUser](https://msdn.microsoft.com/library/microsoft.sharepoint.spuser.aspx)<br/>

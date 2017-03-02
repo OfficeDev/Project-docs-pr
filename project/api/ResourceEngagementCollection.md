@@ -1,6 +1,7 @@
 [comment]: # (Name:ResourceEngagementCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ResourceEngagementCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ResourceEngagementCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<ResourceEngagement>](https://msdn.
 
 ### CSOM
 
-```C#
+```cs
 class ResourceEngagementCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ResourceEngagementCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ResourceEngagementCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ResourceEngagementId}&#39;](#&#39;{ResourceEngagementId}&#39;)|||&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the specified ResourceEngagementId.|
 |[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.|
@@ -59,10 +60,11 @@ Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the 
 ##### Syntax
 
 ```
-ResourceEngagement http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{ResourceEngagementId}')
+ResourceEngagement http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Engagements('{ResourceEngagementId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |ResourceEngagementId|String|the id of the ResourceEngagement|
@@ -82,6 +84,7 @@ ResourceEngagement GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [ResourceEngagement](ResourceEngagement.md)|
@@ -101,6 +104,7 @@ ResourceEngagement GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [ResourceEngagement](ResourceEngagement.md).|
@@ -120,6 +124,7 @@ Boolean Remove(Engagement engagement)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |engagement|[Engagement](Engagement.md)|The [ResourceEngagement](ResourceEngagement.md) to remove.|

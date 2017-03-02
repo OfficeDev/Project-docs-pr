@@ -11,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum TimeScale 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeScale
 ```
 ### REST Interface
@@ -26,7 +26,7 @@ TimeScale enumeration is not expliclity defined in REST.  Use the values below t
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="Days"></a>Days|3|Days.|

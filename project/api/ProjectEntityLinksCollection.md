@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEntityLinksCollection)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEntityLinksCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEntityLinksCollection class
 
@@ -17,7 +18,7 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectEntityLinksCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/EntityLinks
 ```
 
 ## <a name="members"></a>Members

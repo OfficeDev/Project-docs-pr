@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class TimeSheetPeriod 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.TimeSheetPeriod
 ```
 ### REST Interface
@@ -28,14 +28,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.TimeSheetPeriod
 
-http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{periodid}')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end date of a timesheet period.|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the timesheet period.|
@@ -44,8 +44,8 @@ http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')
 |<a name="TimeSheet"></a>TimeSheet|&#x2713;|&#x2713;|&#x2713;|[TimeSheet](TimeSheet.md)|Gets the timesheet that is associated with the timesheet period.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[CreateTimeSheet()](#CreateTimeSheet__)|&#x2713;|&#x2713;|&#x2713;|[TimeSheet](TimeSheet.md)|Creates a new TimeSheet object.|
 

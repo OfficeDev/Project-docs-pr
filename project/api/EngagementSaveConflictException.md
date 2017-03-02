@@ -1,6 +1,7 @@
 [comment]: # (Name:EngagementSaveConflictException)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.EngagementSaveConflictException)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EngagementSaveConflictException class
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class EngagementSaveConflictException 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EngagementSaveConflictException
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.EngagementSaveConflictException
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members

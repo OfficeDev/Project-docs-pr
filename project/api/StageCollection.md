@@ -1,6 +1,7 @@
 [comment]: # (Name:StageCollection)
+[comment]: # (Name:Microsoft.ProjectServer.StageCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>StageCollection class
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<Stage>](https://msdn.microsoft.com
 
 ### CSOM
 
-```C#
+```cs
 class StageCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StageCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.StageCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Stages
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageId}&#39;](#&#39;{StageId}&#39;)|||&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the specified StageId.|
 |[Add(StageCreationInformation parameters)](#Add_[StageCreationInformation]_StageCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Adds the [Stage](Stage.md) that is specified by the [StageCreationInformation](StageCreationInformation.md) object to the collection.|
@@ -60,10 +61,11 @@ Gets a [Stage](Stage.md) from the collection with the specified StageId.
 ##### Syntax
 
 ```
-Stage http://<sitecollection>/<site>/api/ProjectServer/Stages('{StageId}')
+Stage http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{StageId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |StageId|String|the id of the Stage|
@@ -83,6 +85,7 @@ Stage Add(StageCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[StageCreationInformation](StageCreationInformation.md)|The properties that can be set when creating a stage.|
@@ -102,6 +105,7 @@ Stage GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [Stage](Stage.md)|
@@ -121,6 +125,7 @@ Stage GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [Stage](Stage.md).|
@@ -140,6 +145,7 @@ Boolean Remove(Stage stage)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |stage|[Stage](Stage.md)|The [Stage](Stage.md) to remove.|

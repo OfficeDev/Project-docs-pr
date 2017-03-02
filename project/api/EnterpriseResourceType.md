@@ -1,6 +1,7 @@
 [comment]: # (Name:EnterpriseResourceType)
+[comment]: # (Name:Microsoft.ProjectServer.EnterpriseResourceType)
 [comment]: # (Type:Enum)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EnterpriseResourceType enumeration
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum EnterpriseResourceType 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.EnterpriseResourceType
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ EnterpriseResourceType enumeration is not expliclity defined in REST.  Use the v
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="NotSpecified"></a>NotSpecified|0|Type is not specified|

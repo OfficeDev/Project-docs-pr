@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectContext)
+[comment]: # (Name:Microsoft.ProjectServer.PSContext)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectContext class
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 class ProjectContext 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectContext
 ```
 ### REST Interface
@@ -25,14 +26,14 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectContext
 
-http://<sitecollection>/<site>/api/ProjectServer
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Calendars"></a>Calendars|&#x2713;|&#x2713;|&#x2713;|[CalendarCollection](CalendarCollection.md)|Gets the collection of calendars for the Project Server instance.|
 |<a name="CustomFields"></a>CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets the collection of enterprise custom field definitions in the Project Web App instance.|
@@ -58,8 +59,8 @@ http://<sitecollection>/<site>/api/ProjectServer
 |<a name="WorkflowDesigner"></a>WorkflowDesigner|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesigner](WorkflowDesigner.md)|Gets a workflow designer that developers can call at design time.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[GetDeletedPublishedAssignments(DateTime deletedDate)](#GetDeletedPublishedAssignments_DateTime_deletedDate_)|&#x2713;|&#x2713;|&#x2713;|[DeletedPublishedAssignmentCollection](DeletedPublishedAssignmentCollection.md)||
 |[StopDelegation()](#StopDelegation__)||&#x2713;|&#x2713;|void|	Gets a value that indicates whether the Project Server database is in read-only mode.  For CSOM/JSOM support see [ServiceStatus](ServiceStatus.md)|
@@ -77,6 +78,7 @@ DeletedPublishedAssignmentCollection GetDeletedPublishedAssignments(DateTime del
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |deletedDate|DateTime|The earliest date to retrieve deleted published assignments from.|
@@ -103,4 +105,20 @@ None
 void
 
 ## <a name="seeAlso"></a>See Also
+
+[CalendarCollection](CalendarCollection.md)<br/>
+[CustomFieldCollection](CustomFieldCollection.md)<br/>
+[EnterpriseProjectTypeCollection](EnterpriseProjectTypeCollection.md)<br/>
+[EnterpriseResourceCollection](EnterpriseResourceCollection.md)<br/>
+[EntityTypes](EntityTypes.md)<br/>
+[EventHandlerCollection](EventHandlerCollection.md)<br/>
+[EventCollection](EventCollection.md)<br/>
+[LookupTableCollection](LookupTableCollection.md)<br/>
+[PhaseCollection](PhaseCollection.md)<br/>
+[ProjectDetailPageCollection](ProjectDetailPageCollection.md)<br/>
+[ProjectCollection](ProjectCollection.md)<br/>
+[StageCollection](StageCollection.md)<br/>
+[TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)<br/>
+[UserPermissionCollection](UserPermissionCollection.md)<br/>
+[WorkflowActivities](WorkflowActivities.md)
 

@@ -1,6 +1,7 @@
 [comment]: # (Name:ProjectEngagementTimephasedPeriod)
+[comment]: # (Name:Microsoft.ProjectServer.ProjectEngagementTimephasedPeriod)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>ProjectEngagementTimephasedPeriod class
 
@@ -12,12 +13,12 @@ inherits members from [EngagementTimephasedPeriod](EngagementTimephasedPeriod.md
 
 ### CSOM
 
-```C#
+```cs
 class ProjectEngagementTimephasedPeriod 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.ProjectEngagementTimephasedPeriod
 ```
 ### REST Interface
@@ -27,7 +28,7 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.ProjectEngagementTimephasedPeriod
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')/GetTimephasedByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}',contourType='{contourType}')('{yyyy-MM-dd}')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')/GetTimephasedByUrl(start='{yyyy-MM-dd}',end='{yyyy-MM-dd}',scale='{timescale}',contourType='{contourType}')('{yyyy-MM-dd}')
 ```
 
 ## <a name="members"></a>Members

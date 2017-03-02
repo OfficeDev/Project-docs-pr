@@ -11,13 +11,13 @@
 
 ### CSOM
 
-```C#
+```cs
 class StatusAssignmentCreationInformation 
 ```
 
 ### JSOM
 
-```JavaScript
+```javascript
 PS.StatusAssignmentCreationInformation
 ```
 ### REST Interface
@@ -27,7 +27,7 @@ This resource supports POST HTTP commands.
 ```
 PS.StatusAssignmentCreationInformation
 
-http://<sitecollection>/<site>/api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/Add
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceid}')/Assignments/Add
 ```
 POST Example (not all fields may be required)
 ```
@@ -43,8 +43,8 @@ body = {
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**.NET**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Comment"></a>Comment|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the comment for the status submission.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the status assignment.|

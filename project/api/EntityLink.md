@@ -1,6 +1,7 @@
 [comment]: # (Name:EntityLink)
+[comment]: # (Name:Microsoft.ProjectServer.EntityLink)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>EntityLink class
 
@@ -17,14 +18,14 @@ This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
 ```
 PS.EntityLink
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityLinks('EntityLink.Id')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/EntityLinks('EntityLink.Id')
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Created"></a>Created|&#x2713;|&#x2713;|&#x2713;|DateTime||
 |<a name="EntityLinkType"></a>EntityLinkType|&#x2713;|&#x2713;|&#x2713;|[EntityLinkType](EntityLinkType.md)||
@@ -32,8 +33,8 @@ http://<sitecollection>/<site>/api/ProjectServer/Projects('{projectid}')/EntityL
 |<a name="Url"></a>Url|&#x2713;|&#x2713;|&#x2713;|String||
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[DeleteObject()](#DeleteObject__)|&#x2713;|&#x2713;|&#x2713;|void|Deletes the entity link object.|
 
@@ -62,3 +63,5 @@ void
 
 [EntityLinkCreationInformation](EntityLinkCreationInformation.md)<br/>
 [EntityLinksCollection](EntityLinksCollection.md)<br/>
+[ProjectEntityLinksCollection](ProjectEntityLinksCollection.md)<br/>
+[TaskEntityLinksCollection](TaskEntityLinksCollection.md)<br/>

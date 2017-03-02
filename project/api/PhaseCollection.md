@@ -1,4 +1,5 @@
 [comment]: # (Name:PhaseCollection)
+[comment]: # (Name:Microsoft.ProjectServer.PhaseCollection)
 [comment]: # (Type:class)
 [comment]: # (Status:Verified)
 
@@ -12,12 +13,12 @@ inherits members from [ClientObjectCollection<Phase>](https://msdn.microsoft.com
 
 ### CSOM
 
-```C#
+```cs
 class PhaseCollection 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.PhaseCollection
 ```
 ### REST Interface
@@ -27,21 +28,21 @@ This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
 ```
 PS.PhaseCollection
 
-http://<sitecollection>/<site>/api/ProjectServer/Phases
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Phases
 ```
 
 ## <a name="members"></a>Members
 
 ### <a name="properties"></a>Properties
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="[Integer]"></a>[Integer]|&#x2713;|||[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection at the specified index.|
 |<a name="Item"></a>Item||&#x2713;||[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection at the specified index.|
 
 ### <a name="methods"></a>Methods
-
-|**Name**|**CSOM**|**JSOM**|**REST**|**Return Data Type**|**Description**|
+> [!div class="mx-tdBreakAll"]
+|**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PhaseId}&#39;](#&#39;{PhaseId}&#39;)|||&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the specified PhaseId.|
 |[Add(PhaseCreationInformation parameters)](#Add_[PhaseCreationInformation]_PhaseCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Adds the [Phase](Phase.md) that is specified by the [PhaseCreationInformation](PhaseCreationInformation.md) object to the collection.|
@@ -60,10 +61,11 @@ Gets a [Phase](Phase.md) from the collection with the specified PhaseId.
 ##### Syntax
 
 ```
-Phase http://<sitecollection>/<site>/api/ProjectServer/Phases('{PhaseId}')
+Phase http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Phases('{PhaseId}')
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |PhaseId|String|the id of the Phase|
@@ -83,6 +85,7 @@ Phase Add(PhaseCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[PhaseCreationInformation](PhaseCreationInformation.md)|The properties that can be set when creating a phase.|
@@ -102,6 +105,7 @@ Phase GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [Phase](Phase.md)|
@@ -121,9 +125,10 @@ Phase GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|objectId|String|The id of the [Phase](Phase.md)|
+|objectId|String|The id of the [Phase](Phase.md).|
 
 ##### Return Value
 
@@ -140,6 +145,7 @@ Boolean Remove(Phase phase)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |phase|[Phase](Phase.md)|The [Phase](Phase.md) to remove.|

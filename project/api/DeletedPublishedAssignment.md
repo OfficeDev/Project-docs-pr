@@ -1,7 +1,7 @@
 [comment]: # (Name:DeletedPublishedAssignment)
 [comment]: # (Name:Microsoft.ProjectServer.DeletedPublishedAssignment)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>DeletedPublishedAssignment class
 
@@ -13,12 +13,12 @@ inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/mi
 
 ### CSOM
 
-```C#
+```cs
 class DeletedPublishedAssignment 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.DeletedPublishedAssignment
 ```
 ### REST Interface

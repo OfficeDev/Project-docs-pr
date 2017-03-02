@@ -1,4 +1,5 @@
 [comment]: # (Name:LookupTableSortOrder)
+[comment]: # (Name:Microsoft.Office.Project.Server.Library.LookupTables+SortOrder)
 [comment]: # (Type:Enum)
 [comment]: # (Status:Verified)
 
@@ -10,12 +11,12 @@
 
 ### CSOM
 
-```C#
+```cs
 enum LookupTableSortOrder 
 ```
 ### JSOM
 
-```JavaScript
+```javascript
 PS.LookupTableSortOrder
 ```
 ### REST Interface
@@ -25,7 +26,7 @@ LookupTableSortOrder enumeration is not expliclity defined in REST.  Use the val
 ## <a name="members"></a>Members
 
 <a name="enumMembers"></a>
-
+> [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
 |<a name="UserDefined"></a>UserDefined|0|Custom sort; the user specifies the preferred ordering of lookup table values.|
