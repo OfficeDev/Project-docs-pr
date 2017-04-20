@@ -5,21 +5,23 @@
   "docsets_to_publish": [
     {
       "docset_name": "Project",
-      "build_source_folder": "project",
+      "build_source_folder": "api",
       "build_output_subfolder": "office/project",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
-    "nadin.merali@microsoft.com"
+    "nadin.merali@microsoft.com",
+    " v-ribix@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
@@ -31,5 +33,6 @@
       "branch": "master",
       "branch_mapping": {}
     }
-  ]
+  ],
+  "need_generate_pdf_url_template": false
 }
