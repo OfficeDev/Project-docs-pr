@@ -134,7 +134,7 @@ void CreateProjectSite(String siteName)
 > [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|siteName| String |Name of the new project website. If empty, the website name will be the same as the project name.|
+|siteName| String |Name of the new project site. If empty, the site name will be the same as the project name.|
 
 ##### Return Value
 
