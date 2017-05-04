@@ -57,7 +57,6 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |<a name="Duration"></a>Duration|&#x2713;|&#x2713;|&#x2713;|String|Gets the amount of time it takes to complete a task.|
 |<a name="DurationMilliseconds"></a>DurationMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the amount of time it takes to complete a task.|
 |<a name="DurationTimeSpan"></a>DurationTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of time it takes to complete a task.|
-|<a name="EntityLinks"></a>EntityLinks|||&#x2713;|[EntityLinksCollection](EntityLinksCollection.md)||
 |<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the published task.|
 |<a name="Finish"></a>Finish|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when a task is scheduled to be completed.|
 |<a name="FinishText"></a>FinishText|&#x2713;|&#x2713;|&#x2713;|String|Gets a string representation of the task finish date.|

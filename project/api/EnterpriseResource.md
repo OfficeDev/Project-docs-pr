@@ -74,7 +74,6 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources('{
 |<a name="TerminationDate"></a>TerminationDate|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the date and time after which the resource can no longer be used.|
 |<a name="TimesheetManager"></a>TimesheetManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the manager who reviews and approves the timesheet of an enterprise resource.|
 |<a name="User"></a>User|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the SharePoint user that is linked to the Enterprise Resource.|
-|<a name="UserPermissions"></a>UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)|Gets a UserPermissionCollection that represents the users and their permissions for the enterprise resource.|
 
 ### <a name="methods"></a>Methods
 > [!div class="mx-tdBreakAll"]

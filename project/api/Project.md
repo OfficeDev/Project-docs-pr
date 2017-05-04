@@ -83,7 +83,6 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="Stage"></a>Stage|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets the current workflow stage of the project.|
 |<a name="SummaryTaskId"></a>SummaryTaskId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the hidden project summary task.|
 |<a name="TaskListId"></a>TaskListId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project's task list.|
-|<a name="UserPermissions"></a>UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)||
 |<a name="WebId"></a>WebId|||&#x2713;&#x02B7;|Guid||
 
 ### <a name="methods"></a>Methods

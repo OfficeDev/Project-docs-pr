@@ -57,7 +57,6 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |<a name="Description"></a>Description|&#x2713;|&#x2713;|&#x2713;|String|Gets the project description.|
 |<a name="Draft"></a>Draft|&#x2713;|&#x2713;|&#x2713;|[DraftProject](DraftProject.md)|Gets a [DraftProject](DraftProject.md) object if it is not already checked out.|
 |<a name="EnterpriseProjectTypeId"></a>EnterpriseProjectTypeId|||&#x2713;|Guid|Gets the GUID of the enterprise project type.|
-|<a name="EntityLinks"></a>EntityLinks|||&#x2713;|[EntityLinksCollection](EntityLinksCollection.md)||
 |<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the published project.|
 |<a name="FinishDate"></a>FinishDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the project finish date.|
 |<a name="FiscalYearStartMonth"></a>FiscalYearStartMonth|&#x2713;|&#x2713;|&#x2713;|Integer|Gets the number of the first month in the fiscal year.|

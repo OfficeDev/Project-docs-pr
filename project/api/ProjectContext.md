@@ -54,7 +54,6 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer
 |<a name="ServiceStatus"></a>ServiceStatus|&#x2713;|&#x2713;||[ServiceStatus](ServiceStatus.md)|Gets information about the status of the Project Server service.|
 |<a name="Stages"></a>Stages|&#x2713;|&#x2713;|&#x2713;|[StageCollection](StageCollection.md)|Gets the collection of Project Server workflow stages in a Project Web App instance.|
 |<a name="TimeSheetPeriods"></a>TimeSheetPeriods|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)|Gets a collection of time sheet periods.|
-|<a name="UserPermissions"></a>UserPermissions|||&#x2713;|[UserPermissionCollection](UserPermissionCollection.md)||
 |<a name="WorkflowActivities"></a>WorkflowActivities|&#x2713;|&#x2713;|&#x2713;|[WorkflowActivities](WorkflowActivities.md)|Gets the methods that Project Server workflows can call at run time.|
 |<a name="WorkflowDesigner"></a>WorkflowDesigner|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesigner](WorkflowDesigner.md)|Gets a workflow designer that developers can call at design time.|
 
@@ -119,6 +118,5 @@ void
 [ProjectCollection](ProjectCollection.md)<br/>
 [StageCollection](StageCollection.md)<br/>
 [TimeSheetPeriodCollection](TimeSheetPeriodCollection.md)<br/>
-[UserPermissionCollection](UserPermissionCollection.md)<br/>
 [WorkflowActivities](WorkflowActivities.md)
 
