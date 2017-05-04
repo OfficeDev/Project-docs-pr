@@ -54,7 +54,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="DefaultOvertimeRateUnits"></a>DefaultOvertimeRateUnits|&#x2713;|&#x2713;|&#x2713;|[OvertimeRateFormat](OvertimeRateFormat.md)|Gets the time unit for the default overtime rate.|
 |<a name="DefaultStandardRateUnits"></a>DefaultStandardRateUnits|&#x2713;|&#x2713;|&#x2713;|[StandardRateFormat](StandardRateFormat.md)|Gets the time unit for the default standard rate.|
 |<a name="DefaultStartTime"></a>DefaultStartTime|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the default start time of a working day.|
-|<a name="Engagements"></a>Engagements|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagementCollection](ProjectEngagementCollection.md)||
+|<a name="Engagements"></a>Engagements|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagementCollection](ProjectEngagementCollection.md)|Returns the engagements for this project.|
 |<a name="EnterpriseProjectType"></a>EnterpriseProjectType|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets the enterprise project type (EPT) for the project.|
 |<a name="HasMppPendingImport"></a>HasMppPendingImport|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether there is an mpp file waiting to be imported.|
 |<a name="HonorConstraints"></a>HonorConstraints|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether scheduling constraints take precedence over dependencies.|
