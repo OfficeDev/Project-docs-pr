@@ -7,7 +7,7 @@
 
 inherits members from [ClientObjectCollection<EnterpriseResourceCostRate>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
-<a name="description"></a>Collection of (EnterpriseResourceCostRates)[EnterpriseResourceCostRate.md]
+<a name="description"></a>Collection of [EnterpriseResourceCostRates](EnterpriseResourceCostRate.md).
 
 ## <a name="syntax"></a>Syntax
 
