@@ -71,5 +71,5 @@ Boolean
 ## <a name="seeAlso"></a>See Also
 
 [CostRateCreationInformation](CostRateCreationInformation.md)<br/>
-[CostRateTable](CostRateTable.md)<br/>
+[EnterpriseResourceCostRateTable](EnterpriseResourceCostRateTable.md)<br/>
 [EnterpriseResourceCostRateCollection](EnterpriseResourceCostRateCollection.md)<br/>
