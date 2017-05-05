@@ -23,7 +23,7 @@ PS.PublishedProjectResource
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+Supported.
 
 ```
 PS.PublishedProjectResource

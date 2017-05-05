@@ -23,7 +23,7 @@ PS.ResourceEngagementTimephasedCollection
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+Supported.
 
 ```
 PS.ResourceEngagementTimephasedCollection

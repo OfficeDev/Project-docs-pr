@@ -7,7 +7,7 @@
 
 inherits members from [ClientObjectCollection<EnterpriseResourceCostRateTable>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
-<a name="description"></a>Collection of cost rate tables for the (EnterpriseResource)[EnterpriseResource.md].
+<a name="description"></a>Collection of cost rate tables for the [EnterpriseResource](EnterpriseResource.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -23,7 +23,7 @@ PS.EnterpriseResourceCostRateTableCollection
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+Supported.
 
 ```
 PS.EnterpriseResourceCostRateTableCollection

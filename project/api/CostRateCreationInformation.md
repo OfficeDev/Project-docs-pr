@@ -5,7 +5,7 @@
 
 # <a name="name"></a>CostRateCreationInformation class
 
-<a name="description"></a>
+<a name="description"></a>Contains the properties that can be set when creating an (EnterpriseResourceCostRate)[EnterpriseResourceCostRate.md].
 
 ## <a name="syntax"></a>Syntax
 

@@ -5,7 +5,7 @@
 
 # <a name="name"></a>EnterpriseResourceCostRateTable class
 
-<a name="description"></a>Contains the cost rates and effective dates for the (EnterpriseResource)[EnterpriseResource.md] cost rate table.
+<a name="description"></a>Contains the cost rates and effective dates for the [EnterpriseResource](EnterpriseResource.md) cost rate table.
 
 ## <a name="syntax"></a>Syntax
 
