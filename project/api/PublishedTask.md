@@ -83,6 +83,7 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |<a name="StartText"></a>StartText|&#x2713;|&#x2713;|&#x2713;|String|Gets a string representation of the task start date.|
 |<a name="StatusManager"></a>StatusManager|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the task status manager.|
 |<a name="Successors"></a>Successors|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets a collection of links to tasks that depend on the current task.|
+|<a name="TaskType"></a>TaskType|&#x2713;|&#x2713;|&#x2713;|[TaskType](TaskType.md)|Gets the task type.|
 |<a name="UsePercentPhysicalWorkComplete"></a>UsePercentPhysicalWorkComplete|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to use PercentPhysicalWorkComplete orPercentComplete to compute earned value.|
 |<a name="Work"></a>Work|&#x2713;|&#x2713;|&#x2713;|String|Gets the total time that is scheduled for all resources assigned to the task.|
 |<a name="WorkMilliseconds"></a>WorkMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the total time that is scheduled for all resources assigned to the task.|
