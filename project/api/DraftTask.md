@@ -84,7 +84,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |<a name="RemainingDurationTimeSpan"></a>RemainingDurationTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the remaining task duration.|
 |<a name="Start"></a>Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime|Gets or sets the task start date.|
 |<a name="StartText"></a>StartText|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets a string representation of the task start date.|
-|<a name="StatusManager"></a>StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)||
+|<a name="StatusManager"></a>StatusManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets or sets the task status manager.|
 |<a name="Successors"></a>Successors|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLinkCollection](DraftTaskLinkCollection.md)|Gets links to tasks that depend on the current task.|
 |<a name="UsePercentPhysicalWorkComplete"></a>UsePercentPhysicalWorkComplete|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether to use PercentPhysicalWorkComplete orPercentComplete to compute earned value.|
 |<a name="Work"></a>Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the total time scheduled for a task.|

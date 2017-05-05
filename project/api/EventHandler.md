@@ -42,7 +42,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EventHandlers('{handle
 |<a name="Description"></a>Description|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the description of the event handler.|
 |<a name="EndpointUrl"></a>EndpointUrl|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Uri|Gets or sets the URL of the endpoint that is associated with the event handler.|
 |<a name="Event"></a>Event|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets the event that triggers the event handler.|
-|<a name="EventId"></a>EventId|||&#x2713;|Integer||
+|<a name="EventId"></a>EventId|||&#x2713;|Integer|Gets the identifier of the event that is dispatched by the event handler.  Please see [PSEventId](https://msdn.microsoft.com/en-us/library/office/websvcevents.pseventid_di_pj14mref.aspx).|
 |<a name="Id"></a>Id|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the event handler.|
 |<a name="Name"></a>Name|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the name of the event handler.|
 |<a name="Order"></a>Order|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the order of placement of the event handler in a list of event handlers that are associated with an event.|

@@ -38,7 +38,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Duration"></a>Duration|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String|Gets or sets the timespan of the interval, expressed in a text string.|
-|<a name="DurationMilliseconds"></a>DurationMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
+|<a name="DurationMilliseconds"></a>DurationMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the plan assignment interval.|
 |<a name="DurationTimeSpan"></a>DurationTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the length of time for the plan assignment interval, in units of time.|
 |<a name="End"></a>End|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the end time of the plan assignment interval.|
 |<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the plan assignment interval.|

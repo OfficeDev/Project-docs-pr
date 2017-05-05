@@ -43,7 +43,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid
 |<a name="IsStandardCalendar"></a>IsStandardCalendar|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the calendar is Gregorian.|
 |<a name="Modified"></a>Modified|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that the calendar was modified.|
 |<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|String|Gets the name of the calendar.|
-|<a name="OriginalId"></a>OriginalId|||&#x2713;|Guid||
+|<a name="OriginalId"></a>OriginalId|||&#x2713;|Guid|The Id of the calendar that this calendar was copied from.|
 
 ### <a name="methods"></a>Methods
 > [!div class="mx-tdBreakAll"]

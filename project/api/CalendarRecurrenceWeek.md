@@ -29,7 +29,7 @@ CalendarRecurrenceWeek enumeration is not expliclity defined in REST.  Use the v
 > [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|<a name="NotSpecified"></a>NotSpecified|0||
+|<a name="NotSpecified"></a>NotSpecified|0|Not Specified|
 |<a name="First"></a>First|1|First Week|
 |<a name="Second"></a>Second|2|Second Week|
 |<a name="Third"></a>Third|3|Third Week|

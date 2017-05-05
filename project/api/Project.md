@@ -43,7 +43,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="ApprovedStart"></a>ApprovedStart|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the approved start date in the project portfolio planner.|
 |<a name="CalculateActualCosts"></a>CalculateActualCosts|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project automatically calculates actual and remaining work and costs.|
 |<a name="CalculatesActualCosts"></a>CalculatesActualCosts|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project always calculates actual costs.|
-|<a name="CheckedOutBy"></a>CheckedOutBy|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the enterprise resource who has the project checked out.|
+|<a name="CheckedOutBy"></a>CheckedOutBy|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the user who has the project checked out.|
 |<a name="CheckedOutDate"></a>CheckedOutDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when project was checked out.|
 |<a name="CheckOutDescription"></a>CheckOutDescription|&#x2713;|&#x2713;|&#x2713;|String|Gets the description of the current checkout action for the project.|
 |<a name="CheckOutId"></a>CheckOutId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the session GUID that is associated with the current check out.|
@@ -91,7 +91,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[EnterProjectStage(Stage stage)](#EnterProjectStage_[Stage]_Stage.md__stage_)|&#x2713;|&#x2713;|&#x2713;|void|Switches the project to the specified stage in a Project Server workflow.|
 |[GetResourcePlan(DateTime start, DateTime end, TimeScale timeScale)](#GetResourcePlan_DateTime_start,_DateTime_end,_[TimeScale]_TimeScale.md__timeScale_)|&#x2713;|&#x2713;||[ResourcePlan](ResourcePlan.md)|Gets resource plan data for a project by filtering project data with date range and timescale parameters.|
-|[GetResourcePlanByUrl(String start, String end, String scale)](#GetResourcePlanByUrl_String_start,_String_end,_String_scale_)|||&#x2713;|[ResourcePlan](ResourcePlan.md)||
+|[GetResourcePlanByUrl(String start, String end, String scale)](#GetResourcePlanByUrl_String_start,_String_end,_String_scale_)|||&#x2713;|[ResourcePlan](ResourcePlan.md)|Gets resource plan data for a project by filtering project data with date range and timescale parameters.|
 |[LeaveProjectStage()](#LeaveProjectStage__)|&#x2713;|&#x2713;|&#x2713;|void|Sets the project complete and leaves the current workflow stage.|
 |[ReadyToLeaveProjectStage()](#ReadyToLeaveProjectStage__)|&#x2713;|&#x2713;|&#x2713;|[ReadyToLeaveProjectStageValue](ReadyToLeaveProjectStageValue.md)|Checks whether the current workflow stage requirements are met and the project is ready to move to the next stage.|
 |[SetCustomFieldValue(String fieldName, Object value)](#SetCustomFieldValue_String_fieldName,_Object_value_)|&#x2713;|&#x2713;||void|Sets a custom field on the project.|
@@ -145,6 +145,7 @@ ResourcePlan GetResourcePlan(DateTime start, DateTime end, TimeScale timeScale)
 
 #### <a name="GetResourcePlanByUrl_String_start,_String_end,_String_scale_"></a>GetResourcePlanByUrl(String start, String end, String scale)
 
+Gets resource plan data for a project by filtering project data with date range and timescale parameters.
 
 ##### Syntax
 
