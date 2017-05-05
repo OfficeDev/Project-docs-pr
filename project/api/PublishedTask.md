@@ -81,7 +81,7 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |<a name="RemainingDurationTimeSpan"></a>RemainingDurationTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the amount of time that is required to complete the unfinished part of the task, which is the remaining task duration.|
 |<a name="Start"></a>Start|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date when an assigned resource is scheduled to begin working on the task.|
 |<a name="StartText"></a>StartText|&#x2713;|&#x2713;|&#x2713;|String|Gets a string representation of the task start date.|
-|<a name="StatusManager"></a>StatusManager|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)||
+|<a name="StatusManager"></a>StatusManager|&#x2713;|&#x2713;|&#x2713;|[SPUser](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx)|Gets the task status manager.|
 |<a name="Successors"></a>Successors|&#x2713;|&#x2713;|&#x2713;|[PublishedTaskLinkCollection](PublishedTaskLinkCollection.md)|Gets a collection of links to tasks that depend on the current task.|
 |<a name="UsePercentPhysicalWorkComplete"></a>UsePercentPhysicalWorkComplete|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to use PercentPhysicalWorkComplete orPercentComplete to compute earned value.|
 |<a name="Work"></a>Work|&#x2713;|&#x2713;|&#x2713;|String|Gets the total time that is scheduled for all resources assigned to the task.|

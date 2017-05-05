@@ -160,7 +160,7 @@ QueueMsgType enumeration is not expliclity defined in REST.  Use the values belo
 |<a name="ProjectImportTaskList"></a>ProjectImportTaskList|128|Protect import task list.|
 |<a name="TimesheetUpdateSRAForResource"></a>TimesheetUpdateSRAForResource|129|ActiveMonitorCheck|
 |<a name="ActiveMonitorCheck"></a>ActiveMonitorCheck|130|Internal use only.|
-|<a name="ManagedModeTaskSynchronization"></a>ManagedModeTaskSynchronization|131||
+|<a name="ManagedModeTaskSynchronization"></a>ManagedModeTaskSynchronization|131|Synchronize Managed Project With Task List|
 |<a name="ResourcePlanMigrate"></a>ResourcePlanMigrate|132|Migrating Resource Plans to Resource Engagements.|
 |<a name="ReportingWSSIssueSync"></a>ReportingWSSIssueSync|133|Synchronize the SharePoint Issue data with the Reporting endpoint.|
 |<a name="ReportingWSSRiskSync"></a>ReportingWSSRiskSync|134|Synchronize the SharePoint Risk data with the Reporting endpoint.|

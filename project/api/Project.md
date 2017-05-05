@@ -62,7 +62,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="IsCheckedOut"></a>IsCheckedOut|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether the project is checked out.|
 |<a name="LastPublishedDate"></a>LastPublishedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the most recent date when the project was published.|
 |<a name="LastSavedDate"></a>LastSavedDate|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the most recent date when the project was saved.|
-|<a name="ListId"></a>ListId|||&#x2713;&#x02B7;|Guid||
+|<a name="ListId"></a>ListId|||&#x2713;&#x02B7;|Guid|List Id on the web that the project was created from.|
 |<a name="MoveActualIfLater"></a>MoveActualIfLater|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts forward to the status date, if the actual end date falls before the status date. 
 |<a name="MoveActualToStatus"></a>MoveActualToStatus|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the end date of completed parts back to the status date, if the actual end data falls after the status date.|
 |<a name="MoveRemainingIfEarlier"></a>MoveRemainingIfEarlier|&#x2713;|&#x2713;|&#x2713;|Boolean|Gets a value that indicates whether to move the start date of remaining parts forward to the status date, if the actual start date falls before the status date.|
@@ -83,7 +83,7 @@ http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
 |<a name="Stage"></a>Stage|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets the current workflow stage of the project.|
 |<a name="SummaryTaskId"></a>SummaryTaskId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID for the hidden project summary task.|
 |<a name="TaskListId"></a>TaskListId|&#x2713;|&#x2713;|&#x2713;|Guid|Gets the GUID of the project's task list.|
-|<a name="WebId"></a>WebId|||&#x2713;&#x02B7;|Guid||
+|<a name="WebId"></a>WebId|||&#x2713;&#x02B7;|Guid|The Id of the web that contains the list where the project was created from. (Ideation Scenario)|
 
 ### <a name="methods"></a>Methods
 > [!div class="mx-tdBreakAll"]

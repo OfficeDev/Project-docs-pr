@@ -23,7 +23,7 @@ PS.WorkflowActivities
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+Supported.
 
 ```
 PS.WorkflowActivities
@@ -37,12 +37,12 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[CheckInWithJobId(Guid projId, Guid jobId, Boolean force)](#CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_)|||&#x2713;|void||
+|[CheckInWithJobId(Guid projId, Guid jobId, Boolean force)](#CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_)|||&#x2713;|void|Queue a check-in job for the project if its checked-out.|
 |[CreateProjectFromListItem(Guid webId, Guid listId, Integer itemId, Guid eptId)](#CreateProjectFromListItem_Guid_webId,_Guid_listId,_Integer_itemId,_Guid_eptId_)|&#x2713;|&#x2713;|&#x2713;|Guid|Creates a project from a SharePoint list item, where the project uses the specified enterprise project type (EPT).|
 |[EnterProjectStage(Guid projectId, Guid stageId)](#EnterProjectStage_Guid_projectId,_Guid_stageId_)|&#x2713;|&#x2713;|&#x2713;|void|Attempts to enter the specified workflow stage for the project.|
 |[LeaveProjectStage(Guid projectId)](#LeaveProjectStage_Guid_projectId_)|&#x2713;|&#x2713;|&#x2713;|void|Sets the project complete and leaves the current workflow stage.|
-|[PublishSummaryWithJobId(Guid projId, Guid jobId)](#PublishSummaryWithJobId_Guid_projId,_Guid_jobId_)|||&#x2713;|void||
-|[PublishWithJobId(Guid projectId, Guid jobId)](#PublishWithJobId_Guid_projectId,_Guid_jobId_)|||&#x2713;|void||
+|[PublishSummaryWithJobId(Guid projId, Guid jobId)](#PublishSummaryWithJobId_Guid_projId,_Guid_jobId_)|||&#x2713;|void|Queue a publish summary job for a project.|
+|[PublishWithJobId(Guid projectId, Guid jobId)](#PublishWithJobId_Guid_projectId,_Guid_jobId_)|||&#x2713;|void|Queue a publish job.|
 |[ReadBooleanProperty(Guid projectId, String propertyId)](#ReadBooleanProperty_Guid_projectId,_String_propertyId_)|&#x2713;|&#x2713;|&#x2713;|Boolean|Reads the value of the specified project property by using the SharePoint SPFieldType.Boolean type.|
 |[ReadCurrencyProperty(Guid projectId, String propertyId)](#ReadCurrencyProperty_Guid_projectId,_String_propertyId_)|&#x2713;|&#x2713;|&#x2713;|Double|Reads the value of of the specified project property by using the SharePoint SPFieldType.Currency type.|
 |[ReadDateTimeProperty(Guid projectId, String propertyId)](#ReadDateTimeProperty_Guid_projectId,_String_propertyId_)|&#x2713;|&#x2713;|&#x2713;|DateTime|Reads the value of of the specified project property by using the SharePoint SPFieldType.DateTime type.|
@@ -66,7 +66,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 #### Method Details
 
 #### <a name="CheckInWithJobId_Guid_projId,_Guid_jobId,_Boolean_force_"></a>CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
- 
+
+Queue a check-in job for the project if its checked-out. 
 
 ##### Syntax
 
@@ -78,9 +79,9 @@ void CheckInWithJobId(Guid projId, Guid jobId, Boolean force)
 > [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projId|Guid||
-|jobId|Guid||
-|force|Boolean||
+|projId|Guid|Id of the project.|
+|jobId|Guid|Id to create job with.|
+|force|Boolean|Force check in the project.|
 
 ##### Return Value
 
@@ -152,6 +153,7 @@ void
 
 #### <a name="PublishSummaryWithJobId_Guid_projId,_Guid_jobId_"></a>PublishSummaryWithJobId(Guid projId, Guid jobId)
  
+Queue a publish summary job for a project.
 
 ##### Syntax
 
@@ -163,8 +165,8 @@ void PublishSummaryWithJobId(Guid projId, Guid jobId)
 > [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projId|Guid||
-|jobId|Guid||
+|projId|Guid|The GUID of the project.|
+|jobId|Guid|Id to create job with.|
 
 ##### Return Value
 
@@ -172,6 +174,7 @@ void
 
 #### <a name="PublishWithJobId_Guid_projectId,_Guid_jobId_"></a>PublishWithJobId(Guid projectId, Guid jobId)
  
+Queue a publish job.
 
 ##### Syntax
 
@@ -183,8 +186,8 @@ void PublishWithJobId(Guid projectId, Guid jobId)
 > [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
-|projectId|Guid||
-|jobId|Guid||
+|projectId|Guid|The GUID of the project.|
+|jobId|Guid|Id to create job with.|
 
 ##### Return Value
 

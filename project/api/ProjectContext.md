@@ -37,7 +37,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="Calendars"></a>Calendars|&#x2713;|&#x2713;|&#x2713;|[CalendarCollection](CalendarCollection.md)|Gets the collection of calendars for the Project Server instance.|
 |<a name="CustomFields"></a>CustomFields|&#x2713;|&#x2713;|&#x2713;|[CustomFieldCollection](CustomFieldCollection.md)|Gets the collection of enterprise custom field definitions in the Project Web App instance.|
-|<a name="EngagementsTimephasedPageSize"></a>EngagementsTimephasedPageSize|&#x2713;|&#x2713;|&#x2713;|Integer||
+|<a name="EngagementsTimephasedPageSize"></a>EngagementsTimephasedPageSize|&#x2713;|&#x2713;|&#x2713;|Integer|The number of [Engagements](Engagement.md) objects that can be returned in a single request.|
 |<a name="EnterpriseProjectTypes"></a>EnterpriseProjectTypes|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectTypeCollection](EnterpriseProjectTypeCollection.md)|Gets the collection of enterprise project types (EPTs) in the Project Web App instance.|
 |<a name="EnterpriseResources"></a>EnterpriseResources|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceCollection](EnterpriseResourceCollection.md)|Gets the collection of enterprise resources in a Project Web App instance.|
 |<a name="EnterpriseResourcesPageSize"></a>EnterpriseResourcesPageSize|&#x2713;|&#x2713;|&#x2713;|Integer|The number of [EnterpriseResource](EnterpriseResource.md) that can be pulled down with child elements in a single request|
@@ -61,14 +61,15 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetDeletedPublishedAssignments(DateTime deletedDate)](#GetDeletedPublishedAssignments_DateTime_deletedDate_)|&#x2713;|&#x2713;|&#x2713;|[DeletedPublishedAssignmentCollection](DeletedPublishedAssignmentCollection.md)||
-|[StopDelegation()](#StopDelegation__)||&#x2713;|&#x2713;|void|	Gets a value that indicates whether the Project Server database is in read-only mode.  For CSOM/JSOM support see [ServiceStatus](ServiceStatus.md)|
+|[GetDeletedPublishedAssignments(DateTime deletedDate)](#GetDeletedPublishedAssignments_DateTime_deletedDate_)|&#x2713;|&#x2713;|&#x2713;|[DeletedPublishedAssignmentCollection](DeletedPublishedAssignmentCollection.md)|Get all Published assignments deleted since the specified date.|
+|[StopDelegation()](#StopDelegation__)||&#x2713;|&#x2713;|void|Stops the current delegation session.|
 
 <br/>
 #### Method Details
 
 #### <a name="GetDeletedPublishedAssignments_DateTime_deletedDate_"></a>GetDeletedPublishedAssignments(DateTime deletedDate)
  
+Get all Published assignments deleted since the specified date.
 
 ##### Syntax
 
@@ -88,6 +89,7 @@ DeletedPublishedAssignmentCollection GetDeletedPublishedAssignments(DateTime del
 
 #### <a name="StopDelegation__"></a>StopDelegation()
  
+Stops the current delegation session.
 
 ##### Syntax
 

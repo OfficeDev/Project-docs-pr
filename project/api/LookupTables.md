@@ -34,13 +34,14 @@ PS_LookupTables_InvalidNameCharacters
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[InvalidNameCharacters()](#InvalidNameCharacters__)|&#x2713;|&#x2713;|&#x2713;|Char[]||
+|[InvalidNameCharacters()](#InvalidNameCharacters__)|&#x2713;|&#x2713;|&#x2713;|Char[]|Returns an array of characters that are not valid.|
 
 <br/>
 #### Method Details
 
 #### <a name="InvalidNameCharacters__"></a>InvalidNameCharacters()
  
+Returns an array of characters that are not valid.
 
 ##### Syntax
 

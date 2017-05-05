@@ -29,8 +29,8 @@ CustomFieldRollupType enumeration is not expliclity defined in REST.  Use the va
 > [!div class="mx-tdBreakAll"]
 |**Name**|**Value**|**Description**|
 |:------ |:----: |:----- |
-|<a name="NotSpecified"></a>NotSpecified|0||
-|<a name="Max"></a>Max|1||
+|<a name="NotSpecified"></a>NotSpecified|0|	Not Specified.|
+|<a name="Max"></a>Max|1|Maximum.|
 |<a name="Min"></a>Min|2|Minimum.|
 |<a name="Count"></a>Count|3|Count.|
 |<a name="Sum"></a>Sum|4|Sum.|
