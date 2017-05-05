@@ -21,7 +21,7 @@ PS.PlanAssignmentIntervalCreationInformation
 ```
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 ```
 PS.PlanAssignmentIntervalCreationInformation

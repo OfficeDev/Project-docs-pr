@@ -23,7 +23,7 @@ PS.QueueJobCollection
 ```
 ### REST Interface
 
-This resource supports GET HTTP commands.
+Supported.
 
 ```
 PS.QueueJobCollection

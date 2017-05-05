@@ -21,7 +21,7 @@ PS.TimeSheetWorkCreationInformation
 ```
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 ```
 PS.TimeSheetWorkCreationInformation

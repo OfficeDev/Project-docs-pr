@@ -23,7 +23,7 @@ PS.ProjectEngagementCreationInformation
 ```
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 ```
 PS.ProjectEngagementCreationInformation

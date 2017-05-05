@@ -23,7 +23,7 @@ PS.PublishedTaskLinkCollection
 ```
 ### REST Interface
 
-This resource supports GET HTTP commands.
+Supported.
 
 ```
 PS.PublishedTaskLinkCollection

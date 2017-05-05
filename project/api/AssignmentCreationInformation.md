@@ -23,7 +23,7 @@ PS.AssignmentCreationInformation
 
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 ```
 PS.AssignmentCreationInformation

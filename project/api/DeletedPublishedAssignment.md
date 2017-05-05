@@ -23,7 +23,7 @@ PS.DeletedPublishedAssignment
 ```
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 Endpoint returns a collection of published assignments.  No way to query for specific assignments or projects.
 

@@ -24,7 +24,7 @@ PS.EnterpriseResource
 
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, MERGE, and DELETE HTTP commands.
+Supported.
 
 ```
 PS.EnterpriseResource

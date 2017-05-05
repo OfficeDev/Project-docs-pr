@@ -25,7 +25,7 @@ PS.PublishedProjectResourceCollection
 
 ### REST Interface
 
-This resource supports GET and POST HTTP commands:
+Supported.
 
 ```
 PS.PublishedProjectResourceCollection

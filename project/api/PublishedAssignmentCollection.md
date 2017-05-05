@@ -25,7 +25,7 @@ PS.PublishedAssignmentCollection
 
 ### REST Interface
 
-This resource supports GET HTTP command:
+Supported.
 
 ```
 PS.PublishedAssignmentCollection

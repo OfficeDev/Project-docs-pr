@@ -23,7 +23,7 @@ PS.EngagementTimephasedPeriodCreationInformation
 ```
 ### REST Interface
 
-This resource supports POST HTTP commands.
+Supported.
 
 ```
 PS.EngagementTimephasedPeriodCreationInformation
