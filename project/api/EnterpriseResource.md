@@ -177,6 +177,8 @@ Enterprise resources are usually part of an organization's entire list of resour
 
 [DraftProjectResourceCollection](DraftProjectResourceCollection.md)<br/>
 [Engagement](Engagement.md)<br/>
+[EnterpriseResourceCostRateTableCollection](EnterpriseResourceCostRateTableCollection.md)<br/>
+[EnterpriseResourceCollection](EnterpriseResourceCollection.md)<br/>
 [EnterpriseResourceCollection](EnterpriseResourceCollection.md)<br/>
 [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md)<br/>
 [PlanAssignment](PlanAssignment.md)<br/>

@@ -139,7 +139,6 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('projectid')
 |<a name="StartVarianceTimeSpan"></a>StartVarianceTimeSpan|&#x2713;||&#x2713;|TimeSpan|Gets the time interval for the variance of the task start date.|
 |<a name="Stop"></a>Stop|&#x2713;|&#x2713;|&#x2713;|DateTime|Gets the date that represents the end of the actual portion of the task.|
 |<a name="SubProject"></a>SubProject|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a project that has been inserted into the master project.|
-|<a name="TaskType"></a>TaskType|&#x2713;|&#x2713;|&#x2713;|[TaskType](TaskType.md)|Gets the task type.|
 |<a name="ToCompletePerformanceIndex"></a>ToCompletePerformanceIndex|&#x2713;|&#x2713;|&#x2713;|Double|Gets the To Complete Performance Index for the task.|
 |<a name="TotalSlack"></a>TotalSlack|&#x2713;|&#x2713;|&#x2713;|String|Gets the time that the task's finish date can be delayed without delaying the project's finish date.|
 |<a name="TotalSlackMilliseconds"></a>TotalSlackMilliseconds||&#x2713;|&#x2713;|Integer|Gets the time interval, expressed in milliseconds, for the amount of time that the task finish date can be delayed without delaying the project's finish date.|

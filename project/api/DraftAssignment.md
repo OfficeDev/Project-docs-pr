@@ -54,7 +54,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |<a name="BudgetedWorkMilliseconds"></a>BudgetedWorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer|Gets or sets the time interval, expressed in milliseconds, for the budgeted work for the assignment.|
 |<a name="BudgetedWorkTimeSpan"></a>BudgetedWorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan|Gets or sets the time interval for the budgeted work for the assignment.|
 |<a name="Cost"></a>Cost|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double|Gets or sets the total scheduled or projected cost for the assignment.|
-|<a name="CostRateTable"></a>CostRateTable|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CostRateTableName](CostRateTableName.md)|Gets or sets the cost rate assoicated with the assignment.|
+|<a name="CostRateTable"></a>CostRateTable|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[CostRateTableName](CostRateTableName.md)|Gets or sets the cost rate table name for the assignment.|
 |<a name="DefaultBookingType"></a>DefaultBookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the default booking type for the assignment.|
 |<a name="FieldValues"></a>FieldValues|&#x2713;|&#x2713;||Dictionary&lt;string, Object&gt;|Gets the collection of custom fields that have values set for the draft assignment.|
 |<a name="IsLockedByManager"></a>IsLockedByManager|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Boolean|Gets or sets a value that indicates whether the assignment has been locked for changes by a manager.|

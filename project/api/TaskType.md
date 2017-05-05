@@ -37,5 +37,6 @@ TaskType enumeration is not expliclity defined in REST.  Use the values below to
 ## <a name="seeAlso"></a>See Also
 
 [DraftProject](DraftProject.md)<br/>
+[DraftTask](DraftTask.md)<br/>
 [PublishedProject](PublishedProject.md)<br/>
-[Task](Task.md)<br/>
+[PublishedTask](PublishedTask.md)<br/>

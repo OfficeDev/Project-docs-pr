@@ -164,8 +164,8 @@ QueueMsgType enumeration is not expliclity defined in REST.  Use the values belo
 |<a name="ResourcePlanMigrate"></a>ResourcePlanMigrate|132|Migrating Resource Plans to Resource Engagements.|
 |<a name="ReportingWSSIssueSync"></a>ReportingWSSIssueSync|133|Synchronize the SharePoint Issue data with the Reporting endpoint.|
 |<a name="ReportingWSSRiskSync"></a>ReportingWSSRiskSync|134|Synchronize the SharePoint Risk data with the Reporting endpoint.|
-|<a name="ReportingWSSDocSync"></a>ReportingWSSDocSync|135|Synchronize the SharePoint linked Docs data with the Reporting endpoint.|
-
+|<a name="ReportingWSSDocSync"></a>ReportingWSSDocSync|135|Reporting (Project Document Sync).|
+|<a name="ReportingWSSDeliverableSync"></a>ReportingWSSDeliverableSync|136|Reporting (Project Deliverable Sync).|
 ## <a name="seeAlso"></a>See Also
 
 [QueueJob](QueueJob.md)<br/>
