@@ -5,7 +5,7 @@
 
 # <a name="name"></a>EnterpriseResourceCostRate class
 
-<a name="description"></a>Represents resource rate information in a [CostRateTable](CostRateTable.md).
+<a name="description"></a>Represents resource rate information in a [EnterpriseResourceCostRateTable](EnterpriseResourceCostRateTable.md).
 
 ## <a name="syntax"></a>Syntax
 

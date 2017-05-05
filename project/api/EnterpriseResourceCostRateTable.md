@@ -5,9 +5,7 @@
 
 # <a name="name"></a>EnterpriseResourceCostRateTable class
 
-inherits members from [CostRateTable](CostRateTable.md)<br/>
-
-<a name="description"></a>
+<a name="description"></a>Contains the cost rates and effective dates for the (EnterpriseResource)[EnterpriseResource.md] cost rate table.
 
 ## <a name="syntax"></a>Syntax
 
@@ -23,7 +21,7 @@ PS.EnterpriseResourceCostRateTable
 ```
 ### REST Interface
 
-This resource supports GET, POST, PUT, PATCH, and MERGE HTTP commands.
+Supported.
 
 ```
 PS.EnterpriseResourceCostRateTable
@@ -37,8 +35,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|<a name="CostRates"></a>CostRates|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceCostRateCollection](EnterpriseResourceCostRateCollection.md)||
-|<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|[CostRateTableName](CostRateTableName.md)||
+|<a name="CostRates"></a>CostRates|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResourceCostRateCollection](EnterpriseResourceCostRateCollection.md)|Cost rates that have been configured in the rate table.|
+|<a name="Name"></a>Name|&#x2713;|&#x2713;|&#x2713;|[CostRateTableName](CostRateTableName.md)|Name of the cost rate table.|
 
 ## <a name="seeAlso"></a>See Also
 
