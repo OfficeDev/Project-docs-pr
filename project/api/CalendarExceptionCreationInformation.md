@@ -26,7 +26,7 @@ Supported.
 ```
 PS.CalendarExceptionCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions/Add
 ```
 POST Example (not all fields may be required)
 ```

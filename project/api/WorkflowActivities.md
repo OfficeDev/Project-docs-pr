@@ -28,7 +28,7 @@ Supported.
 ```
 PS.WorkflowActivities
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/ProjectServer/WorkflowActivities
 ```
 
 ## <a name="members"></a>Members

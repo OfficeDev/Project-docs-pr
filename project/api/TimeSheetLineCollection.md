@@ -60,7 +60,7 @@ Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the specified 
 ##### Syntax
 
 ```
-TimeSheetLine http://<sitecollection>/<site>/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{TimeSheetLineId}')
+TimeSheetLine http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/TimeSheetPeriods('{periodid}')/TimeSheet/Lines('{TimeSheetLineId}')
 ```
 
 ##### Parameters

@@ -7,7 +7,7 @@
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>
+<a name="description"></a>Represents a comment on an engagement.  Please see Please see [ProjectEngagementComment](ProjectEngagementComment.md) and [ResourceEngagementComment](ResourceEngagementComment.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +28,6 @@ Supported.
 ```
 PS.EngagementComment
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members

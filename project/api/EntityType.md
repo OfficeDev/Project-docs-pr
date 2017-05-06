@@ -25,7 +25,10 @@ Supported.
 ```
 PS.EntityType
 
-http://<sitecollection>/<site>/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EntityTypes/AssignmentEntity
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EntityTypes/ProjectEntity
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EntityTypes/ResourceEntity
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EntityTypes/TaskEntity
 ```
 
 ## <a name="members"></a>Members

@@ -27,8 +27,6 @@ Supported.
 
 ```
 PS.EngagementTimephasedPeriod
-
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members

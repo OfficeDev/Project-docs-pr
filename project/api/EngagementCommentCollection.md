@@ -7,7 +7,7 @@
 
 inherits members from [ClientObjectCollection<EngagementComment>](https://msdn.microsoft.com/EN-US/library/ee539303)<br/>
 
-<a name="description"></a>
+<a name="description"></a>Represents a collection of comments on an engagement.  Please see [ProjectEngagementCommentCollection](ProjectEngagementCommentCollection.md) and [ResourceEngagementCommentCollection](ResourceEngagementCommentCollection.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +28,6 @@ Supported.
 ```
 PS.EngagementCommentCollection
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 
 ## <a name="members"></a>Members
@@ -72,3 +71,5 @@ EngagementComment Add(String comment)
 
 [Engagement](Engagement.md)<br/>
 [EngagementComment](EngagementComment.md)<br/>
+[ProjectEngagementCommentCollection](ProjectEngagementCommentCollection.md)<br/>
+[ResourceEngagementCommentCollection](ProjectEngagementCommentCollection.md)<br/>

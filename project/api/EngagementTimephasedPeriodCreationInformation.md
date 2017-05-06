@@ -28,7 +28,6 @@ Supported.
 ```
 PS.EngagementTimephasedPeriodCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```
@@ -58,3 +57,4 @@ body = {
 
 ## <a name="seeAlso"></a>See Also
 
+[EngagementCreationInformation](EngagementCreationInformation.md)<br/>

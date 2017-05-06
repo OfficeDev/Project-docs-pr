@@ -26,7 +26,7 @@ Supported.
 ```
 PS.CostRateCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceId}')/CostRateTables('{CostRateTableName}')/CostRates/Add
 ```
 POST Example (not all fields may be required)
 ```

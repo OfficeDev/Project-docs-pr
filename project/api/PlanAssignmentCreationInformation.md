@@ -47,7 +47,7 @@ body = {
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |<a name="BookingType"></a>BookingType|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[BookingType](BookingType.md)|Gets or sets the booking type of the assignment.|
 |<a name="Id"></a>Id|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID for the plan assignment.|
-|<a name="Intervals"></a>Intervals|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[	PlanAssignmentIntervalCollection](PlanAssignmentIntervalCollection.md)|Gets or sets an enumerator that iterates through a collection of time intervals.|
+|<a name="Intervals"></a>Intervals|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|[PlanAssignmentIntervalCreationInformation](PlanAssignmentIntervalCreationInformation.md)|Gets the collection of new assignment intervals.|
 |<a name="ResourceId"></a>ResourceId|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Guid|Gets or sets the GUID of the resource.|
 
 ## <a name="seeAlso"></a>See Also

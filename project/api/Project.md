@@ -30,7 +30,7 @@ Supported.
 ```
 PS.Project
 
-http://<sitecollection>/<site>/_api/ProjectServer/Projects('projectid')
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('projectid')
 ```
 
 ## <a name="members"></a>Members

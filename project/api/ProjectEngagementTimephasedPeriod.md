@@ -35,4 +35,5 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 
 ## <a name="seeAlso"></a>See Also
 
+[EngagementTimephasedPeriod](EngagementTimephasedPeriod.md)<br/>
 [ProjectEngagementTimephasedCollection](ProjectEngagementTimephasedCollection.md)<br/>

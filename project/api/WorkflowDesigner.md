@@ -28,7 +28,7 @@ Supported.
 ```
 PS.WorkflowDesigner
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/WorkflowDesigner
 ```
 
 ## <a name="members"></a>Members

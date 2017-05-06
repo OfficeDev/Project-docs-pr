@@ -5,7 +5,7 @@
 
 # <a name="name"></a>PlanAssignmentIntervalCreationInformation class
 
-<a name="description"></a>Contains the properties that can be set when creating a [PlanAssignmentInterval](PlanAssignmentInterval.md).
+<a name="description"></a>Contains the properties that can be set when creating a [PlanAssignmentInterval](PlanAssignmentInterval.md), see [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -26,7 +26,6 @@ Supported.
 ```
 PS.PlanAssignmentIntervalCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```

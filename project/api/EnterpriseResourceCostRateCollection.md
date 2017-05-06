@@ -28,7 +28,7 @@ Supported.
 ```
 PS.EnterpriseResourceCostRateCollection
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('{resourceId}')/CostRateTables('{CostRateTableName}')/CostRates
 ```
 
 ## <a name="members"></a>Members

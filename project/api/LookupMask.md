@@ -26,7 +26,7 @@ Supported.
 ```
 PS.LookupMask
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid}')/Masks
 ```
 
 ## <a name="members"></a>Members

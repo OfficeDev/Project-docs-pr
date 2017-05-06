@@ -28,7 +28,7 @@ Supported.
 ```
 PS.ProjectEngagementCommentCollection
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}')/Engagements('{engagementid}')/Comments
 ```
 
 ## <a name="members"></a>Members

@@ -28,7 +28,7 @@ Supported.
 ```
 PS.WorkflowDesignerField
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/WorkflowDesigner/Fields('{id}')
 ```
 
 ## <a name="members"></a>Members

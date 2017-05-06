@@ -5,7 +5,7 @@
 
 # <a name="name"></a>ProjectDetailPageCreationInformation class
 
-<a name="description"></a>Contains the properties that can be set when creating a [ProjectDetailPage](ProjectDetailPage.md).
+<a name="description"></a>Contains the properties that can be set when creating a [ProjectDetailPage](ProjectDetailPage.md) when creating a [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -26,8 +26,10 @@ Supported.
 ```
 PS.ProjectDetailPageCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
+
+
+
 POST Example (not all fields may be required)
 ```
 body = {

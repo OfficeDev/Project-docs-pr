@@ -28,7 +28,7 @@ Supported.
 ```
 PS.CalendarException
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid}')/BaseCalendarExceptions('{calendarExceptionId'})
 ```
 
 ## <a name="members"></a>Members

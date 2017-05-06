@@ -32,7 +32,7 @@ This resource supports the GET HTTP commands.
 ```
 PS.ProjectSummaryTask
 
-http://<sitecollection>/<site>/api/ProjectServer/Projects('projectid')/ProjectSummaryTask
+http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('projectid')/ProjectSummaryTask
 ```
 
 ## <a name="members"></a>Members

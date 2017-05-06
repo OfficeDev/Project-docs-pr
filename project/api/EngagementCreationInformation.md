@@ -7,7 +7,7 @@
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>
+<a name="description"></a>Contains the properties that can be set when creating a [Engagement](Engagement.md).  Please see [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) and [ResourceEngagementCreationInformation](ResourceEngagementCreationInformation.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +28,6 @@ Supported.
 ```
 PS.EngagementCreationInformation
 
-http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/?????
 ```
 POST Example (not all fields may be required)
 ```
@@ -59,11 +58,14 @@ body = {
 |<a name="MaxUnits"></a>MaxUnits|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Double||
 |<a name="ResourceId"></a>ResourceId|||&#x2713;&#x02B7;|Guid||
 |<a name="Start"></a>Start|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|DateTime||
-|<a name="TimephasedPeriodData"></a>TimephasedPeriodData|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Collection`1||
+|<a name="TimephasedPeriodData"></a>TimephasedPeriodData|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|Collection([EngagementTimephasedPeriodCreationInformation](EngagementTimephasedPeriodCreationInformation.md))||
 |<a name="Work"></a>Work|&#x2713;&#x02B7;|&#x2713;&#x02B7;|&#x2713;&#x02B7;|String||
 |<a name="WorkMilliseconds"></a>WorkMilliseconds||&#x2713;&#x02B7;|&#x2713;&#x02B7;|Integer||
 |<a name="WorkTimeSpan"></a>WorkTimeSpan|&#x2713;&#x02B7;||&#x2713;&#x02B7;|TimeSpan||
 
 ## <a name="seeAlso"></a>See Also
 
+
+[EngagementTimephasedPeriodCreationInformation](EngagementTimephasedPeriodCreationInformation.md)<br/>
 [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)<br/>
+[ResourceEngagementCreationInformation](ResourceEngagementCreationInformation.md)<br/>
