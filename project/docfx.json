@@ -7,8 +7,11 @@
         ],
         "exclude": [
           "**/obj/**",
-          "office/project/**",
-          "**/includes/**"
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
     ],
@@ -20,7 +23,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "office/project/**",
           "**/includes/**"
         ]
       }
@@ -30,6 +32,6 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "office/project"
+    "dest": "project"
   }
 }

@@ -1,5 +1,6 @@
 # [Getting started](articles/GettingStarted.md)
-# [AccrueAt enumeration](api/AccrueAt.md) 
+# [API]
+## [AccrueAt enumeration](api/AccrueAt.md) 
 # [Assignment class](api/Assignment.md) 
 # [AssignmentCreationInformation class](api/AssignmentCreationInformation.md) 
 # [BaseCalendarException class](api/BaseCalendarException.md) 
