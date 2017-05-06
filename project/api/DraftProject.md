@@ -33,6 +33,9 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 
 ## <a name="members"></a>Members
 
+&#x2713 Supported/Read
+;&#x02B7 Write
+
 ### <a name="properties"></a>Properties
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
