@@ -1,4 +1,5 @@
-# [Getting started](articles/GettingStarted.md)
+# Articles
+## [Getting started](articles/GettingStarted.md)
 # API
 ## [AccrueAt enumeration](api/AccrueAt.md) 
 ## [Assignment class](api/Assignment.md) 
