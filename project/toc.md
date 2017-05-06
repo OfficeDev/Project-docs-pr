@@ -40,7 +40,6 @@
 # [EngagementCommentCollection class](api/EngagementCommentCollection.md) 
 # [EngagementContourType enumeration](api/EngagementContourType.md) 
 # [EngagementCreationInformation class](api/EngagementCreationInformation.md) 
-# [EngagementSaveConflictException class](api/EngagementSaveConflictException.md) 
 # [EngagementStatus enumeration](api/EngagementStatus.md) 
 # [EngagementTimephasedPeriod class](api/EngagementTimephasedPeriod.md) 
 # [EngagementTimephasedPeriodCreationInformation class](api/EngagementTimephasedPeriodCreationInformation.md) 

@@ -33,5 +33,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 
 ## <a name="members"></a>Members
 
+
+&#x2713; - Read Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2713;&#x02B7; - Write Support
+
 ## <a name="seeAlso"></a>See Also
 

@@ -29,6 +29,9 @@ PS_LookupTables_InvalidNameCharacters
 
 ## <a name="members"></a>Members
 
+
+&#x2713; - Read Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2713;&#x02B7; - Write Support
+
 ### <a name="methods"></a>Methods
 
 > [!div class="mx-tdBreakAll"]

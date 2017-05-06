@@ -7,7 +7,7 @@
 
 inherits members from [ClientObject](https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.client.clientobject.aspx)<br/>
 
-<a name="description"></a>Contains the properties that can be set when creating a [Engagement](Engagement.md).  Please see [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) and [ResourceEngagementCreationInformation](ResourceEngagementCreationInformation.md).
+<a name="description"></a>Contains the properties that can be set when creating a [Engagement](Engagement.md).  Please see [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,6 +48,9 @@ body = {
 
 ## <a name="members"></a>Members
 
+
+&#x2713; - Read Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2713;&#x02B7; - Write Support
+
 ### <a name="properties"></a>Properties
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
@@ -68,4 +71,3 @@ body = {
 
 [EngagementTimephasedPeriodCreationInformation](EngagementTimephasedPeriodCreationInformation.md)<br/>
 [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md)<br/>
-[ResourceEngagementCreationInformation](ResourceEngagementCreationInformation.md)<br/>

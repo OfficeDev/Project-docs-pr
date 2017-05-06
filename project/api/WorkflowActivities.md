@@ -33,6 +33,9 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/ProjectServer/Workflo
 
 ## <a name="members"></a>Members
 
+
+&#x2713; - Read Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2713;&#x02B7; - Write Support
+
 ### <a name="methods"></a>Methods
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|

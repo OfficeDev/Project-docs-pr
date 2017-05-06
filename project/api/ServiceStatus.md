@@ -26,6 +26,9 @@ See [ProjectContext](ProjectContext.md) for the REST properties/methods.
 
 ## <a name="members"></a>Members
 
+
+&#x2713; - Read Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2713;&#x02B7; - Write Support
+
 ### <a name="properties"></a>Properties
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Type**|**Description**|
