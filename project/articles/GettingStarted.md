@@ -40,15 +40,10 @@ External/Standalone  Add-in
 
 | Type of application |API Implementation|Target Environment|Application Examples
 |:------|:------|:------|:------|
-| Project Hosted | JSOM (JavaScript Object Model)| Browser | Timecard entry |
-|| REST || Timecard approval |
-|||| Project Status|
-|||| Issues Report |
-| Project Provider Hosted | CSOM client library | Azure Website/App | External timesheet validator |
-|| REST | Non-Windows environment (LAMP, etc.)| Project Importer |
-| External/Standalone | REST | REST – Any platform | Timecard entry |
-|| CSOM client library | CSOM – Any .NET supported platform | Migration of projects to a new site |
-|||| Change Management Status |
+| Project Hosted| JSOM (JavaScript Object Model)<br/>REST | Browser | Timecard entry<br/>Timecard approval<br/>Project Status<br/>Issues Report |
+| Project Provider Hosted | CSOM client library<br/>REST  | Azure Website/App<br/> Non-Windows environment (LAMP, etc.) | External timesheet validator<br/>Project Importer |
+| External/Standalone | CSOM client library<br/>REST | CSOM – Any .NET supported platform<br/>REST – Any platform | Timecard entry<br/>Migration of projects to a new site<br/>Change Management Status |
+
 
 
 ## What does it take to start developing applications for Project Online?
