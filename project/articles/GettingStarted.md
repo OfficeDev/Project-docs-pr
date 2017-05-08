@@ -43,7 +43,9 @@ Project Online includes API support to accommodate the following scenarios:
 
 | Type of application |API |Target Environment|Application Examples
 |:------|:------|:------|:------|
-| Project Hosted| <ul><li>1JSOM (JavaScript Object Model)</li><li>REST</li></ul> | Browser | * F * Timecard entry-Timecard approval-Project Status*Issues Report |
+| Project Hosted| <ul><li>1JSOM (JavaScript Object Model)</li><li>REST</li></ul> | Browser | 
+* F 
+* Timecard entry-Timecard approval-Project Status*Issues Report |
 | Project Provider Hosted | *CSOM client library*REST  | Azure Website/App<br/> Non-Windows environment (LAMP, etc.) | External timesheet validator<br/>Project Importer |
 | External/Standalone | CSOM client library<br/>REST | CSOM – Any .NET supported platform<br/>REST – Any platform | Timecard entry<br/>Migration of projects to a new site<br/>Change Management Status |
 
