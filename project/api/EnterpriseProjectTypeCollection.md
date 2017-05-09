@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseProjectTypes
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{EnterpriseProjectTypeId}&#39;](#&#39;{EnterpriseProjectTypeId}&#39;)|||&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the specified EnterpriseProjectTypeId.|
 |[Add(EnterpriseProjectTypeCreationInformation parameters)](#Add_[EnterpriseProjectTypeCreationInformation]_EnterpriseProjectTypeCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Adds the [EnterpriseProjectType](EnterpriseProjectType.md) that is specified by the [EnterpriseProjectTypeCreationInformation](EnterpriseProjectTypeCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseProjectType](EnterpriseProjectType.md)|Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.|
 |[Remove(EnterpriseProjectType ept)](#Remove_[EnterpriseProjectType]_EnterpriseProjectType.md__ept_)|&#x2713;|&#x2713;||Boolean|Removes the specified [EnterpriseProjectType](EnterpriseProjectType.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the enterprise project type collection.|
 
@@ -99,7 +99,7 @@ EnterpriseProjectType Add(EnterpriseProjectTypeCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.
+Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ EnterpriseProjectType GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Guid value.
+Gets a [EnterpriseProjectType](EnterpriseProjectType.md) from the collection with the Id value.
 
 ##### Syntax
 

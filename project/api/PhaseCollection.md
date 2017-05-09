@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Phases
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PhaseId}&#39;](#&#39;{PhaseId}&#39;)|||&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the specified PhaseId.|
 |[Add(PhaseCreationInformation parameters)](#Add_[PhaseCreationInformation]_PhaseCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Adds the [Phase](Phase.md) that is specified by the [PhaseCreationInformation](PhaseCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Phase](Phase.md)|Gets a [Phase](Phase.md) from the collection with the Id value.|
 |[Remove(Phase phase)](#Remove_[Phase]_Phase.md__phase_)|&#x2713;|&#x2713;||Boolean|Removes the specified [Phase](Phase.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the phase collection.|
 
@@ -99,7 +99,7 @@ Phase Add(PhaseCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [Phase](Phase.md) from the collection with the Id value.
+Gets a [Phase](Phase.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ Phase GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [Phase](Phase.md) from the collection with the Guid value.
+Gets a [Phase](Phase.md) from the collection with the Id value.
 
 ##### Syntax
 

@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/C
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageCustomFieldId}&#39;](#&#39;{StageCustomFieldId}&#39;)|||&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the specified StageCustomFieldId.|
 |[Add(StageCustomFieldCreationInformation creationInfo)](#Add_[StageCustomFieldCreationInformation]_StageCustomFieldCreationInformation.md__creationInfo_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Adds the [StageCustomField](StageCustomField.md) that is specified by the [StageCustomFieldCreationInformation](StageCustomFieldCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageCustomField](StageCustomField.md)|Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.|
 |[Remove(StageCustomField field)](#Remove_[StageCustomField]_StageCustomField.md__field_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StageCustomField](StageCustomField.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ StageCustomField Add(StageCustomFieldCreationInformation creationInfo)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.
+Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ StageCustomField GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [StageCustomField](StageCustomField.md) from the collection with the Guid value.
+Gets a [StageCustomField](StageCustomField.md) from the collection with the Id value.
 
 ##### Syntax
 

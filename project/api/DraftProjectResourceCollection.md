@@ -52,8 +52,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |[Add(ProjectResourceCreationInformation parameters)](#Add_[ProjectResourceCreationInformation]_ProjectResourceCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Adds the [DraftProjectResource](DraftProjectResource.md) that is specified by the [ProjectResourceCreationInformation](ProjectResourceCreationInformation.md) object to the collection.|
 |[AddEnterpriseResource(EnterpriseResource resource)](#AddEnterpriseResource_[EnterpriseResource]_EnterpriseResource.md__resource_)|&#x2713;|&#x2713;||[DraftProjectResource](DraftProjectResource.md)|Adds an existing enterprise resource to the draft project resource collection.|
 |[AddEnterpriseResourceById(Guid resourceId)](#AddEnterpriseResourceById_Guid_resourceId_)|||&#x2713;|[QueueJob](QueueJob.md)|Adds an existing enterprise resource with the specified Id value to the draft project resource collection.||[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftProjectResource](DraftProjectResource.md)|Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.|
 |[Remove(DraftProjectResource resource)](#Remove_[DraftProjectResource]_DraftProjectResource.md__resource_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftProjectResource](DraftProjectResource.md) from the collection.|
 
 <br/>
@@ -144,7 +144,7 @@ The [QueueJob](QueueJob.md) includes the JobState property that identifies the r
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -164,7 +164,7 @@ DraftProjectResource GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Guid value.
+Gets a [DraftProjectResource](DraftProjectResource.md) from the collection with the Id value.
 
 ##### Syntax
 

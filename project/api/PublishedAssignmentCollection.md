@@ -50,8 +50,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedAssignmentId}&#39;](#&#39;{PublishedAssignmentId}&#39;)|||&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the specified PublishedAssignmentId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedAssignment](PublishedAssignment.md)|Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -78,7 +78,7 @@ PublishedAssignment http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Pr
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.
+Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -98,7 +98,7 @@ PublishedAssignment GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Guid value.
+Gets a [PublishedAssignment](PublishedAssignment.md) from the collection with the Id value.
 
 ##### Syntax
 

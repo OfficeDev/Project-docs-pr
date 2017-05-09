@@ -48,8 +48,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{QueueJobId}&#39;](#&#39;{QueueJobId}&#39;)|||&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the specified QueueJobId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[QueueJob](QueueJob.md)|Gets a [QueueJob](QueueJob.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -76,7 +76,7 @@ QueueJob http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{p
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [QueueJob](QueueJob.md) from the collection with the Id value.
+Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -96,7 +96,7 @@ QueueJob GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [QueueJob](QueueJob.md) from the collection with the Guid value.
+Gets a [QueueJob](QueueJob.md) from the collection with the Id value.
 
 ##### Syntax
 

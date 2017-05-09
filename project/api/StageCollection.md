@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageId}&#39;](#&#39;{StageId}&#39;)|||&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the specified StageId.|
 |[Add(StageCreationInformation parameters)](#Add_[StageCreationInformation]_StageCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Adds the [Stage](Stage.md) that is specified by the [StageCreationInformation](StageCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Stage](Stage.md)|Gets a [Stage](Stage.md) from the collection with the Id value.|
 |[Remove(Stage stage)](#Remove_[Stage]_Stage.md__stage_)|&#x2713;|&#x2713;||Boolean|Removes the specified [Stage](Stage.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the stage collection.|
 
@@ -99,7 +99,7 @@ Stage Add(StageCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [Stage](Stage.md) from the collection with the Id value.
+Gets a [Stage](Stage.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ Stage GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [Stage](Stage.md) from the collection with the Guid value.
+Gets a [Stage](Stage.md) from the collection with the Id value.
 
 ##### Syntax
 

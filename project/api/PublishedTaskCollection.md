@@ -50,8 +50,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedTaskId}&#39;](#&#39;{PublishedTaskId}&#39;)|||&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the specified PublishedTaskId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedTask](PublishedTask.md)|Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -78,7 +78,7 @@ PublishedTask http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Project
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.
+Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -98,7 +98,7 @@ PublishedTask GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [PublishedTask](PublishedTask.md) from the collection with the Guid value.
+Gets a [PublishedTask](PublishedTask.md) from the collection with the Id value.
 
 ##### Syntax
 

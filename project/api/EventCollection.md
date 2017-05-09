@@ -47,7 +47,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Events
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets a [Event](Event.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets a [Event](Event.md) from the collection with the Id value.|
 |[GetByInt(Integer id)](#GetByInt_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[Event](Event.md)|Gets an event from the collection with the specified integer identifier.|
 
 <br/>
@@ -55,7 +55,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Events
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [Event](Event.md) from the collection with the Guid value.
+Gets a [Event](Event.md) from the collection with the Id value.
 
 ##### Syntax
 

@@ -47,14 +47,14 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)|Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md)|Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
  
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Guid value.
+Gets a [StatusAssignmentHistoryLine](StatusAssignmentHistoryLine.md) from the collection with the Id value.
 
 ##### Syntax
 

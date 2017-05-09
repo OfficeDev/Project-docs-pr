@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{CalendarId}&#39;](#&#39;{CalendarId}&#39;)|||&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the specified CalendarId.|
 |[Add(CalendarCreationInformation parameters)](#Add_[CalendarCreationInformation]_CalendarCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Adds the [Calendar](Calendar.md) that is specified by the [CalendarCreationInformation](CalendarCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[Calendar](Calendar.md)|Gets a [Calendar](Calendar.md) from the collection with the Id value.|
 |[Remove(Calendar calendar)](#Remove_[Calendar]_Calendar.md__calendar_)|&#x2713;|&#x2713;||Boolean|Removes the specified [Calendar](Calendar.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the calendar collection.|
 
@@ -99,7 +99,7 @@ Calendar Add(CalendarCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [Calendar](Calendar.md) from the collection with the Id value.
+Gets a [Calendar](Calendar.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ Calendar GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [Calendar](Calendar.md) from the collection with the Guid value.
+Gets a [Calendar](Calendar.md) from the collection with the Id value.
 
 ##### Syntax
 

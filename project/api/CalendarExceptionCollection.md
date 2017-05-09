@@ -48,7 +48,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Calendars('{calendarid
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(CalendarExceptionCreationInformation parameters)](#Add_[CalendarExceptionCreationInformation]_CalendarExceptionCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Adds the [CalendarException](CalendarException.md) that is specified by the [CalendarExceptionCreationInformation](CalendarExceptionCreationInformation.md) object to the collection.|
-|[GetById(Integer id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a [CalendarException](CalendarException.md) from the collection with the Guid value.|
+|[GetById(Integer id)](#GetById_Integer_id_)|&#x2713;|&#x2713;|&#x2713;|[CalendarException](CalendarException.md)|Gets a [CalendarException](CalendarException.md) from the collection with the Id value.|
 |[Remove(CalendarException exception)](#Remove_[CalendarException]_CalendarException.md__exception_)|&#x2713;|&#x2713;||Boolean|Removes the specified [CalendarException](CalendarException.md) from the collection.|
 
 <br/>
@@ -76,7 +76,7 @@ CalendarException Add(CalendarExceptionCreationInformation parameters)
 
 #### <a name="GetById_Integer_id_"></a>GetById(Integer id)
 
-Gets a [CalendarException](CalendarException.md) from the collection with the Guid value.
+Gets a [CalendarException](CalendarException.md) from the collection with the Id value.
 
 ##### Syntax
 

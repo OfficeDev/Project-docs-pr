@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftTaskId}&#39;](#&#39;{DraftTaskId}&#39;)|||&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the specified DraftTaskId.|
 |[Add(TaskCreationInformation parameters)](#Add_[TaskCreationInformation]_TaskCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Adds the [DraftTask](DraftTask.md) that is specified by the [TaskCreationInformation](TaskCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTask](DraftTask.md)|Gets a [DraftTask](DraftTask.md) from the collection with the Id value.|
 |[Remove(DraftTask task)](#Remove_[DraftTask]_DraftTask.md__task_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftTask](DraftTask.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ DraftTask Add(TaskCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [DraftTask](DraftTask.md) from the collection with the Id value.
+Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ DraftTask GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [DraftTask](DraftTask.md) from the collection with the Guid value.
+Gets a [DraftTask](DraftTask.md) from the collection with the Id value.
 
 ##### Syntax
 

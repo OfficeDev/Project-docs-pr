@@ -50,8 +50,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Projects('{projectid}
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
 |[&#39;{PublishedProjectResourceId}&#39;](#&#39;{PublishedProjectResourceId}&#39;)|||&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the specified PublishedProjectResourceId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProjectResource](PublishedProjectResource.md)|Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -78,7 +78,7 @@ PublishedProjectResource http://contoso.sharepoint.com/sites/pwa/_api/ProjectSer
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.
+Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -99,7 +99,7 @@ A [PublishedProjectResource](PublishedProjectResource.md) object.
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Guid value.
+Gets a [PublishedProjectResource](PublishedProjectResource.md) from the collection with the Id value.
 
 ##### Syntax
 

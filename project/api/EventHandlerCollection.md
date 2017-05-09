@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EventHandlers
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{EventHandlerId}&#39;](#&#39;{EventHandlerId}&#39;)|||&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the specified EventHandlerId.|
 |[Add(EventHandlerCreationInformation parameters)](#Add_[EventHandlerCreationInformation]_EventHandlerCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Adds the [EventHandler](EventHandler.md) that is specified by the [EventHandlerCreationInformation](EventHandlerCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EventHandler](EventHandler.md)|Gets a [EventHandler](EventHandler.md) from the collection with the Id value.|
 |[Remove(EventHandler handler)](#Remove_[EventHandler]_EventHandler.md__handler_)|&#x2713;|&#x2713;||Boolean|Removes the specified [EventHandler](EventHandler.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the event handler collection.|
 
@@ -99,7 +99,7 @@ EventHandler Add(EventHandlerCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [EventHandler](EventHandler.md) from the collection with the Id value.
+Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ EventHandler GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [EventHandler](EventHandler.md) from the collection with the Guid value.
+Gets a [EventHandler](EventHandler.md) from the collection with the Id value.
 
 ##### Syntax
 
