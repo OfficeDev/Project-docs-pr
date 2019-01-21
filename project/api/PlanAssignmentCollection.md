@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PlanAssignmentId}&#39;](#&#39;{PlanAssignmentId}&#39;)|||&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the specified PlanAssignmentId.|
 |[Add(PlanAssignmentCreationInformation parameters)](#Add_[PlanAssignmentCreationInformation]_PlanAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Adds the [PlanAssignment](PlanAssignment.md) that is specified by the [PlanAssignmentCreationInformation](PlanAssignmentCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignment](PlanAssignment.md)|Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.|
 |[Remove(PlanAssignment assignment)](#Remove_[PlanAssignment]_PlanAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [PlanAssignment](PlanAssignment.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ PlanAssignment Add(PlanAssignmentCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.
+Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ PlanAssignment GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Guid value.
+Gets a [PlanAssignment](PlanAssignment.md) from the collection with the Id value.
 
 ##### Syntax
 

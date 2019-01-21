@@ -8,21 +8,22 @@ An application developer can customize a Project Online site (SharePoint hosted)
 - Oversight of permits (procurement and status) needed for a project
 - Status/Health check of active projects
 - Issues report
-- Change Management STatus report
+- Change Management Status report
 
 Project Online includes API support to accommodate the following scenarios:
 
-Project (SharePoint) Hosted Add-In:
+######Project (SharePoint) Hosted Add-In:
 
-- Code (JavaScript, HTML, CSS) is hosted in SharePoint Online
+- Code (JavaScript, HTML, CSS) is hosted in Project Online
 - Assets are downloaded to the browser and executed against SharePoint online
 - Business logic is in JavaScript 
 - Access data is in/stored in Project Online or SharePoint
   - Custom Fields
   - Lists 
-  -  etc.
-
-Project (SharePoint) Provider Hosted Add-In:
+  - etc.
+ 
+  
+######Project (SharePoint) Provider Hosted Add-In:
 
 - Code exists on a site external to the Project Online site
 - External site can be 
@@ -33,16 +34,18 @@ Project (SharePoint) Provider Hosted Add-In:
 - Browser is redirected from Project Online to external site with access tokens to Project Online
 - External site can make calls to SharePoint and Project Online
 
-External/Standalone  Add-in
+######External/Standalone Add-in:
 
 - User executes an application on their device
 - Application authenticates and calls Project Online APIs directly
 
-| Type of application |API Implementation|Target Environment|Application Examples
+
+
+| Type of application |API |Target Environment|Application Examples
 |:------|:------|:------|:------|
-| Project Hosted| JSOM (JavaScript Object Model)<br/>REST | Browser | Timecard entry<br/>Timecard approval<br/>Project Status<br/>Issues Report |
-| Project Provider Hosted | CSOM client library<br/>REST  | Azure Website/App<br/> Non-Windows environment (LAMP, etc.) | External timesheet validator<br/>Project Importer |
-| External/Standalone | CSOM client library<br/>REST | CSOM – Any .NET supported platform<br/>REST – Any platform | Timecard entry<br/>Migration of projects to a new site<br/>Change Management Status |
+| Project Hosted| <ul><li>JSOM (JavaScript Object Model)</li><li>REST</li></ul>|<ul><li> Browser</li></ul>| <ul><li> Timecard entry</li><li>Timecard approval</li><li>Project Status</li><li>Issues Report</li></ul> |
+| Project Provider Hosted | <ul><li>CSOM client library</li><li>REST</li></ul> |  <ul><li>Azure Website/App</li><li>Non-Windows environment (LAMP, etc.)</li></ul> | <ul><li>External timesheet validator</li><li>Project Importer</li></ul> |
+| External/Standalone | <ul><li>CSOM client library</li><li>REST</li></ul> | <ul><li>CSOM – Any .NET supported platform</li><li>REST – Any platform </li></ul>| <ul><li>Timecard entry</li><li>Migration of projects to a new site</li><li>Change Management Status</li></ul> |
 
 
 

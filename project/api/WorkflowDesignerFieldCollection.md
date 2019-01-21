@@ -47,14 +47,14 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/WorkflowDesigner/Fiel
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[WorkflowDesignerField](WorkflowDesignerField.md)|Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Guid value.
+Gets a [WorkflowDesignerField](WorkflowDesignerField.md) from the collection with the Id value.
 
 ##### Syntax
 

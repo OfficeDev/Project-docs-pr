@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{pe
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{TimeSheetLineId}&#39;](#&#39;{TimeSheetLineId}&#39;)|||&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the specified TimeSheetLineId.|
 |[Add(TimeSheetLineCreationInformation parameters)](#Add_[TimeSheetLineCreationInformation]_TimeSheetLineCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Adds the [TimeSheetLine](TimeSheetLine.md) that is specified by the [TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetLine](TimeSheetLine.md)|Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.|
 |[Remove(TimeSheetLine line)](#Remove_[TimeSheetLine]_TimeSheetLine.md__line_)|&#x2713;|&#x2713;||Boolean|Removes the specified [TimeSheetLine](TimeSheetLine.md) from the collection.|
 
 <br/>
@@ -67,6 +67,7 @@ TimeSheetLine http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/TimeShee
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |TimeSheetLineId|String|the id of the TimeSheetLine|
@@ -86,6 +87,7 @@ TimeSheetLine Add(TimeSheetLineCreationInformation parameters)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |parameters|[TimeSheetLineCreationInformation](TimeSheetLineCreationInformation.md)|The properties that can be set when creating a time sheet line.|
@@ -96,7 +98,7 @@ TimeSheetLine Add(TimeSheetLineCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.
+Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -105,6 +107,7 @@ TimeSheetLine GetByGuid(Guid uid)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |uid|Guid|The Guid of the [TimeSheetLine](TimeSheetLine.md)|
@@ -115,7 +118,7 @@ TimeSheetLine GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Guid value.
+Gets a [TimeSheetLine](TimeSheetLine.md) from the collection with the Id value.
 
 ##### Syntax
 
@@ -124,6 +127,7 @@ TimeSheetLine GetById(String objectId)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |objectId|String|The id of the [TimeSheetLine](TimeSheetLine.md).|
@@ -143,6 +147,7 @@ Boolean Remove(TimeSheetLine line)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |line|[TimeSheetLine](TimeSheetLine.md)|The [TimeSheetLine](TimeSheetLine.md) to remove.|

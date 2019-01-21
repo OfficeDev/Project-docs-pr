@@ -48,8 +48,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{TimeSheetPeriodId}&#39;](#&#39;{TimeSheetPeriodId}&#39;)|||&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the specified TimeSheetPeriodId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetPeriod](TimeSheetPeriod.md)|Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -76,7 +76,7 @@ TimeSheetPeriod http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeS
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.
+Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -96,7 +96,7 @@ TimeSheetPeriod GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Guid value.
+Gets a [TimeSheetPeriod](TimeSheetPeriod.md) from the collection with the Id value.
 
 ##### Syntax
 

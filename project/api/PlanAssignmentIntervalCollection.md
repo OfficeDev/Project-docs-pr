@@ -47,7 +47,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
-|[GetById(String id)](#GetById_String_id_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Guid value.|
+|[GetById(String id)](#GetById_String_id_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Id value.|
 |[GetByStart(DateTime start)](#GetByStart_DateTime_start_)|&#x2713;|&#x2713;|&#x2713;|[PlanAssignmentInterval](PlanAssignmentInterval.md)|Gets a plan assignment interval from the collection of plan assignment intervals, with the specified start date.|
 
 <br/>
@@ -55,7 +55,7 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 
 #### <a name="GetById_String_id_"></a>GetById(String id)
  
-Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Guid value.
+Gets a [PlanAssignmentInterval](PlanAssignmentInterval.md) from the collection with the Id value.
 
 ##### Syntax
 

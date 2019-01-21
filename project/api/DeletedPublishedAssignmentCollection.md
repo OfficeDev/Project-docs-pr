@@ -1,7 +1,7 @@
 [comment]: # (Name:DeletedPublishedAssignmentCollection)
 [comment]: # (Name:Microsoft.ProjectServer.DeletedPublishedAssignmentCollection)
 [comment]: # (Type:class)
-[comment]: # (Status:Incomplete)
+[comment]: # (Status:Verified)
 
 # <a name="name"></a>DeletedPublishedAssignmentCollection class
 

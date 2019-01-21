@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftTaskLinkId}&#39;](#&#39;{DraftTaskLinkId}&#39;)|||&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the specified DraftTaskLinkId.|
 |[Add(TaskLinkCreationInformation parameters)](#Add_[TaskLinkCreationInformation]_TaskLinkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Adds the [DraftTaskLink](DraftTaskLink.md) that is specified by the [TaskLinkCreationInformation](TaskLinkCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftTaskLink](DraftTaskLink.md)|Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.|
 |[Remove(DraftTaskLink TaskLink)](#Remove_[DraftTaskLink]_DraftTaskLink.md__TaskLink_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftTaskLink](DraftTaskLink.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ DraftTaskLink Add(TaskLinkCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.
+Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ DraftTaskLink GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Guid value.
+Gets a [DraftTaskLink](DraftTaskLink.md) from the collection with the Id value.
 
 ##### Syntax
 

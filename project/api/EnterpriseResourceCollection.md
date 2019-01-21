@@ -49,14 +49,13 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/EnterpriseResources
 > [!div class="mx-tdBreakAll"]
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:----- |:-----: |:-----: |:-----: |:----- |:----- |
-|[Add(EnterpriseResourceCreationInformation ercinfo)](#add)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the enterprise resource that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#getbyguid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Get an enterprise resource from the collection with the specified GUID.|
-|[GetById(String Id)](#getbyid)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets an enterprise resource from the collection with the Name value.|
-|[GetByUser(SPUser user)](#getbyuser)|&#x2713;|&#x2713;||[EnterpriseResource](EnterpriseResource.md)|Returns an enterprise resource from the collection linked to the SharePoint user.|
-|[Remove(EnterpriseResource resource)](#remove)|&#x2713;|&#x2713;||Boolean|Removes the specified enterprise resource from a project.|
-|[Self()](#self)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets the enterprise resource object for the current user.|
-|[Update()](#update)|&#x2713;|&#x2713;|&#x2713;|Void|Updates the enterprise resource collection.|
-
+|[&#39;{EnterpriseResourceId}&#39;](#&#39;{EnterpriseResourceId}&#39;)|||&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the specified EnterpriseResourceId.|
+|[Add(EnterpriseResourceCreationInformation parameters)](#Add_[EnterpriseResourceCreationInformation]_EnterpriseResourceCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Adds the [EnterpriseResource](EnterpriseResource.md) that is specified by the [EnterpriseResourceCreationInformation](EnterpriseResourceCreationInformation.md) object to the collection.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Gets a [EnterpriseResource](EnterpriseResource.md) from the collection with the Id value.|
+|[GetByUser(SPUser user)](#GetByUser_[SPUser]_https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spuser.aspx__user_)|&#x2713;|&#x2713;|&#x2713;|[EnterpriseResource](EnterpriseResource.md)|Returns an element from the collection linked to the SharePoint user.|
+|[Remove(EnterpriseResource resource)](#Remove_[EnterpriseResource]_EnterpriseResource.md__resource_)|&#x2713;|&#x2713;||Boolean|Removes the specified [EnterpriseResource](EnterpriseResource.md) from the collection.|
+|[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the enterprise resource collection.|
 
 <br/>
 #### Method Details

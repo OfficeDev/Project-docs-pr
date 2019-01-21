@@ -52,8 +52,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{PublishedProjectId}&#39;](#&#39;{PublishedProjectId}&#39;)|||&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the specified PublishedProjectId.|
 |[Add(ProjectCreationInformation parameters)](#Add_[ProjectCreationInformation]_ProjectCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Adds the [PublishedProject](PublishedProject.md) that is specified by the [ProjectCreationInformation](ProjectCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[PublishedProject](PublishedProject.md)|Gets a [PublishedProject](PublishedProject.md) from the collection with the Id value.|
 |[Remove(PublishedProject project)](#Remove_[PublishedProject]_PublishedProject.md__project_)|&#x2713;|&#x2713;||Boolean|Removes the specified [PublishedProject](PublishedProject.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||[QueueJob](QueueJob.md)|Updates the project collection.|
 |[Validate()](#Validate__)|&#x2713;|&#x2713;|&#x2713;|void|Validates pending changes to the project and all of the entities that it contains without saving them.|
@@ -103,7 +103,7 @@ PublishedProject Add(ProjectCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
 
-Gets a [PublishedProject](PublishedProject.md) from the collection with the Id value.
+Gets a [PublishedProject](PublishedProject.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -124,7 +124,7 @@ The [PublishedProject](PublishedProject.md) with the specified guid.
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
 
-Gets a [PublishedProject](PublishedProject.md) from the collection with the Guid value.
+Gets a [PublishedProject](PublishedProject.md) from the collection with the Id value.
 
 ##### Syntax
 
@@ -154,6 +154,7 @@ Boolean Remove(PublishedProject project)
 ```
 
 ##### Parameters
+> [!div class="mx-tdBreakAll"]
 |**Name** |**Type**|**Description**|
 |:------ |:----|:------ |
 |project|[PublishedProject](PublishedProject.md)|The [PublishedProject](PublishedProject.md) to remove.|

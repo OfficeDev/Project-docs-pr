@@ -50,8 +50,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables('{tableid
 |[&#39;{LookupEntryId}&#39;](#&#39;{LookupEntryId}&#39;)|||&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the specified LookupEntryId.|
 |[Add(LookupEntryCreationInformation parameters)](#Add_[LookupEntryCreationInformation]_LookupEntryCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Adds the [LookupEntry](LookupEntry.md) that is specified by the [LookupEntryCreationInformation](LookupEntryCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a lookup entry from the collection by using the alternate lookup entry GUID that is specified in an App package for Project Server online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupEntry](LookupEntry.md)|Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.|
 |[Remove(LookupEntry entry)](#Remove_[LookupEntry]_LookupEntry.md__entry_)|&#x2713;|&#x2713;||Boolean|Removes the specified [LookupEntry](LookupEntry.md) from the collection.|
 
 <br/>
@@ -119,7 +119,7 @@ LookupEntry GetByAppAlternateId(String objectId)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.
+Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -139,7 +139,7 @@ LookupEntry GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [LookupEntry](LookupEntry.md) from the collection with the Guid value.
+Gets a [LookupEntry](LookupEntry.md) from the collection with the Id value.
 
 ##### Syntax
 

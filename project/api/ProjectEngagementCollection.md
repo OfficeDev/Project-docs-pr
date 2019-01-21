@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ProjectEngagementId}&#39;](#&#39;{ProjectEngagementId}&#39;)|||&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the specified ProjectEngagementId.|
 |[Add(ProjectEngagementCreationInformation parameters)](#Add_[ProjectEngagementCreationInformation]_ProjectEngagementCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Adds the [ProjectEngagement](ProjectEngagement.md) that is specified by the [ProjectEngagementCreationInformation](ProjectEngagementCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectEngagement](ProjectEngagement.md)|Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.|
 |[Remove(Engagement engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean|Removes the specified [ProjectEngagement](ProjectEngagement.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the project engagement collection.|
 
@@ -99,7 +99,7 @@ ProjectEngagement Add(ProjectEngagementCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.
+Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -119,7 +119,7 @@ ProjectEngagement GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Guid value.
+Gets a [ProjectEngagement](ProjectEngagement.md) from the collection with the Id value.
 
 ##### Syntax
 

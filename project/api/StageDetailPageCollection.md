@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/Stages('{stageid}')/P
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StageDetailPageId}&#39;](#&#39;{StageDetailPageId}&#39;)|||&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the specified StageDetailPageId.|
 |[Add(StageDetailPageCreationInformation parameters)](#Add_[StageDetailPageCreationInformation]_StageDetailPageCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Adds the [StageDetailPage](StageDetailPage.md) that is specified by the [StageDetailPageCreationInformation](StageDetailPageCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StageDetailPage](StageDetailPage.md)|Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Id value.|
 |[Remove(StageDetailPage pdp)](#Remove_[StageDetailPage]_StageDetailPage.md__pdp_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StageDetailPage](StageDetailPage.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ StageDetailPage Add(StageDetailPageCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Id value.
+Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ StageDetailPage GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Guid value.
+Gets a [StageDetailPage](StageDetailPage.md) from the collection with the Id value.
 
 ##### Syntax
 

@@ -48,7 +48,7 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/TimeSheetPeriods('{pe
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[Add(TimeSheetWorkCreationInformation parameters)](#Add_[TimeSheetWorkCreationInformation]_TimeSheetWorkCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Adds the [TimeSheetWork](TimeSheetWork.md) that is specified by the [TimeSheetWorkCreationInformation](TimeSheetWorkCreationInformation.md) object to the collection.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Id value.|
 |[GetByStartDate(DateTime start)](#GetByStartDate_DateTime_start_)|&#x2713;|&#x2713;|&#x2713;|[TimeSheetWork](TimeSheetWork.md)|Gets a timesheet actual work object from the collection with a specified start date.|
 |[Remove(TimeSheetWork work)](#Remove_[TimeSheetWork]_TimeSheetWork.md__work_)|&#x2713;|&#x2713;||Boolean|Removes the specified [TimeSheetWork](TimeSheetWork.md) from the collection.|
 
@@ -77,7 +77,7 @@ TimeSheetWork Add(TimeSheetWorkCreationInformation parameters)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Guid value.
+Gets a [TimeSheetWork](TimeSheetWork.md) from the collection with the Id value.
 
 ##### Syntax
 

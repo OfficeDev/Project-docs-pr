@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/ProjectDetailPages
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ProjectDetailPageId}&#39;](#&#39;{ProjectDetailPageId}&#39;)|||&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the specified ProjectDetailPageId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ProjectDetailPage](ProjectDetailPage.md)|Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.|
 
 <br/>
 #### Method Details
@@ -77,7 +77,7 @@ ProjectDetailPage http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Proj
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.
+Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -97,7 +97,7 @@ ProjectDetailPage GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Guid value.
+Gets a [ProjectDetailPage](ProjectDetailPage.md) from the collection with the Id value.
 
 ##### Syntax
 

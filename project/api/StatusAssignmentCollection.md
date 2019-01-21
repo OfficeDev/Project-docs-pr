@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{StatusAssignmentId}&#39;](#&#39;{StatusAssignmentId}&#39;)|||&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the specified StatusAssignmentId.|
 |[Add(StatusAssignmentCreationInformation parameters)](#Add_[StatusAssignmentCreationInformation]_StatusAssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Adds the [StatusAssignment](StatusAssignment.md) that is specified by the [StatusAssignmentCreationInformation](StatusAssignmentCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[StatusAssignment](StatusAssignment.md)|Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.|
 |[GetTimePhase(DateTime start, DateTime end)](#GetTimePhase_DateTime_start,_DateTime_end_)|&#x2713;|&#x2713;||[TimePhase](TimePhase.md)|Reads the timephased data for assignments that are within the specified start date and end date.|
 |[GetTimePhaseByUrl(String start, String end)](#GetTimePhaseByUrl_String_start,_String_end_)|||&#x2713;|[TimePhase](TimePhase.md)||
 |[Remove(StatusAssignment assignment)](#Remove_[StatusAssignment]_StatusAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [StatusAssignment](StatusAssignment.md) from the collection.|
@@ -102,7 +102,7 @@ StatusAssignment Add(StatusAssignmentCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.
+Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -122,7 +122,7 @@ StatusAssignment GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Guid value.
+Gets a [StatusAssignment](StatusAssignment.md) from the collection with the Id value.
 
 ##### Syntax
 

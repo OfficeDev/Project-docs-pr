@@ -50,8 +50,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/LookupTables
 |[&#39;{LookupTableId}&#39;](#&#39;{LookupTableId}&#39;)|||&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the specified LookupTableId.|
 |[Add(LookupTableCreationInformation parameters)](#Add_[LookupTableCreationInformation]_LookupTableCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Adds the [LookupTable](LookupTable.md) that is specified by the [LookupTableCreationInformation](LookupTableCreationInformation.md) object to the collection.|
 |[GetByAppAlternateId(String objectId)](#GetByAppAlternateId_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Get an element from the lookup table collection by using the alternate object GUID that is specified in an App package for Project Online.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[LookupTable](LookupTable.md)|Gets a [LookupTable](LookupTable.md) from the collection with the Id value.|
 |[Remove(LookupTable table)](#Remove_[LookupTable]_LookupTable.md__table_)|&#x2713;|&#x2713;||Boolean|Removes the specified [LookupTable](LookupTable.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the lookup table collection.|
 
@@ -120,7 +120,7 @@ LookupTable GetByAppAlternateId(String objectId)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [LookupTable](LookupTable.md) from the collection with the Id value.
+Gets a [LookupTable](LookupTable.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -140,7 +140,7 @@ LookupTable GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [LookupTable](LookupTable.md) from the collection with the Guid value.
+Gets a [LookupTable](LookupTable.md) from the collection with the Id value.
 
 ##### Syntax
 

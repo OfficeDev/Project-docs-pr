@@ -48,8 +48,8 @@ http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/EnterpriseResources('
 |**Name**|**.NET**|**JSOM**|**REST**|**Return Type**|**Description**|
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{ResourceEngagementId}&#39;](#&#39;{ResourceEngagementId}&#39;)|||&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the specified ResourceEngagementId.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[ResourceEngagement](ResourceEngagement.md)|Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.|
 |[Remove(Engagement engagement)](#Remove_[Engagement]_Engagement.md__engagement_)|&#x2713;|&#x2713;||Boolean|Removes the specified [ResourceEngagement](ResourceEngagement.md) from the collection.|
 |[Update()](#Update__)|&#x2713;|&#x2713;||void|Updates the resource engagement collection.|
 
@@ -78,7 +78,7 @@ ResourceEngagement http://contoso.sharepoint.com/sites/pwa/_api/ProjectServer/En
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.
+Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -98,7 +98,7 @@ ResourceEngagement GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Guid value.
+Gets a [ResourceEngagement](ResourceEngagement.md) from the collection with the Id value.
 
 ##### Syntax
 

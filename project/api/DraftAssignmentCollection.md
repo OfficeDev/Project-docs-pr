@@ -49,8 +49,8 @@ http://contoso.sharepoint.com/sites/pwa/api/ProjectServer/Projects('{projectid}'
 |:-----|:-----:|:-----:|:-----:|:-----|:-----|
 |[&#39;{DraftAssignmentId}&#39;](#&#39;{DraftAssignmentId}&#39;)|||&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the specified DraftAssignmentId.|
 |[Add(AssignmentCreationInformation parameters)](#Add_[AssignmentCreationInformation]_AssignmentCreationInformation.md__parameters_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Adds the [DraftAssignment](DraftAssignment.md) that is specified by the [AssignmentCreationInformation](AssignmentCreationInformation.md) object to the collection.|
-|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.|
-|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Guid value.|
+|[GetByGuid(Guid uid)](#GetByGuid_Guid_uid_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Guid value.|
+|[GetById(String objectId)](#GetById_String_objectId_)|&#x2713;|&#x2713;|&#x2713;|[DraftAssignment](DraftAssignment.md)|Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.|
 |[Remove(DraftAssignment assignment)](#Remove_[DraftAssignment]_DraftAssignment.md__assignment_)|&#x2713;|&#x2713;||Boolean|Removes the specified [DraftAssignment](DraftAssignment.md) from the collection.|
 
 <br/>
@@ -98,7 +98,7 @@ DraftAssignment Add(AssignmentCreationInformation parameters)
 
 #### <a name="GetByGuid_Guid_uid_"></a>GetByGuid(Guid uid)
  
-Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.
+Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Guid value.
 
 ##### Syntax
 
@@ -118,7 +118,7 @@ DraftAssignment GetByGuid(Guid uid)
 
 #### <a name="GetById_String_objectId_"></a>GetById(String objectId)
  
-Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Guid value.
+Gets a [DraftAssignment](DraftAssignment.md) from the collection with the Id value.
 
 ##### Syntax
 
