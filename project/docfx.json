@@ -28,7 +28,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "is_archived": true
+                                         "feedback_system":  "None",
+                                         "ROBOTS":  "NOINDEX,NOFOLLOW",
+                                         "is_archived":  true,
+                                         "uhfHeaderId":  "MSDocsHeader-Archive",
+                                         "ms.prod":  "project",
+                                         "ms.topic":  "archived"
     },
     "fileMetadata": {},
     "template": [],
