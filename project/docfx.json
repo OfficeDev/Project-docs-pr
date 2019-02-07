@@ -32,6 +32,7 @@
                                          "ROBOTS":  "NOINDEX,NOFOLLOW",
                                          "is_archived":  true,
                                          "uhfHeaderId":  "MSDocsHeader-Archive",
+                                         "ms.suite": "office365",
                                          "ms.prod":  "project",
                                          "ms.topic":  "archived"
     },
